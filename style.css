@@ -653,3 +653,550 @@ img.size-full {}
 	clear:      both;
 	visibility: hidden;
 }
+/*
+	Theme Name: stargazer-child
+	Theme URI: http://themehybrid.com/themes/alice
+	Description: A very neat child theme for <a href="http://themehybrid.com/themes/stargazer">Stargazer WordPress Theme</a> (The most advanced theme ever crafted). The child Theme gives your site a whole different look. It also inherits all the awesome feature from its parent theme. Check out the <a href="http://bit.ly/alice-demo">live demo site here</a>. You may find all documentations about the parent theme at <a href="http://www.themehybrid.com/">ThemeHybrid</a> and about the child theme at <a href="http://www.blogsynthesis.com/themes/alice/">BlogSynthesis</a>.
+	Tags:			one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, gray, black, white
+	Author:			Anand Kumar
+	Author URI:		http://www.blogsynthesis.com/
+	Version:		1.0.1
+	Text Domain:	alice
+	Template:		stargazer
+	License:		GNU General Public License v2.0 or later
+	License URI: 	http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+/* Change Defaults  */
+
+
+
+/* Let JS In theme-footer coloriz the header. */
+img.header-image {
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%); 
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+
+/* V1 Let JS In theme-footer colorize the header. */
+.js-active img.header-image.color {
+    -webkit-filter: grayscale(0%); 
+    -moz-filter: grayscale(0%); 
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%); 
+}
+
+/* V2 Let JS In theme-footer colorize the header. */
+.js-active img.header-image.colorup {
+	-webkit-animation: colorit 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: colorit 2s; /* Firefox < 16 */
+	-ms-animation: colorit 2s; /* Internet Explorer */
+	 -o-animation: colorit 2s; /* Opera < 12.1 */
+	    animation: colorit 2s;
+	
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+		animation-fill-mode: both;
+}
+
+@keyframes colorit {
+    from { filter: grayscale(1); }
+    to   { filter: grayscale(0); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes colorit {
+    from { grayscale: 1; }
+    to   { grayscale: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes colorit {
+    from { -webkit-filter: grayscale(1); }
+    to   { -webkit-filter: grayscale(0); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes colorit {
+    from { grayscale: 1; }
+    to   { grayscale: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes colorit {
+    from { grayscale: 1; }
+    to   { grayscale: 0; }
+}
+
+img.header-image-orig {
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out; 
+	
+    filter: gray; /* For IE 6 - 9 */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+
+    -webkit-filter: grayscale(0%); 
+    -moz-filter: grayscale(0%); 
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%); 
+
+}
+
+img.header-image-orig:hover {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0); 
+}
+
+
+/* DS Tweaks Stargazer CSS */
+
+/* Position banner text over the banner image */
+.header-image-wrap { position: relative; }
+.header-image {}
+.header-image-text  {
+	/* Placement */
+	position: absolute;
+	bottom:     1.5rem;
+	padding:    0.75rem;
+	/* font-size:  0.9375rem; */
+	/* Style */
+	font-family: 'Merriweather', Georgia, serif; 
+	letter-spacing: 2pt; 
+	line-height: 100%;
+	vertical-align: -1; 
+	font-variant: small-caps;
+	margin: 0 0 10px 0;
+	text-shadow: 1px 1px 1px #000;
+}
+	
+/* Emulate what JT Stargazer does. 
+.wp-caption { position: relative; }
+.wp-caption .wp-caption-text {
+	position:   absolute;
+	bottom:     1.5rem;
+	padding:    0.75rem;
+	font-size:  0.9375rem;
+}
+*/
+
+#menu-primary .search-toggle { 
+	/* color: black !important;
+	weirdly turns all links green */
+	background: #1897A0 !important;
+}
+
+@media only screen and ( min-width: 950px ) {
+
+	.layout-1c   #footer .credit,
+	.layout-2c-l #footer .credit,
+	.layout-2c-r #footer .credit { max-width: 95%; }
+}
+
+/* DS Jake site customizing.  */
+
+.home .entry-title { display: none; }
+
+/* Doesnt work yet. */
+#menu-secondary .menu-toggle button {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 0 0.5rem; 
+}
+
+/* Automatically inserted text/graohics after singular content.  */
+/* wrapper */
+.autoinsert {
+	padding: 1em 0 0 0;
+	/* border: 1px solid #999; */
+}
+/* p for auto inserted text or images. */
+.autoinserttext {
+	font-size: 85%;
+	font-style: italic;
+}
+.autoinsertimage {
+}
+/* Bill Holab Music and G. Schirmer image links */
+.imginsert img {
+	max-width: 90%; /* only issue on mobile view */
+}
+.billholab a,
+.imginsert a {
+	display: inline;
+	padding: 0 2em 0 0;
+	border-bottom: none;
+}
+
+.gallery_hide { display: none; }
+
+/* Works-filter is the dropdown filter area on archive pages.
+   It is populated using a widget area.  
+   It is opened and closed using javascript toggle. */
+
+/* Works-filter only available on archives. See taxonomy.php.
+ It is closed by default, opened intentionally on compositions page. */
+
+/* Default is to initially hide/close the works filter. */
+.works-filter { display: none;} 
+
+/* Pre-open the works filter on these pages
+.taxonomy-category-works:not(.paged) .works-filter  { display: block;}
+*/
+
+.works-filter:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+
+.works-filter-wrap { width: 100%; /*border: solid 1px green; */ }
+/* DS TEST .works-filter { background: rgba(0,0,0,0.3); } */
+.works-filter { 
+	/* ALICE background: rgba(34,103,135,1.0); /* Joyce shirt! */
+	border-left: 4px solid #000;
+	border-right: 4px solid #000;
+	border-top: 4px solid #000;
+	padding-bottom: 15px;
+}
+
+/* Massage inside of works filter drop down for Compositions */
+
+/*.works-filter #filter-item-text-6 { max-width: 610px; } Unused. composition tiles */
+.works-filter .comp_dropdown_snippet {clear: both; width: 100%; }
+.works-filter .comp_dropdown_snippet ul { 
+	list-style: none; 
+	width: 39em; 
+	max-width: 97%;
+	margin: 0 auto;
+}
+.works-filter .comp_dropdown_snippet ul li { float:left; display: inline; padding: 5px; }
+
+/* Massage inside of filter drop down for Recordings */
+.works-filter #filter-item-text-7 { 
+	float: right; 
+	min-width: 280px; 
+	margin: 0 auto 0 auto; 
+	padding: 0 10px 0 10px; 
+} /* tag dropdown */
+.works-filter #filter-item-hybrid-nav-menu-10 {
+	float: left;
+	font-size: 110%;
+	margin: 0px;
+	padding: 10px;
+	width: 410px;
+	max-width: 80%;
+	text-align: center;
+}/* recordings filter menu */
+.works-filter #filter-item-hybrid-nav-menu-10 label { 
+	font-weight: normal; 
+	font-size: 110%;
+}
+ 
+/* Massage Collaborators and Recordings labels */
+.works-filter #filter-item-text-2 { text-align: center;}
+.works-filter #filter-item-text-2 label
+ { font-weight: bold; font-size: 110%;}
+
+
+
+.filter-item {
+	padding-top: 10px;
+	padding-right: 15px;
+}
+.filter-toggle-wrap{
+	border-top: 4px solid #E5AF69;
+	border-top: 4px solid #222;
+}
+.filter-toggle-wrap:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+/* We only want the works filter shown when jquery is running 
+	and on chosen archive pages. */
+.works-filter-toggle { display: none; }
+
+/* Display when jquery is running on Compositions, Recordings, Collaborators (tag) */
+body.archive.col-masonry-active.taxonomy-category-works .works-filter-toggle,
+body.archive.col-masonry-active.taxonomy-category-recordings .works-filter-toggle,
+body.archive.col-masinry-active.taxonomy-post_tag .works-filter-toggle
+	{ display: block; }
+
+.works-filter-toggle{
+	float: right;
+	/* display: block; */
+	padding: 10px 20px;
+	/* background: #E5AF69;
+	background: #222; */
+	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
+	color: #fff;
+	margin-right: 15%;
+}
+.works-filter-toggle:hover,
+.works-filter-toggle:focus{
+	border: none;
+	color: #faebd7;
+	background: #222;
+}
+.works-filter-toggle:after{
+/*	content: "\f347"; */
+	content: "\f168";
+	margin-left: 5px;
+	font-family: "dashicons";
+	vertical-align: top;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* theme.js adds and removes .works-filter-open */
+.works-filter-toggle.works-filter-open:after{
+	content: "\f317";
+}
+.works-filter-toggle:not(works-filter-open):after{
+	content: "\f316";
+}
+/* toggle other */
+.filter-toggle-wrap-left{
+	padding: 0 5%;
+	padding-right: 0;
+	float: left;
+	/* width: 480px; 
+	max-width: 250px; */
+	padding-top: 10px;
+}
+.filter-toggle-wrap-left:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+
+/* unused i think. */
+.works-cat-dropdown{
+	float: right;
+	width: 200px;
+	text-align: center;
+}
+
+/* There are three toggles used for changing taxinomy archive list displays. */
+/* We only display them if class .col-masonry-active is present which means
+	the jquery display code in theme.js is running. */
+.works-grid-toggle,
+.works-tile-toggle,
+.works-list-toggle { display: none; }
+
+/* The mobile version of the toggles hide the link text and increases the icon size */
+@media (max-width: 480px) {
+
+	/* Thank you W3C for span support inside anchors. */
+	a.works-grid-toggle span,
+	a.works-tile-toggle span,
+	a.works-list-toggle span {
+		height: 1px;
+		width: 1px;
+		position: absolute;
+		overflow: hidden;
+		top: -10px;
+	}
+	
+	a.works-grid-toggle,
+	a.works-tile-toggle,
+	a.works-list-toggle {
+		padding: 7px !important;
+		padding-right: 2px !important;
+		font-size: 175%;
+	}
+
+	.filter-toggle-wrap-left {
+		margin: 0 !important;
+		padding: 5px 0 0 0 !important;
+	}
+	
+	.works-filter-toggle {
+		margin: 0px !important;
+		padding: 10px !important;
+	}
+}
+/* End Mobile Toggle overrides */
+
+.col-masonry-active .works-tile-toggle {
+	padding: 5px 10px;
+	display: block;
+	float: left;
+	margin-right: 15px;
+	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
+}
+.works-tile-toggle:hover,
+.works-tile-toggle:focus{
+	border: none;
+}
+.works-tile-toggle:before{
+	content: "\f233";
+	font-family: "dashicons";
+	margin-right: 5px;
+	vertical-align: top;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;
+}
+
+.col-masonry-active .works-list-toggle{
+	padding: 5px 10px;
+	display: block;
+	float: left;
+	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
+}
+.works-list-toggle:hover,
+.works-list-toggle:focus{
+	border: none;
+}
+.works-list-toggle:before{
+	content: "\f333";
+	margin-right: 5px;
+	font-family: "dashicons";
+	vertical-align: top;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;
+}
+/* Only display grid toggle on recordings tax list. */
+body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle {
+	padding: 5px 10px;
+	display: block;
+	float: left;
+	margin-right: 15px;
+	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
+}
+
+.works-grid-toggle:hover,
+.works-grid-toggle:focus{
+	border: none;
+}
+.works-grid-toggle:before{
+	content: "\f180";
+	margin-right: 5px;
+	font-family: "dashicons";
+	vertical-align: top;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;
+}
+#select-works-category{
+	border: 1px solid transparent;
+	margin-top: 1px;
+	display: none;
+}
+
+/* End DC Prototype Styles */
+
+/* Masonry */
+/* == Grid and Tile views reset entry-wrap to use columns here == 
+	If col-auto and col-2,3,4 unset then width remains 100% */
+
+/* == Auto set no. of Columns == Responsive */
+@media (max-width: 480px) {
+	.col-auto.col-tile .content-entry-wrap > .entry,
+	.col-auto.col-grid .content-entry-wrap > .entry {
+		width: 90%;
+		padding: 3%;
+	}
+}
+@media (min-width: 481px) and (max-width: 860px) {
+	.col-auto.col-tile .content-entry-wrap > .entry,
+	.col-auto.col-grid .content-entry-wrap > .entry{
+		width: 47%;
+		padding: 3.5%;
+	}
+}
+@media (min-width: 861px) {
+	.col-auto.col-tile .content-entry-wrap > .entry,
+	.col-auto.col-grid .content-entry-wrap > .entry{
+		width: 27%; /* ALICE */
+		padding: 3%; /* ALICE */
+	}
+}
+.col-auto.col-tile .main-inner,
+.col-auto.col-grid .main-inner{ padding-right: 60px; }
+
+/* == Hard set 2 COLUMNS == */
+.col-2.col-tile .content-entry-wrap > .entry,
+.col-2.col-grid .content-entry-wrap > .entry{ width: 50%; }
+
+.col-2.col-tile .main-inner,
+.col-2.col-grid .main-inner{ padding-right: 60px; }
+
+/* == Hard set 3 COLUMNS == */
+.col-3.col-tile .content-entry-wrap > .entry,
+.col-3.col-grid .content-entry-wrap > .entry{ width: 33%; }
+
+.col-3.col-tile .main-inner,
+.col-3.col-grid .main-inner{ padding-right: 60px; }
+
+/* == Hard set 4 COLUMNS == */
+.col-4.col-tile .content-entry-wrap > .entry,
+.col-4.col-grid .content-entry-wrap > .entry{ width: 25%; }
+
+.col-4.col-tile .main-inner,
+.col-4.col-grid .main-inner{ padding-right: 60px; }
+
+/* LIST View -- The default. Useful to search engines if no Javascript.  */
+.archive.taxonomy .entry-summary .entry-summary-short { display: none; }
+
+/* == GRID View -- Only these changes to default LIST view needed. == */
+.archive.taxonomy.col-grid .content-entry-wrap > .entry .entry-wrap{
+	margin-left: 0;
+	padding: 5px;
+	border: 2px double #ccc; 
+	border-radius: 10px;/* Grid view reduce padding for bigger image. */
+}
+.archive.taxonomy.col-grid .entry-inner { display: none; } /* Kills all text */
+.archive.taxonomy.col-grid .entry-media{ float: none; }
+.archive.taxonomy.col-grid .theme-thumbnail { width: 100%; margin: 0; padding: 0; }
+
+/* == TILE View -- Only these needed to chg default LIST View into TILE. == */
+.archive.taxonomy.col-tile .entry-media { float: none; width: 100%; margin: -8px 0 8px 0; }
+.archive.taxonomy.col-tile .theme-thumbnail { float: none; width: 100%; margin: 0 0 12px 0;  }
+.archive.taxonomy.col-tile .entry-header { padding-left: 0; text-align: center; }
+.archive.taxonomy.col-tile .entry-summary .entry-summary-short { display: block; }
+.archive.taxonomy.col-tile .entry-summary .entry-summary-long { display: none;}
+.archive.taxonomy.col-tile .entry-footer { display: none; }
+.archive.taxonomy.col-tile .entry-meta { display: none; }
+
+/* Contact Form 7 message style tweaks*/
+.wpcf7-form-control-wrap {
+}
+.wpcf7-form-control {
+	max-width: 95%; /* Smallest mobile screen */
+}
+.wpcf7 p {
+	margin-bottom: 1.5em;
+}
+.wpcf7-submit {
+	font-size: 1.5em;
+	margin: 0;
+	text-indent: 0;
+	text-align: center;
+	width: 4.5em;
+}
+div.wpcf7-response-output.wpcf7-validation-errors {
+	border: 1px solid orange !important;
+	text-indent: 0em;
+	color: orange;
+}
+div.wpcf7-response-output,
+div.wpcf7-mail-sent-ok,
+.wpcf7-response-output.wpcf7-mail-sent-ok
+{
+	text-indent: 0em;
+	color: #FAEBD7;
+	border: 1px solid #EECBAD !important;
+}
+span.wpcf7-not-valid-tip {
+	font-size: 90%;
+	text-indent: 1em;
+	color: orange !important;
+	border: 1px solid orange;
+}
+
