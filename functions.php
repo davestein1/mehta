@@ -667,13 +667,13 @@ function add_content_after_title( $title ) {
 
 //Add links to top of composition archive.  
 function add_page_extras( $content) {
-	if ( is_archive() && is_category('works') ) {
+	
 		ob_start();
 		dynamic_sidebar( 'works_genre_area' );
 		$sidebar = ob_get_contents();
 		ob_end_clean();
 		if ( $sidebar ) $content = $sidebar . $content;
-	}
+	
 	return $content;
 }
 
