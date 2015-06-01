@@ -27,7 +27,7 @@
 
 	<br />
 		
-	<?php if ( is_active_sidebar( 'works_genre_area' ) ) : ?>
+	<?php if ( true || is_active_sidebar( 'works_genre_area' ) ) : ?>
 		<div <?php hybrid_attr( "works-genre-area" ); // DS Code here ?>>
 			<?php dynamic_sidebar( 'works_genre_area' ); ?>
 			<br />
