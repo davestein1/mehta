@@ -135,7 +135,7 @@ function hybrid_base_theme_setup() {
 	add_action( 'pre_get_posts', 'set_query_defaults' );
 	
 	// Add extras to composition archive 
-	add_action("the_content", 'add_page_extras');
+	//add_action("the_content", 'add_page_extras');
 
 	//Add Other descriptions and images into composition content. 
 	add_filter( "the_content", 'add_other_to_entry_content', 10 );
@@ -603,6 +603,17 @@ function widget_area_init() {
 		'before_title' => '<label>',
 		'after_title' => '</label>'
 	) );
+	
+	register_sidebar( array(
+		'name' => 'Archive Top Content Area',
+		'id' => 'archive_top_content_area',
+		'description' => 'Archive Top of Content Area',
+		'class' => '',
+		'before_widget' => '<div id="archive-top-%1$s" class="archive-top-item">',
+		'after_widget' => '</div><!-- #archive-top-item -->',
+		'before_title' => '<label>',
+		'after_title' => '</label>'
+	) );
 }
 
 
@@ -665,15 +676,16 @@ function add_content_after_title( $title ) {
 	return $title;
 }
 
-//Add links to top of composition archive.  
+//Add links to top of composition archive.
+//Depricated 
 function add_page_extras( $content) {
-	
+/*
 		ob_start();
 		dynamic_sidebar( 'works_genre_area' );
 		$sidebar = ob_get_contents();
 		ob_end_clean();
 		if ( $sidebar ) $content = $sidebar . $content;
-	
+*/
 	return $content;
 }
 
