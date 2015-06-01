@@ -24,7 +24,15 @@
 		</div>
 	  </div><!-- .filter-toggle-wrap -->
 	</div><!-- .works-filter-wrap -->
-<br />
+
+	<br />
+		
+	<?php if ( is_active_sidebar( 'works_genre_area' ) ) : ?>
+		<div <?php hybrid_attr( "works-genre-area" ); // DS Code here ?>>
+			<?php dynamic_sidebar( 'works_genre_area' ); ?>
+			<br />
+		</div><!-- .works-genre-area -->
+	<?php endif; ?>
 
 	<?php endif; // End check for multi-post page. ?>
 
