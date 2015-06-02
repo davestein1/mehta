@@ -27,11 +27,11 @@
 
 	<br />
 		
-	<?php if ( true || is_active_sidebar( 'works_genre_area' ) ) : ?>
-		<div <?php hybrid_attr( "works-genre-area" ); // DS Code here ?>>
-			<?php dynamic_sidebar( 'works_genre_area' ); ?>
+	<?php if ( is_active_sidebar( 'archive_top_content_area' ) ) : ?>
+		<div <?php hybrid_attr( "archive-top-content-area" ); // DS Code here ?>>
+			<?php dynamic_sidebar( 'archive_top_content_area' ); ?>
 			<br />
-		</div><!-- .works-genre-area -->
+		</div><!-- #archive-top-content-area -->
 	<?php endif; ?>
 
 	<?php endif; // End check for multi-post page. ?>
