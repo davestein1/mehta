@@ -97,10 +97,10 @@ function hybrid_base_theme_setup() {
 /*}. */
 
     /* Change default background color. */
-    add_theme_support( 'custom-background', array( 'default-color' => 'f7f7f7' ) );			
+    //add_theme_support( 'custom-background', array( 'default-color' => 'f7f7f7' ) );			
 			
     /* Add a custom default color for the "primary" color option. */
-    add_filter( 'theme_mod_color_primary', 'my_color_primary' );
+    //add_filter( 'theme_mod_color_primary', 'my_color_primary' );
 	
 	/* Change default custom header */
 	//add_theme_support( 'custom-header', array ( 'default-image' => '%2$s/images/headers/header.jpg'	) );
