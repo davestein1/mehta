@@ -244,8 +244,17 @@ img.size-full {}
 		.layout-3c-c #container {}
 
 		#header {}
-
+		
 		#menu-primary {}
+				
+		#menu-secondary div.menu ul { text-align: left; }
+		#menu-secondary div.wrap { border: none; float: right; width: 100%;}
+		#menu-secondary div.menu { width: auto; float: right; }
+		#menu-secondary ul { margin:0; list-style:none; } /* margin: 5px; */
+		#menu-secondary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
+		#menu-secondary ul li a { padding:0; /* border: none; color: #FAEBD7;background: #36648B;font-family: 'Merriweather', Georgia, serif;font-size: 80%; font-weight: bold; text-shadow: 1px 1px 1px #000; */ } /* text-transform:uppercase; */
+		#menu-secondary ul li a:hover,
+		#menu-secondary li.current-menu-item a {color: #fff; text-decoration: none; }
 
 		#menu-secondary {}
 
