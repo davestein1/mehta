@@ -291,15 +291,15 @@ img.size-full {}
 	#branding {}
 
 	#site-title {
-	font-family: 'Merriweather', Georgia, serif;
-	font-size: 44px;
-	/* font-size: 4.4rem; */
-	font-weight: 300;
-	font-style: normal;
-	font-variant: small-caps;
-	margin: 0 0 10px 0;
-	text-shadow: 1px 1px 1px #000;
-	white-space: nowrap;
+		font-family: 'Merriweather', Georgia, serif;
+		font-size: 44px;
+		/* font-size: 4.4rem; */
+		font-weight: 300;
+		font-style: normal;
+		font-variant: small-caps;
+		margin: 0 0 10px 0;
+		text-shadow: 1px 1px 1px #000;
+		white-space: nowrap;
 	}
 		#site-title,
 		#site-title a,
