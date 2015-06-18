@@ -290,12 +290,44 @@ img.size-full {}
 
 	#branding {}
 
-		#site-title {}
+	#site-title {
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 44px;
+	/* font-size: 4.4rem; */
+	font-weight: 300;
+	font-style: normal;
+	font-variant: small-caps;
+	margin: 0 0 10px 0;
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	}
+		#site-title,
+		#site-title a,
+		#site-title a:visited,
+		#site-description,
+		#site-description a,
+		#site-description a:visited { 
+			color: #FAEBD7; border-bottom: none;
+		}
 
-			#site-title a {}
-			#site-title a:hover {}
+		#site-title a:hover,
+		#site-description a:hover {
+			text-decoration: none;
+			color: white;
+			border-bottom: none;
+		}
 
-		#site-description {}
+	#site-description {
+		font-family: 'Merriweather', Georgia, serif;
+		font-size: 22px;
+		/* font-size: 2.2rem; */
+		font-weight: 300;
+		font-style: normal;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #000;
+		white-space: nowrap;
+		margin-bottom: 0;
+	}
 
 /**
  * Menus
