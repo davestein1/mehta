@@ -304,7 +304,15 @@ img.size-full {}
 
 #header {}
 
-	#branding {}
+	#branding,
+	.sidebar-header-inactive #branding {
+		float: left;
+		width: auto;
+		margin: 0 0 0 1%;
+		padding: 0%;	
+		border: 1px solid  orange; /* DS TEST */
+		text-align: center;
+	}
 
 	#site-title {
 		font-family: 'Merriweather', Georgia, serif;
