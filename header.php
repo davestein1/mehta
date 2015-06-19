@@ -20,8 +20,8 @@
 			<?php if ( display_header_text() ) : // If user chooses to display header text. ?>
 
 				<div <?php hybrid_attr( 'branding' ); ?>>
-					<?php hybrid_site_title(); ?>
-					<?php hybrid_site_description(); ?>
+					<?php /* hybrid_site_title(); */?>
+					<?php /* hybrid_site_description(); */ ?>
 					<?php header_site_title(); // ds header site title ?>
 					<?php header_site_description(); // ds header site desc ?>
 					
