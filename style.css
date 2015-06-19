@@ -292,8 +292,13 @@ img.size-full {}
 		
 		#sidebar-subsidiary {}
 
-		/* Orange line under site title and menu */
-		#header-spacer { height: 10px; border-bottom: 0.3em solid #E5AF69; }
+		/* Orange line over header image */
+		.header-image-wrap { 
+			padding-top: 10px; 
+			height: 10px; 
+			border-top: 0.3em solid #E5AF69;
+			border-bottom: 0;
+		}
 
 		/* Orange line on top of footer, too. */
 		#footer {
