@@ -300,6 +300,23 @@ img.size-full {}
 			border-top: 0.3em solid #E5AF69;
 			border-bottom: 0;
 		}
+		
+		.header-image {}
+		.header-image-text  {
+			/* Place text over banner.  */
+			position: absolute;
+			bottom:     1.5rem;
+			padding:    0.75rem;
+			/* font-size:  0.9375rem; */
+			/* Style */
+			font-family: 'Merriweather', Georgia, serif; 
+			letter-spacing: 2pt; 
+			line-height: 100%;
+			vertical-align: -1; 
+			font-variant: small-caps;
+			margin: 0 0 10px 0;
+			text-shadow: 1px 1px 1px #000;
+		}
 
 		/* Orange line on top of footer, too. */
 		#footer {
