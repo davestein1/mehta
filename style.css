@@ -17,7 +17,9 @@
 
 /**
  * Defaults
- * --------------------------------------------------------------------------- */
+ *
+ 	/* "theme-reset" */
+	@import url( "css/reset.css" ); --------------------------------------------------------------------------- */
 
 /* === HTML === */
 
@@ -47,17 +49,21 @@ a:hover {
 
 /* === Headers === */
 
-h1 {}
+/* CSS Headers tags -- we accept def. sizes */
 
-h2 {}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: bold;
+}
 
-h3 {}
+.hfeed h1, .hfeed h2, .hfeed h3, .hfeed h4, .hfeed h5, .hfeed h6 {
+	padding-left: 0px;
+	border-left: none;
+}
 
-h4 {}
-
-h5 {}
-
-h6 {}
+h1, h2, h3 {
+	text-shadow: 1px 1px 1px #000;
+}
 
 /* === Blockquotes, quotes, and cites === */
 
@@ -350,8 +356,14 @@ img.size-full {}
 		text-transform: uppercase;
 		text-shadow: 1px 1px 1px #000;
 		white-space: nowrap;
-		margin: 0;
+		margin-bottom: 0;
 	}
+
+/* Horizontal rule */
+hr {
+	height: 2px;
+	background: #FFF;
+}
 
 /**
  * Menus
