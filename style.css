@@ -280,7 +280,17 @@ img.size-full {}
 		
 		#sidebar-subsidiary {}
 
-		#footer {}
+		/* Orange line under site title and menu */
+		#header-spacer { height: 10px; border-bottom: 0.3em solid #E5AF69; }
+
+		/* Orange line on top of footer, too. */
+		#footer {
+			border: none;
+			border-top: 0.2em solid #E5AF69;
+			padding: 12px 25px 0 25px;
+		}
+
+		#footer a.login-link { color: #36648B; } /* Make footer login link invisible, but still active. */
 
 /**
  * Header
