@@ -272,7 +272,7 @@ img.size-full {}
 			#sidebar-secondary {}
 
 		/* Footer Menu - simple | text | menu. */
-		div#menu-subsidiary {text-align: center;}
+		#menu-subsidiary div.wrap {text-align: center;}
 		#menu-subsidiary ul {margin:0;list-style:none;}
 		#menu-subsidiary ul li {display:inline;}
 		#menu-subsidiary ul li a {font-family:'Arial Narrow';font-size: 75%;text-transform:uppercase;}
