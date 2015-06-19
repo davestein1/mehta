@@ -8,15 +8,24 @@
 
 <footer <?php hybrid_attr( 'footer' ); ?>>
 
-	<div class="wrap">
+	<div class="footer_wrap">
 
-		<?php wp_nav_menu( array('menu' => 'footer', 'container' => 'nav' ) ); ?>
+		<?php wp_nav_menu(
+			array(
+				'menu'            => 'footer',
+				'container'       => 'nav',
+				'menu_id'         => 'menu-footer-items',
+				'menu_class'      => 'menu-items',
+				'fallback_cb'     => '',
+				'items_wrap'      => '<div class="wrap"><ul id="%s" class="%s">%s</ul></div>'
+			)
+		); ?>
 		
 		<p class="credit">
 			<?php do_action('jh_credit'); ?>
 		</p><!-- .credit -->
 
-	</div><!-- .wrap -->
+	</div><!-- .footer_wrap -->
 
 </footer><!-- #footer -->
 
