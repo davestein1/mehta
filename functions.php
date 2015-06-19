@@ -377,6 +377,18 @@ function add_body_class( $body_classes ) {
 	return $body_classes;
 }
 
+// ds header site title -- Force in bc the real site title has composer & pianist in it. 
+function header_site_title() {
+	$str = '<div id="site-title"><a href="' . get_bloginfo('url') . '" title="Jake Heggie" rel="home"><span>Jake Heggie</span></a></div>';
+	echo $str;
+}
+
+// ds header site description -- Force in bc the real one says official  
+function header_site_description() {
+	$str = '<div id="site-description"><a href="' . get_bloginfo('url') . '">Composer &amp; Pianist</a></div>';
+	echo $str;
+}
+
 /* Called from footer.php to print the site credit.
 Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link. */
 function my_credit() {
