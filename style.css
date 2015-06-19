@@ -350,7 +350,7 @@ img.size-full {}
 		text-transform: uppercase;
 		text-shadow: 1px 1px 1px #000;
 		white-space: nowrap;
-		margin-bottom: 0;
+		margin: 0;
 	}
 
 /**
