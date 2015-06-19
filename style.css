@@ -292,11 +292,11 @@ img.size-full {}
 		
 		#sidebar-subsidiary {}
 
-		/* Orange line over header image */
+		/* End menus with Orange line over header image */
 		.header-image-wrap {
 			clear: both;
-			padding-top: 10px; 
-			height: 10px; 
+			position: relative;
+			margin-top: 10px; 
 			border-top: 0.3em solid #E5AF69;
 			border-bottom: 0;
 		}
