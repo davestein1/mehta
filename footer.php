@@ -10,7 +10,7 @@
 
 	<div class="wrap">
 
-		<?php hybrid_get_menu( 'footer' ); ?>
+		<?php wp_nav_menu( 'footer' ); ?>
 		
 		<p class="credit">
 			<?php do_action('jh_credit'); ?>
