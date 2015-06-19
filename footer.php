@@ -14,6 +14,8 @@
 			array(
 				'menu'            => 'footer',
 				'container'       => 'nav',
+				'container_id'    => 'menu-footer',
+				'container_class' => 'menu',
 				'menu_id'         => 'menu-footer-items',
 				'menu_class'      => 'menu-items',
 				'fallback_cb'     => '',
