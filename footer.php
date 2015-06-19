@@ -10,7 +10,7 @@
 
 	<div class="wrap">
 
-		<?php wp_nav_menu( array('menu' => 'footer' ) ); ?>
+		<?php wp_nav_menu( array('menu' => 'footer', 'container' => 'nav' ) ); ?>
 		
 		<p class="credit">
 			<?php do_action('jh_credit'); ?>
