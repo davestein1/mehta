@@ -715,6 +715,14 @@ img.size-full {}
 	clear:      both;
 	visibility: hidden;
 }
+
+/***
+ * Search form (DS)
+ * --------------------------------------------------------------------------- */
+.search-form input[type="submit"] {
+	display: none;
+}
+ 
 /*
 	Theme Name: stargazer-child
 	Theme URI: http://themehybrid.com/themes/alice
