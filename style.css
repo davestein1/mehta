@@ -251,13 +251,18 @@ img.size-full {}
 
 		#header {}
 		
+		/* Menu Defaults */
+		nav ul.menu-items li a {
+			font-family: 'Merriweather', Georgia, serif; 
+			font-weight: bold;
+		}
 		/* Featured Works Menu */
 		#menu-primary.menu ul { text-align: left; }
 		#menu-primary div.wrap { border: none; float: right; width: 100%;}
 		#menu-primary.menu { width: auto; float: right; }
 		#menu-primary ul { margin:0; list-style:none; } /* margin: 5px; */
 		#menu-primary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
-		#menu-primary ul li a {padding:0; border: none; font-family: 'Merriweather', Georgia, serif;font-size: 80%; font-style: italic;}
+		#menu-primary ul li a {padding:0.5em; border: none; font-size: 80%; font-style: italic;}
 		#menu-primary ul li a:hover,
 		#menu-primary li.current-menu-item a {color: #fff; text-decoration: none; }
 				
@@ -396,7 +401,7 @@ hr {
 
 .menu-toggle {}
 
-/* ====== Primary Menu ====== */
+/* ====== Primary Menu ======
 
 #menu-primary {}
 
@@ -411,8 +416,8 @@ hr {
 
 				#menu-primary li a {}
 				#menu-primary li a:hover {}
-
-/* ====== Secondary Menu ====== */
+*/
+/* ====== Secondary Menu ====== 
 
 #menu-secondary {}
 
@@ -427,8 +432,8 @@ hr {
 
 				#menu-secondary li a {}
 				#menu-secondary li a:hover {}
-
-/* ====== Subsidiary Menu ====== */
+*/
+/* ====== Subsidiary Menu ====== 
 
 #menu-subsidiary {}
 
@@ -441,7 +446,7 @@ hr {
 
 				#menu-subsidiary li a {}
 				#menu-subsidiary li a:hover {}
-
+*/
 /**
  * Content
  * --------------------------------------------------------------------------- */
