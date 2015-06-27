@@ -13,8 +13,6 @@
 			<a href="#content" class="screen-reader-text"><?php _e( 'Skip to content', 'hybrid-base' ); ?></a>
 		</div><!-- .skip-link -->
 
-		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
-
 		<header <?php hybrid_attr( 'header' ); ?>>
 
 			<?php if ( display_header_text() ) : // If user chooses to display header text. ?>
@@ -30,6 +28,8 @@
 			<?php endif; // End check for header text. ?>
 
 		</header><!-- #header -->
+
+		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
 
 		<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
 
