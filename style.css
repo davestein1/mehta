@@ -240,7 +240,12 @@ img.size-full {}
  * Layout
  * --------------------------------------------------------------------------- */
 
-	#container {}
+	#container {
+		/* Container */
+		width:100%;
+		margin: 0 auto;
+		max-width:980px;
+	}
 
 		.layout-1c #container {}
 		.layout-2c-l #container {}
@@ -1300,39 +1305,9 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy.col-tile .entry-footer { display: none; }
 .archive.taxonomy.col-tile .entry-meta { display: none; }
 
-/* Contact Form 7 message style tweaks*/
-.wpcf7-form-control-wrap {
-}
-.wpcf7-form-control {
-	max-width: 95%; /* Smallest mobile screen */
-}
-.wpcf7 p {
-	margin-bottom: 1.5em;
-}
-.wpcf7-submit {
-	font-size: 1.5em;
-	margin: 0;
-	text-indent: 0;
-	text-align: center;
-	width: 4.5em;
-}
-div.wpcf7-response-output.wpcf7-validation-errors {
-	border: 1px solid orange !important;
-	text-indent: 0em;
-	color: orange;
-}
-div.wpcf7-response-output,
-div.wpcf7-mail-sent-ok,
-.wpcf7-response-output.wpcf7-mail-sent-ok
-{
-	text-indent: 0em;
-	color: #FAEBD7;
-	border: 1px solid #EECBAD !important;
-}
-span.wpcf7-not-valid-tip {
-	font-size: 90%;
-	text-indent: 1em;
-	color: orange !important;
-	border: 1px solid orange;
-}
+/**
+ * Plugin CSS
+ *
+ 	/* "theme-reset" */
+	@import url( "css/plugins.css" ); --------------------------------------------------------------------------- */
 
