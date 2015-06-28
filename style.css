@@ -349,9 +349,9 @@ img.size-full {}
 	.sidebar-header-inactive #branding {
 		float: left;
 		width: auto;
-		margin: 0 0 0 1%;
+		margin: 1%;
 		padding: 0%;	
-		border: 1px solid  orange; /* DS TEST */
+		/* border: 1px solid  orange; /* DS TEST */
 		text-align: center;
 	}
 
@@ -990,6 +990,23 @@ img.header-image-orig:hover {
 }
 
 .gallery_hide { display: none; }
+
+/* works archive has genre buttons */
+.smalliconmenu { 
+	width: 100%; 
+	text-align: center;
+}
+
+.smalliconmenu img {
+	margin: 0 8px 10px 8px;
+	min-width: 100px;
+	width: 12%;
+	height: auto;
+}
+
+.smalliconmenu a {
+	border-bottom: 1px solid transparent;
+}
 
 /* Works-filter is the dropdown filter area on archive pages.
    It is populated using a widget area.  
