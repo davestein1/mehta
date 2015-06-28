@@ -349,7 +349,7 @@ img.size-full {}
 	.sidebar-header-inactive #branding {
 		float: left;
 		width: auto;
-		margin: 1%;
+		margin: 1% 0 0 0;
 		padding: 0%;	
 		/* border: 1px solid  orange; /* DS TEST */
 		text-align: center;
