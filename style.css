@@ -810,13 +810,16 @@ nav.menu .search-form {
 }
 
 .search-form input[type="text"] {
-	margin-top: 5px;
-	padding: 5px 0;
+	height: 100%;
+	margin: 0; padding: 0;
+	/*margin-top: 5px;
+	padding: 5px 0; */
 	text-indent: 15px;
 	font-style: italic;
 	font-size: 12px;
 	color: #aaa;
 }
+
 .search-form input[type="text"]:focus {
 	color: #999;
 	/*background: #fefefe;
