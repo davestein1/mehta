@@ -362,7 +362,7 @@ img.size-full {}
 		font-weight: 300;
 		font-style: normal;
 		font-variant: small-caps;
-		margin: 0 0 10px 0;
+		margin: 0 0 5px 0;
 		text-shadow: 1px 1px 1px #000;
 		white-space: nowrap;
 	}
@@ -392,6 +392,7 @@ img.size-full {}
 		text-shadow: 1px 1px 1px #000;
 		white-space: nowrap;
 		margin-bottom: 0;
+		margin-top: 0;
 	}
 
 /* Horizontal rule */
@@ -802,7 +803,7 @@ nav.menu .search-form {
 }
 
 .search-form input[type="search"] {
-	width: 95%;
+	width: 90%;
 	color: #999;
 }
 
