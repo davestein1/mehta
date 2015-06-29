@@ -797,12 +797,12 @@ nav.menu .search-form {
 	margin: 0 10px 10px 0;
 	height: 30px;
 	font-style: italic;
-	font-size: 12px;
+	font-size: 10px;
 	border: 1px solid orange;
 }
 
 .search-form input[type="search"] {
-	width: 100%;
+	width: 95%;
 	color: #999;
 }
 
