@@ -796,6 +796,8 @@ nav.menu .search-form {
 	width: 27.5%;
 	margin: 0 10px 10px 0;
 	height: 30px;
+	font-style: italic;
+	font-size: 12px;
 	border: 1px solid orange;
 }
 
@@ -808,7 +810,7 @@ nav.menu .search-form {
 	display: none;
 }
 
-.search-form input[type="text"] {
+.xxxxxxsearch-form input[type="text"] {
 	height: 30px;
 	margin: 0; padding: 0;
 	/*margin-top: 5px;
