@@ -795,6 +795,8 @@ nav.menu .search-form {
 	float: right;
 	width: 27.5%;
 	margin: 0 10px 10px 0;
+	height: 30px;
+	border: 1px solid orange;
 }
 
 .search-form input[type="search"] {
@@ -809,8 +811,7 @@ nav.menu .search-form {
 	display: none;
 }
 
-.xsearch-form input[type="text"] {
-	height: 25px;
+.search-form input[type="text"] {
 	margin: 0; padding: 0;
 	/*margin-top: 5px;
 	padding: 5px 0; */
