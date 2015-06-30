@@ -577,7 +577,7 @@ function jh_enqueue_scripts(){
 		wp_enqueue_style('dashicons');
 		//wp_enqueue_script('theme-footer', get_stylesheet_directory_uri() . '/js/theme-footer.min.js', array('jquery'), false, true );
 		/*wp_enqueue_style( 'themename-style', get_stylesheet_uri(), array( 'dashicons' ), '1.0' ); /* This loads child style.css twice!*/
-		wp_enqueue_style( 'mfp-styles', get_stylesheet_directory_uri() . '/magnific-popup.css' );
+		wp_enqueue_style( 'mfp-styles', get_stylesheet_directory_uri() . '/css/magnific-popup.css' );
 	}
 }
 
