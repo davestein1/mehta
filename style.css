@@ -228,6 +228,27 @@ img.size-full {}
 			.gallery .gallery-icon img {}
 
 		.gallery .gallery-caption {}
+		
+/* Gallery/Caption Tweaks */ 
+.gallery .gallery-row { margin-bottom: 1em; }
+.gallery_hide { display: none; }
+
+.wp-caption {
+	background-color: #36648B;
+	border: none;
+	margin-top: 1.0em;
+	margin-bottom: 0;
+}
+.wp-caption p,
+.wp-caption-text,
+.gallery-caption {
+	margin: 0 5px;
+	padding: 2px;
+	font: normal normal normal 12px/12px Arial,Verdana,sans-serif;
+	color: #FAEBD7; 
+	text-align: center;
+}
+
 
 /* === Avatars === */
 
@@ -811,7 +832,7 @@ nav.menu .search-form {
 	display: none;
 }
 
-.earch-form input[type="text"] {
+.search-form input[type="text"] {
 	height: 30px;
 	margin: 0; padding: 0;
 	/*margin-top: 5px;
@@ -1358,10 +1379,69 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy.col-tile .entry-summary .entry-summary-long { display: none;}
 .archive.taxonomy.col-tile .entry-footer { display: none; }
 .archive.taxonomy.col-tile .entry-meta { display: none; }
+/* ---------------------------------------------------------------------- */
 
+/**
+ * Lightbox and Magnific Popup 
+Magnific Popup lightbox runs magnific-custom.js and sets body class mfp-active. 
+And the js traps then sets these classes active AT THE TOP OF THE LIGHTBOX DOM. 
+1. gallery-popup. if active then it adds class gallery-popup-active. It makes a lightbox carousel of the gallery, whether visible or not. 
+2. gallery-popup-link. if active then it adds class gallery-popup-link-active. we use css to add a slide show graphic to the image programmatically. 
+3. lightbox-popup. if active then it adds class lightbox-popup-active. 
+in our custom popuos we create a new div classed mfp-dscaption inside mfp-title. this allows screen bottom alignment. 
+*/
+.mfp-bg {
+	opacity: 0.90;
+	filter: alpha(opacity=90);
+}
+
+.mfp-active .gallery-popup-link { position: relative; }
+
+.mfp-active .gallery-popup-link:after {
+	position: absolute;  
+	/* bottom: 5%; left: 5%; top: 0; */ 
+	left: 5px;
+	content: "\f232";
+	font-family: "dashicons";
+	font-size: 30px;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+}
+.lightbox-popup-active .mfp-title,
+.gallery-popup-link-active .mfp-title {
+	position: fixed;
+	bottom: 10px; 
+	left: 0;
+	padding-right: 0;
+	width: 100%;
+	text-align: center;
+	margin: 0 5px;
+	color: #FFF;
+	/* text-align: left; */
+	/* line-height: 18px; */
+	/* word-wrap: break-word; */
+	/* padding-right: 36px; */
+}
+.lightbox-popup-active .mfp-dscaption,
+.gallery-popup-link-active .mfp-dscaption {
+	background-color: #000;
+	width: 100%; 
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	top: auto;
+}
+.mfp-dscaption p {
+	margin: 0 5px;
+	text-align: center;
+}
+.gallery-popup-link-active .mfp-counter { display: none; }
+
+/* ---------------------------------------------------------------------- */
 /**
  * Plugin CSS
  *
  	/* "theme-reset" */
-	@import url( "css/plugins.css" ); --------------------------------------------------------------------------- */
+	@import url( "css/plugins.css" ); 
+/* ---------------------------------------------------------------------- */
 
