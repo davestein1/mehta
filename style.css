@@ -158,7 +158,11 @@ form {}
 		input[type="password"] {}
 		input[type="radio"] {}
 		input[type="reset"] {}
-		input[type="search"] {}
+		input[type="search"] {
+			-moz-box-sizing: content-box;
+			-webkit-box-sizing: content-box;
+			box-sizing: content-box;
+		}
 		input[type="submit"] {}
 		input[type="text"] {}
 		input[type="url"] {}
