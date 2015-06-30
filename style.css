@@ -830,7 +830,12 @@ nav.menu .search-form {
 .search-form input[type="search"] {
 	width: 90%;
 	color: #999;
+    -webkit-appearance: textfield;
 }
+
+/*.search-form input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}*/
 
 .search-form input[type="submit"] {
 	display: none;
