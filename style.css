@@ -31,6 +31,7 @@ html {
 /* === Body === */
 
 body {
+	font-family: 'Merriweather', Georgia, serif;
 	color: #FAEBD7;
 	background: #36648B;
 }
