@@ -495,8 +495,9 @@ hr {
 
 /* ====== BREADCRUMBS ====== */
 
-.breadcrumb-trail {}
-
+.breadcrumb-trail {
+	font-size: 65%;
+}
 	.breadcrumb-trail .trail-begin {}
 
 	.breadcrumb-trail .trail-end {}
