@@ -28,6 +28,8 @@
 			<?php endif; // End check for header text. ?>
 
 		</header><!-- #header -->
+		
+		<div class="wrap"> <?php get_search_form( false ) ?> </div>
 
 		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
 
