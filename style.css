@@ -820,7 +820,7 @@ hr {
  * Search forms (DS)
  * --------------------------------------------------------------------------- */
 /* Menu Search form */
-nav.menu .search-form {
+.wrap .search-form {
 	float: right;
 	width: 22.5%;
 	max-width: 170px;
