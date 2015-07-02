@@ -296,9 +296,13 @@ function my_breadcrumb( $html_breadcrumb ) {
 	if ( is_page('contact') ) $html_breadcrumb = '';
 	elseif ( is_page('biography') ) $html_breadcrumb = '';
 	elseif ( is_page('collaborators') ) $html_breadcrumb = '';
-	elseif ( is_tag() ) str_replace('Home', 'Collaborators', $html_breadcrumb );
-	elseif ( is_category('works') ) str_replace('Home', 'Compositions', $html_breadcrumb );
-	elseif ( is_category('recordings') ) str_replace('Home', 'Recordings', $html_breadcrumb );
+	elseif ( is_tag() ) 
+		$html_breadcrumb = str_replace('Home', 'Collaborators', $html_breadcrumb );
+	elseif ( is_category('works') ) 
+		$html_breadcrumb = str_replace('Home', 'Compositions', $html_breadcrumb );
+	elseif ( is_category('recordings') ) 
+		$html_breadcrumb = str_replace('Home', 'Recordings', $html_breadcrumb );
+	
 	return $html_breadcrumb;
 }
 
