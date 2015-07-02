@@ -830,8 +830,8 @@ hr {
 /* Menu Search form */
 .wrap .search-form {
 	float: right;
-	width: 22.5%;
-	max-width: 170px;
+	width: 20%;
+	max-width: 125px;
 	margin: 1% 0 0 0; 
 	padding: 0.5% 0 0 0;
 	/* height: 30px; */
