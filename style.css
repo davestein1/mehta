@@ -310,10 +310,13 @@ img.size-full {}
 
 		#main {
 			clear: both;
-			margin-top: 10px; 
-			border-top: 0.3em solid #E5AF69;
-			border-bottom: 0;
 		}
+			/* no header on home page but design needs orange stripe. */
+			.home #main {
+				margin-top: 10px; 
+				border-top: 0.3em solid #E5AF69;
+				border-bottom: 0;
+			}
 
 			#content {}
 
