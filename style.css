@@ -308,7 +308,12 @@ img.size-full {}
 		#menu-secondary ul li a:hover,
 		#menu-secondary li.current-menu-item a {color: #fff; text-decoration: none; }
 
-		#main {}
+		#main {
+			clear: both;
+			margin-top: 10px; 
+			border-top: 0.3em solid #E5AF69;
+			border-bottom: 0;
+		}
 
 			#content {}
 
