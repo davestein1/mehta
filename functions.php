@@ -112,6 +112,9 @@ function hybrid_base_theme_setup() {
 	
 	// header.php calls do action and we add header-image-text markup to the page. 
 	add_action("jh_header_text", 'my_header_text');
+	
+	/* Filter Breadcrumb to make Home into our Menu items */
+	add_filter("breadcrumb_trail", 'my_breadcrumb' );
 
 	/* Get the theme prefix ("shell"). */
 	//$prefix = hybrid_get_prefix();
@@ -285,6 +288,18 @@ function my_header_text() {
 		echo '<span ' . hybrid_get_attr('header-image-text') .  '>' . 
 		$header_text . '</span>';
 	}
+}
+
+/* Replace breadcrumb "Home" or remove breadcrumb based on page/post. */
+function my_breadcrumb( $html_breadcrumb ) {
+
+	if ( is_page('contact') ) $html_breadcrumb = '';
+	elseif ( is_page('biography') ) $html_breadcrumb = '';
+	elseif ( is_page('collaborators') ) $html_breadcrumb = '';
+	elseif ( is_tag() ) str_replace('Home', 'Collaborators', $html_breadcrumb );
+	elseif ( is_category('works') ) str_replace('Home', 'Compositions', $html_breadcrumb );
+	elseif ( is_category('recordings') ) str_replace('Home', 'Recordings', $html_breadcrumb );
+	return $html_breadcrumb;
 }
 
 // Here we tell WP any custom variables that can appear on the URL. 
