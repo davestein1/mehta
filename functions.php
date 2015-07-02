@@ -299,11 +299,12 @@ function my_breadcrumb( $html_breadcrumb ) {
 	elseif ( is_tag() ) 
 		$html_breadcrumb = str_replace('Home', 'Collaborators', $html_breadcrumb );
 	elseif ( is_archive() && !is_paged() ) $html_breadcrumb = '';
-	
-	/* elseif ( is_category('the_works') ) 
+	elseif ( is_category('works') ) 
 		$html_breadcrumb = str_replace('Home', 'Compositions', $html_breadcrumb );
+	/*
 	elseif ( is_category('the_recordings') ) 
 		$html_breadcrumb = str_replace('Home', 'Recordings', $html_breadcrumb );
+	<span class="trail-begin"><a href="http://dev4.edakavin.com" title="Jake Heggie Composer &amp; Pianist" rel="home">Home</a></span>
 	*/
 	return $html_breadcrumb;
 }
