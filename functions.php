@@ -305,6 +305,8 @@ function my_breadcrumb( $html_breadcrumb ) {
 	elseif ( is_category('the_recordings') ) 
 		$html_breadcrumb = str_replace('Home', 'Recordings', $html_breadcrumb );
 	<span class="trail-begin"><a href="http://dev4.edakavin.com" title="Jake Heggie Composer &amp; Pianist" rel="home">Home</a></span>
+	<span class="sep">></span>
+
 	*/
 	return $html_breadcrumb;
 }
