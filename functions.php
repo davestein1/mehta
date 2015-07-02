@@ -293,14 +293,20 @@ function my_header_text() {
 /* Replace breadcrumb "Home" or remove breadcrumb based on page/post. */
 function my_breadcrumb( $html_breadcrumb ) {
 
-	if ( is_page('contact') ) $html_breadcrumb = '';
-	elseif ( is_page('biography') ) $html_breadcrumb = '';
-	elseif ( is_page('collaborators') ) $html_breadcrumb = '';
+	if ( is_page('contact') ) 
+		$html_breadcrumb = '';
+	elseif ( is_page('biography') ) 
+		$html_breadcrumb = '';
+	elseif ( is_page('collaborators') ) 
+		$html_breadcrumb = '';
 	elseif ( is_tag() ) 
 		$html_breadcrumb = str_replace('Home', 'Collaborators', $html_breadcrumb );
-	elseif ( is_archive() && !is_paged() ) $html_breadcrumb = '';
+	elseif ( is_archive() && !is_paged() ) 
+		$html_breadcrumb = '';
 	elseif ( is_singular() && (is_category('works') || in_category('works')) ) 
 		$html_breadcrumb = str_replace('Home', 'Compositions', $html_breadcrumb );
+	elseif ( is_singular() && (is_category('recordings') || in_category('recordings')) ) 
+		$html_breadcrumb = str_replace('Home', 'Recordings+', $html_breadcrumb );
 	/*
 	elseif ( is_category('the_recordings') ) 
 		$html_breadcrumb = str_replace('Home', 'Recordings', $html_breadcrumb );
