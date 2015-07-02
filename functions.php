@@ -301,6 +301,8 @@ function my_breadcrumb( $html_breadcrumb ) {
 		$html_breadcrumb = '';
 	elseif ( is_tag() ) 
 		$html_breadcrumb = str_replace('Home', 'Collaborators', $html_breadcrumb );
+	elseif ( is_search() ) 
+		$html_breadcrumb = str_replace('Home', 'Search', $html_breadcrumb );
 	elseif ( is_archive() && !is_paged() ) 
 		$html_breadcrumb = '';
 	elseif ( is_singular() && (is_category('works') || in_category('works')) ) 
