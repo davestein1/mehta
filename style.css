@@ -498,6 +498,10 @@ hr {
 .breadcrumb-trail {
 	font-size: 65%;
 }
+	/* Missing and DS Added */
+	.breadcrumb-trail .trail-browse {
+		font-style: italic;
+	}
 	.breadcrumb-trail .trail-begin {}
 
 	.breadcrumb-trail .trail-end {}
