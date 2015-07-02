@@ -29,7 +29,7 @@
 
 		</header><!-- #header -->
 		
-		<div class="wrap"> <?php get_search_form( false ); ?> </div>
+		<div class="wrap"> <?php get_search_form( true ); ?> </div>
 
 		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
 
