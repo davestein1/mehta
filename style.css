@@ -351,7 +351,7 @@ img.size-full {}
 		.header-image-text  {
 			/* Place text over banner.  */
 			position: absolute;
-			bottom: 0;
+			bottom: 50%;
 			left: 0;
 			/* Style */
 			font-family: 'Merriweather', Georgia, serif; 
@@ -363,6 +363,7 @@ img.size-full {}
 			font-variant: small-caps;
 			margin: 0 0 10px 0;
 			text-shadow: 1px 1px 1px #000;
+			word-break: keep-all;
 		}
 
 		/* Orange line on top of footer, too. */
