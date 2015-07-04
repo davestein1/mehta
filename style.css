@@ -978,25 +978,6 @@ img.header-image-orig:hover {
 
 
 /* DS Tweaks Stargazer CSS */
-
-/* Position banner text over the banner image */
-.header-image-wrap { position: relative; }
-.header-image {}
-.header-image-text  {
-	/* Placement */
-	position: absolute;
-	bottom:     1.5rem;
-	padding:    0.75rem;
-	/* font-size:  0.9375rem; */
-	/* Style */
-	font-family: 'Merriweather', Georgia, serif; 
-	letter-spacing: 2pt; 
-	line-height: 100%;
-	vertical-align: -1; 
-	font-variant: small-caps;
-	margin: 0 0 10px 0;
-	text-shadow: 1px 1px 1px #000;
-}
 	
 /* Emulate what JT Stargazer does. 
 .wp-caption { position: relative; }
