@@ -421,6 +421,14 @@ img.size-full {}
 	padding: 0 5px;
 	border: 1px solid orange;
 }
+	/* Trick to make this wrapper enclose its floated children. */
+	#site-top:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
 
 #header {}
 
