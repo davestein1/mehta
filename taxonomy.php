@@ -4,8 +4,6 @@
 
 	<?php if ( !is_front_page() && !is_singular() && !is_404() ) : // If viewing a multi-post page ?>
 
-		<?php locate_template( array( 'misc/loop-meta.php' ), true ); // Loads the misc/loop-meta.php template. ?>
-		
 	<div <?php hybrid_attr( "works-filter-wrap" ); // DS Code here ?>>
 	  <div <?php hybrid_attr( "works-filter" ); ?>>
 
@@ -26,6 +24,8 @@
 	</div><!-- .works-filter-wrap -->
 
 	<br />
+	
+	<?php locate_template( array( 'misc/loop-meta.php' ), true ); // Loads the misc/loop-meta.php template. ?>
 		
 	<?php if ( is_active_sidebar( 'archive_top_content_area' ) ) : ?>
 		<div <?php hybrid_attr( "archive-top-content-area" ); // DS Code here ?>>
