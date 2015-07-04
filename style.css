@@ -310,8 +310,7 @@ img.size-full {}
 		#menu-primary ul li a {padding:0.5em 0.5em 0 0; border: none; font-size: 80%; font-style: italic; font-weight: normal; }
 		#menu-primary ul li a:hover,
 		#menu-primary li.current-menu-item a {color: #fff; text-decoration: none; }
-				
-		#site-top #menu-secondary { bottom: 0 };
+
 		#menu-secondary.menu ul { text-align: left; }
 		#menu-secondary div.wrap { border: none; float: right; width: 100%;}
 		#menu-secondary.menu { width: auto; float: right; }
@@ -320,6 +319,8 @@ img.size-full {}
 		#menu-secondary ul li a { padding:0.5em 0 0 0.5em; font-family: 'Merriweather', Georgia, serif;font-size: 80%; font-weight: bold; text-shadow: 1px 1px 1px #000; */ }
 		#menu-secondary ul li a:hover,
 		#menu-secondary li.current-menu-item a {color: #fff; text-decoration: none; }
+
+			#site-top #menu-secondary { bottom: 0; }
 
 		#main {
 			clear: both;
