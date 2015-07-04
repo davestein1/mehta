@@ -311,6 +311,10 @@ img.size-full {}
 		#menu-primary ul li a:hover,
 		#menu-primary li.current-menu-item a {color: #fff; text-decoration: none; }
 
+			#site-top #menu-primary {
+				border: 1px solid red;
+				width: auto;
+			}
 			#site-top #menu-primary:after { /* trick to in-flow floated element */
 				content: "."; 
 				display: block; 
