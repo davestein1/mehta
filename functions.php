@@ -323,7 +323,7 @@ function my_breadcrumb( $html_breadcrumb ) {
 	if ( !empty($bread_start) ) {
 		$pattern = '@<span class="trail-begin">.+</span>@';
 		//$pattern = '@>Home<@';
-		$replacement = '>' . $bread_start . '<';
+		$replacement = $bread_start;
 		$html_breadcrumb = preg_replace($pattern, $replacement, $html_breadcrumb);
 	}
 
