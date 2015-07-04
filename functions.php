@@ -293,6 +293,8 @@ function my_header_text() {
 /* Replace breadcrumb "Home" or remove breadcrumb based on page/post. */
 function my_breadcrumb( $html_breadcrumb ) {
 
+	$bread_start = '';
+
 	if ( is_page('contact') ) 
 		$html_breadcrumb = '';
 	elseif ( is_page('biography') ) 
@@ -300,7 +302,7 @@ function my_breadcrumb( $html_breadcrumb ) {
 	elseif ( is_page('collaborators') ) 
 		$html_breadcrumb = '';
 	elseif ( is_page('calendar') || (  is_page() && strpos( get_permalink(), 'calendar-archive') !== FALSE ) )
-		$html_breadcrumb = str_replace('Home', 'Calendar', $html_breadcrumb );
+		$bread_start = 'Calendar' );
 	elseif ( is_tag() ) 
 		$html_breadcrumb = str_replace('Home', 'Collaborators', $html_breadcrumb );
 	elseif ( is_search() ) 
@@ -317,6 +319,13 @@ function my_breadcrumb( $html_breadcrumb ) {
 	<span class="trail-begin"><a href="http://dev4.edakavin.com" title="Jake Heggie Composer &amp; Pianist" rel="home">Home</a></span>
 	<span class="sep">></span>
 	*/
+	if ( !empty($bread_start) ) {
+		//$pattern = '<span class="trail-begin"> ... </span>';
+		$pattern = '>Home<';
+		$replacement = '>' . $bread_start . '<';
+		$html_breadcrumb = preg_replace($pattern, $replacement, $html_breadcrumb);
+	}
+
 	return $html_breadcrumb;
 }
 
