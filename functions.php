@@ -299,6 +299,8 @@ function my_breadcrumb( $html_breadcrumb ) {
 		$html_breadcrumb = '';
 	elseif ( is_page('collaborators') ) 
 		$html_breadcrumb = '';
+	elseif ( is_page('calendar') || (  is_page() && strpos( get_permalink(), 'calendar-archive') !== FALSE )
+		$html_breadcrumb = str_replace('Home', 'Calendar', $html_breadcrumb );
 	elseif ( is_tag() ) 
 		$html_breadcrumb = str_replace('Home', 'Collaborators', $html_breadcrumb );
 	elseif ( is_search() ) 
