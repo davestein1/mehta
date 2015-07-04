@@ -105,7 +105,7 @@ function hybrid_base_theme_setup() {
 	/* Change default custom header */
 	//add_theme_support( 'custom-header', array ( 'default-image' => '%2$s/images/headers/header.jpg'	) );
 	add_theme_support( 'custom-header', 
-	array ( 'default-image' => '', 'header-text' => true, 'height' => '250', 'width' => '980','default-text-color' => 'FAEBD7' ) ); // try our own values.  
+	array ( 'default-image' => '', 'header-text' => true, 'height' => '150', 'width' => '980','default-text-color' => 'FAEBD7' ) ); // try our own values.  
 
 	/* Filter custom header. Used with Custom Header Extended plugin. */ 
 	add_filter( 'theme_mod_header_image', 'my_header_image', 99 ); 
