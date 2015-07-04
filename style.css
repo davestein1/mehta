@@ -339,7 +339,13 @@ img.size-full {}
 				border: 1px solid #000;
 				width: auto; }
 
-		#main {
+		div#main {
+			clear: both;
+			padding: 0;
+			border: 1px solid green;
+		}
+		
+		main #content {
 			clear: both;
 			padding: 0 5px;
 		}
