@@ -382,7 +382,7 @@ img.size-full {}
 			margin: 10px 0 0 0; 
 			border-top: 0.3em solid #E5AF69;
 			border-bottom: 0;
-			padding 0;
+			padding: 0;
 		}
 		
 		.header-image {}
@@ -425,6 +425,12 @@ img.size-full {}
 				left: 1%;
 				top: 55%;
 				letter-spacing: 3pt;
+			}
+			
+			/* Recordings Banner -- Goose text */
+			.singular-page-12 .header-image-text  {
+				left: 1%;
+				letter-spacing: 2.75pt;
 			}
 
 		/* Site bottom.  
