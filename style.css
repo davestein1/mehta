@@ -339,13 +339,13 @@ img.size-full {}
 				border: 1px solid #000;
 				width: auto; }
 
-		div#main {
+		div#main { /* filters go in here */
 			clear: both;
 			padding: 0;
 			border: 1px solid green;
 		}
 		
-		main #content {
+		main #content { /* content goes in here. */
 			clear: both;
 			padding: 0 5px;
 		}
@@ -381,7 +381,7 @@ img.size-full {}
 		.header-image-wrap {
 			clear: both;
 			position: relative;
-			margin-top: 10px; 
+			margin: 10px 0 0 0; 
 			border-top: 0.3em solid #E5AF69;
 			border-bottom: 0;
 			padding 0;
