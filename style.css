@@ -339,13 +339,13 @@ img.size-full {}
 				border: 1px solid #000;
 				width: auto; }
 
-		div#main { /* filters go in here */
+		#main { /* filters go in here */
 			clear: both;
 			padding: 0;
 			border: 1px solid green;
 		}
 		
-		main #content { /* content goes in here. */
+		#content { /* main! content goes in here. */
 			clear: both;
 			padding: 0 5px;
 		}
@@ -355,8 +355,6 @@ img.size-full {}
 				border-top: 0.3em solid #E5AF69;
 				border-bottom: 0;
 			}
-
-			#content {}
 
 			#sidebar-primary {}
 
