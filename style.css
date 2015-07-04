@@ -273,7 +273,7 @@ img.size-full {}
 		width:100%;
 		margin: 0 auto;
 		max-width:980px;
-		padding: 5px;
+		padding: 5px; /* overall padding */
 	}
 
 		.layout-1c #container {}
@@ -346,6 +346,7 @@ img.size-full {}
 			margin-top: 10px; 
 			border-top: 0.3em solid #E5AF69;
 			border-bottom: 0;
+			padding 0;
 		}
 		
 		.header-image {}
