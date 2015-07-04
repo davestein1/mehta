@@ -382,6 +382,7 @@ img.size-full {}
 			.taxonomy-post_tag .header-image-text  {
 				left: 2%;
 				top: 65%;
+				letter-spacing: 3pt;
 			}
 			
 			/* Contact Banner -- Goose text */
@@ -391,7 +392,8 @@ img.size-full {}
 				letter-spacing: 3pt;
 			}
 
-		/* Orange line on top of footer, too. */
+		/* Site bottom.  
+		Orange line on top of footer, too. */
 		#footer {
 			border: none;
 			border-top: 0.2em solid #E5AF69;
