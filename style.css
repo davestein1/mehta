@@ -353,12 +353,12 @@ img.size-full {}
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			font-size:  3rem;
-			padding:    0.75rem;
 			/* Style */
 			font-family: 'Merriweather', Georgia, serif; 
 			letter-spacing: 4pt; 
 			line-height: 100%;
+			font-size: 3rem;
+			/* padding:    0.75rem; */
 			/* vertical-align: -1; */
 			font-variant: small-caps;
 			margin: 0 0 10px 0;
