@@ -388,6 +388,7 @@ img.size-full {}
 			.singular-page-12 .header-image-text  {
 				left: 1%;
 				top: 55%;
+				letter-spacing: 3pt;
 			}
 
 		/* Orange line on top of footer, too. */
