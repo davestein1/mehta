@@ -306,22 +306,23 @@ function my_breadcrumb( $html_breadcrumb ) {
 	elseif ( is_tag() ) 
 		$bread_start = 'Collaborators';
 	elseif ( is_search() ) 
-		$html_breadcrumb = str_replace('Home', 'Search', $html_breadcrumb );
+		$bread_start = 'Search';
 	elseif ( is_archive() && !is_paged() ) 
 		$html_breadcrumb = '';
 	elseif ( is_singular() && (is_category('works') || in_category('works')) ) 
-		$html_breadcrumb = str_replace('Home', 'Compositions', $html_breadcrumb );
+		$bread_start = 'Compositions';
 	elseif ( is_singular() && (is_category('recordings') || in_category('recordings')) ) 
-		$html_breadcrumb = str_replace('Home', 'Recordings+', $html_breadcrumb );
+		$bread_start = 'Recordings';
 	/*
 	elseif ( is_category('the_recordings') ) 
 		$html_breadcrumb = str_replace('Home', 'Recordings', $html_breadcrumb );
-	<span class="trail-begin"><a href="http://dev4.edakavin.com" title="Jake Heggie Composer &amp; Pianist" rel="home">Home</a></span>
 	<span class="sep">></span>
 	*/
+	/* Replace
+	<span class="trail-begin"><a href="http://dev4.edakavin.com" title="Jake Heggie Composer &amp; Pianist" rel="home">Home</a></span> */
 	if ( !empty($bread_start) ) {
-		//$pattern = '<span class="trail-begin"> ... </span>';
-		$pattern = '@>Home<@';
+		$pattern = '<span class="trail-begin">.+</span>';
+		//$pattern = '@>Home<@';
 		$replacement = '>' . $bread_start . '<';
 		$html_breadcrumb = preg_replace($pattern, $replacement, $html_breadcrumb);
 	}
