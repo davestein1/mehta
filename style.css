@@ -351,10 +351,10 @@ img.size-full {}
 		.header-image-text  {
 			/* Place text over banner.  */
 			position: absolute;
-			bottom:     50%;
+			top: 0;
+			right: 0;
+			font-size:  3rem;
 			padding:    0.75rem;
-			left: 0;
-			font-size:  3rem; 
 			/* Style */
 			font-family: 'Merriweather', Georgia, serif; 
 			letter-spacing: 4pt; 
