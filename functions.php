@@ -301,7 +301,7 @@ function my_breadcrumb( $html_breadcrumb ) {
 		$html_breadcrumb = '';
 	elseif ( is_page('collaborators') ) 
 		$html_breadcrumb = '';
-	elseif ( is_page('calendar') || (  is_page() && strpos( get_permalink(), 'calendar-archive') !== FALSE ) )
+	elseif ( is_page('calendar') || ( is_page() && strpos( get_permalink(), 'calendar-archive') !== FALSE ) )
 		$bread_start = 'Calendar';
 	elseif ( is_tag() ) 
 		$bread_start = 'Collaborators';
@@ -321,7 +321,7 @@ function my_breadcrumb( $html_breadcrumb ) {
 	*/
 	if ( !empty($bread_start) ) {
 		//$pattern = '<span class="trail-begin"> ... </span>';
-		$pattern = '>Home<';
+		$pattern = '@>Home<@';
 		$replacement = '>' . $bread_start . '<';
 		$html_breadcrumb = preg_replace($pattern, $replacement, $html_breadcrumb);
 	}
