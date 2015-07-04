@@ -24,15 +24,15 @@
 		</div><!-- .works-filter-wrap -->
 	
 		<br />
-		
-		<?php locate_template( array( 'misc/loop-meta.php' ), true ); // Loads the misc/loop-meta.php template. ?>
-			
+
 		<?php if ( is_active_sidebar( 'archive_top_content_area' ) ) : ?>
 			<div <?php hybrid_attr( "archive-top-content-area" ); // DS Code here ?>>
 				<?php dynamic_sidebar( 'archive_top_content_area' ); ?>
 				<br />
 			</div><!-- #archive-top-content-area -->
 		<?php endif; ?>
+		
+		<?php locate_template( array( 'misc/loop-meta.php' ), true ); // Loads the misc/loop-meta.php template which displays entry title. ?>
 	
 	<?php endif; // End check for multi-post page. ?>
 
