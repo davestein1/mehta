@@ -52,7 +52,16 @@ a:hover {
 
 /* CSS Headers tags -- we accept def. sizes */
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+	font-family: 'Merriweather', Georgia, serif; 
+	letter-spacing: 2pt; 
+	/* line-height: 100%;
+	vertical-align: -1; */
+	font-variant: small-caps;
+	margin: 0 0 10px 0;
+}
+
+h2, h3, h4, h5, h6 {
 	font-family: Arial, Verdana, sans-serif;
 	font-weight: bold;
 }
@@ -553,6 +562,11 @@ hr {
 
 			.entry-title a {}
 			.entry-title a:hover {}
+				/* No titles on certain pages */
+				.singular-page-12   #main header .entry-title,
+				.singular-page-33   #main header .entry-title,
+				.singular-page-1895 #main header .entry-title { 
+					display: none; }
 
 		.entry-byline {}
 
