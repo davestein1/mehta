@@ -366,6 +366,7 @@ img.size-full {}
 			/* Composition Banner -- Goose text */
 			.singular-the_works .header-image-text,
 			.taxonomy-category-works .header-image-text  {
+				top: 55%;
 				background-color: rgba(54, 100, 139, 0.25);
 				text-shadow: 2px 2px 0px #000;
 				border: 1px solid #FFF;
@@ -374,7 +375,8 @@ img.size-full {}
 			/* Collaborators Banner -- Goose text */
 			.singular-page-1895 .header-image-text,
 			.taxonomy-post_tag .header-image-text  {
-				top: 60%;
+				left: 2%;
+				top: 65%;
 			}
 
 		/* Orange line on top of footer, too. */
