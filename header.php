@@ -13,27 +13,31 @@
 			<a href="#content" class="screen-reader-text"><?php _e( 'Skip to content', 'hybrid-base' ); ?></a>
 		</div><!-- .skip-link -->
 
-		<header <?php hybrid_attr( 'header' ); ?>>
+		<div id="site-top">
 
-			<?php if ( display_header_text() ) : // If user chooses to display header text. ?>
+			<header <?php hybrid_attr( 'header' ); ?>>
+	
+				<?php if ( display_header_text() ) : // If user chooses to display header text. ?>
+	
+					<div <?php hybrid_attr( 'branding' ); ?>>
+						<?php /* hybrid_site_title(); */?>
+						<?php /* hybrid_site_description(); */ ?>
+						<?php header_site_title(); // ds header site title ?>
+						<?php header_site_description(); // ds header site desc ?>
+						
+					</div><!-- #branding -->
+	
+				<?php endif; // End check for header text. ?>
+	
+			</header><!-- #header -->
+			
+			<div class="wrap"> <?php get_search_form( true ); ?> </div>
+	
+			<?php hybrid_get_menu( 'primary' ); // Loads menu/primary.php template. ?>
+	
+			<?php hybrid_get_menu( 'secondary' ); // Loads menu/secondary.php template. ?>
 
-				<div <?php hybrid_attr( 'branding' ); ?>>
-					<?php /* hybrid_site_title(); */?>
-					<?php /* hybrid_site_description(); */ ?>
-					<?php header_site_title(); // ds header site title ?>
-					<?php header_site_description(); // ds header site desc ?>
-					
-				</div><!-- #branding -->
-
-			<?php endif; // End check for header text. ?>
-
-		</header><!-- #header -->
-		
-		<div class="wrap"> <?php get_search_form( true ); ?> </div>
-
-		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
-
-		<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
+		</div> <!-- #site-top -->
 
 			<?php if ( get_header_image() && !display_header_text() ) : // If there's a header image but no header text. ?>
 
