@@ -18,11 +18,11 @@
 				<a class="works-tile-toggle" href="#" rel="nofollow" title="Tile View"><span>Tile</span></a>
 				<a class="works-list-toggle" href="#" rel="nofollow" title="List View"><span>List</span></a>
 	
-			</div>
+			</div><!-- .filter-toggle-wrap-left -->
 		  </div><!-- .filter-toggle-wrap -->
 		</div><!-- .works-filter-wrap -->
 	
-		<br />
+		<br /><!-- main put here -->
 		
 		<main <?php hybrid_attr( 'content' ); ?>>
 
