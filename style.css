@@ -315,7 +315,7 @@ img.size-full {}
 				content: "."; 
 				display: block; 
 				height: 0; 
-				clear: both; 
+				clear: right; 
 				visibility: hidden;	
 			}
 
@@ -329,9 +329,9 @@ img.size-full {}
 		#menu-secondary li.current-menu-item a {color: #fff; text-decoration: none; }
 
 			#site-top #menu-secondary { /* Hug bottom of #site-top div. */ 
-				position: absolute;
+				/* position: absolute;
 				bottom: 0;
-				right: 0;
+				right: 0; */
 				border: 1px solid #000;
 				width: auto; }
 
