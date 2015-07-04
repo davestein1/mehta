@@ -320,9 +320,11 @@ img.size-full {}
 		#menu-secondary ul li a:hover,
 		#menu-secondary li.current-menu-item a {color: #fff; text-decoration: none; }
 
-			#site-top #menu-secondary {
+			#site-top #menu-secondary { /* Hug bottom of #site-top div. */ 
 				position: absolute;
-				bottom: 0; }
+				bottom: 0;
+				border: 1px solid #000;
+				width: 100%; }
 
 		#main {
 			clear: both;
