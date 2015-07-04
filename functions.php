@@ -321,7 +321,7 @@ function my_breadcrumb( $html_breadcrumb ) {
 	/* Replace
 	<span class="trail-begin"><a href="http://dev4.edakavin.com" title="Jake Heggie Composer &amp; Pianist" rel="home">Home</a></span> */
 	if ( !empty($bread_start) ) {
-		$pattern = '<span class="trail-begin">.+</span>';
+		$pattern = '@<span class="trail-begin">.+</span>@';
 		//$pattern = '@>Home<@';
 		$replacement = '>' . $bread_start . '<';
 		$html_breadcrumb = preg_replace($pattern, $replacement, $html_breadcrumb);
