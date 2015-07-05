@@ -391,8 +391,8 @@ img.size-full {}
 				content: ".hello."; 
 				display: block; 
 				height: 12px; 
-				/* clear: right; 
-				visibility: hidden; */
+				clear: left; 
+				/* visibility: hidden; */
 		}
 
 			/* no header on home page but design needs orange stripe. */
