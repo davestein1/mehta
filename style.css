@@ -301,7 +301,7 @@ img.size-full {}
 		content: ".doneleft."; 
 		display: block; 
 		height: 10px; 
-		clear: left; 
+		clear: both;
 		/*visibility: hidden;*/
 	}
 
