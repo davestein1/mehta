@@ -24,8 +24,8 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<div class="entry-meta">
-				    <?php edit_post_link(); ?>
+			 <div <?php hybrid_attr( 'entry-meta' ); ?>>
+				<?php edit_post_link(); ?>
 			    <?php do_action('jh_entry_meta'); ?>
 			</div>
 		</footer><!-- .entry-footer -->
