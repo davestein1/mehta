@@ -832,7 +832,14 @@ hr {
 
 .loop-pagination {}
 
-	.loop-pagination .page-numbers {}
+	.loop-pagination .page-numbers {
+		display: inline-block;
+		padding: 8px 11px;
+		margin: 0 10px 0 0;
+		font: normal normal bold 13px/13px Arial, Verdana, sans-serif;
+		color: #333;
+		border: 1px solid #dfdfdf;
+	}
 
 	.loop-pagination a.page-numbers {}
 	.loop-pagination a.page-numbers:hover {}
