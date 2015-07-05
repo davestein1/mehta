@@ -297,7 +297,7 @@ img.size-full {}
 	width: 57.5%;
 }
 .layout-2c-l #sidebar-primary {
-	float: right;
+	/*float: right; */
 	min-width: 290px;
 	width: 35.0%;
 }
@@ -391,8 +391,8 @@ img.size-full {}
 				content: ".hello."; 
 				display: block; 
 				height: 12px; 
-				clear: left; 
-				/* visibility: hidden; */
+				/*clear: left; 
+				visibility: hidden; */
 		}
 
 			/* no header on home page but design needs orange stripe. */
