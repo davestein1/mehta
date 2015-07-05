@@ -292,7 +292,7 @@ function my_header_text() {
 
 /* Replace breadcrumb "Home" or remove breadcrumb based on page/post. */
 function my_breadcrumb( $html_breadcrumb ) {
-
+	return $html_breadcrumb; /* test */
 	$bread_start = '';
 
 	if ( is_page('contact') ) 
