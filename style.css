@@ -1087,7 +1087,7 @@ img.header-image-orig:hover {
 
 	.layout-1c   #footer .credit,
 	.layout-2c-l #footer .credit,
-	.layout-2c-r #footer .credit { max-width: 95%; }
+	.layout-2c-r #footer .credit { width: 100%; }
 }
 
 /* DS Jake site customizing.  */
