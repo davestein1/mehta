@@ -1,8 +1,5 @@
 <?php get_header(); // Loads the header.php template. ?>
 <!--hello from taxonomy.php -->
-	<?php if ( function_exists( 'breadcrumb_trail' ) ) : // Check for breadcrumb support. ?>
-		<?php echo 'hello'; hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
-	<?php endif; ?>
 	
 	<?php if ( !is_front_page() && !is_singular() && !is_404() ) : // If viewing a multi-post page ?>
 
@@ -27,9 +24,7 @@
 	
 		<br /><!-- main put here -->
 
-		<?php if ( function_exists( 'breadcrumb_trail' ) ) : // Check for breadcrumb support. ?>
-		<?php echo 'hello'; hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
-		<?php endif; ?>
+		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
 		
 		<main <?php hybrid_attr( 'content' ); ?>>
 		
@@ -44,7 +39,7 @@
 	
 	<?php else : // Not a multi-post page. ?>
 		
-		<?php echo 'hi'; hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
+		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
 
 		<main <?php hybrid_attr( 'content' ); ?>>
 	
