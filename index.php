@@ -1,5 +1,7 @@
 <?php get_header(); // Loads the header.php template. ?>
 
+<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
+
 <main <?php hybrid_attr( 'content' ); ?>>
 
 	<?php if ( !is_front_page() && !is_singular() && !is_404() ) : // If viewing a multi-post page ?>
