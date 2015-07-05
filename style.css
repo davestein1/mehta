@@ -280,20 +280,49 @@ img.size-full {}
  * Layout
  * --------------------------------------------------------------------------- */
 
-	#container {
-		/* Container */
-		width:100%;
-		margin: 0 auto;
-		max-width:980px;
-		padding: 5px 0px; /* overall padding */
-	}
+#container {
+	/* Container */
+	width:100%;
+	margin: 0 auto;
+	max-width:980px;
+	padding: 5px 0px; /* overall padding */
+}
 
-		.layout-1c #container {}
-		.layout-2c-l #container {}
-		.layout-2c-r #container {}
-		.layout-3c-l #container {}
-		.layout-3c-r #container {}
-		.layout-3c-c #container {}
+.layout-1c #content, 
+.layout-default #content {
+	width: 100%;
+}
+.layout-2c-l #content {
+	float: left;
+	width: 57.5%;
+}
+.layout-2c-l #sidebar-primary {
+	float: right;
+	min-width: 290px;
+	width: 35.0%;
+}
+.layout-2c-l #sidebar-secondary {
+	clear: right;
+	float: right;
+	width: 33.5%;
+}
+.layout-2c-r #content {
+	float: right;
+	width: 65%;
+}
+.layout-2c-r #sidebar-primary {
+	float: left;
+	width: 32.5%;
+}
+.layout-2c-r #sidebar-secondary {
+	float: left;
+	clear: left;
+	width: 32.5%;
+}
+
+/*.layout-3c-l #container {}
+.layout-3c-r #container {}
+.layout-3c-c #container {} */
 
 		
 		/* Menu Defaults */
@@ -939,7 +968,7 @@ hr {
 
 .search-form input[type="search"] {
 	width: 96%;
-	padding: 2% 0 0 0%;
+	padding: 3px;
 	margin: 0;
 	color: #999;
 }
