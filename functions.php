@@ -312,7 +312,7 @@ function my_breadcrumb( $html_breadcrumb ) {
 	elseif ( is_singular() && (is_category('works') || in_category('works')) ) 
 		$bread_start = 'Compositions';
 	elseif ( is_singular() && (is_category('recordings') || in_category('recordings')) ) 
-		$bread_start = 'Recordings';
+		$bread_start = 'Recordings & Media';
 	/*
 	elseif ( is_category('the_recordings') ) 
 		$html_breadcrumb = str_replace('Home', 'Recordings', $html_breadcrumb );
