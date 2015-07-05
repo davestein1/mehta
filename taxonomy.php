@@ -24,7 +24,9 @@
 	
 		<br /><!-- main put here -->
 		
+		<pre>hello</pre>
 		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
+		<pre>goodbye</pre>
 
 		<main <?php hybrid_attr( 'content' ); ?>>
 		
