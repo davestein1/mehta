@@ -44,7 +44,7 @@
 	
 	<?php else : // Not a multi-post page. ?>
 		
-		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
+		<?php echo 'hi'; hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
 
 		<main <?php hybrid_attr( 'content' ); ?>>
 	
