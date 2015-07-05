@@ -967,7 +967,7 @@ function get_post_tax_meta() {
 		if ( !empty( $terms ) ) {
 			$label = $taxonomy->label;
 			$the_meta = hybrid_get_post_terms( array( 'taxonomy' => $taxonomy_slug,
-			 'text' => __(  $label . $arrow . '%s | ', 'stargazer' ), 
+			 'text' => __(  $label . $arrow . '%s | ', 'mehta' ), 
 			 'sep' => ' ' ) );
 			//template-post.php holds this routine.  
 			//field items_wrap is <span %s>%s</span>
