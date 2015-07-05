@@ -468,6 +468,7 @@ img.size-full {}
 		/* Site bottom.  
 		Orange line on top of footer, too. */
 		#footer {
+			clear: both;
 			border: none;
 			border-top: 0.2em solid #E5AF69;
 			padding: 12px 25px 0 25px;
