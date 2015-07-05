@@ -453,7 +453,10 @@ img.size-full {}
 			
 		}
 		
-		.header-image {}
+		.header-image {
+			overflow: hidden;
+		}
+		
 		.header-image-text  {
 			/* Place text over banner.  */
 			position: absolute;
