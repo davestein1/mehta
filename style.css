@@ -43,7 +43,7 @@ a {
 	border-bottom: 1px dotted #666;
 }
 a:hover {
-	color: #000;
+	color: #FFF;
 	border-bottom: 1px dotted #000;
 	text-decoration: none;
 }
