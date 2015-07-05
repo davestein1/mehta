@@ -841,6 +841,9 @@ hr {
 		padding: 8px 11px;
 		margin: 0 20px 0 0;
 		font: normal normal bold 13px/13px Arial, Verdana, sans-serif;
+	}
+	
+	.loop-pagination .page-numbers not:(.dots) {
 		border: 1px solid #dfdfdf;
 	}
 
