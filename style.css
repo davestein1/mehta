@@ -393,27 +393,27 @@ img.size-full {}
 			padding: 0;
 			border: 1px solid green;
 		}
-		
-		#main:after { /* trick to in-flow floated element */
+		/* trick to in-flow floated element */
+		/* #main:after { 
 				content: "."; 
 				display: block; 
 				height: 0; 
 				clear: right; 
 				visibility: hidden;	
-			}
+			} */
 		
 		#content { /* main! content goes in here. */
 			clear: both;
 			padding: 0 5px;
 		}
 
-		#content:after { /* trick to in-flow floated element */
+		/* trick to in-flow floated element */
+		/* #content:after { 
 				content: "."; 
 				display: block; 
 				height: 12px; 
-				/*clear: left; */
 				visibility: hidden;
-		}
+		} */
 
 			/* no header on home page but design needs orange stripe. */
 			.home #main {
