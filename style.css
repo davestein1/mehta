@@ -445,7 +445,7 @@ img.size-full {}
 		.header-image-wrap {
 			clear: both;
 			position: relative;
-			max-width: 100%;
+			width: 100%;
 			overflow: hidden;
 			margin: 10px 0 0 0; 
 			border-top: 4px solid #E5AF69;
@@ -456,8 +456,7 @@ img.size-full {}
 		
 		.header-image {
 			height: 154px;
-			width: 980px;
-			overflow: hidden;
+			min-width: 980px;
 		}
 		
 		.header-image-text  {
