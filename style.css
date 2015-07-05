@@ -76,6 +76,10 @@ h1, h2, h3 {
 	border-left: none;
 }
 
+/* Find the right home for size settings. */
+h1 { font-size: 25px; }
+h2 { font-size: 1.7em; }
+h3 { font-size: 20px; }
 
 
 /* === Blockquotes, quotes, and cites === */
@@ -445,6 +449,7 @@ img.size-full {}
 		.header-image-wrap {
 			clear: both;
 			position: relative;
+			height: 154px;
 			width: 100%;
 			overflow: hidden;
 			margin: 10px 0 0 0; 
@@ -455,7 +460,7 @@ img.size-full {}
 		}
 		
 		.header-image {
-			height: 154px;
+			height: 150px;
 			min-width: 980px;
 		}
 		
@@ -852,6 +857,9 @@ hr {
 .sidebar {}
 
 	.widget {}
+		.widget ul li {
+			list-style: none;
+		}
 
 		.widget-title {}
 
