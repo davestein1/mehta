@@ -297,7 +297,8 @@ img.size-full {}
 	width: 57.5%;
 }
 .layout-2c-l #sidebar-primary {
-	/*float: right; */
+	clear: left;
+	float: right; 
 	min-width: 290px;
 	width: 35.0%;
 }
@@ -388,11 +389,11 @@ img.size-full {}
 		}
 
 		#content:after { /* trick to in-flow floated element */
-				content: ".hello."; 
+				content: "."; 
 				display: block; 
 				height: 12px; 
-				/*clear: left; 
-				visibility: hidden; */
+				/*clear: left; */
+				visibility: hidden;
 		}
 
 			/* no header on home page but design needs orange stripe. */
@@ -402,9 +403,9 @@ img.size-full {}
 				border-bottom: 0;
 			}
 
-			#sidebar-primary {}
+		#sidebar-primary {}
 
-			#sidebar-secondary {}
+		#sidebar-secondary {}
 
 		/* Subsidiary and Footer Menu - simple | text | menu. */
 		#menu-subsidiary div.wrap {text-align: center;}
