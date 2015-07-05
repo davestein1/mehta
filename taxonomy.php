@@ -23,9 +23,11 @@
 		</div><!-- .works-filter-wrap -->
 	
 		<br /><!-- main put here -->
-		
-		<?php echo 'hello'; hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
 
+		<?php if ( function_exists( 'breadcrumb_trail' ) ) : // Check for breadcrumb support. ?>
+		<?php echo 'hello'; hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
+		<?php endif; ?>
+		
 		<main <?php hybrid_attr( 'content' ); ?>>
 		
 		<?php if ( is_active_sidebar( 'archive_top_content_area' ) ) : ?>
