@@ -296,8 +296,15 @@ img.size-full {}
 	float: left;
 	width: 57.5%;
 }
+	.layout-2c-l #content:after { /* trick to in-flow floated element */
+		content: ".hello again"; 
+		display: block; 
+		/* height: 0; 
+		clear: right; 
+		visibility: hidden; */
+	}
+
 .layout-2c-l #sidebar-primary {
-	clear: left;
 	float: right; 
 	min-width: 290px;
 	width: 35.0%;
