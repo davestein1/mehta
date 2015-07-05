@@ -302,12 +302,13 @@ img.size-full {}
 	min-width: 290px;
 	width: 35.0%;
 }
+
 	.layout-2c-l #sidebar-primary:after { /* trick to in-flow floated element */
-		content: "."; 
+		content: ".done."; 
 		display: block; 
-		height: 0; 
+		height: 10px; 
 		clear: both; 
-		visibility: hidden;
+		/*visibility: hidden;*/
 	}
 
 .layout-2c-l #sidebar-secondary {
@@ -315,6 +316,7 @@ img.size-full {}
 	float: right;
 	width: 33.5%;
 }
+
 .layout-2c-r #content {
 	float: right;
 	width: 65%;
