@@ -24,9 +24,9 @@
 	
 		<br /><!-- main put here -->
 		
-		<main <?php hybrid_attr( 'content' ); ?>>
-
 		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
+
+		<main <?php hybrid_attr( 'content' ); ?>>
 		
 		<?php if ( is_active_sidebar( 'archive_top_content_area' ) ) : ?>
 			<div <?php hybrid_attr( "archive-top-content-area" ); // DS Code here ?>>
@@ -39,6 +39,8 @@
 	
 	<?php else : // Not a multi-post page. ?>
 		
+		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
+
 		<main <?php hybrid_attr( 'content' ); ?>>
 	
 	<?php endif; // End check for multi-post page. ?>
