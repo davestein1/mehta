@@ -1,6 +1,9 @@
 <?php get_header(); // Loads the header.php template. ?>
 <!--hello from taxonomy.php -->
-
+	<?php if ( function_exists( 'breadcrumb_trail' ) ) : // Check for breadcrumb support. ?>
+		<?php echo 'hello'; hybrid_get_menu( 'breadcrumbs' ); // Loads menu/breadcrumbs.php template. ?>
+	<?php endif; ?>
+	
 	<?php if ( !is_front_page() && !is_singular() && !is_404() ) : // If viewing a multi-post page ?>
 
 		<div <?php hybrid_attr( "works-filter-wrap" ); // DS Code here ?>>
