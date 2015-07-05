@@ -589,7 +589,7 @@ img.size-full {}
 		text-shadow: 1px 1px 1px #000;
 		white-space: nowrap;
 		margin-bottom: 0;
-		margin-top: 0;
+		margin-top: -3px;
 	}
 
 /* Horizontal rule */
@@ -1041,7 +1041,25 @@ hr {
 .search-form input[type="text"]:focus {
 	color: #999;
 }
- 
+
+/***
+ * Content has special nav links (DS)
+ * --------------------------------------------------------------------------- */
+.menulink {
+	font-weight:bold;
+	text-shadow: 1px 1px 1px #000;
+}
+.menulink a:link {
+	border-bottom: none;
+	text-decoration: none;
+}
+.menulink a:visited,
+.menulink a:active {
+}
+.menulink a:hover {
+	color: white;
+}
+
 /*
 	Theme Name: stargazer-child
 	Theme URI: http://themehybrid.com/themes/alice
