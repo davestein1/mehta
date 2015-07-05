@@ -266,7 +266,7 @@ function my_header_text() {
 	elseif ( is_search() )
 		$header_text = "Search";
 
-	elseif ( is_search() || is_category('recordings') || in_category('recordings') )
+	elseif ( is_category('recordings') || in_category('recordings') )
 		$header_text = "Recordings & Media";
 
 	elseif ( is_category('works') || in_category('works') ) 
