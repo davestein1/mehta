@@ -430,7 +430,8 @@ img.size-full {}
 			}
 			
 			/* Recordings Banner -- Goose text */
-			.singular-page-12 .header-image-text  {
+			.singular-the_recordings .header-image-text,
+			.taxonomy-category-recordings .header-image-text {
 				left: 1%;
 				letter-spacing: 2.75pt;
 			}
