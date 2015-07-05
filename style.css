@@ -379,10 +379,12 @@ img.size-full {}
 		.header-image-wrap {
 			clear: both;
 			position: relative;
+			height: 154px;
 			margin: 10px 0 0 0; 
-			border-top: 0.3em solid #E5AF69;
-			border-bottom: 0;
+			border-top: 4px solid #E5AF69;
+			border-bottom: none;
 			padding: 0;
+			
 		}
 		
 		.header-image {}
