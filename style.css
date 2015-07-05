@@ -631,7 +631,7 @@ hr {
 
 	.entry-footer {}
 
-		.entry-meta {}
+		.entry-meta { font-size: 80%; }
 
 			.entry-meta a {}
 			.entry-meta a:hover {}
@@ -894,9 +894,12 @@ hr {
 
 #footer {}
 
-	#footer .copyright {}
+	#footer .copyright {} /* unused */
 
-	#footer .credit {}
+	#footer .credit { 
+		width: 100%;
+		font-size: 80%;
+	}
 
 	#footer a {}
 	#footer a:hover {}
@@ -1083,13 +1086,14 @@ img.header-image-orig:hover {
 	background: #1897A0 !important;
 }
 
+/*
 @media only screen and ( min-width: 950px ) {
 
 	.layout-1c   #footer .credit,
 	.layout-2c-l #footer .credit,
 	.layout-2c-r #footer .credit { width: 100%; }
 }
-
+*/
 /* DS Jake site customizing.  */
 
 .home .entry-title { display: none; }
