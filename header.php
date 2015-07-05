@@ -60,6 +60,9 @@
 			  </div><!-- .header-image-wrap -->
 
 			<?php endif; // End check for header image. ?>
+			
 		<div id="main" class="main">
+		
+			<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
 
 			<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
