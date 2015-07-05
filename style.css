@@ -386,6 +386,15 @@ img.size-full {}
 			clear: both;
 			padding: 0 5px;
 		}
+		
+		#content:after { /* trick to in-flow floated element */
+				content: "."; 
+				display: block; 
+				height: 0; 
+				/* clear: right; */
+				visibility: hidden;	
+		}
+
 			/* no header on home page but design needs orange stripe. */
 			.home #main {
 				margin-top: 10px; 
