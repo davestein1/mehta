@@ -832,7 +832,7 @@ hr {
 
 .loop-pagination { 
 	width: 100%;
-	padding 5px;
+	padding: 5px;
 	text-align: center;
 }
 
@@ -843,7 +843,7 @@ hr {
 		font: normal normal bold 13px/13px Arial, Verdana, sans-serif;
 	}
 	
-	.loop-pagination .page-numbers not:(.dots) {
+	.loop-pagination .page-numbers:not(.dots) {
 		border: 1px solid #dfdfdf;
 	}
 
