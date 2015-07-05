@@ -370,7 +370,7 @@ img.size-full {}
 		#menu-footer div.wrap {text-align: center;}
 		#menu-footer ul {margin:0;list-style:none;}
 		#menu-footer ul li {display:inline;}
-		#menu-footer ul li a {font-family:'Arial Narrow';font-size: 75%;text-transform:uppercase;}
+		#menu-footer ul li a {font-family:'Arial Narrow';font-size: 75%;text-transform:uppercase; font-weight: normal;}
 		#menu-footer ul li:not(:first-child)::before {content: '| ';}
 		
 		#sidebar-subsidiary {}
