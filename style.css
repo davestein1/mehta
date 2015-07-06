@@ -521,7 +521,7 @@ img.size-full {}
 			padding: 12px 25px 0 25px;
 		}
 
-		#footer a.login-link { color: #36648B; } /* Make footer login link invisible, but still active. */
+		#footer a.loginlink { color: #36648B; } /* Make footer login link invisible, but still active. */
 
 /**
  * Header
@@ -832,7 +832,7 @@ hr {
 
 .loop-pagination { 
 	width: 100%;
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 }
 
@@ -848,7 +848,11 @@ hr {
 	}
 
 	.loop-pagination a.page-numbers {}
-	.loop-pagination a.page-numbers:hover {}
+	
+	.loop-pagination a.page-numbers:hover {
+		background: white;
+		color: #36648B;
+	}
 
 	.page-numbers.current {}
 
