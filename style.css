@@ -360,7 +360,7 @@ img.size-full {}
 		#menu-primary.menu { width: auto; float: right; }
 		#menu-primary ul { margin: 8px 0 0 0; list-style:none; } /* margin: 5px; */
 		#menu-primary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
-		#menu-primary ul li a {padding:0.5em 0 0 0.5em; border: none; font-size: 80%; font-style: italic; font-weight: normal; }
+		#menu-primary ul li a {padding:0.5em 0 0 0.5em; border: none; font-size: 75%; font-style: italic; font-weight: normal; }
 		#menu-primary ul li a:hover,
 		#menu-primary li.current-menu-item a {color: #fff; text-decoration: none; }
 
