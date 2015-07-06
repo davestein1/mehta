@@ -986,7 +986,7 @@ hr {
 	padding: 12px 25px 0 25px;
 }
 
-	#footer a.loginlink { color: #36648B; } /* invisible, but still active. */
+	#footer .loginlink a { color: #36648B; } /* invisible, but still active. */
 	
 	#footer .footer_wrap { 
 		width: 100%;
