@@ -416,12 +416,12 @@ img.size-full {}
 				visibility: hidden;
 		} */
 
-			/* no header on home page but design needs orange stripe. */
+			/* no header on home page but design needs orange stripe.
 			.home #main {
 				margin-top: 10px; 
 				border-top: 0.3em solid #E5AF69;
 				border-bottom: 0;
-			}
+			} */
 
 		#sidebar-primary {}
 
@@ -446,12 +446,12 @@ img.size-full {}
 		.header-image-wrap {
 			clear: both;
 			position: relative;
-			height: 154px;
+			height: 150px;
 			width: 100%;
 			overflow: hidden;
 			margin: 0 0 0 0; 
-			border-top: 4px solid #E5AF69;
-			border-bottom: none;
+			/* border-top: 4px solid #E5AF69; */
+			border: none;
 			padding: 0;
 			
 		}
@@ -516,6 +516,7 @@ img.size-full {}
 	position: relative;
 	padding: 0 5px 0 5px;
 	border: 1px solid yellow;
+	border-bottom: 0.3em solid #E5AF69; /* orange stripe for design */
 }
 	
 	#site-top:after { /* Trick makes wrapper enclose its floated children. */
