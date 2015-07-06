@@ -405,7 +405,7 @@ img.size-full {}
 				visibility: hidden;	
 			} */
 		
-		#content { /* main! content goes in here. */
+		#content { /* main body content goes in here. Not sidebars.  */
 			clear: both;
 			padding: 25px 5px;
 		}
@@ -425,9 +425,15 @@ img.size-full {}
 				border-bottom: 0;
 			} */
 
-		#sidebar-primary {}
+		#sidebar-primary {
+			padding: 25px 5px;
+		}
 
-		#sidebar-secondary {}
+		#sidebar-secondary {
+			padding: 0 5px 25px 5px;
+		}
+		
+		#sidebar-subsidiary {}
 
 		/* Subsidiary and Footer Menu - simple | text | menu. */
 		#menu-subsidiary div.wrap {text-align: center;}
@@ -442,9 +448,8 @@ img.size-full {}
 		#menu-footer ul li a {font-family:'Arial Narrow';font-size: 75%;text-transform:uppercase; font-weight: normal;}
 		#menu-footer ul li:not(:first-child)::before {content: '| ';}
 		
-		#sidebar-subsidiary {}
 
-		/* End menus with Orange line over header image */
+		/* header image stays same size and we truncate */
 		.header-image-wrap {
 			clear: both;
 			position: relative;
@@ -452,7 +457,6 @@ img.size-full {}
 			width: 100%;
 			overflow: hidden;
 			margin: 0 0 0 0; 
-			/* border-top: 4px solid #E5AF69; */
 			border: none;
 			padding: 0;
 			
