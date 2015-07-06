@@ -407,7 +407,8 @@ img.size-full {}
 		
 		#content { /* main body content goes in here. Not sidebars.  */
 			clear: both;
-			padding: 25px 5px;
+			padding: 0 5px;
+			border: 1px solid black;
 		}
 
 		/* trick to in-flow floated element */
@@ -426,7 +427,7 @@ img.size-full {}
 			} */
 
 		#sidebar-primary {
-			padding: 25px 5px;
+			padding: 50px 5px 25px 5px;
 		}
 
 		#sidebar-secondary {
@@ -1282,7 +1283,31 @@ img.header-image-orig:hover {
 	border-bottom: 1px solid transparent;
 }
 
-/* Works-filter is the dropdown filter area on archive pages.
+/* Style Menus and items inside the Works Filter drop down.(below)  
+-----------------------------------------------------------------
+*/
+/* Recordings Filter Menu - simple | text | menu. */
+.menu-recordings-list-filter-container {text-align: center;}
+.menu-recordings-list-filter-container ul {margin:0;list-style:none;}
+.menu-recordings-list-filter-container ul li {
+	display:inline; 
+	padding-right: 10px;
+}
+.menu-recordings-list-filter-container ul li a {
+	padding:0; 
+	border: none; 
+	/*color: #FAEBD7;
+	background: #36648B;*/
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 80%; 
+	font-style: italic; 
+} 
+/* fix a word-wrap problem. needs a space inbetween to break. */
+.menu-recordings-list-filter-container ul li a:after { content: " "; }
+
+/* Works Filter
+------------------------------------------------------------------------
+Works-filter is the dropdown filter area on archive pages.
    It is populated using a widget area.  
    It is opened and closed using javascript toggle. */
 
