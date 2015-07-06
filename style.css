@@ -1147,13 +1147,12 @@ hr {
 	font-weight:bold;
 	text-shadow: 1px 1px 1px #000;
 }
-.menulink a:link {
+.menulink a:link,
+.menulink a:visited,
+.menulink a:active  {
 	color: #EECBAD;
 	border-bottom: none;
 	text-decoration: none;
-}
-.menulink a:visited,
-.menulink a:active {
 }
 .menulink a:hover {
 	color: white;
@@ -1334,9 +1333,6 @@ img.header-image-orig:hover {
 	margin: 0;
 	padding: 0;
 }
-	.archive-top-content-area p { /* DOESNT WORK */
-		margin-bottom: 0;
-	}
 
 .smalliconmenu { 
 	width: 100%; 
@@ -1355,7 +1351,7 @@ img.header-image-orig:hover {
 	margin-bottom: 0;
 }
 
-.smalliconmenu p { /* DOESNT WORK */
+.smalliconmenu p {
 	margin-bottom: 0;
 }
 
