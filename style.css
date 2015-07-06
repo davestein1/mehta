@@ -1576,6 +1576,12 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 /* LIST View -- The default. Useful to search engines if no Javascript.  */
 .archive.taxonomy .entry-summary .entry-summary-short { display: none; }
 
+.archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
+	border: none;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	background: rgba(0,0,0,0.4);
+}
+
 /* == GRID View -- Only these changes to default LIST view needed. == */
 .archive.taxonomy.col-grid .content-entry-wrap > .entry .entry-wrap{
 	margin-left: 0;
