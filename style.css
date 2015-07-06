@@ -449,7 +449,7 @@ img.size-full {}
 			height: 154px;
 			width: 100%;
 			overflow: hidden;
-			margin: 10px 0 0 0; 
+			margin: 0 0 0 0; 
 			border-top: 4px solid #E5AF69;
 			border-bottom: none;
 			padding: 0;
@@ -514,8 +514,8 @@ img.size-full {}
  * --------------------------------------------------------------------------- */
 #site-top { /* DS Entire top of site */
 	position: relative;
-	padding: 0 5px;
-	border: 1px solid orange;
+	padding: 0 5px 0 5px;
+	border: 1px solid yellow;
 }
 	
 	#site-top:after { /* Trick makes wrapper enclose its floated children. */
