@@ -1286,6 +1286,16 @@ img.header-image-orig:hover {
 /* Style Menus and items inside the Works Filter drop down.(below)  
 -----------------------------------------------------------------
 */
+/* Pulldown/Dropdown menus. */
+.ds_dropdown {
+	font-size: 0.80em;
+	background: rgba(0,0,0,0.4); 
+	color: #FAEBD7;
+}
+
+	/* iOS Safari webkit menulist greatly limits what we can customize. */
+	body.iOS .ds_dropdown { color: black; }
+
 /* Recordings Filter Menu - simple | text | menu. */
 .menu-recordings-list-filter-container {text-align: center;}
 .menu-recordings-list-filter-container ul {margin:0;list-style:none;}
@@ -1302,8 +1312,8 @@ img.header-image-orig:hover {
 	font-size: 80%; 
 	font-style: italic; 
 } 
-/* fix a word-wrap problem. needs a space inbetween to break. */
-.menu-recordings-list-filter-container ul li a:after { content: " "; }
+	/* fix a word-wrap problem. needs a space inbetween to break. */
+	.menu-recordings-list-filter-container ul li a:after { content: " "; }
 
 /* Works Filter
 ------------------------------------------------------------------------
