@@ -988,7 +988,8 @@ hr {
 	clear: both;
 	border: none;
 	border-top: 4px solid #E5AF69;
-	padding: 12px 25px 20px 25px;
+	padding: 12px 25px 0 25px;
+	margin: 0 0 20px 0;
 }
 
 	#footer .loginlink a {
@@ -1295,6 +1296,17 @@ img.header-image-orig:hover {
 
 	/* iOS Safari webkit menulist greatly limits what we can customize. */
 	body.iOS .ds_dropdown { color: black; }
+
+/* Search Balloon Wrap - For search used in Filter area and also Contact page. */
+.search_balloon {
+	max-width: 96%;
+	margin: 0 auto;
+	width: 35em; 
+	padding: 10px; 
+	border: 2px solid white; 
+	border-radius: 10px;
+	text-align: center;
+}
 
 /* Recordings Filter Menu - simple | text | menu. */
 .menu-recordings-list-filter-container {text-align: center;}
