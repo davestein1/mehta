@@ -986,7 +986,15 @@ hr {
 	padding: 12px 25px 0 25px;
 }
 
-	#footer .loginlink a { color: #36648B; } /* invisible, but still active. */
+	#footer .loginlink a {
+		float: left;
+		color: #36648B;
+		text-decoration: none; 
+	} /* Invisible, but still active. */
+	
+	#footer .loginlink a:hover { 
+		color: white;
+	} /* Show on hover */
 	
 	#footer .footer_wrap { 
 		width: 100%;
