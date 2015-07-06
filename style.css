@@ -126,7 +126,21 @@ dl {}
 
 /* === Tables === */
 
-table {}
+table {
+	border-style: solid;
+	border-collapse:collapse;
+	border-spacing: 0px;
+	border-right: none;
+	border-bottom: none;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+}
+	.table-no-border,
+	.table-no-border td {
+		border-style:none;
+		width: auto;
+		vertical-align: bottom; /* Fix for multiline situations */
+	}
 
 	caption {}
 
@@ -140,7 +154,11 @@ table {}
 
 	th {}
 
-	td {}
+	td {
+		padding: 4px 2%;
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+	}
 
 	/* wp-calendar <table> */
 
