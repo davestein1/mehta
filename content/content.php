@@ -1,5 +1,5 @@
 <article <?php hybrid_attr( 'post' ); ?>>
-
+<!-- hello from comtent.php -->
 	<?php if ( is_singular( get_post_type() ) ) : // If viewing a single post. ?>
 
 		<header class="entry-header">
@@ -14,8 +14,10 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => __( 'Posted in %s', 'hybrid-base' ) ) ); ?>
-			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => __( 'Tagged %s', 'hybrid-base' ), 'before' => '<br />' ) ); ?>
+			 <div <?php hybrid_attr( 'entry-meta' ); ?>>
+				<?php edit_post_link(); ?>
+			    <?php do_action('jh_entry_meta'); ?>
+			</div>
 		</footer><!-- .entry-footer -->
 
 	<?php else : // If not viewing a single post. ?>
