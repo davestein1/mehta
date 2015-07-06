@@ -988,7 +988,7 @@ hr {
 
 	#footer a.loginlink { color: #36648B; } /* invisible, but still active. */
 	
-	#footer .wrap { 
+	#footer .footer_wrap { 
 		width: 100%;
 		font-size: 80%;
 		text-align: center;
