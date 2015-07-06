@@ -29,9 +29,8 @@
 		<main <?php hybrid_attr( 'content' ); ?>>
 		
 		<?php if ( is_active_sidebar( 'archive_top_content_area' ) ) : ?>
-			<div <?php hybrid_attr( "archive-top-content-area" ); // DS Code here ?>>
+			<div <?php hybrid_attr( "archive-top-content-area" ); // DS Code ?>>
 				<?php dynamic_sidebar( 'archive_top_content_area' ); ?>
-				<br />
 			</div><!-- #archive-top-content-area -->
 		<?php endif; ?>
 		
