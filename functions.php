@@ -435,8 +435,8 @@ function header_site_description() {
 /* Called from footer.php to print the site credit.
 Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link. */
 function my_credit() {
-	printf( '<span style="float: left;">The Official Website of Jake Heggie.&nbsp;s</span> <span style="float: left;" class="loginlink">%1$s</span><span style="float: right;">Copyright &#169; %2$s %3$s</span>', 
-	wp_loginout() , date_i18n( 'Y' ), '<a href="'. home_url('/contact') .'">Bent Pen Music, Inc.</a>' );
+	printf( '<span style="float: left;">The Official Website of Jake Heggie.&nbsp;</span> %1$s<span style="float: right;">Copyright &#169; %2$s %3$s</span>', 
+	do_shortcode('[loginout-link]') , date_i18n( 'Y' ), '<a href="'. home_url('/contact') .'">Bent Pen Music, Inc.</a>' );
 	/* original here:	printf(	__( 'Copyright &#169; %1$s %2$s. Powered by %3$s and %4$s.', 'stargazer' ), 
 	date_i18n( 'Y' ), hybrid_get_site_link(), hybrid_get_wp_link(), hybrid_get_theme_link() ); 
 	*/
