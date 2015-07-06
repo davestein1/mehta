@@ -512,17 +512,6 @@ img.size-full {}
 				letter-spacing: 2.75pt;
 			}
 
-		/* Site bottom.  
-		Orange line on top of footer, too. */
-		#footer {
-			clear: both;
-			border: none;
-			border-top: 0.2em solid #E5AF69;
-			padding: 12px 25px 0 25px;
-		}
-
-		#footer a.loginlink { color: #36648B; } /* Make footer login link invisible, but still active. */
-
 /**
  * Header
  * --------------------------------------------------------------------------- */
@@ -989,13 +978,28 @@ hr {
  * Footer
  * --------------------------------------------------------------------------- */
 
-#footer {}
+/*Orange line on top of footer. */
+#footer {
+	clear: both;
+	border: none;
+	border-top: 0.2em solid #E5AF69;
+	padding: 12px 25px 0 25px;
+}
 
-	#footer .copyright {} /* unused */
-
-	#footer .credit { 
+	#footer a.loginlink { color: #36648B; } /* invisible, but still active. */
+	
+	#footer .wrap { 
 		width: 100%;
 		font-size: 80%;
+		text-align: center;
+	}
+
+	#footer .copyright {
+		float: right;
+	}
+
+	#footer .credit { 
+		float: left;
 	}
 
 	#footer a {}
