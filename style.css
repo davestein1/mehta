@@ -1329,7 +1329,12 @@ img.header-image-orig:hover {
 
 .gallery_hide { display: none; }
 
-/* works archive has genre buttons */
+/* composition archive has genre buttons */
+.archive-top-content-area {
+	margin: 0;
+	padding: 0;
+}
+
 .smalliconmenu { 
 	width: 100%; 
 	text-align: center;
