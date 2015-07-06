@@ -301,13 +301,14 @@ img.size-full {}
 	width: 57.5%;
 }
 
-	.layout-2c-l #content:after { /* trick to in-flow floated element */
+	 /* trick to in-flow floated element */
+	 /* .layout-2c-l #content:after {
 		content: ".doneleft."; 
 		display: block; 
 		height: 10px; 
 		clear: both;
-		/*visibility: hidden;*/
-	}
+		/ *visibility: hidden; * /
+	} */
 
 
 .layout-2c-l #sidebar-primary {
@@ -316,13 +317,14 @@ img.size-full {}
 	width: 35.0%;
 }
 
-	.layout-2c-l #sidebar-primary:after { /* trick to in-flow floated element */
+	/* trick to in-flow floated element */
+	/* .layout-2c-l #sidebar-primary:after { 
 		content: ".doneright."; 
 		display: block; 
 		height: 10px; 
 		clear: both; 
-		/*visibility: hidden;*/
-	}
+		/ * visibility: hidden;  * /
+	} */ 
 
 .layout-2c-l #sidebar-secondary {
 	clear: right;
@@ -405,7 +407,7 @@ img.size-full {}
 		
 		#content { /* main! content goes in here. */
 			clear: both;
-			padding: 0 5px;
+			padding: 25px 5px;
 		}
 
 		/* trick to in-flow floated element */
@@ -980,8 +982,8 @@ hr {
 #footer {
 	clear: both;
 	border: none;
-	border-top: 0.2em solid #E5AF69;
-	padding: 12px 25px 0 25px;
+	border-top: 4px solid #E5AF69;
+	padding: 12px 25px 20px 25px;
 }
 
 	#footer .loginlink a {
