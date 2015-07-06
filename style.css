@@ -1334,6 +1334,9 @@ img.header-image-orig:hover {
 	margin: 0;
 	padding: 0;
 }
+	.archive-top-content-area p { /* DOESNT WORK */
+		margin-bottom: 0;
+	}
 
 .smalliconmenu { 
 	width: 100%; 
@@ -1352,7 +1355,7 @@ img.header-image-orig:hover {
 	margin-bottom: 0;
 }
 
-.smalliconmenu p {
+.smalliconmenu p { /* DOESNT WORK */
 	margin-bottom: 0;
 }
 
