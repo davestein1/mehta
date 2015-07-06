@@ -1348,7 +1348,12 @@ img.header-image-orig:hover {
 }
 
 .smalliconmenu a {
-	border-bottom: 1px solid transparent;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.smalliconmenu p {
+	margin-bottom: 0;
 }
 
 /* Style Menus and items inside the Works Filter drop down.(below)  
