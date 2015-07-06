@@ -435,7 +435,7 @@ function header_site_description() {
 /* Called from footer.php to print the site credit.
 Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link. */
 function my_credit() {
-	$loginout = '<span class="loginlink">' . 'wp_loginout(false)' . '</span>';
+	$loginout = '<span class="loginlink">' . wp_loginout(true) . '</span>';
 	
 	printf( '<span class="credit">The Official Website of Jake Heggie.&nbsp;</span> %1$s<span class="copyright">Copyright &#169; %2$s %3$s</span>', 
 		 $loginout ,
