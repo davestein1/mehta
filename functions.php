@@ -144,7 +144,7 @@ function hybrid_base_theme_setup() {
 	add_filter( "the_content", 'add_other_to_entry_content', 10 );
 	
 	//Add Other descriptions into each composition in an archive
-	add_action( "the_excerpt", 'add_other_to_entry_content', 10 );
+	//add_action( "the_excerpt", 'add_other_to_entry_content', 10 );
 
  	// Replace entry meta info with our own version. 
  	// Requires do_action change in template(s) like content.php.
@@ -763,23 +763,9 @@ function add_tag_page_extras( $content ) {
 	return $content;
 }
 
-// FIX ME return looks bad. 
-// If this post is a composition auto insert text from Other taxonomy into entry summary. 
-// insert the description of the taxonomy. 
-function add_other_to_entry_summary($content) {
-
-	if ( !in_category('works') ) return $content;
-	ob_start();
-	display_other_text(); // recorded, score, rental, etc. 
-	$search = get_query_var( 's' );
-	if ( $search ) display_other_images();
-	$output = ob_get_contents();
-	ob_end_clean();
-	return $content . $output;
-}
-
-// If this is a singular composition post, or a search archive excerpt, we auto insert text and images from Other taxonomy into entry content.
-// Are we called twice?
+// If this is a singular composition post, or a search archive excerpt, 
+// we auto insert text and images from Other taxonomy into entry content.
+// Are we called twice? (the_excerpt and the_content)
 function add_other_to_entry_content($content) {
 
 	if ( !( is_category('works') || in_category('works') ) ) return $content;
