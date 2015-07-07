@@ -1812,11 +1812,15 @@ in our custom popuos we create a new div classed mfp-dscaption inside mfp-title.
 }
 .gallery-popup-link-active .mfp-counter { display: none; }
 
-/* ---------------------------------------------------------------------- */
+/**
+ * Responsive Overwrites
+ */
+	@import url( "css/responsive.css" );
+/* --------------------------------------------------------------------------- */
+
 /**
  * Plugin CSS
- *
- 	/* "theme-reset" */
+ */
 	@import url( "css/plugins.css" ); 
 /* ---------------------------------------------------------------------- */
 
