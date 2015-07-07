@@ -769,15 +769,19 @@ function add_tag_page_extras( $content ) {
 function add_other_to_entry_summary($content) {
 
 	if ( !in_category('works') ) return $content;
+	ob_start();
 	display_other_text(); // recorded, score, rental, etc. 
 	$search = get_query_var( 's' );
 	if ( $search ) display_other_images();
+	$output = ob_get_contents();
+	ob_end_clean();
+	return $content . $output;
 }
 
 // If this is a singular composition post, or a search archive summary, we auto insert text and images from Other taxonomy into entry content.
 function add_other_to_entry_content($content) {
 
-	if ( !in_category('works') ) return $content;
+	if ( !( is_category('works') || in_category('works') ) return $content;
 
 	ob_start();
 	display_other_text(); // recorded, rental, etc.
