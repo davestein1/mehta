@@ -1,0 +1,1809 @@
+/**
+ * Theme Name:  Mehta
+ * Theme URI:   http://steinbay.com/themes/mehta 
+ * Description: A fork of/from Theme Hybrid’s Hybrid-Base
+ * Version:     1.0.1
+ * Author:      Justin Tadlock
+ * Author URI:  http://justintadlock.com
+ * Tags:        one-column, two-columns, custom-background, custom-header, custom-menu, featured-images, left-sidebar, post-formats, responsive-layout, right-sidebar, rtl-language-support, threaded-comments, translation-ready
+ * Text Domain: hybrid-base
+ * License:     GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/**
+ * Fonts - Declare @font-face here.
+ * --------------------------------------------------------------------------- */
+
+/* === HTML === */
+
+html {
+	color: #FAEBD7;
+	background: #36648B;
+}
+
+/* === Body === */
+
+body {
+	font-family: 'Merriweather', Georgia, serif;
+	color: #FAEBD7;
+	background: #36648B;
+}
+
+/* === Links === */
+
+a {
+	color: #FAEBD7;
+	border-bottom: 1px dotted #666;
+}
+a:hover {
+	color: #FFF;
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+}
+
+/* === Headers === */
+
+/* CSS Headers tags -- we accept def. sizes */
+
+h1 {
+	font-family: 'Merriweather', Georgia, serif;
+	font-weight: bold;
+	letter-spacing: 2pt; 
+	/* line-height: 100%;
+	vertical-align: -1; */
+	font-variant: small-caps;
+	margin: 0 0 10px 0;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: bold;
+}
+
+h1, h2, h3 {
+	text-shadow: 1px 1px 1px #000;
+}
+
+.hfeed h1, .hfeed h2, .hfeed h3, .hfeed h4, .hfeed h5, .hfeed h6 {
+	padding-left: 0px;
+	border-left: none;
+}
+
+/* Find the right home for size settings. */
+h1 { font-size: 25px; }
+h2 { font-size: 1.7em; }
+h3 { font-size: 20px; }
+
+
+/* === Blockquotes, quotes, and cites === */
+
+blockquote {}
+
+	blockquote blockquote {}
+
+	blockquote cite {}
+
+/* === Acronyms and abbreviations === */
+
+acronym {}
+
+abbr {}
+
+/* === Code and Preformatted text === */
+
+code {}
+
+pre {}
+
+	pre code {}
+
+/* === <address> tag === */
+
+address {}
+
+/* === Lists === */
+
+ul {}
+
+	ul li {}
+
+ol {}
+
+	ol li {}
+
+dl {}
+
+	dt {}
+
+	dd {}
+
+/* === Tables === */
+
+table {
+	border-style: solid;
+	border-collapse:collapse;
+	border-spacing: 0px;
+	border-right: none;
+	border-bottom: none;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+}
+	.table-no-border,
+	.table-no-border td {
+		border-style:none;
+		width: auto;
+		vertical-align: bottom; /* Fix for multiline situations */
+	}
+
+	caption {}
+
+	thead {}
+
+	tfoot {}
+
+	tbody {}
+
+	tr {}
+
+	th {}
+
+	td {
+		padding: 4px 2%;
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+	}
+
+	/* wp-calendar <table> */
+
+	#wp-calendar {}
+
+/* === Embeds === */
+
+object {}
+
+embed {}
+
+iframe {}
+
+video {}
+
+/* === Forms === */
+
+form {}
+
+	fieldset {}
+
+		fieldset legend {}
+
+	label {}
+
+	input {}
+
+		/* Not all types, but these are more common for themes. */
+		input[type="button"] {}
+		input[type="checkbox"] {}
+		input[type="email"] {}
+		input[type="password"] {}
+		input[type="radio"] {}
+		input[type="reset"] {}
+		input[type="search"] {
+    		-webkit-appearance: textfield;
+    		padding: 0;
+    		margin: 0;
+    		line-height: 100%;
+    		border-radius: 10px;
+		}
+		input[type="submit"] {}
+		input[type="text"] {}
+		input[type="url"] {}
+
+	textarea {}
+
+	select {}
+
+		select optgroup {}
+
+		select option {}
+
+	button {}
+
+/* === Alignment (WP classes) === */
+
+/* Alignment */
+.left, .alignleft {
+	float: left;
+	margin: 0 25px 10px 0;
+}
+.right, .alignright {
+	float: right;
+	margin: 0 0 10px 25px;
+}
+.center, .aligncenter {
+	display: block;
+	margin: 0 auto 25px auto !important;
+}
+.block, .alignnone {
+	display: block;
+	margin: 0 0 25px 0;
+}
+.clear {
+	clear: both;
+}
+
+/* === Alignment (DS classes) === */
+.first {
+	text-indent: 0; 
+	line-height: 100%; 
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+	margin-left: 0; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.indent {
+	text-indent: 0; 
+	line-height: 110%; 
+	margin-left: 20px; 
+	margin-top: 0; 
+	margin-bottom: 20px;
+	margin-bottom: 1.5em; 
+}
+.indent-simple {
+	text-indent: 0; 
+	margin-left: 20px; 
+}
+
+/**
+ * Images
+ * --------------------------------------------------------------------------- */
+
+img {}
+
+	a img {}
+
+/* === WP editor image sizes === */
+
+img.size-thumbnail {}
+
+img.size-medium {}
+
+img.size-large {}
+
+img.size-full {}
+
+/* === DS image styles === */
+
+/* Automatically inserted text/graohics after singular content.  */
+.autoinsert {
+	padding: 1em 0 0 0;
+	/* border: 1px solid #999; */
+}
+/* p for auto inserted text or images. */
+.autoinserttext {
+	font-size: 85%;
+	font-style: italic;
+}
+.autoinsertimage {
+}
+/* Bill Holab Music and G. Schirmer image links */
+.imginsert img {
+	max-width: 90%; /* only issue on mobile view */
+}
+.billholab a,
+.imginsert a {
+	display: inline;
+	padding: 0 2em 0 0;
+	border-bottom: none;
+}
+
+/* === Thumbnails === */
+
+.thumbnail {}
+
+/* === Captions === */
+
+.wp-caption {}
+
+	.wp-caption img {}
+
+	.wp-caption-text {}
+
+		.wp-caption-text a {}
+		.wp-caption-text a:hover {}
+
+/* === Gallery === */
+
+.gallery {}
+
+	.gallery .gallery-item {}
+
+		.gallery-icon {}
+
+			.gallery .gallery-icon img {}
+
+		.gallery .gallery-caption {}
+		
+/* Gallery/Caption Tweaks */ 
+.gallery .gallery-row { margin-bottom: 1em; }
+.gallery_hide { display: none; }
+
+.wp-caption {
+	background-color: #36648B;
+	border: none;
+	margin-top: 1.0em;
+	margin-bottom: 0;
+}
+.wp-caption p,
+.wp-caption-text,
+.gallery-caption {
+	margin: 0 5px;
+	padding: 2px;
+	font: normal normal normal 12px/12px Arial,Verdana,sans-serif;
+	color: #FAEBD7; 
+	text-align: center;
+}
+
+
+/* === Avatars === */
+
+.avatar {}
+
+	a .avatar {}
+	a:hover .avatar {}
+
+/**
+ * Layout
+ * --------------------------------------------------------------------------- */
+
+#container {
+	/* Container */
+	width:100%;
+	margin: 0 auto;
+	max-width:980px;
+	padding: 5px 0px; /* overall padding */
+}
+
+.layout-1c #content, 
+.layout-default #content {
+	width: 100%;
+}
+.layout-2c-l #content {
+	float: left;
+	width: 57.5%;
+}
+
+	 /* trick to in-flow floated element */
+	 /* .layout-2c-l #content:after {
+		content: ".doneleft."; 
+		display: block; 
+		height: 10px; 
+		clear: both;
+		/ *visibility: hidden; * /
+	} */
+
+
+.layout-2c-l #sidebar-primary {
+	float: right; 
+	min-width: 290px;
+	width: 35.0%;
+}
+
+	/* trick to in-flow floated element */
+	/* .layout-2c-l #sidebar-primary:after { 
+		content: ".doneright."; 
+		display: block; 
+		height: 10px; 
+		clear: both; 
+		/ * visibility: hidden;  * /
+	} */ 
+
+.layout-2c-l #sidebar-secondary {
+	clear: right;
+	float: right;
+	width: 33.5%;
+}
+
+.layout-2c-r #content {
+	float: right;
+	width: 65%;
+}
+.layout-2c-r #sidebar-primary {
+	float: left;
+	width: 32.5%;
+}
+.layout-2c-r #sidebar-secondary {
+	float: left;
+	clear: left;
+	width: 32.5%;
+}
+
+/*.layout-3c-l #container {}
+.layout-3c-r #container {}
+.layout-3c-c #container {} */
+
+		
+		/* Menu Defaults */
+		nav ul.menu-items li a {
+			font-family: 'Merriweather', Georgia, serif; 
+			font-weight: bold;
+		}
+		/* Featured Works Menu */
+		#menu-primary.menu ul { text-align: left; }
+		#menu-primary div.wrap { border: none; float: right; width: 100%;}
+		#menu-primary.menu { width: auto; float: right; }
+		#menu-primary ul { margin: 8px 0 0 0; list-style:none; } /* margin: 5px; */
+		#menu-primary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
+		#menu-primary ul li a {padding:0.5em 0 0 0.5em; border: none; font-size: 75%; font-style: italic; font-weight: normal; }
+		#menu-primary ul li a:hover,
+		#menu-primary li.current-menu-item a {color: #fff; text-decoration: none; }
+
+			#site-top #menu-primary {
+				border: 1px solid red;
+				width: auto;
+			}
+			#site-top #menu-primary:after { /* trick to in-flow floated element */
+				content: "."; 
+				display: block; 
+				height: 0; 
+				clear: right; 
+				visibility: hidden;	
+			}
+
+		#menu-secondary.menu ul { text-align: left; }
+		#menu-secondary div.wrap { border: none; float: right; width: 100%;}
+		#menu-secondary.menu { width: auto; float: right; }
+		#menu-secondary ul { margin: 0; list-style:none; } /* margin: 5px; */
+		#menu-secondary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
+		#menu-secondary ul li a { padding:0 0 0 0.6em; font-family: 'Merriweather', Georgia, serif;font-size: 80%; font-weight: bold; text-shadow: 1px 1px 1px #000; */ }
+		#menu-secondary ul li a:hover,
+		#menu-secondary li.current-menu-item a {color: white; text-decoration: none; }
+
+			#site-top #menu-secondary { /* Hug bottom of #site-top div. */ 
+				border: 1px solid #000;
+				width: auto; }
+
+		#main { /* filters go in here */
+			clear: both;
+			padding: 0;
+			border: 1px solid green;
+		}
+		/* trick to in-flow floated element */
+		/* #main:after { 
+				content: "."; 
+				display: block; 
+				height: 0; 
+				clear: right; 
+				visibility: hidden;	
+			} */
+		
+		#content { /* main body content goes in here. Not sidebars.  */
+			clear: both;
+			padding: 0 5px;
+			border: 1px solid black;
+		}
+
+		/* trick to in-flow floated element */
+		/* #content:after { 
+				content: "."; 
+				display: block; 
+				height: 12px; 
+				visibility: hidden;
+		} */
+
+			/* no header on home page but design needs orange stripe.
+			.home #main {
+				margin-top: 10px; 
+				border-top: 0.3em solid #E5AF69;
+				border-bottom: 0;
+			} */
+
+		#sidebar-primary {
+			padding: 50px 5px 25px 5px;
+		}
+
+		#sidebar-secondary {
+			padding: 0 5px 25px 5px;
+		}
+		
+		#sidebar-subsidiary {}
+
+		/* Subsidiary and Footer Menu - simple | text | menu. */
+		#menu-subsidiary div.wrap {text-align: center;}
+		#menu-subsidiary ul {margin:0;list-style:none;}
+		#menu-subsidiary ul li {display:inline;}
+		#menu-subsidiary ul li a {font-family:'Arial Narrow';font-size: 75%; text-transform:uppercase;}
+		#menu-subsidiary ul li:not(:first-child)::before {content: '| ';}
+		
+		#menu-footer div.wrap {text-align: center;}
+		#menu-footer ul {margin:0;list-style:none;}
+		#menu-footer ul li {display:inline;}
+		#menu-footer ul li a {font-family:'Arial Narrow';font-size: 75%; color: #EECBAD; text-transform:uppercase; font-weight: normal;}
+		#menu-footer ul li a:hover {color: white;}
+		#menu-footer ul li:not(:first-child)::before {content: '| ';}
+		
+
+		/* header image stays same size and we truncate */
+		.header-image-wrap {
+			clear: both;
+			position: relative;
+			height: 150px;
+			width: 100%;
+			overflow: hidden;
+			margin: 0 0 0 0; 
+			border: none;
+			padding: 0;
+			
+		}
+		
+		.header-image {
+			height: 150px;
+			min-width: 980px;
+		}
+		
+		.header-image-text  {
+			/* Place text over banner.  */
+			position: absolute;
+			top: 50%;
+			left: 5%;
+			/* Style */
+			font-family: 'Merriweather', Georgia, serif; 
+			font-size: 3rem;
+			font-variant: small-caps;
+			font-style: bold;
+			font-weight: 700;
+			letter-spacing: 4pt; 
+			margin: -1.5rem 0 0 0;
+			text-shadow: 1px 1px 1px #000;
+			word-break: keep-all;
+		}
+			/* Composition Banner -- Goose text */
+			.singular-the_works .header-image-text,
+			.taxonomy-category-works .header-image-text  {
+				top: 55%;
+				background-color: rgba(54, 100, 139, 0.25);
+				padding: 3px;
+				text-shadow: 2px 2px 0px #000;
+				border: 1px solid #FFF;
+			}
+			
+			/* Collaborators Banner -- Goose text */
+			.singular-page-1895 .header-image-text,
+			.taxonomy-post_tag .header-image-text  {
+				left: 2%;
+				top: 65%;
+				letter-spacing: 3pt;
+			}
+			
+			/* Contact Banner -- Goose text */
+			.singular-page-12 .header-image-text  {
+				left: 1%;
+				top: 55%;
+				letter-spacing: 3pt;
+			}
+			
+			/* Recordings Banner -- Goose text */
+			.singular-the_recordings .header-image-text,
+			.taxonomy-category-recordings .header-image-text {
+				left: 1%;
+				letter-spacing: 2.75pt;
+			}
+
+/**
+ * Header
+ * --------------------------------------------------------------------------- */
+#site-top { /* DS Entire top of site */
+	position: relative;
+	padding: 0 5px 0 5px;
+	/* border: 1px solid yellow; */
+	border-bottom: 4px solid #E5AF69; /* orange stripe for design */
+}
+	
+	#site-top:after { /* Trick makes wrapper enclose its floated children. */
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+
+#header {}
+
+	#branding,
+	.sidebar-header-inactive #branding {
+		float: left;
+		width: auto;
+		margin: 0;
+		padding: 1% 1% .5% 0;	
+		/* border: 1px solid  orange; /* DS TEST */
+		text-align: center;
+	}
+
+	#site-title {
+		font-family: 'Merriweather', Georgia, serif;
+		font-size: 44px;
+		/* font-size: 4.4rem; */
+		font-weight: 300;
+		font-style: normal;
+		font-variant: small-caps;
+		margin: 0 0 5px 0;
+		text-shadow: 1px 1px 1px #000;
+		white-space: nowrap;
+	}
+		#site-title,
+		#site-title a,
+		#site-title a:visited,
+		#site-description,
+		#site-description a,
+		#site-description a:visited { 
+			color: #FAEBD7; border-bottom: none;
+		}
+
+		#site-title a:hover,
+		#site-description a:hover {
+			text-decoration: none;
+			color: white;
+			border-bottom: none;
+		}
+
+	#site-description {
+		font-family: 'Merriweather', Georgia, serif;
+		font-size: 22px;
+		/* font-size: 2.2rem; */
+		font-weight: 300;
+		font-style: normal;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #000;
+		white-space: nowrap;
+		margin-bottom: 0;
+		margin-top: -3px;
+	}
+
+/* Horizontal rule */
+hr {
+	height: 2px;
+	background: #FFF;
+}
+
+/**
+ * Menus
+ * --------------------------------------------------------------------------- */
+
+.menu-toggle {}
+
+/* ====== Primary Menu ======
+
+#menu-primary {}
+
+	#menu-primary .wrap {}
+
+		#menu-primary ul {}
+
+			#menu-primary ul ul {}
+
+			#menu-primary li {}
+			#menu-primary li.current-menu-item {}
+
+				#menu-primary li a {}
+				#menu-primary li a:hover {}
+*/
+/* ====== Secondary Menu ====== 
+
+#menu-secondary {}
+
+	#menu-secondary .wrap {}
+
+		#menu-secondary ul {}
+
+			#menu-secondary ul ul {}
+
+			#menu-secondary li {}
+			#menu-secondary li.current-menu-item {}
+
+				#menu-secondary li a {}
+				#menu-secondary li a:hover {}
+*/
+/* ====== Subsidiary Menu ====== 
+
+#menu-subsidiary {}
+
+	#menu-subsidiary .wrap {}
+
+		#menu-subsidiary ul {}
+
+			#menu-subsidiary li {}
+			#menu-subsidiary li.current-menu-item {}
+
+				#menu-subsidiary li a {}
+				#menu-subsidiary li a:hover {}
+*/
+/**
+ * Content
+ * --------------------------------------------------------------------------- */
+
+/* ====== BREADCRUMBS ====== */
+
+.breadcrumb-trail {
+	font-size: 65%;
+}
+	/* Missing and DS Added */
+	.breadcrumb-trail .trail-browse {
+		font-style: italic;
+	}
+	.breadcrumb-trail .trail-begin {}
+
+	.breadcrumb-trail .trail-end {}
+
+	.breadcrumb-trail .sep {}
+
+	.breadcrumb-trail a {}
+	.breadcrumb-trail a:hover {}
+
+/* ====== POSTS ====== */
+
+.hentry  {}
+.sticky {}
+
+	/* === Post Header === */
+
+	.entry-header {}
+
+		.entry-title {}
+
+			.entry-title a {}
+			.entry-title a:hover {}
+				/* No titles on certain pages */
+				.singular-page-12   #main header .entry-title,
+				.singular-page-33   #main header .entry-title,
+				.singular-page-1895 #main header .entry-title { 
+					display: none; }
+
+		.entry-byline {}
+
+			.entry-byline a {}
+			.entry-byline a:hover {}
+
+			.entry-byline .published {}
+
+	/* === Post content and excerpts === */
+
+	.entry-content {}
+
+	.entry-summary {}
+
+	/* === Post Footer === */
+
+	.entry-footer {}
+
+		.entry-meta { font-size: 80%; }
+
+			.entry-meta a {}
+			.entry-meta a:hover {}
+
+			.entry-meta .published {}
+
+			.entry-meta .category {}
+			.entry-meta .post_tag {}
+
+	/* === Asides === */
+
+	.format-aside {}
+
+		.format-aside .entry-content a.permalink {}
+
+	/* === Chats === */
+
+	.format-chat {}
+
+		.format-chat .chat-row {}
+
+			.format-chat .chat-text {}
+
+			.format-chat cite {}
+
+			.format-chat .chat-speaker-1 {}
+			.format-chat .chat-speaker-2 {}
+			.format-chat .chat-speaker-3 {}
+			.format-chat .chat-speaker-4 {}
+			.format-chat .chat-speaker-5 {}
+			.format-chat .chat-speaker-6 {}
+			.format-chat .chat-speaker-7 {}
+			.format-chat .chat-speaker-8 {}
+			.format-chat .chat-speaker-9 {}
+
+	/* === Links === */
+
+	.format-link {}
+
+		.format-link .entry-title {}
+
+			.format-link .entry-title a {}
+			.format-link .entry-title a:hover {}
+
+				.format-link .entry-title a .meta-nav {}
+
+	/* === Galleries === */
+
+	.format-gallery {}
+
+		.format-gallery .image-count {}
+
+	/* === Quotes === */
+
+	.format-quote {}
+
+		.format-quote blockquote {}
+
+			.format-quote blockquote cite {}
+
+	/* === Status updates === */
+
+	.format-status
+
+		.format-status .avatar {}
+
+	/* === Audio and Video === */
+
+	.format-video {}
+	.format-audio {}
+
+
+/* ====== Attachment Meta (on image attachment pages) ====== */
+
+.attachment-meta {}
+
+	.attachment-meta .image-gallery {}
+
+	.attachment-meta .image-info {}
+
+		.image-info ul {}
+
+			.image-info ul li {}
+
+				.image-info .prep {}
+
+				.image-info .image-data {}
+
+
+/* ====== LOOP META ====== */
+
+.loop-meta {}
+
+	.loop-title {}
+
+	.loop-description {}
+
+/* ====== PAGINATION ====== */
+
+/* === Single posts using <!--nextpage--> === */
+
+.page-links {}
+
+	.page-links .before {}
+
+	.page-links a {}
+	.page-links a:hover {}
+
+/* === Single post navigation (between different posts) === */
+
+.loop-nav {}
+
+	.loop-nav a {}
+	.loop-nav a:hover {}
+
+	.loop-nav a[rel="prev"] {}
+
+	.loop-nav a[rel="next"] {}
+
+/* === Archive-type pages === */
+
+.loop-pagination { 
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+
+	.loop-pagination .page-numbers {
+		display: inline-block;
+		padding: 8px 11px;
+		margin: 0 20px 0 0;
+		font: normal normal bold 13px/13px Arial, Verdana, sans-serif;
+	}
+	
+	.loop-pagination .page-numbers:not(.dots) {
+		border: 1px solid #dfdfdf;
+	}
+
+	.loop-pagination a.page-numbers {}
+	
+	.loop-pagination a.page-numbers:hover {
+		background: white;
+		color: #36648B;
+	}
+
+	.page-numbers.current {}
+
+/* === Comments pagination === */
+
+.comments-nav {}
+
+	.comments-nav a {}
+	.comments-nav a:hover {}
+
+	.comments-nav .page-numbers {}
+
+/**
+ * Sidebars and widgets
+ * --------------------------------------------------------------------------- */
+
+/* ====== General ====== */
+
+.sidebar {}
+
+	.widget {}
+		.widget ul li {
+			list-style: none;
+		}
+
+		.widget-title {}
+
+/* ====== Specific ====== */
+
+#sidebar-primary {}
+
+#sidebar-secondary {}
+
+#sidebar-subsidiary {}
+
+#sidebar-header {}
+
+#sidebar-before-content {}
+
+#sidebar-after-content {}
+
+#sidebar-after-singular {}
+
+
+/**
+ * Comments Template
+ * --------------------------------------------------------------------------- */
+
+#comments-template {}
+
+/* ====== COMMENTS ======= */
+
+#comments {}
+
+	#comments-number {}
+
+	/* === Comments closed message === */
+
+	.comments-closed {}
+
+	.comments-closed.pings-open {}
+
+	/* === Comment list === */
+
+	ol.comment-list {}
+
+		ol.comment-list ol.children {}
+
+		/* === Individual comments */
+
+		li.comment {}
+
+		li.ping {}
+
+		li.bypostauthor {}
+
+			/* === Avatars === */
+
+			.comment-list .avatar {}
+
+			/* === Meta === */
+
+			.comment-meta {}
+
+				.comment-author {}
+
+					.comment-author cite {}
+
+				.comment-meta .published {}
+
+			/* === Comment text/content === */
+
+			.comment-content {}
+
+
+			/* === Reply link === */
+
+			.comment-reply-link {}
+			.comment-reply-link:hover {}
+
+
+/* ====== RESPOND (COMMENT FORM) ====== */
+
+#respond {}
+
+	#reply-title {}
+
+		#reply-title small {}
+
+	#respond .log-in-out {}
+
+	#respond label {}
+
+		#respond label .required {}
+
+	#respond input[type="text"] {}
+	#respond input[type="text"]:focus {}
+
+	#respond input[type="url"] {}
+	#respond input[type="url"]:focus {}
+
+	#respond input[type="email"] {}
+	#respond input[type="email"]:focus {}
+
+	#respond input[type="submit"] {}
+	#respond input[type="submit"]:focus {}
+	#respond input[type="submit"]:hover {}
+
+	#respond textarea {}
+	#respond textarea:focus {}
+
+
+/**
+ * Footer
+ * --------------------------------------------------------------------------- */
+
+/*Orange line on top of footer. */
+#footer {
+	clear: both;
+	border: none;
+	border-top: 4px solid #E5AF69;
+	padding: 12px 25px 15px 25px;
+	margin: 0;
+}
+
+	#footer .loginlink a {
+		float: left;
+		color: #36648B;
+		text-decoration: none; 
+	} /* Login Invisible, but still active. */
+	
+	#footer .loginlink a:hover { 
+		color: white;
+	} /* Show on hover */
+	
+	#footer .footer_wrap { 
+		width: 100%;
+		font-size: 80%;
+		text-align: center;
+	}
+		/* trick to add floated element to flow */
+		.footer_wrap:after {
+			content: "."; 
+			display: block; 
+			height: 0px; 
+			clear: both;
+			visibility: hidden;
+		}
+
+	#footer .copyright {
+		float: right;
+	}
+
+	#footer .credit { 
+		float: left;
+	}
+
+	#footer a {}
+	#footer a:hover {}
+
+/**
+ * Media Queries
+ * --------------------------------------------------------------------------- */
+
+
+/**
+ * Clearing Floats
+ * --------------------------------------------------------------------------- */
+
+.clearfix::after {
+	content:    ".";
+	display:    block;
+	height:     0;
+	clear:      both;
+	visibility: hidden;
+}
+
+/***
+ * Search forms (DS)
+ * --------------------------------------------------------------------------- */
+/* Menu Search form */
+.wrap .search-form {
+	float: right;
+	width: 20%;
+	min-width: 125px;
+	max-width: 200px;
+	margin: 1% 0 0 0.5em; 
+	padding: 0.5% 0 0 0;
+	/* height: 30px; */
+	font-style: italic;
+	font-size: 10px;
+	text-indent: 5px;
+	border: 1px solid green; 
+}
+
+.search-form input[type="search"] {
+	width: 96%;
+	padding: 3px;
+	margin: 0;
+	color: #999;
+}
+
+/*.search-form input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}*/
+
+.search-form input[type="submit"] {
+	display: none;
+}
+
+.search-form input[type="text"] {
+	font-style: italic;
+	font-size: 8px;
+	color: #aaa;
+}
+
+.search-form input[type="text"]:focus {
+	color: #999;
+}
+
+/***
+ * Content has special nav links (DS)
+ * --------------------------------------------------------------------------- */
+.menulink {
+	font-weight:bold;
+	text-shadow: 1px 1px 1px #000;
+}
+.menulink a:link,
+.menulink a:visited,
+.menulink a:active  {
+	color: #EECBAD;
+	border-bottom: none;
+	text-decoration: none;
+}
+.menulink a:hover {
+	color: white;
+}
+
+/*
+	Theme Name: stargazer-child
+	Theme URI: http://themehybrid.com/themes/alice
+	Description: A very neat child theme for <a href="http://themehybrid.com/themes/stargazer">Stargazer WordPress Theme</a> (The most advanced theme ever crafted). The child Theme gives your site a whole different look. It also inherits all the awesome feature from its parent theme. Check out the <a href="http://bit.ly/alice-demo">live demo site here</a>. You may find all documentations about the parent theme at <a href="http://www.themehybrid.com/">ThemeHybrid</a> and about the child theme at <a href="http://www.blogsynthesis.com/themes/alice/">BlogSynthesis</a>.
+	Tags:			one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, gray, black, white
+	Author:			Anand Kumar
+	Author URI:		http://www.blogsynthesis.com/
+	Version:		1.0.1
+	Text Domain:	alice
+	Template:		stargazer
+	License:		GNU General Public License v2.0 or later
+	License URI: 	http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+/* Change Defaults  */
+
+
+
+/* Let JS In theme-footer coloriz the header. */
+img.header-image {
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%); 
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+
+/* V1 Let JS In theme-footer colorize the header. */
+.js-active img.header-image.color {
+    -webkit-filter: grayscale(0%); 
+    -moz-filter: grayscale(0%); 
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%); 
+}
+
+/* V2 Let JS In theme-footer colorize the header. */
+.js-active img.header-image.colorup {
+	-webkit-animation: colorit 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: colorit 2s; /* Firefox < 16 */
+	-ms-animation: colorit 2s; /* Internet Explorer */
+	 -o-animation: colorit 2s; /* Opera < 12.1 */
+	    animation: colorit 2s;
+	
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+		animation-fill-mode: both;
+}
+
+@keyframes colorit {
+    from { filter: grayscale(1); }
+    to   { filter: grayscale(0); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes colorit {
+    from { grayscale: 1; }
+    to   { grayscale: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes colorit {
+    from { -webkit-filter: grayscale(1); }
+    to   { -webkit-filter: grayscale(0); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes colorit {
+    from { grayscale: 1; }
+    to   { grayscale: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes colorit {
+    from { grayscale: 1; }
+    to   { grayscale: 0; }
+}
+
+img.header-image-orig {
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out; 
+	
+    filter: gray; /* For IE 6 - 9 */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+
+    -webkit-filter: grayscale(0%); 
+    -moz-filter: grayscale(0%); 
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%); 
+
+}
+
+img.header-image-orig:hover {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0); 
+}
+
+
+/* DS Tweaks Stargazer CSS */
+	
+/* Emulate what JT Stargazer does. 
+.wp-caption { position: relative; }
+.wp-caption .wp-caption-text {
+	position:   absolute;
+	bottom:     1.5rem;
+	padding:    0.75rem;
+	font-size:  0.9375rem;
+}
+*/
+
+#menu-primary .search-toggle { 
+	/* color: black !important;
+	weirdly turns all links green */
+	background: #1897A0 !important;
+}
+
+/*
+@media only screen and ( min-width: 950px ) {
+
+	.layout-1c   #footer .credit,
+	.layout-2c-l #footer .credit,
+	.layout-2c-r #footer .credit { width: 100%; }
+}
+*/
+/* DS Jake site customizing.  */
+
+.home .entry-title { display: none; }
+
+/* Doesnt work yet. */
+#menu-secondary .menu-toggle button {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 0 0.5rem; 
+}
+
+/* Automatically inserted text/graohics after singular content.  */
+/* wrapper */
+.autoinsert {
+	padding: 1em 0 0 0;
+	/* border: 1px solid #999; */
+}
+/* p for auto inserted text or images. */
+.autoinserttext {
+	font-size: 85%;
+	font-style: italic;
+}
+.autoinsertimage {
+}
+/* Bill Holab Music and G. Schirmer image links */
+.imginsert img {
+	max-width: 90%; /* only issue on mobile view */
+}
+.billholab a,
+.imginsert a {
+	display: inline;
+	padding: 0 2em 0 0;
+	border-bottom: none;
+}
+
+.gallery_hide { display: none; }
+
+/* composition archive has genre buttons */
+.archive-top-content-area {
+	margin: 0;
+	padding: 0;
+}
+
+.smalliconmenu { 
+	width: 100%; 
+	text-align: center;
+}
+
+.smalliconmenu img {
+	margin: 0 8px 10px 8px;
+	min-width: 100px;
+	width: 12%;
+	height: auto;
+}
+
+.smalliconmenu a {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.smalliconmenu p {
+	margin-bottom: 0;
+}
+
+/* Style Menus and items inside the Works Filter drop down.(below)  
+-----------------------------------------------------------------
+*/
+/* Pulldown/Dropdown menus. */
+.ds_dropdown {
+	font-size: 0.80em;
+	background: rgba(0,0,0,0.4); 
+	color: #FAEBD7;
+}
+
+	/* iOS Safari webkit menulist greatly limits what we can customize. */
+	body.iOS .ds_dropdown { color: black; }
+
+/* Search Balloon Wrap - For search used in Filter area and also Contact page. */
+.search_balloon {
+	max-width: 96%;
+	margin: 0 auto;
+	width: 35em; 
+	padding: 10px; 
+	border: 2px solid white; 
+	border-radius: 10px;
+	text-align: center;
+}
+
+/* Recordings Filter Menu - simple | text | menu. */
+.menu-recordings-list-filter-container {text-align: center;}
+.menu-recordings-list-filter-container ul {margin:0;list-style:none;}
+.menu-recordings-list-filter-container ul li {
+	display:inline; 
+	padding-right: 10px;
+}
+.menu-recordings-list-filter-container ul li a {
+	padding:0; 
+	border: none; 
+	/*color: #FAEBD7;
+	background: #36648B;*/
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 80%; 
+	font-style: italic; 
+} 
+	/* fix a word-wrap problem. needs a space inbetween to break. */
+	.menu-recordings-list-filter-container ul li a:after { content: " "; }
+
+/* Works Filter
+------------------------------------------------------------------------
+Works-filter is the dropdown filter area on archive pages.
+   It is populated using a widget area.  
+   It is opened and closed using javascript toggle. */
+
+/* Works-filter only available on archives. See taxonomy.php.
+ It is closed by default, opened intentionally on compositions page. */
+
+/* Default is to initially hide/close the works filter. */
+.works-filter { display: none;} 
+
+/* Pre-open the works filter on these pages
+.taxonomy-category-works:not(.paged) .works-filter  { display: block;}
+*/
+
+.works-filter:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+
+.works-filter-wrap { width: 100%; /*border: solid 1px green; */ }
+/* DS TEST .works-filter { background: rgba(0,0,0,0.3); } */
+.works-filter { 
+	/* ALICE background: rgba(34,103,135,1.0); /* Joyce shirt! */
+	border-left: 4px solid #000;
+	border-right: 4px solid #000;
+	border-top: 4px solid #000;
+	padding-bottom: 15px;
+}
+
+/* Massage inside of works filter drop down for Compositions */
+
+/*.works-filter #filter-item-text-6 { max-width: 610px; } Unused. composition tiles */
+.works-filter .comp_dropdown_snippet {clear: both; width: 100%; }
+.works-filter .comp_dropdown_snippet ul { 
+	list-style: none; 
+	width: 39em; 
+	max-width: 97%;
+	margin: 0 auto;
+}
+.works-filter .comp_dropdown_snippet ul li { float:left; display: inline; padding: 5px; }
+
+/* Massage inside of filter drop down for Recordings */
+.works-filter #filter-item-text-7 { 
+	float: right; 
+	min-width: 280px; 
+	margin: 0 auto 0 auto; 
+	padding: 0 10px 0 10px; 
+} /* tag dropdown */
+.works-filter #filter-item-hybrid-nav-menu-10 {
+	float: left;
+	font-size: 110%;
+	margin: 0px;
+	padding: 10px;
+	width: 410px;
+	max-width: 80%;
+	text-align: center;
+}/* recordings filter menu */
+.works-filter #filter-item-hybrid-nav-menu-10 label { 
+	font-weight: normal; 
+	font-size: 110%;
+}
+ 
+/* Massage Collaborators and Recordings labels */
+.works-filter #filter-item-text-2 { text-align: center;}
+.works-filter #filter-item-text-2 label
+ { font-weight: bold; font-size: 110%;}
+
+
+
+.filter-item {
+	padding-top: 10px;
+	padding-right: 15px;
+}
+.filter-toggle-wrap{
+	border-top: 4px solid #E5AF69;
+	border-top: 4px solid #222;
+}
+.filter-toggle-wrap:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+/* We only want the works filter shown when jquery is running 
+	and on chosen archive pages. */
+.works-filter-toggle { display: none; }
+
+/* Display when jquery is running on Compositions, Recordings, Collaborators (tag) */
+body.archive.col-masonry-active.taxonomy-category-works .works-filter-toggle,
+body.archive.col-masonry-active.taxonomy-category-recordings .works-filter-toggle,
+body.archive.col-masinry-active.taxonomy-post_tag .works-filter-toggle
+	{ display: block; }
+
+.works-filter-toggle{
+	float: right;
+	/* display: block; */
+	padding: 10px 20px;
+	/* background: #E5AF69;
+	background: #222; */
+	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
+	color: #fff;
+	margin-right: 15%;
+}
+.works-filter-toggle:hover,
+.works-filter-toggle:focus{
+	border: none;
+	color: #faebd7;
+	background: #222;
+}
+.works-filter-toggle:after{
+/*	content: "\f347"; */
+	content: "\f168";
+	margin-left: 5px;
+	font-family: "dashicons";
+	vertical-align: top;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* theme.js adds and removes .works-filter-open */
+.works-filter-toggle.works-filter-open:after{
+	content: "\f317";
+}
+.works-filter-toggle:not(works-filter-open):after{
+	content: "\f316";
+}
+/* toggle other */
+.filter-toggle-wrap-left{
+	padding: 0 5%;
+	padding-right: 0;
+	float: left;
+	/* width: 480px; 
+	max-width: 250px; */
+	padding-top: 10px;
+}
+.filter-toggle-wrap-left:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+
+/* unused i think. */
+.works-cat-dropdown{
+	float: right;
+	width: 200px;
+	text-align: center;
+}
+
+/* There are three toggles used for changing taxinomy archive list displays. */
+/* We only display them if class .col-masonry-active is present which means
+	the jquery display code in theme.js is running. */
+.works-grid-toggle,
+.works-tile-toggle,
+.works-list-toggle { display: none; }
+
+/* The mobile version of the toggles hide the link text and increases the icon size */
+@media (max-width: 480px) {
+
+	/* Thank you W3C for span support inside anchors. */
+	a.works-grid-toggle span,
+	a.works-tile-toggle span,
+	a.works-list-toggle span {
+		height: 1px;
+		width: 1px;
+		position: absolute;
+		overflow: hidden;
+		top: -10px;
+	}
+	
+	a.works-grid-toggle,
+	a.works-tile-toggle,
+	a.works-list-toggle {
+		padding: 7px !important;
+		padding-right: 2px !important;
+		font-size: 175%;
+	}
+
+	.filter-toggle-wrap-left {
+		margin: 0 !important;
+		padding: 5px 0 0 0 !important;
+	}
+	
+	.works-filter-toggle {
+		margin: 0px !important;
+		padding: 10px !important;
+	}
+}
+/* End Mobile Toggle overrides */
+
+.col-masonry-active .works-tile-toggle {
+	padding: 5px 10px;
+	display: block;
+	float: left;
+	margin-right: 15px;
+	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
+}
+.works-tile-toggle:hover,
+.works-tile-toggle:focus{
+	border: none;
+}
+.works-tile-toggle:before{
+	content: "\f233";
+	font-family: "dashicons";
+	margin-right: 5px;
+	vertical-align: top;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;
+}
+
+.col-masonry-active .works-list-toggle{
+	padding: 5px 10px;
+	display: block;
+	float: left;
+	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
+}
+.works-list-toggle:hover,
+.works-list-toggle:focus{
+	border: none;
+}
+.works-list-toggle:before{
+	content: "\f333";
+	margin-right: 5px;
+	font-family: "dashicons";
+	vertical-align: top;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;
+}
+/* Only display grid toggle on recordings tax list. */
+body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle {
+	padding: 5px 10px;
+	display: block;
+	float: left;
+	margin-right: 15px;
+	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
+}
+
+.works-grid-toggle:hover,
+.works-grid-toggle:focus{
+	border: none;
+}
+.works-grid-toggle:before{
+	content: "\f180";
+	margin-right: 5px;
+	font-family: "dashicons";
+	vertical-align: top;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;
+}
+#select-works-category{
+	border: 1px solid transparent;
+	margin-top: 1px;
+	display: none;
+}
+
+/* End DC Prototype Styles */
+
+/* Masonry */
+/* == Grid and Tile views reset entry-wrap to use columns here == 
+	If col-auto and col-2,3,4 unset then width remains 100% */
+
+/* == Auto set no. of Columns == Responsive */
+@media (max-width: 480px) {
+	.col-auto.col-tile .content-entry-wrap > .entry,
+	.col-auto.col-grid .content-entry-wrap > .entry {
+		width: 90%;
+		padding: 3%;
+	}
+}
+@media (min-width: 481px) and (max-width: 860px) {
+	.col-auto.col-tile .content-entry-wrap > .entry,
+	.col-auto.col-grid .content-entry-wrap > .entry{
+		width: 47%;
+		padding: 3.5%;
+	}
+}
+@media (min-width: 861px) {
+	.col-auto.col-tile .content-entry-wrap > .entry,
+	.col-auto.col-grid .content-entry-wrap > .entry{
+		width: 27%; /* ALICE */
+		padding: 3%; /* ALICE */
+	}
+}
+.col-auto.col-tile .main-inner,
+.col-auto.col-grid .main-inner{ padding-right: 60px; }
+
+/* == Hard set 2 COLUMNS == */
+.col-2.col-tile .content-entry-wrap > .entry,
+.col-2.col-grid .content-entry-wrap > .entry{ width: 50%; }
+
+.col-2.col-tile .main-inner,
+.col-2.col-grid .main-inner{ padding-right: 60px; }
+
+/* == Hard set 3 COLUMNS == */
+.col-3.col-tile .content-entry-wrap > .entry,
+.col-3.col-grid .content-entry-wrap > .entry{ width: 33%; }
+
+.col-3.col-tile .main-inner,
+.col-3.col-grid .main-inner{ padding-right: 60px; }
+
+/* == Hard set 4 COLUMNS == */
+.col-4.col-tile .content-entry-wrap > .entry,
+.col-4.col-grid .content-entry-wrap > .entry{ width: 25%; }
+
+.col-4.col-tile .main-inner,
+.col-4.col-grid .main-inner{ padding-right: 60px; }
+
+/* LIST View -- The default. Useful to search engines if no Javascript.  */
+.archive.taxonomy .entry-summary .entry-summary-short { display: none; }
+
+.archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
+	border: none;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	background: rgba(0,0,0,0.4);
+}
+
+/* == GRID View -- Only these changes to default LIST view needed. == */
+.archive.taxonomy.col-grid .content-entry-wrap > .entry .entry-wrap{
+	margin-left: 0;
+	padding: 5px;
+	border: 2px double #ccc; 
+	border-radius: 10px;/* Grid view reduce padding for bigger image. */
+}
+.archive.taxonomy.col-grid .entry-inner { display: none; } /* Kills all text */
+.archive.taxonomy.col-grid .entry-media{ float: none; }
+.archive.taxonomy.col-grid .theme-thumbnail { width: 100%; margin: 0; padding: 0; }
+
+/* == TILE View -- Only these needed to chg default LIST View into TILE. == */
+.archive.taxonomy.col-tile .entry-media { float: none; width: 100%; margin: -8px 0 8px 0; }
+.archive.taxonomy.col-tile .theme-thumbnail { float: none; width: 100%; margin: 0 0 12px 0;  }
+.archive.taxonomy.col-tile .entry-header { padding-left: 0; text-align: center; }
+.archive.taxonomy.col-tile .entry-summary .entry-summary-short { display: block; }
+.archive.taxonomy.col-tile .entry-summary .entry-summary-long { display: none;}
+.archive.taxonomy.col-tile .entry-footer { display: none; }
+.archive.taxonomy.col-tile .entry-meta { display: none; }
+/* ---------------------------------------------------------------------- */
+
+/**
+ * Lightbox and Magnific Popup 
+Magnific Popup lightbox runs magnific-custom.js and sets body class mfp-active. 
+And the js traps then sets these classes active AT THE TOP OF THE LIGHTBOX DOM. 
+1. gallery-popup. if active then it adds class gallery-popup-active. It makes a lightbox carousel of the gallery, whether visible or not. 
+2. gallery-popup-link. if active then it adds class gallery-popup-link-active. we use css to add a slide show graphic to the image programmatically. 
+3. lightbox-popup. if active then it adds class lightbox-popup-active. 
+in our custom popuos we create a new div classed mfp-dscaption inside mfp-title. this allows screen bottom alignment. 
+*/
+.mfp-bg {
+	opacity: 0.90;
+	filter: alpha(opacity=90);
+}
+
+.mfp-active .gallery-popup-link { position: relative; }
+
+.mfp-active .gallery-popup-link:after {
+	position: absolute;  
+	/* bottom: 5%; left: 5%; top: 0; */ 
+	left: 5px;
+	content: "\f232";
+	font-family: "dashicons";
+	font-size: 30px;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+}
+.lightbox-popup-active .mfp-title,
+.gallery-popup-link-active .mfp-title {
+	position: fixed;
+	bottom: 10px; 
+	left: 0;
+	padding-right: 0;
+	width: 100%;
+	text-align: center;
+	margin: 0 5px;
+	color: #FFF;
+	/* text-align: left; */
+	/* line-height: 18px; */
+	/* word-wrap: break-word; */
+	/* padding-right: 36px; */
+}
+.lightbox-popup-active .mfp-dscaption,
+.gallery-popup-link-active .mfp-dscaption {
+	background-color: #000;
+	width: 100%; 
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	top: auto;
+}
+.mfp-dscaption p {
+	margin: 0 5px;
+	text-align: center;
+}
+.gallery-popup-link-active .mfp-counter { display: none; }
+
+/* END of themestyle.css */
