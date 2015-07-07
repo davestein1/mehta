@@ -851,7 +851,7 @@ function get_other_text($post) {
 // A very specialized routine. 
 function get_other_images() {
 
-	if ( !in_category('works') ) return false;
+	if ( !( is_category('works') || in_category('works') ) return false;
 
 	global $post;
 	$before = '<div class="autoinsert"><p class="autoinsertimage">';
