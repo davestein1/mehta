@@ -781,7 +781,7 @@ function add_other_to_entry_summary($content) {
 // If this is a singular composition post, or a search archive summary, we auto insert text and images from Other taxonomy into entry content.
 function add_other_to_entry_content($content) {
 
-	if ( !( is_category('works') || in_category('works') ) return $content;
+	if ( !( is_category('works') || in_category('works') ) ) return $content;
 
 	ob_start();
 	display_other_text(); // recorded, rental, etc.
