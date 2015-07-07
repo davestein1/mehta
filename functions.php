@@ -144,7 +144,7 @@ function hybrid_base_theme_setup() {
 	add_filter( "the_content", 'add_other_to_entry_content', 10 );
 	
 	//Add Other descriptions into each composition in an archive
-	//add_action( "the_excerpt", 'add_other_to_entry_content', 10 );
+	add_action( "the_excerpt", 'add_other_to_entry_content', 10 );
 
  	// Replace entry meta info with our own version. 
  	// Requires do_action change in template(s) like content.php.
@@ -778,16 +778,22 @@ function add_other_to_entry_summary($content) {
 	return $content . $output;
 }
 
-// If this is a singular composition post, or a search archive summary, we auto insert text and images from Other taxonomy into entry content.
+// If this is a singular composition post, or a search archive excerpt, we auto insert text and images from Other taxonomy into entry content.
+// Are we called twice?
 function add_other_to_entry_content($content) {
 
 	if ( !( is_category('works') || in_category('works') ) ) return $content;
 
 	ob_start();
-	display_other_text(); // recorded, rental, etc.
-	$search = get_query_var( 's' );
-	//if ( !is_archive() || $search ) display_other_images(); //images on non-archives or searches. 
-	display_other_images(); // test
+	if ( is_singular() ) {
+		display_other_text(); // recorded, rental, etc.
+		display_other_images(); // schirmer, holab
+	} 
+	else {
+		display_other_text(); // recorded, rental, etc.
+		$search = get_query_var( 's' );
+		if ( $search ) display_other_images(); //display images on searches. 
+	}
 	$output = ob_get_contents();
 	ob_end_clean();
 	if ($output) $content .= $output;
