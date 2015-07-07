@@ -786,7 +786,8 @@ function add_other_to_entry_content($content) {
 	ob_start();
 	display_other_text(); // recorded, rental, etc.
 	$search = get_query_var( 's' );
-	if ( !is_archive() || $search ) display_other_images(); //images on non-archives or searches. 
+	//if ( !is_archive() || $search ) display_other_images(); //images on non-archives or searches. 
+	display_other_images(); // test
 	$output = ob_get_contents();
 	ob_end_clean();
 	if ($output) $content .= $output;
