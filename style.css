@@ -518,13 +518,14 @@ img.size-full {}
 		#menu-subsidiary div.wrap {text-align: center;}
 		#menu-subsidiary ul {margin:0;list-style:none;}
 		#menu-subsidiary ul li {display:inline;}
-		#menu-subsidiary ul li a {font-family:'Arial Narrow';font-size: 75%;text-transform:uppercase;}
+		#menu-subsidiary ul li a {font-family:'Arial Narrow';font-size: 75%; text-transform:uppercase;}
 		#menu-subsidiary ul li:not(:first-child)::before {content: '| ';}
 		
 		#menu-footer div.wrap {text-align: center;}
 		#menu-footer ul {margin:0;list-style:none;}
 		#menu-footer ul li {display:inline;}
-		#menu-footer ul li a {font-family:'Arial Narrow';font-size: 75%;text-transform:uppercase; font-weight: normal;}
+		#menu-footer ul li a {font-family:'Arial Narrow';font-size: 75%; color: #EECBAD; text-transform:uppercase; font-weight: normal;}
+		#menu-footer ul li a:hover {color: white;}
 		#menu-footer ul li:not(:first-child)::before {content: '| ';}
 		
 
