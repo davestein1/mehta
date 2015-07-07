@@ -278,6 +278,31 @@ img.size-large {}
 
 img.size-full {}
 
+/* === DS image styles === */
+
+/* Automatically inserted text/graohics after singular content.  */
+.autoinsert {
+	padding: 1em 0 0 0;
+	/* border: 1px solid #999; */
+}
+/* p for auto inserted text or images. */
+.autoinserttext {
+	font-size: 85%;
+	font-style: italic;
+}
+.autoinsertimage {
+}
+/* Bill Holab Music and G. Schirmer image links */
+.imginsert img {
+	max-width: 90%; /* only issue on mobile view */
+}
+.billholab a,
+.imginsert a {
+	display: inline;
+	padding: 0 2em 0 0;
+	border-bottom: none;
+}
+
 /* === Thumbnails === */
 
 .thumbnail {}
