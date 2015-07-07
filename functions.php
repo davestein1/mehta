@@ -142,6 +142,9 @@ function hybrid_base_theme_setup() {
 
 	//Add Other descriptions and images into composition content. 
 	add_filter( "the_content", 'add_other_to_entry_content', 10 );
+	
+	//Add Other descriptions into each composition in an archive
+	add_action( "the_excerpt", 'add_other_to_entry_content', 10 );
 
  	// Replace entry meta info with our own version. 
  	// Requires do_action change in template(s) like content.php.
@@ -151,9 +154,6 @@ function hybrid_base_theme_setup() {
  	// Replace site credit in footer with our own version. 
  	//Requires do_action change in template footer.php.
 	add_action("jh_credit", 'my_credit');
-
-	//Add Other descriptions into each composition in an archive
-	// add_action( "the_excerpt", 'add_other_to_entry_content' );
 
 	// Make the archive titles smart.
 	add_filter( "hybrid_loop_title", 'my_archive_title', 15);
@@ -781,7 +781,7 @@ function add_other_to_entry_summary($content) {
 // If this is a singular composition post, or a search archive summary, we auto insert text and images from Other taxonomy into entry content.
 function add_other_to_entry_content($content) {
 
-	if ( !( is_category('works') || in_category('works') ) ) return $content . 'nada';
+	if ( !( is_category('works') || in_category('works') ) ) return $content;
 
 	ob_start();
 	display_other_text(); // recorded, rental, etc.
@@ -791,7 +791,7 @@ function add_other_to_entry_content($content) {
 	ob_end_clean();
 	if ($output) $content .= $output;
 	
-	return $content . 'hello';
+	return $content . '[add_other]';
 }
 
 function display_other_images() {
