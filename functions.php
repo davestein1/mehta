@@ -144,7 +144,7 @@ function hybrid_base_theme_setup() {
 	add_filter( "the_content", 'add_other_to_entry_content', 10 );
 	
 	//Add Other descriptions into each composition in an archive
-	add_action( "the_excerpt", 'add_other_to_entry_content', 10 );
+	//add_action( "the_excerpt", 'add_other_to_entry_content', 10 );
 
  	// Replace entry meta info with our own version. 
  	// Requires do_action change in template(s) like content.php.
