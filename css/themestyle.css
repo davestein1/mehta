@@ -217,8 +217,6 @@ form {}
 
 		select option {}
 
-	button {}
-
 /* === Alignment (WP classes) === */
 
 /* Alignment */
@@ -1324,14 +1322,6 @@ img.header-image-orig:hover {
 /* DS Jake site customizing.  */
 
 .home .entry-title { display: none; }
-
-/* Doesnt work yet. */
-#menu-secondary .menu-toggle button {
-	position: fixed;
-	top: 0;
-	right: 0;
-	margin: 0 0.5rem; 
-}
 
 /* Automatically inserted text/graohics after singular content.  */
 /* wrapper */
