@@ -84,6 +84,16 @@
 /* for mobile */
 @media screen and (max-width: 480px) {
 	
+	/* Site Top and Header
+	*******************************************/
+	.wrap .search-form{
+		float:none;
+		clear:both;
+		width: 33%;
+		margin:0 auto;
+		padding-bottom: 5px;
+	}
+	
 	/* Primary Sidebar
 	*******************************************/
 	.layout-default #sidebar-primary,
@@ -117,13 +127,18 @@
 	*******************************************/
 	#footer .copyright{
 		float:none;
+		display: block;
 		width:100%;
 		text-align: center;
 	}
 	#footer .credit{
 		float:none;
+		display: block;
 		width:100%;
 		text-align: center;
+	}
+	#footer .loginlink{
+		font-size: 25%;
 	}
 
 	/* Grid Column
