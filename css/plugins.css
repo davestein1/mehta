@@ -37,3 +37,177 @@ span.wpcf7-not-valid-tip {
 	color: orange !important;
 	border: 1px solid orange;
 }
+
+
+/* ===Gigpress used for calendar events=== */
+
+/* Stock items from original css. */
+/* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
+/* Default wrapper for the year/month dropdown */
+.gigpress-menu-container {
+	padding: 5px 0;
+	text-align: right;
+}
+/* Meet the table that displays our shows */
+.gigpress-table {
+/*	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	border-top: 1px solid #CCC;
+*/
+	margin: 0.5em 0 1em 0;
+}
+td.gigpress-links-cell {
+	vertical-align: top;
+}
+
+.gigpress-calendar-add {
+	position: relative;
+}
+
+a.gigpress-links-toggle {
+	display: block;
+	text-indent: -9999px;
+	width: 11px;
+	height: 11px;
+	background: transparent url(images/gigpress/calendar-toggle.png) no-repeat left top;
+	cursor: pointer;
+}
+
+a.gigpress-links-toggle:hover {
+	background-position: -11px 0px;
+}
+
+a.gigpress-link-active {
+	background-position: -33px;
+}
+
+a.gigpress-link-active:hover {
+	background-position: -22px;
+}
+
+div.gigpress-calendar-links {
+	display: none;
+	position: absolute;
+	left: 20px;
+	top: -1.2em;
+	width: 15em;
+	padding-left: 7px;
+	background: transparent url(images/gigpress/calendar-links-bg.png) no-repeat left center;
+}
+
+.gigpress-calendar-links-inner {
+	background-color: #F3F3F3;
+	padding: 6px 8px;
+	font-size: 11px;
+	line-height: 16px;
+	border: 1px solid #CCC;
+	border-width: 1px 1px 1px 0;
+}
+
+div.gigpress-calendar-links span {
+	display: block;
+}
+
+/* These are for the RSS/iCal subscribe links */
+p.gigpress-subscribe {
+	text-align: left;
+	color: #999;
+}
+
+p.gigpress-subscribe a {
+	display: inline-block;
+	text-indent: -9999px;
+	width: 12px;
+	margin: 0 3px;
+}
+
+a.gigpress-rss, a.gigpress-rss:hover {
+	background: transparent url(images/gigpress/feed-icon-12x12.png) no-repeat left center;	
+}
+
+a.gigpress-ical, a.gigpress-ical:hover {
+	background: transparent url(images/gigpress/icalendar-icon.gif) no-repeat left center;	
+}
+
+/* This is just to include data for hcalendar support, but hide it from view */
+.vevent .hide { display: none; }
+
+
+/* Now we make gigpress changes. */
+
+/* Start with table fixes */
+.gigpress-info,
+.gigpress-info .description,
+.gigpress-title-item,
+.gigpress-info-item,
+.gigpress-listing,
+.gigpress-sidebar-title,
+.gigpress-sidebar-date {
+	/* border-bottom: 1px solid #EEE; */
+	color: #FAEBD7;
+}
+.gigpress-title-item,
+.gigpress-sidebar-title {
+	font-size: 100%;
+	text-shadow: 1px 1px 1px #000;
+}
+.gigpress-ds-more-info {
+	font-style: italic;
+}
+.gigpress-ds-venue {
+}
+.gigpress-ds-event-type {
+	float: right;
+	text-align: right;
+	width: auto;
+	font-size: 85%;
+}
+.gigpress-ds-event-end {
+	clear: both;
+}
+td.gigpress-date {
+	/* width: 19%; */
+	min-width: 120px;
+	min-width: 7.5em;
+	word-break: keep-all;
+	word-wrap: normal;
+}
+.gigpress-calendar-links-inner {
+	background-color: #36648B; 
+	border: 3px solid #CCC;
+	line-height: 20px;
+} /* NEW!!! Style add-to-calendar pop-up */
+/* Outer box .gigpress-calendar-links has arrow */
+
+#sidebar-primary .widget_gigpress h3.widget-title { margin-bottom: 5px; }
+
+#sidebar-primary .widget ul.gigpress-listing { 
+	margin-bottom: 0.5em; 
+}
+
+#sidebar-primary .widget .gigpress-listing li {
+	list-style: square;
+	list-style-position: inside;
+}
+#sidebar-primary .widget span.gigpress-sidebar-date {
+	font-weight: bold;
+	display: block;
+	font-weight: normal;
+	margin-top: 5px;
+}
+#sidebar-primary .widget .gigpress-sidebar-more {
+	text-align: center;
+	font-style: italic;
+}
+#sidebar-primary .widget p.gigpress-sidebar-more {
+	margin-bottom: 1em;
+}
+
+abbr,
+.widget_gigpress abbr { 
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+}
+/* End of Gigpress style */
