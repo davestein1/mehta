@@ -777,6 +777,12 @@ hr {
 	/* === Post content and excerpts === */
 
 	.entry-content {}
+	
+	.entry-content img {
+		padding: 2px;
+		background: transparent; /* #f9f9f9; */
+		border: 1px solid #ddd;
+	}
 
 	.entry-summary {}
 
