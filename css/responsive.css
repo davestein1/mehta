@@ -94,6 +94,20 @@
 		padding-bottom: 5px;
 	}
 	
+	/* Menus
+	*******************************************/
+	#menu-primary .menu-toggle button::before,
+	#menu-secondary .menu-toggle button::after {
+		content:        '\f419';
+		display:        inline-block;
+		font-family:    'Genericons';
+		font-size:      24px;
+		vertical-align: middle;
+
+		-webkit-font-smoothing: antialiased;
+	}
+
+	
 	/* Primary Sidebar
 	*******************************************/
 	.layout-default #sidebar-primary,
