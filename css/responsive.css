@@ -107,6 +107,8 @@
 		-webkit-font-smoothing: antialiased;
 	}
 
+	#menu-secondary .menu-toggle { display: block; }
+	#menu-secondary div.wrap { display: none; }
 	
 	/* Primary Sidebar
 	*******************************************/
