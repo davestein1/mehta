@@ -438,7 +438,7 @@ img.size-full {}
 			font-weight: bold;
 		}
 		/* Featured Works Menu */
-		#menu-secondary .menu-toggle { display: none; }
+		#menu-primary .menu-toggle { display: none; }
 		#menu-primary.menu ul { text-align: left; }
 		#menu-primary div.wrap { border: none; float: right; width: 100%;}
 		#menu-primary.menu { width: auto; float: right; }
