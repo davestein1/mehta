@@ -15,7 +15,9 @@
 	text-indent: 0;
 	text-align: center;
 	width: 4.5em;
+	color: black;
 }
+
 div.wpcf7-response-output.wpcf7-validation-errors {
 	border: 1px solid orange !important;
 	text-indent: 0em;
