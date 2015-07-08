@@ -3,7 +3,7 @@
 	<nav <?php hybrid_attr( 'menu', 'primary' ); ?>>
 
 		<h3 id="menu-primary-title" class="menu-toggle">
-			<button class="screen-reader-text"><?php
+			<button class="NOTscreen-reader-text"><?php
 				/* Translators: %s is the nav menu name. This is the nav menu title shown to screen readers. */
 				printf( _x( '%s Menu', 'nav menu title', 'mehta' ), hybrid_get_menu_location_name( 'primary' ) ); 
 			?></button>
