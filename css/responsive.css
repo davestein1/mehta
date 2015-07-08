@@ -107,6 +107,9 @@
 		-webkit-font-smoothing: antialiased;
 	}
 
+	#menu-primary .menu-toggle { display: block; }
+	#menu-primary div.wrap { display: none; }
+	
 	#menu-secondary .menu-toggle { display: block; }
 	#menu-secondary div.wrap { display: none; }
 	
