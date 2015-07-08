@@ -459,6 +459,7 @@ img.size-full {}
 				visibility: hidden;	
 			}
 
+		#menu-secondary .menu-toggle { display: none; }
 		#menu-secondary.menu ul { text-align: left; }
 		#menu-secondary div.wrap { border: none; float: right; width: 100%;}
 		#menu-secondary.menu { width: auto; float: right; }
