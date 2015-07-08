@@ -181,12 +181,23 @@ form {}
 	input {}
 
 		/* Not all types, but these are more common for themes. */
-		input[type="button"] {}
+		input[type="button"],
+		button {
+			display:        inline-block;
+			padding:        0.75rem 1rem;
+			font-size:      0.9375rem;
+			font-weight:    400;
+			border:         none;
+			-moz-box-sizing: border-box;
+			     box-sizing: border-box;
+		}
+		
 		input[type="checkbox"] {}
 		input[type="email"] {}
 		input[type="password"] {}
 		input[type="radio"] {}
 		input[type="reset"] {}
+
 		input[type="search"] {
     		-webkit-appearance: textfield;
     		padding: 0;
