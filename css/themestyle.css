@@ -211,7 +211,15 @@ form {}
 
 	textarea {}
 
-	select {}
+	select {
+		font-size: 0.80em;
+		background: rgba(0,0,0,0.4); 
+		color: #FAEBD7;
+		text-align: right;
+		padding: 3px 3px 6px 3px;
+	}
+	
+		body.iOS select { color: black; } /* Safari dropdowns very limited. */
 
 		select optgroup {}
 
