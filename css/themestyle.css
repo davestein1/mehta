@@ -219,11 +219,13 @@ form {}
 		padding: 3px 3px 6px 3px;
 	}
 	
+		select option {
+			background: rgba(0,0,0,0.4); 
+		}
+		
 		body.iOS select { color: black; } /* Safari dropdowns very limited. */
 
 		select optgroup {}
-
-		select option {}
 
 /* === Alignment (WP classes) === */
 
