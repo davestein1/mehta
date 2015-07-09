@@ -1471,6 +1471,11 @@ Works-filter is the dropdown filter area on archive pages.
 
 /* Massage inside of works filter drop down for Compositions */
 
+/* .filter-item {
+	padding-top: 10px;
+	padding-right: 15px;
+} */
+
 /*.works-filter #filter-item-text-6 { max-width: 610px; } Unused. composition tiles */
 .works-filter .comp_dropdown_snippet {clear: both; width: 100%; }
 .works-filter .comp_dropdown_snippet ul { 
@@ -1482,12 +1487,12 @@ Works-filter is the dropdown filter area on archive pages.
 .works-filter .comp_dropdown_snippet ul li { float:left; display: inline; padding: 5px; }
 
 /* Massage inside of filter drop down for Recordings */
-.works-filter #filter-item-text-7 { 
+/* .works-filter #filter-item-text-7 { 
 	float: right; 
 	min-width: 280px; 
 	margin: 0 auto 0 auto; 
 	padding: 0 10px 0 10px; 
-} /* tag dropdown */
+} / * tag dropdown * /
 .works-filter #filter-item-hybrid-nav-menu-10 {
 	float: left;
 	font-size: 110%;
@@ -1496,23 +1501,22 @@ Works-filter is the dropdown filter area on archive pages.
 	width: 410px;
 	max-width: 80%;
 	text-align: center;
-}/* recordings filter menu */
+} /* recordings filter menu * /
 .works-filter #filter-item-hybrid-nav-menu-10 label { 
 	font-weight: normal; 
 	font-size: 110%;
-}
+} */
  
-/* Massage Collaborators and Recordings labels */
+/* OLD Massage Collaborators and Recordings labels */
 .works-filter #filter-item-text-2 { text-align: center;}
 .works-filter #filter-item-text-2 label
  { font-weight: bold; font-size: 110%;}
 
+/* NEW Massage Collaborators and Recordings labels */
+.works-filter div.filter-item { text-align: center;}
+.works-filter .filter-item label { text-align: center;}
 
-
-.filter-item {
-	padding-top: 10px;
-	padding-right: 15px;
-}
+/* For the toggle, of course. */
 .filter-toggle-wrap{
 	border-top: 4px solid #E5AF69;
 	border-top: 4px solid #222;
