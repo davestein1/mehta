@@ -1400,14 +1400,14 @@ img.header-image-orig:hover {
 -----------------------------------------------------------------
 */
 /* Pulldown/Dropdown menus. */
-.ds_dropdown {
+/* .ds_dropdown {
 	font-size: 0.80em;
 	background: rgba(0,0,0,0.4); 
 	color: #FAEBD7;
-}
+} */
 
 	/* iOS Safari webkit menulist greatly limits what we can customize. */
-	body.iOS .ds_dropdown { color: black; }
+	/* body.iOS .ds_dropdown { color: black; } */
 
 /* Search Balloon Wrap - For search used in Filter area and also Contact page. */
 .search_balloon {
@@ -1514,6 +1514,8 @@ Works-filter is the dropdown filter area on archive pages.
 
 /* NEW Massage Collaborators and Recordings labels */
 .works-filter div.filter-item { text-align: center;}
+.works-filter div.filter-item .text-widget { width: 100%; text-align: center;}
+.works-filter div.filter-item .text-widget select { text-align: center;}
 .works-filter .filter-item label { text-align: center;}
 
 /* For the toggle, of course. */
