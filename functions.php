@@ -1,5 +1,6 @@
 <?php
 /**
+ * TO FIX PUT THEMEFOOTER MIN BACK. 
  * "Funny, 'cause I look around at this world you're so eager to be a part of and all I see is six billion 
  * lunatics looking for the fastest ride out. Who's not crazy? Look around, everyone's drinking, smoking, 
  * shooting up, shooting each other, or just plain screwing their brains out 'cause they don't want 'em anymore. 
@@ -619,7 +620,7 @@ function jh_enqueue_scripts(){
 		wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.min.js', array(), false, false );
 		//wp_dequeue_script('masonry');
 		wp_enqueue_script('masonry');
-		wp_enqueue_script( 'theme-footer', get_stylesheet_directory_uri() . '/js/theme-footer.min.js', array('jquery', 'masonry'), false, true );
+		wp_enqueue_script( 'theme-footer', get_stylesheet_directory_uri() . '/js/theme-footer.js', array('jquery', 'masonry'), false, true );
 		wp_dequeue_script('gigpress-js');
 		wp_enqueue_script('gigpress-js', plugins_url('gigpress/scripts/gigpress.js', 'gigpress'), array('jquery'), false, true);
 		wp_enqueue_style('dashicons');
