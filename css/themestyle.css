@@ -979,6 +979,11 @@ hr {
 
 #sidebar-primary {}
 
+	/* Massage Collaborators sidebar*/
+	#sidebar-primary div.textwidget .collaborator_dropdowns select {
+		width: 90%;
+	}
+
 #sidebar-secondary {}
 
 #sidebar-subsidiary {}
