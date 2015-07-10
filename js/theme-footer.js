@@ -105,7 +105,15 @@ jQuery( document ).ready( function($) {
 			scrollTop:  $( $.attr(this, 'href') ).offset().top - $('#one').offset().top
 		}, 2000); 
 		return false;
-	}); 
+	});
+	
+	/* Responsive menus have toggles. */
+	$( '.menu-toggle button' ).click(
+		function() {
+			$( this ).parents( '.menu' ).children( '.wrap' ).fadeToggle();
+			$( this ).toggleClass( 'active' );
+		}
+	);
 	
 	/* Banner loads as grayscale. Color as signal we have fully loaded. */
 	$( window ).load( function() {
