@@ -1513,9 +1513,9 @@ Works-filter is the dropdown filter area on archive pages.
  { font-weight: bold; font-size: 110%;}
 
 /* NEW Massage Collaborators and Recordings labels */
-.works-filter div.filter-item { text-align: center;}
-.works-filter div.filter-item .textwidget { width: 100%; text-align: center;}
-.works-filter div.filter-item .textwidget select { text-align: center;}
+.works-filter div.filter-item { text-align: center; padding-top: 15px;}
+/* .works-filter div.filter-item .textwidget { width: 100%; text-align: center;} */
+.works-filter div.filter-item .textwidget select { margin: 0 auto;}
 .works-filter .filter-item label { text-align: center;}
 
 /* For the toggle, of course. */
