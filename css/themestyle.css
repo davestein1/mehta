@@ -477,7 +477,7 @@ img.size-full {}
 		#menu-secondary.menu { width: auto; float: right; }
 		#menu-secondary ul { margin: 0; list-style:none; } /* margin: 5px; */
 		#menu-secondary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
-		#menu-secondary ul li a { padding:0 0 0 0.6em; font-family: 'Merriweather', Georgia, serif;font-size: 80%; font-weight: bold; text-shadow: 1px 1px 1px #000; */ }
+		#menu-secondary ul li a { padding:0 0 0 0.6em; font-family: 'Merriweather', Georgia, serif;font-size: 80%; font-weight: bold; text-shadow: 1px 1px 1px #000; }
 		#menu-secondary ul li a:hover,
 		#menu-secondary li.current-menu-item a {color: white; text-decoration: none; }
 
@@ -572,7 +572,7 @@ img.size-full {}
 			font-family: 'Merriweather', Georgia, serif; 
 			font-size: 3rem;
 			font-variant: small-caps;
-			font-style: bold;
+			font-weight: bold;
 			font-weight: 700;
 			letter-spacing: 4pt; 
 			margin: -1.5rem 0 0 0;
