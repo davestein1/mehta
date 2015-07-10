@@ -157,7 +157,7 @@
 		text-align: center;
 	}
 	#footer .loginlink{
-		font-size: 25%;
+		display: none;
 	}
 
 	/* Grid Column
