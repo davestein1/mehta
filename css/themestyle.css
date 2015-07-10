@@ -215,7 +215,7 @@ form {}
 		font-size: 0.80em;
 		background: rgba(0,0,0,0.4); 
 		color: #FAEBD7;
-		text-align: right;
+		text-align: center;
 		padding: 3px 3px 6px 3px;
 		width: auto;
 	}
@@ -1226,7 +1226,7 @@ hr {
 
 
 
-/* Let JS In theme-footer coloriz the header. */
+/* Let JS In theme-footer colorize the header. */
 img.header-image {
     -webkit-filter: grayscale(100%); 
     -moz-filter: grayscale(100%); 
@@ -1325,20 +1325,6 @@ img.header-image-orig:hover {
 }
 */
 
-#menu-primary .search-toggle { 
-	/* color: black !important;
-	weirdly turns all links green */
-	background: #1897A0 !important;
-}
-
-/*
-@media only screen and ( min-width: 950px ) {
-
-	.layout-1c   #footer .credit,
-	.layout-2c-l #footer .credit,
-	.layout-2c-r #footer .credit { width: 100%; }
-}
-*/
 /* DS Jake site customizing.  */
 
 .home .entry-title { display: none; }
@@ -1484,7 +1470,11 @@ Works-filter is the dropdown filter area on archive pages.
 	max-width: 97%;
 	margin: 0 auto;
 }
-.works-filter .comp_dropdown_snippet ul li { float:left; display: inline; padding: 5px; }
+.works-filter .comp_dropdown_snippet ul li { 
+	/* float:left; */ 
+	display: inline; 
+	padding: 5px;
+}
 
 /* Massage inside of filter drop down for Recordings */
 /* .works-filter #filter-item-text-7 { 
@@ -1515,7 +1505,10 @@ Works-filter is the dropdown filter area on archive pages.
 /* NEW Massage Collaborators and Recordings labels */
 .works-filter div.filter-item { text-align: center; padding-top: 15px;}
 /* .works-filter div.filter-item .textwidget { width: 100%; text-align: center;} */
-.works-filter div.filter-item .textwidget select { margin: 0 auto;}
+.works-filter div.filter-item .textwidget select { 
+	margin: 0 auto; 
+	background: rgba(0,0,0,0.4);
+}
 .works-filter .filter-item label { text-align: center;}
 
 /* For the toggle, of course. */
