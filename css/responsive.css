@@ -96,6 +96,11 @@
 	
 	/* Menus
 	*******************************************/
+	#menu-primary .menu-toggle button,
+	#menu-secondary .menu-toggle button {
+		background: rgb(0,0,0,0.4) ;
+	}
+	
 	#menu-primary .menu-toggle button::before,
 	#menu-secondary .menu-toggle button::after {
 		content:        '\f168';
