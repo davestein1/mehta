@@ -1466,13 +1466,13 @@ Works-filter is the dropdown filter area on archive pages.
 .works-filter .comp_dropdown_snippet {clear: both; width: 100%; }
 .works-filter .comp_dropdown_snippet ul { 
 	list-style: none; 
-	width: 39em; 
+	/* width: 39em; */
 	max-width: 97%;
 	margin: 0 auto;
 }
 .works-filter .comp_dropdown_snippet ul li { 
 	/* float:left; */ 
-	display: inline; 
+	display: inline-block; 
 	padding: 5px;
 }
 
