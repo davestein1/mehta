@@ -98,7 +98,12 @@
 	*******************************************/
 	#menu-primary .menu-toggle button,
 	#menu-secondary .menu-toggle button {
-		background: rgb(0,0,0,0.4) ;
+		background: rgb(0,0,0,0.4);
+	}
+	
+	#menu-primary .menu-toggle,
+	#menu-secondary .menu-toggle {
+		background: rgb(0,0,0,0.4);
 	}
 	
 	#menu-primary .menu-toggle button::before,
