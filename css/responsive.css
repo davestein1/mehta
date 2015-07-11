@@ -98,17 +98,13 @@
 	*******************************************/
 	#menu-primary .menu-toggle button,
 	#menu-secondary .menu-toggle button {
-		background: rgb(0,0,0,0.4);
-	}
-	
-	#menu-primary .menu-toggle,
-	#menu-secondary .menu-toggle {
-		background: rgb(0,0,0,0.4);
+		background: rgba(0,0,0,0.4);
+		border: 1px solid #ddd;
 	}
 	
 	#menu-primary .menu-toggle button::before,
 	#menu-secondary .menu-toggle button::after {
-		content:        '\f168';
+		content:        '\f333';
 		display:        inline-block;
 		font-family:    'dashicons';
 		font-size:      24px;
