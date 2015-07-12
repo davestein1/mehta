@@ -96,10 +96,13 @@
 	
 	/* Menus
 	*******************************************/
+	.menu-toggle { padding: 0; margin: 0; }
+	
 	#menu-primary .menu-toggle button,
 	#menu-secondary .menu-toggle button {
 		background: rgba(0,0,0,0.4);
 		border: 1px solid #ddd;
+		width: 3em;
 	}
 	
 	#menu-primary .menu-toggle button::before,
