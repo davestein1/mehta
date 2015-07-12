@@ -102,7 +102,7 @@
 	#menu-secondary .menu-toggle button {
 		background: rgba(0,0,0,0.4);
 		border: 1px solid #ddd;
-		width: 3em;
+		width: 80px;
 	}
 	
 	#menu-primary .menu-toggle button::before,
