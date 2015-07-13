@@ -105,7 +105,6 @@
 	
 	#menu-primary.menu { float: right; }
 	#menu-secondary.menu { float: left; }
-	}
 	
 	#menu-primary .menu-toggle,
 	#menu-secondary .menu-toggle { display: block; }
