@@ -103,8 +103,11 @@
 		max-width: 49%;
 	}
 	
-	#menu-primary.menu { float: right; }
-	#menu-secondary.menu { float: left; }
+	#menu-primary.menu,
+	#menu-primary .menu-toggle button { float: right; }
+	
+	#menu-secondary.menu,
+	#menu-secondary .menu-toggle button { float: left; }
 	
 	#menu-primary .menu-toggle,
 	#menu-secondary .menu-toggle { display: block; }
