@@ -98,6 +98,14 @@
 	*******************************************/
 	.menu-toggle { padding: 0; margin: 0; }
 	
+	#menu-primary, 
+	#menu-secondary {
+		width: 49%;
+	}
+	
+	#menu-primary .menu-toggle { display: block; }
+	#menu-secondary .menu-toggle { display: block; }
+	
 	#menu-primary .menu-toggle button,
 	#menu-secondary .menu-toggle button {
 		background: rgba(0,0,0,0.4);
@@ -116,11 +124,14 @@
 		-webkit-font-smoothing: antialiased;
 	}
 
-	#menu-primary .menu-toggle { display: block; }
-	#menu-primary div.wrap { display: none; }
+	#menu-primary div.wrap,
+	#menu-secondary div.wrap { display: none; } /* Javascript toggle in theme-footer.js */ 
 	
-	#menu-secondary .menu-toggle { display: block; }
-	#menu-secondary div.wrap { display: none; }
+	#menu-secondary ul li,
+	#menu-primary ul li { 
+		display: block;
+		float: none;
+	}
 	
 	/* Primary Sidebar
 	*******************************************/
