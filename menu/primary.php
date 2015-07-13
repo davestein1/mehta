@@ -5,7 +5,8 @@
 		<h3 id="menu-primary-title" class="menu-toggle">
 			<button class="NOTscreen-reader-text"><?php
 				/* Translators: %s is the nav menu name. This is the nav menu title shown to screen readers. */
-				printf( _x( '%s Menu', 'nav menu title', 'mehta' ), hybrid_get_menu_location_name( 'primary' ) ); 
+				printf( '%s', 'Featured Works' );
+				/* printf( _x( '%s Menu', 'nav menu title', 'mehta' ), hybrid_get_menu_location_name( 'primary' ) ); */
 			?></button>
 		</h3><!-- .menu-toggle -->
 
