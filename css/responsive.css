@@ -100,10 +100,14 @@
 	
 	#menu-primary, 
 	#menu-secondary {
-		width: 49%;
+		max-width: 49%;
 	}
 	
-	#menu-primary .menu-toggle { display: block; }
+	#menu-primary.menu { float: right; }
+	#menu-secondary.menu { float: left; }
+	}
+	
+	#menu-primary .menu-toggle,
 	#menu-secondary .menu-toggle { display: block; }
 	
 	#menu-primary .menu-toggle button,
