@@ -1158,13 +1158,16 @@ hr {
  * Search forms (DS)
  * --------------------------------------------------------------------------- */
 /* Menu Search form */
-.searchwrap  { border: 1px solid fuchsia; }
+.searchwrap  { 
+	width: auto;
+	border: 1px solid fuchsia;
+}
 
 	.searchwrap:after { /* Trick makes wrapper enclose its floated children. */
 		content: "."; 
 		display: block; 
 		height: 0; 
-		clear: both; 
+		clear: right; 
 		visibility: hidden;
 	}
 
