@@ -1160,7 +1160,11 @@ hr {
 /* Menu Search form */
 .searchwrap  { 
 	width: auto;
-	line-height: 30px;
+	height: 30px;
+	float: right;
+	width: 20%;
+	min-width: 125px;
+	max-width: 150px;
 	border: 1px solid fuchsia;
 }
 
@@ -1173,10 +1177,10 @@ hr {
 	}
 
 	.searchwrap .search-form {
-		float: right;
+		/*float: right;
 		width: 20%;
 		min-width: 125px;
-		max-width: 150px;
+		max-width: 150px; */
 		margin: 1% 0 0 0.5em; 
 		padding: 0.5% 0 0 0;
 		/* height: 30px; */
