@@ -119,24 +119,39 @@
 		width: 80px;
 	}
 	
-	#menu-primary .menu-toggle button::before,
-	#menu-secondary .menu-toggle button::after {
+	#menu-primary .menu-toggle button::before {
 		content:        '\f333';
 		display:        inline-block;
 		font-family:    'dashicons';
-		font-size:      24px;
+		font-size:      28px;
 		vertical-align: middle;
 
 		-webkit-font-smoothing: antialiased;
 	}
 
+	#menu-secondary .menu-toggle button::before {
+		content:        '\f333';
+		display:        inline-block;
+		font-family:    'dashicons';
+		font-size:      45px;
+		vertical-align: middle;
+
+		-webkit-font-smoothing: antialiased;
+	}
+	
 	#menu-primary div.wrap,
-	#menu-secondary div.wrap { display: none; } /* Javascript toggle in theme-footer.js */ 
+	#menu-secondary div.wrap { display: none; } /* jQuery toggles in theme-footer.js */ 
 	
 	#menu-secondary ul li,
 	#menu-primary ul li { 
 		display: block;
 		float: none;
+	}
+	
+	#menu-secondary ul li a,
+	#menu-primary ul li a { 
+		font-size: 22px;
+		font-variant: small-caps;
 	}
 	
 	/* Primary Sidebar
