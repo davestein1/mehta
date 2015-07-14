@@ -31,7 +31,7 @@
 	
 			</header><!-- #header -->
 			
-			<div class="wrap"> <?php get_search_form( true ); ?> </div>
+			<div class="searchwrap"> <?php get_search_form( true ); ?> </div>
 	
 			<?php hybrid_get_menu( 'primary' ); // Loads menu/primary.php template. ?>
 	
