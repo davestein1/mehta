@@ -1158,7 +1158,9 @@ hr {
  * Search forms (DS)
  * --------------------------------------------------------------------------- */
 /* Menu Search form */
-.wrap .search-form {
+.searchwrap  { border: 1px solid fuchsia; }
+
+.searchwrap .search-form {
 	float: right;
 	width: 20%;
 	min-width: 125px;
