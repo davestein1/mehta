@@ -64,6 +64,9 @@
 	#sidebar-subsidiary div.widget:nth-child(even) {
 		clear:right;
 	}
+	
+	/* Menu adjustments as screen shrinks and top rows shift. */
+	#menu-secondary.menu { float: left; }
 }
 
 /* for another tablet */
