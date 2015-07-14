@@ -118,6 +118,7 @@
 		border: 1px solid #ddd;
 		width: 80px;
 		font-size: 100%;
+	}
 	
 	#menu-primary .menu-toggle button::before {
 		content:        '\f333';
