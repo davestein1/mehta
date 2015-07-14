@@ -1168,7 +1168,7 @@ hr {
 	border: 1px solid fuchsia;
 }
 
-	.searchwrap:after { /* Trick makes wrapper enclose its floated children. */
+	.xxxxxxsearchwrap:after { /* Trick makes wrapper enclose its floated children. */
 		content: "."; 
 		display: block; 
 		height: 0; 
@@ -1180,9 +1180,9 @@ hr {
 		/*float: right;
 		width: 20%;
 		min-width: 125px;
-		max-width: 150px; */
+		max-width: 150px; 
 		margin: 1% 0 0 0.5em; 
-		padding: 0.5% 0 0 0;
+		padding: 0.5% 0 0 0; */
 		/* height: 30px; */
 		font-style: italic;
 		font-size: 10px;
