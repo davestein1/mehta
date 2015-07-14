@@ -640,7 +640,7 @@ img.size-full {}
 		float: left;
 		width: auto;
 		margin: 0;
-		padding: 1% 1% .5% 0;	
+		padding: 0% 1% .5% 0;	
 		/* border: 1px solid  orange; /* DS TEST */
 		text-align: center;
 	}
