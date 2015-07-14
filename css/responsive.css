@@ -100,7 +100,7 @@
 	
 	#menu-primary, 
 	#menu-secondary {
-		max-width: 49%;
+		max-width: 100%;
 	}
 	
 	#menu-primary.menu,
@@ -117,6 +117,7 @@
 		background: rgba(0,0,0,0.4);
 		border: 1px solid #ddd;
 		width: 80px;
+		font-size: 100px;
 	}
 	
 	#menu-primary .menu-toggle button::before {
@@ -125,6 +126,7 @@
 		font-family:    'dashicons';
 		font-size:      28px;
 		vertical-align: middle;
+		padding-bottom: 5px;
 
 		-webkit-font-smoothing: antialiased;
 	}
@@ -135,6 +137,7 @@
 		font-family:    'dashicons';
 		font-size:      45px;
 		vertical-align: middle;
+		padding-bottom: 5px;
 
 		-webkit-font-smoothing: antialiased;
 	}
