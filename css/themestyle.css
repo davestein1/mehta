@@ -1160,6 +1160,7 @@ hr {
 /* Menu Search form */
 .searchwrap  { 
 	width: auto;
+	line-height: 30px;
 	border: 1px solid fuchsia;
 }
 
