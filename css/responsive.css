@@ -116,12 +116,10 @@
 	
 	/* Site Top and Header
 	*******************************************/
-	.searchwrap .search-form {
-		float:none;
-		clear:both;
-		width: 33%;
-		margin:0 auto;
-		padding-bottom: 5px;
+	.searchwrap {
+		clear: both;
+		width: 50%;
+		margin: 0 auto;
 	}
 	
 	/* Site name and description */
