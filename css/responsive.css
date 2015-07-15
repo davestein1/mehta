@@ -69,11 +69,9 @@
 	#menu-secondary.menu { float: left; }
 }
 
-/* for another tablet */
+/* for another tablet 
 @media screen and (max-width: 600px) {
 
-	/* header
-	*******************************************/
 	#branding{
 		width:100%;
 	}
@@ -82,7 +80,7 @@
 		height:auto;
 	}
 
-}
+} */
 
 /* for mobile */
 @media screen and (max-width: 480px) {
