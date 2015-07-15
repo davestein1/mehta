@@ -463,7 +463,7 @@ img.size-full {}
 		#menu-primary li.current-menu-item a {color: #fff; text-decoration: none; }
 
 			#site-top #menu-primary {
-				border: 1px solid red;
+				/* border: 1px solid red; */
 				width: auto;
 			}
 			#site-top #menu-primary:after { /* trick to in-flow floated element */
@@ -485,7 +485,7 @@ img.size-full {}
 		#menu-secondary li.current-menu-item a {color: white; text-decoration: none; }
 
 			#site-top #menu-secondary { /* Hug bottom of #site-top div. */ 
-				border: 1px solid #000;
+				/* border: 1px solid #000; */
 				width: auto; }
 
 		#main { /* filters go in here */
@@ -1166,7 +1166,7 @@ hr {
 	height: 30px;
 	line-height: 30px;
 	padding: 5px 0 5px 5px;
-	border: 1px solid fuchsia;
+	/* border: 1px solid fuchsia; */
 }
 	.searchwrap .search-form {
 		/*float: right;
@@ -1178,7 +1178,7 @@ hr {
 		height: 100%;
 		font-style: italic;
 		font-size: 80%;
-		border: 1px solid green; 
+		/* border: 1px solid green; */
 	}
 
 .search-form input[type="search"] {
