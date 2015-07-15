@@ -67,18 +67,16 @@
 	
 	/* Menu adjustments as screen shrinks and top rows shift. */
 	
-	#menu-primary { 
-		width: 100%; 
-	}
-	
-	#menu-primary div.wrap ul li {float: left;}
-	#menu-primary div.wrap { float: left;}
-	
+	#menu-primary,
 	#menu-secondary { 
 		width: 100%; 
 	}
 	
-	#menu-secondary div.wrap ul li {float: left;}
+	#menu-primary.menu,
+	#menu-secondary.menu  { float: left;}
+	
+	
+	#xxxxxxmenu-secondary div.wrap ul li {float: left;}
 	
 	#xxxxxmenu-secondary.menu { float: left; }
 	
