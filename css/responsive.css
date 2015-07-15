@@ -201,6 +201,18 @@
 			font-size: 22px;
 			font-variant: small-caps;
 		}
+		
+	
+	/* Content
+	*******************************************/
+	.layout-default #content,
+	.layout-2c-l #content,
+	.layout-2c-r #content{
+		width:100%;
+		margin:0;
+		margin-bottom:25px;
+		clear:both;
+	}
 	
 	/* Primary Sidebar
 	*******************************************/
