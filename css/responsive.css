@@ -158,10 +158,10 @@
 	
 	#menu-primary .menu-toggle button,
 	#menu-secondary .menu-toggle button {
-		background: rgba(0,0,0,0.4);
+		background: rgba(0,0,0,0.35);
 		border: 1px solid #ddd;
-		width: 75px;
-		font-size: 100%;
+		width: 70px;
+		font-size: 90%;
 	}
 	
 	#menu-primary .menu-toggle button::before {
@@ -179,7 +179,7 @@
 		content:        '\f333';
 		display:        inline-block;
 		font-family:    'dashicons';
-		font-size:      45px;
+		font-size:      42px;
 		vertical-align: middle;
 		padding-bottom: 5px;
 
