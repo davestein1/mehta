@@ -160,8 +160,9 @@
 	#menu-secondary .menu-toggle button {
 		background: rgba(0,0,0,0.35);
 		border: 1px solid #ddd;
-		width: 70px;
+		width: 60px;
 		font-size: 90%;
+		font-family: small-caps;
 		padding: 0.3rem;
 	}
 	
@@ -180,7 +181,7 @@
 		content:        '\f333';
 		display:        inline-block;
 		font-family:    'dashicons';
-		font-size:      42px;
+		font-size:      40px;
 		vertical-align: middle;
 		padding-bottom: 5px;
 
