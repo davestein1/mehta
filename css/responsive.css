@@ -84,8 +84,14 @@
 		padding-left: 0;
 	}
 	
-	#menu-secondary div.wrap ul li:nth-child(n) a {
+	#menu-secondary div.wrap ul li:last-child a {
 		font-size: 50%;
+		width: 10px;
+		overflow: hidden;
+	}
+	
+	#menu-secondary div.wrap ul li:last-child a:after {
+		content: 'hi!';
 	}
 	
 	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
