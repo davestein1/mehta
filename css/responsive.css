@@ -72,6 +72,7 @@
 	}
 	
 	#menu-primary div.wrap ul li {float: left;}
+	#menu-primary div.wrap { float: left;}
 	
 	#menu-secondary { 
 		width: 100%; 
