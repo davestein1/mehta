@@ -84,6 +84,10 @@
 		padding-left: 0;
 	}
 	
+	#menu-secondary div.wrap ul li:nth-child(n) a {
+		font-size: 50%;
+	}
+	
 	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
 		/*clear: right; */
 		content:".\a";
