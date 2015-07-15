@@ -1161,6 +1161,7 @@ hr {
 .searchwrap  { 
 	width: auto;
 	height: 30px;
+	line-height: 30px;
 	float: right;
 	width: 20%;
 	padding-left: 5px;
