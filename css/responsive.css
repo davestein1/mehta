@@ -74,6 +74,12 @@
 		white-space: pre;
 	}
 	
+	#menu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
+		/*clear: right; */
+		content:".";
+		white-space: pre;
+	}
+	
 	#menu-secondary.menu { float: left; }
 }
 
