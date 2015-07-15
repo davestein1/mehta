@@ -4,7 +4,7 @@
  */
 
 /* for tablet */
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 481px) and (max-width: 760px) {
 
 	/* content
 	*******************************************/
@@ -134,6 +134,12 @@
 	#menu-primary, 
 	#menu-secondary {
 		width: 100%;
+	}
+	
+	#menu-primary.menu, 
+	#menu-secondary.menu {
+		width: 100%;
+		float: none;
 	}
 	
 	/* #menu-primary.menu,
