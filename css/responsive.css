@@ -68,11 +68,20 @@
 	/* Menu adjustments as screen shrinks and top rows shift. */
 	
 	#menu-primary div.wrap { 
-		max-width: 300px; 
+		max-width: 50%; 
 		text-align: right;
 	}
 	
 	#menu-primary div.wrap ul li {float: right;}
+	
+	#menu-secondary div.wrap { 
+		max-width: 50%; 
+		text-align: left;
+	}
+	
+	#menu-secondary div.wrap ul li {float: left;}
+	
+	#xxxxxmenu-secondary.menu { float: left; }
 	
 	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3) { /* newline every third */
 		/*clear: right; */
@@ -89,7 +98,6 @@
 		clear: right; /* wrong? */
 	}
 	
-	#menu-secondary.menu { float: left; }
 }
 
 /* for another tablet 
