@@ -66,9 +66,12 @@
 	}
 	
 	/* Menu adjustments as screen shrinks and top rows shift. */
-	#menu-primary div.wrap ul li:nth-child(3n+3) { /* newline every third */
-		background: black;
+	#menu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
+		display:inline;
+		content:"\a";
+		white-space: pre;
 	}
+	
 	#menu-secondary.menu { float: left; }
 }
 
