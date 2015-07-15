@@ -78,6 +78,7 @@
 		/*clear: right; */
 		content:".\a";
 		display: block;
+		clear: right; /* wrong? */
 	}
 	
 	#menu-secondary.menu { float: left; }
