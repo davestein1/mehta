@@ -77,10 +77,10 @@
 	
 	/* jQuery toggles t/f none in theme-footer.js */ 
 	#menu-primary div.wrap,
-	#menu-secondary div.wrap { display: inline; } 
+	#menu-secondary div.wrap { display: inline !important; } 
 	
 	#menu-primary div.wrap ul li:nth-child(1) a,
-	#menu-primary div.wrap ul li:nth-child(1) a { /* 1st on left needs none.  */
+	#menu-secondary div.wrap ul li:nth-child(1) a { /* 1st on left needs none.  */
 		padding-left: 0;
 	}
 	
