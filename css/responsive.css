@@ -133,13 +133,15 @@
 	
 	#menu-primary, 
 	#menu-secondary {
-		max-width: 100%;
+		width: 100%;
 	}
 	
-	#menu-primary.menu,
+	/* #menu-primary.menu,
 	#menu-primary .menu-toggle button { float: right; }
-	
 	#menu-secondary.menu { float: left; }
+	*/
+	
+	#menu-primary .menu-toggle { display: none; }
 	
 	#menu-secondary .menu-toggle {
 		display: block;
@@ -148,13 +150,12 @@
 		left: 5px;
 	}
 	
-	#menu-primary .menu-toggle { display: none; }
 	
 	#menu-primary .menu-toggle button,
 	#menu-secondary .menu-toggle button {
 		background: rgba(0,0,0,0.4);
 		border: 1px solid #ddd;
-		width: 80px;
+		width: 75px;
 		font-size: 100%;
 	}
 	
@@ -183,17 +184,17 @@
 	#menu-primary div.wrap,
 	#menu-secondary div.wrap { display: none; } /* jQuery toggles in theme-footer.js */ 
 	
-	#menu-secondary ul li,
-	#menu-primary ul li { 
-		display: block;
-		float: none;
-	}
-	
-	#menu-secondary ul li a,
-	#menu-primary ul li a { 
-		font-size: 22px;
-		font-variant: small-caps;
-	}
+		#menu-secondary div.wrap ul li,
+		#menu-primary div.wrap ul li { 
+			display: block;
+			float: none;
+		}
+		
+		#menu-secondary div.wrap ul li a,
+		#menu-primary div.wrap ul li a { 
+			font-size: 22px;
+			font-variant: small-caps;
+		}
 	
 	/* Primary Sidebar
 	*******************************************/
