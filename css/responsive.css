@@ -72,6 +72,8 @@
 		text-align: right;
 	}
 	
+	#menu-primary.menu ul { text-align: right; }
+	
 	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3) { /* newline every third */
 		/*clear: right; */
 		background: black;
