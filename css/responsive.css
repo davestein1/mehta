@@ -66,7 +66,10 @@
 	}
 	
 	/* Menu adjustments as screen shrinks and top rows shift. */
-	#menu-primary div.wrap ul li:nth-child(3n+3) { /* newline every third */
+	
+	#menu-primary div.wrap { max-width: 400px };
+	
+	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3) { /* newline every third */
 		/*clear: right; */
 		background: black;
 		display:block;
@@ -74,7 +77,7 @@
 		white-space: pre;*/
 	}
 	
-	#menu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
+	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
 		/*clear: right; */
 		content:".\a";
 		display: block;
