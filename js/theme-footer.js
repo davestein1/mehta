@@ -113,6 +113,7 @@ jQuery( document ).ready( function($) {
 		function() {
 			//$( this ).parents( '.menu' ).children( '.wrap' ).fadeToggle();
 			//$( this ).toggleClass( 'active' );
+			window.scrollTo( 0, 0 );
 			$( '.menu-toggle button' ).parents( '.menu' ).children( '.wrap' ).fadeToggle();
 			$( '.menu-toggle button' ).toggleClass( 'active' );
 		}
