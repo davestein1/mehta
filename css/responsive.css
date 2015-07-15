@@ -75,6 +75,9 @@
 	#menu-primary.menu,
 	#menu-secondary.menu  { float: left;}
 	
+	/* jQuery toggles t/f none in theme-footer.js */ 
+	#menu-primary div.wrap,
+	#menu-secondary div.wrap { display: inline; } 
 	
 	#xxxxxxmenu-secondary div.wrap ul li {float: left;}
 	
