@@ -116,13 +116,16 @@
 	
 	/* Site Top and Header
 	*******************************************/
-	.searchwrap .search-form{
+	.searchwrap .search-form {
 		float:none;
 		clear:both;
 		width: 33%;
 		margin:0 auto;
 		padding-bottom: 5px;
 	}
+	
+	/* Site name and description */
+	#branding	{ float: right; }
 	
 	/* Menus
 	*******************************************/
@@ -136,11 +139,16 @@
 	#menu-primary.menu,
 	#menu-primary .menu-toggle button { float: right; }
 	
-	#menu-secondary.menu,
-	#menu-secondary .menu-toggle button { float: left; }
+	#menu-secondary.menu { float: left; }
 	
-	#menu-primary .menu-toggle,
-	#menu-secondary .menu-toggle { display: block; }
+	#menu-secondary .menu-toggle {
+		display: block;
+		position: fixed;
+		top: 5px;
+		left: 5px;
+	}
+	
+	#menu-primary .menu-toggle { display: none; }
 	
 	#menu-primary .menu-toggle button,
 	#menu-secondary .menu-toggle button {
