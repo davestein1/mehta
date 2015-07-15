@@ -69,15 +69,14 @@
 	#menu-primary div.wrap ul li:nth-child(3n+3) { /* newline every third */
 		/*clear: right; */
 		background: black;
-		display:inline;
-		content:"\a";
-		white-space: pre;
+		display:block;
+		/* content:"\a";
+		white-space: pre;*/
 	}
 	
 	#menu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
 		/*clear: right; */
-		content:".\a";
-		white-space: pre;
+		content:".";
 	}
 	
 	#menu-secondary.menu { float: left; }
