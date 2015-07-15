@@ -76,7 +76,7 @@
 	
 	#menu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
 		/*clear: right; */
-		content:".";
+		content:".\a";
 		white-space: pre;
 	}
 	
