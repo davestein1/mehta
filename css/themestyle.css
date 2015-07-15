@@ -1159,25 +1159,15 @@ hr {
  * --------------------------------------------------------------------------- */
 /* Menu Search form */
 .searchwrap  { 
-	width: auto;
-	height: 30px;
-	line-height: 30px;
 	float: right;
 	width: 20%;
-	padding: 5px 0 5px 5px;
 	min-width: 125px;
 	max-width: 150px;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 0 5px 5px;
 	border: 1px solid fuchsia;
 }
-
-	.xxxxxxsearchwrap:after { /* Trick makes wrapper enclose its floated children. */
-		content: "."; 
-		display: block; 
-		height: 0; 
-		/* clear: both; */
-		visibility: hidden;
-	}
-
 	.searchwrap .search-form {
 		/*float: right;
 		width: 20%;
@@ -1197,7 +1187,7 @@ hr {
 	margin: 0 0 0 0;
 	color: #999;
 	font-size: 80%;
-	text-indent: 8px;
+	text-indent: 2em;
 }
 
 /*.search-form input[type="search"]::-webkit-search-decoration {
