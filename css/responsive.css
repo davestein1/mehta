@@ -74,9 +74,9 @@
 		white-space: pre;*/
 	}
 	
-	#menu-primary div.wrap ul li:nth-child(3n+3) a { /* newline every third */
+	#menu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
 		/*clear: right; */
-		content:".";
+		content:".\a";
 		display: block;
 	}
 	
