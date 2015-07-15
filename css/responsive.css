@@ -162,6 +162,7 @@
 		border: 1px solid #ddd;
 		width: 70px;
 		font-size: 90%;
+		padding: 0.3rem;
 	}
 	
 	#menu-primary .menu-toggle button::before {
