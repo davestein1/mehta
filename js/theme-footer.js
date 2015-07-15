@@ -107,11 +107,14 @@ jQuery( document ).ready( function($) {
 		return false;
 	});
 	
-	/* Responsive menus have toggles. */
+	/* Responsive menus have toggles.
+		HERE WE TRY TOGGLNG BOTH PRIMARY AND SECONDARY MENUS */
 	$( '.menu-toggle button' ).click(
 		function() {
-			$( this ).parents( '.menu' ).children( '.wrap' ).fadeToggle();
-			$( this ).toggleClass( 'active' );
+			//$( this ).parents( '.menu' ).children( '.wrap' ).fadeToggle();
+			//$( this ).toggleClass( 'active' );
+			$( '.menu-toggle button' ).parents( '.menu' ).children( '.wrap' ).fadeToggle();
+			$( '.menu-toggle button' ).toggleClass( 'active' );
 		}
 	);
 	
