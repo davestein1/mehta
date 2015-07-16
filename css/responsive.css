@@ -85,13 +85,13 @@
 	}
 	
 	#menu-secondary div.wrap ul li:last-child a {
-		font-size: 50%;
-		width: 10px;
-		overflow: hidden;
+		font-size: 0%;
+		color: transparent;
 	}
 	
 	#menu-secondary div.wrap ul li:last-child a:after {
-		content: 'hi!';
+		content: 'Contact';
+		font-size: 80%;
 	}
 	
 	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
