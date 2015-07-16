@@ -1712,6 +1712,55 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /* End DC Prototype Styles */
 
+/*=== Archive Entry Styling ===*/
+
+/* Entry icon used? */
+.archive.taxonomy .entry-icon{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.archive.taxonomy .entry-icon:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.archive.taxonomy .entry-icon:before{
+	content: "\f127";
+	font-family: "dashicons";
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	padding: 20px;
+	background: rgba(255,255,255,0.1);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+}
+.archive.taxonomy .entry-media{
+	text-align: center;
+}
+.archive.taxonomy .entry-media:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.archive.taxonomy .entry-media a { border-bottom: none; } /* no dotted thumbnails */
+
+.archive.taxonomy .entry-wrap .entry-title{
+	font-size: 17px;
+	border:none;
+	margin: 0;
+	padding: 0;
+}
+.archive.taxonomy .entry-header{
+	margin-top: 20px; /* removed from img and put here. DS TEST */
+	margin-bottom: 20px;
+	text-align: center;
+}
+.archive.taxonomy .entry-meta {
+	margin: 0;
+}
+.archive.taxonomy .entry-summary{
+	text-align: left; /* DS TEST */
+}
+.archive.taxonomy .entry-footer{
+	display: none;
+
 /* Masonry */
 /* == Grid and Tile views reset entry-wrap to use columns here == 
 	If col-auto and col-2,3,4 unset then width remains 100% */
