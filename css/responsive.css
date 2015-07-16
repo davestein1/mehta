@@ -85,7 +85,8 @@
 	}
 	
 	#menu-secondary div.wrap ul li:last-child a {
-		font-size: 0%;
+		width: 5px;
+		overflow: hidden;
 		color: transparent;
 	}
 	
