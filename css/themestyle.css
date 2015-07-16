@@ -1760,7 +1760,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 }
 .archive.taxonomy .entry-footer{
 	display: none;
-
+}
 /* Masonry */
 /* == Grid and Tile views reset entry-wrap to use columns here == 
 	If col-auto and col-2,3,4 unset then width remains 100% */
