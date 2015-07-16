@@ -84,7 +84,7 @@
 		padding-left: 0;
 	}
 	
-	#menu-secondary div.wrap ul li:last-child a {
+	/*#menu-secondary div.wrap ul li:last-child a {
 		width: 5px;
 		overflow: hidden;
 		color: transparent;
@@ -93,14 +93,14 @@
 	#menu-secondary div.wrap ul li:last-child a:after {
 		content: 'Contact';
 		font-size: 80%;
-	}
+	} 
 	
 	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
 		/*clear: right; */
 		content:".\a";
 		display: block;
-		clear: right; /* wrong? */
-	}
+		clear: right; /* wrong? * /
+	} */
 	
 }
 
