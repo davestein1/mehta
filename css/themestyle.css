@@ -1190,7 +1190,7 @@ hr {
 	margin: 0 0 0 0;
 	color: #999;
 	font-size: 80%;
-	text-indent: 2em;
+	text-indent: 1em;
 }
 
 /*.search-form input[type="search"]::-webkit-search-decoration {
@@ -1760,7 +1760,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	padding: 0;
 }
 .archive.taxonomy .entry-header{
-	margin-top: 20px; /* removed from img and put here. DS TEST */
+	margin-top: 0px; /* was 20 removed from img and put here.*/
 	margin-bottom: 20px;
 	text-align: center;
 }
