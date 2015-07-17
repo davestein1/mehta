@@ -1798,8 +1798,8 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 }
 
 .archive.taxonomy .entry-media { float: right; padding: 0 0 5px 5px; }
-.archive.taxonomy .theme-thumbnail { float: left;  }
-.archive.taxonomy .entry-header { padding-left: 0; text-align: left; }
+/* .archive.taxonomy .theme-thumbnail { float: left;  } */
+.archive.taxonomy .entry-header { float: left; padding-left: 0; text-align: left; }
 .archive.taxonomy .entry-summary .entry-summary-short { display: none; }
 .archive.taxonomy .entry-summary .entry-summary-long { display: block;}
 .archive.taxonomy .entry-footer { display: block; }
@@ -1866,14 +1866,17 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 }
 .archive.taxonomy.col-grid .entry-inner { display: none; } /* Kills all text */
 .archive.taxonomy.col-grid .entry-media{ float: none; }
-.archive.taxonomy.col-grid .theme-thumbnail { width: 100%; margin: 0; padding: 0; }
+.archive.taxonomy.col-grid .entry-media:after { /* Trick to clear float */
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+/* .archive.taxonomy.col-grid .theme-thumbnail { width: 100%; margin: 0; padding: 0; } */
 
 /* == TILE View -- Only these needed to chg default LIST View into TILE. == */
 .archive.taxonomy.col-tile .entry-media { float: none; width: 100%; margin: -8px 0 8px 0; }
-.archive.taxonomy.col-tile .entry-media:after{ /* Trick to clear float */
+.archive.taxonomy.col-tile .entry-media:after { /* Trick to clear float */
 	content:".";display:block;height:0;clear:both;visibility:hidden;
 }
-.archive.taxonomy.col-tile .theme-thumbnail { float: none; width: 100%; margin: 0 0 12px 0;  }
+/* .archive.taxonomy.col-tile .theme-thumbnail { float: none; width: 100%; margin: 0 0 12px 0;  } */
 .archive.taxonomy.col-tile .entry-header { padding-left: 0; text-align: center; }
 .archive.taxonomy.col-tile .entry-summary .entry-summary-short { display: block; }
 .archive.taxonomy.col-tile .entry-summary .entry-summary-long { display: none;}
