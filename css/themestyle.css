@@ -1712,7 +1712,20 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /* End DC Prototype Styles */
 
-/*=== Archive Entry Styling ===*/
+/*=== Archive Entry Styling. ====*/
+
+/* Archive taxonoy. php Layout can be tile, grid, or list (DEFAULT)
+	entry
+	entry-wrap
+	?entry-inner
+	entry-icon
+	entry-media
+	entry-header
+	entry-summary
+		entry-summary-short
+		entry-summary-short
+	entry-footer
+*/
 
 /* Entry icon used? */
 .archive.taxonomy .entry-icon{
@@ -1761,12 +1774,21 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy .entry-footer{
 	display: none;
 }
+.archive.taxonomy .content-entry-wrap > .entry:after { /* Trick to inflow this */
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: right; 
+	visibility: hidden;	
+}
 
 /*=== Archive Box Styling Part 1 - List View (default) ===*/
 
-/* LIST View -- The default. Useful to search engines if no Javascript.  */
-.archive.taxonomy .entry-summary .entry-summary-short { display: none; }
-
+/* LIST View -- The default. Useful to search engines if no Javascript. 
+	cascades into the other The other views 
+	which may use/undo any of these settings and set their own.
+*/
+	
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
 	margin-bottom: 2rem;
@@ -1776,6 +1798,14 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 	background: rgba(0,0,0,0.4);
 }
+
+.archive.taxonomy .entry-media { float: right; }
+.archive.taxonomy .theme-thumbnail { float: left;  }
+.archive.taxonomy .entry-header { padding-left: 0; text-align: left; }
+.archive.taxonomy .entry-summary .entry-summary-short { display: none; }
+.archive.taxonomy .entry-summary .entry-summary-long { display: block;}
+.archive.taxonomy .entry-footer { display: block; }
+.archive.taxonomy .entry-meta { display: block; }
 
 /* Masonry */
 /* == Grid and Tile views reset entry-wrap to use columns here == 
