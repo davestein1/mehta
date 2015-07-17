@@ -1791,7 +1791,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy .content-entry-wrap {
 	margin: 0 auto;
 	border: 1px solid orange;
-	width: 90%;
+	width: 95%;
 }
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
@@ -1832,9 +1832,9 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 }
 @media (min-width: 861px) {
 	.col-auto.col-tile .content-entry-wrap > .entry,
-	.col-auto.col-grid .content-entry-wrap > .entry{
-		width: 27%; /* ALICE */
-		padding: 3%; /* ALICE */
+	.col-auto.col-grid .content-entry-wrap > .entry {
+		width: 33%; 
+		padding: 3%;
 	}
 }
 .col-auto.col-tile .main-inner,
