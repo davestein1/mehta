@@ -1716,15 +1716,16 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /* Archive taxonoy. php Layout can be tile, grid, or list (DEFAULT)
 	entry
-	entry-wrap
-	?entry-inner
-	entry-icon
-	entry-media
-	entry-header
-	entry-summary
-		entry-summary-short
-		entry-summary-short
-	entry-footer
+		entry-wrap
+			entry-media
+			entry-inner
+				entry-header
+					entry-title
+				entry-summary
+					entry-summary-short
+					entry-summary-short
+			entry-footer
+			entry-meta
 */
 
 /* Entry icon used? */
@@ -1789,6 +1790,8 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 .archive.taxonomy .content-entry-wrap {
 	margin: 0 auto;
+	border: 1px solid orange;
+	width: auto;
 }
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
@@ -1803,9 +1806,8 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy .entry-media { float: right; padding: 0 0 5px 5px; }
 /* .archive.taxonomy .theme-thumbnail { float: left;  } */
 .archive.taxonomy .entry-header { float: left; padding-left: 0; text-align: left; }
-.archive.taxonomy .entry-summary { clear: both; }
 .archive.taxonomy .entry-summary .entry-summary-short { display: none; }
-.archive.taxonomy .entry-summary .entry-summary-long { display: block;}
+.archive.taxonomy .entry-summary .entry-summary-long { clear: left; display: block;}
 .archive.taxonomy .entry-footer { display: block; }
 .archive.taxonomy .entry-meta { display: block; }
 
@@ -1862,8 +1864,9 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 /*=== Archive Box Styling Part 2 - Tile and Grid ===*/
 
 /* == GRID View -- Only these changes to default LIST view needed. == */
-.archive.taxonomy.col-grid .content-entry-wrap > .entry .entry-wrap{
+.archive.taxonomy.col-grid .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
+	margin-bottom: 0;
 	padding: 5px;
 	border: 2px double #ccc; 
 	border-radius: 10px;/* Grid view reduce padding for bigger image. */
@@ -1876,6 +1879,9 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 /* .archive.taxonomy.col-grid .theme-thumbnail { width: 100%; margin: 0; padding: 0; } */
 
 /* == TILE View -- Only these needed to chg default LIST View into TILE. == */
+.archive.taxonomy.col-tile .content-entry-wrap > .entry .entry-wrap {
+	margin-left: 0;
+}
 .archive.taxonomy.col-tile .entry-media { float: none; width: 100%; margin: -8px 0 8px 0; }
 .archive.taxonomy.col-tile .entry-media:after { /* Trick to clear float */
 	content:".";display:block;height:0;clear:both;visibility:hidden;
