@@ -387,7 +387,7 @@ img.size-full {}
 	width:100%;
 	margin: 0 auto;
 	max-width:980px;
-	padding: 5px; /* was 5 0. Sets overall padding */
+	padding: 5px 0; /* Sets overall padding */
 }
 
 .layout-1c #content, 
@@ -623,7 +623,7 @@ img.size-full {}
  * --------------------------------------------------------------------------- */
 #site-top { /* DS Entire top of site */
 	position: relative;
-	padding: 5px 5px 0 5px;
+	padding: 5px 10px 0 5px;
 	/* border: 1px solid yellow; */
 	border-bottom: 4px solid #E5AF69; /* orange stripe for design */
 }
@@ -1769,10 +1769,10 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
-	margin-bottom: 2rem; /* test */
+	margin-bottom: 2rem;
 	padding: 20px;
 	padding: 2rem;
-	border: 3px solid orange;
+	/* border: 3px solid orange; */
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 	background: rgba(0,0,0,0.4);
 }
