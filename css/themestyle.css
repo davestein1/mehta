@@ -387,7 +387,7 @@ img.size-full {}
 	width:100%;
 	margin: 0 auto;
 	max-width:980px;
-	padding: 5px 10px 5px 0px; /* was 5 0. Sets overall padding */
+	padding: 5px; /* was 5 0. Sets overall padding */
 }
 
 .layout-1c #content, 
@@ -1764,18 +1764,18 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /*=== Archive Box Styling Part 1 - List View (default) ===*/
 
-.archive.taxonomy .content-entry-wrap > .entry .entry-wrap{
+/* LIST View -- The default. Useful to search engines if no Javascript.  */
+.archive.taxonomy .entry-summary .entry-summary-short { display: none; }
+
+.archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
 	margin-bottom: 2rem; /* test */
 	padding: 20px;
 	padding: 2rem;
-	border: none;
+	border: 3px solid orange;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 	background: rgba(0,0,0,0.4);
 }
-
-/* LIST View -- The default. Useful to search engines if no Javascript.  */
-.archive.taxonomy .entry-summary .entry-summary-short { display: none; }
 
 /* Masonry */
 /* == Grid and Tile views reset entry-wrap to use columns here == 
