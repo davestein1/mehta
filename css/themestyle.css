@@ -1885,7 +1885,9 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy.col-tile .entry-media:after { /* Trick to clear float */
 	content:".";display:block;height:0;clear:both;visibility:hidden;
 }
-.archive.taxonomy.col-tile .entry-header { padding-left: 0; text-align: center; }
+.archive.taxonomy.col-tile .entry-header { 
+	clear: both; padding-left: 0; text-align: center;
+}
 .archive.taxonomy.col-tile .entry-summary .entry-summary-short { display: block; }
 .archive.taxonomy.col-tile .entry-summary .entry-summary-long { display: none;}
 .archive.taxonomy.col-tile .entry-footer { display: none; }
