@@ -1712,16 +1712,6 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /* End DC Prototype Styles */
 
-/*=== Archive Box Styling ===*/
-.archive.taxonomy .content-entry-wrap > .entry .entry-wrap{
-	margin-left: 0;
-	padding: 20px;
-	padding: 2rem;
-	border: none;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-	background: rgba(0,0,0,0.4);
-}
-
 /*=== Archive Entry Styling ===*/
 
 /* Entry icon used? */
@@ -1821,14 +1811,19 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .col-4.col-tile .main-inner,
 .col-4.col-grid .main-inner{ padding-right: 60px; }
 
-/* LIST View -- The default. Useful to search engines if no Javascript.  */
-.archive.taxonomy .entry-summary .entry-summary-short { display: none; }
-
-.archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
+/*=== Archive Box Styling ===*/
+.archive.taxonomy .content-entry-wrap > .entry .entry-wrap{
+	margin-left: 0;
+	padding: 20px;
+	padding: 2rem;
 	border: none;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 	background: rgba(0,0,0,0.4);
 }
+
+/* LIST View -- The default. Useful to search engines if no Javascript.  */
+.archive.taxonomy .entry-summary .entry-summary-short { display: none; }
+
 
 /* == GRID View -- Only these changes to default LIST view needed. == */
 .archive.taxonomy.col-grid .content-entry-wrap > .entry .entry-wrap{
