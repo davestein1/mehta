@@ -1749,9 +1749,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy .entry-media{
 	text-align: center;
 }
-.archive.taxonomy .entry-media:after{
-	content:".";display:block;height:0;clear:both;visibility:hidden;
-}
+
 .archive.taxonomy .entry-media a { border-bottom: none; } /* no dotted thumbnails */
 
 .archive.taxonomy .entry-wrap .entry-title{
@@ -1799,7 +1797,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	background: rgba(0,0,0,0.4);
 }
 
-.archive.taxonomy .entry-media { float: right; }
+.archive.taxonomy .entry-media { float: right; padding: 0 0 5px 5px; }
 .archive.taxonomy .theme-thumbnail { float: left;  }
 .archive.taxonomy .entry-header { padding-left: 0; text-align: left; }
 .archive.taxonomy .entry-summary .entry-summary-short { display: none; }
@@ -1872,6 +1870,9 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /* == TILE View -- Only these needed to chg default LIST View into TILE. == */
 .archive.taxonomy.col-tile .entry-media { float: none; width: 100%; margin: -8px 0 8px 0; }
+.archive.taxonomy.col-tile .entry-media:after{ /* Trick to clear float */
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
 .archive.taxonomy.col-tile .theme-thumbnail { float: none; width: 100%; margin: 0 0 12px 0;  }
 .archive.taxonomy.col-tile .entry-header { padding-left: 0; text-align: center; }
 .archive.taxonomy.col-tile .entry-summary .entry-summary-short { display: block; }
