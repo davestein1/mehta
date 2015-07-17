@@ -1786,7 +1786,10 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	cascades into the other The other views 
 	which may use/undo any of these settings and set their own.
 */
-	
+
+.archive.taxonomy .content-entry-wrap {
+	margin: 0 auto;
+}
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
 	margin-bottom: 2rem;
