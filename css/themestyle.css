@@ -1776,9 +1776,9 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy .content-entry-wrap > .entry:after { /* Trick to inflow this */
 	content: "."; 
 	display: block; 
-	height: 0; 
-	clear: right; 
-	visibility: hidden;	
+	clear: both; /*right; */
+	/* height: 0; 
+	visibility: hidden; TEST */
 }
 
 /*=== Archive Box Styling Part 1 - List View (default) ===*/
