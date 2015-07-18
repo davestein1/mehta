@@ -1873,19 +1873,19 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	border-radius: 10px;/* Grid view reduce padding for bigger image. */
 }
 .archive.taxonomy.col-grid .entry-inner { display: none; } /* Kills all text */
-.archive.taxonomy.col-grid .entry-media{ float: none; }
-.archive.taxonomy.col-grid .entry-media:after { /* Trick to clear float */
+.archive.taxonomy.col-grid .entry-media{ float: none; padding: 0; margin: 0;}
+/* .archive.taxonomy.col-grid .entry-media:after { /* Trick to clear float * /
 	content:".";display:block;height:0;clear:both;visibility:hidden;
-}
+} */ 
 
 /* == TILE View -- Only these needed to chg default LIST View into TILE. == */
 .archive.taxonomy.col-tile .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
 }
-.archive.taxonomy.col-tile .entry-media { float: none; width: 100%; margin: -8px 0 8px 0; }
-.archive.taxonomy.col-tile .entry-media:after { /* Trick to clear float */
+.archive.taxonomy.col-tile .entry-media { float: none; width: 100%; margin: 0; padding: 0; }
+/* .archive.taxonomy.col-tile .entry-media:after { /* Trick to clear float * /
 	content:".";display:block;height:0;clear:both;visibility:hidden;
-}
+} */
 .archive.taxonomy.col-tile .entry-header { 
 	clear: both; padding-left: 0; text-align: center;
 }
