@@ -1217,7 +1217,8 @@ hr {
 .menulink {
 	font-weight:bold;
 	text-shadow: 1px 1px 1px #000;
-	white-space: nowrap;
+	word-break: break-word;
+
 }
 .menulink a:link,
 .menulink a:visited,
