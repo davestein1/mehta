@@ -1806,9 +1806,9 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 .archive.taxonomy .entry-media { float: right; padding: 0 0 5px 15px; }
 /* .archive.taxonomy .theme-thumbnail { float: left;  } */
-.archive.taxonomy .entry-header { float: left; padding-left: 0; text-align: left; }
+.archive.taxonomy .entry-header { float: none; padding-left: 0; text-align: left; }
 .archive.taxonomy .entry-summary .entry-summary-short { display: none; }
-.archive.taxonomy .entry-summary .entry-summary-long { clear: left; display: block;}
+.archive.taxonomy .entry-summary .entry-summary-long { /* clear: left; */ display: block;}
 .archive.taxonomy .entry-footer { display: block; }
 .archive.taxonomy .entry-meta { display: block; }
 
