@@ -622,7 +622,7 @@ function jh_enqueue_scripts(){
 		wp_enqueue_script('masonry');
 		wp_dequeue_script('gigpress-js');
 		wp_enqueue_script('gigpress-js', plugins_url('gigpress/scripts/gigpress.js', 'gigpress'), array('jquery'), false, true);
-		wp_enqueue_script( 'theme-footer', get_stylesheet_directory_uri() . '/js/theme-footer.js', array('jquery', 'masonry', 'gigpress'), false, true );
+		wp_enqueue_script( 'theme-footer', get_stylesheet_directory_uri() . '/js/theme-footer.js', array('jquery', 'masonry', 'gigpress-js'), false, true );
 		wp_enqueue_style('dashicons');
 		//wp_enqueue_script('theme-footer', get_stylesheet_directory_uri() . '/js/theme-footer.min.js', array('jquery'), false, true );
 		/*wp_enqueue_style( 'themename-style', get_stylesheet_uri(), array( 'dashicons' ), '1.0' ); /* This loads child style.css twice!*/
