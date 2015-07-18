@@ -1754,7 +1754,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy .entry-media a { border-bottom: none; } /* no dotted thumbnails */
 
 .archive.taxonomy .entry-wrap .entry-title{
-	font-size: 17px;
+	/* font-size: 17px; */
 	border:none;
 	margin: 0;
 	padding: 0;
@@ -1850,17 +1850,17 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /* == Hard set 3 COLUMNS == */
 .col-3.col-tile .content-entry-wrap > .entry,
-.col-3.col-grid .content-entry-wrap > .entry{ width: 33%; }
+.col-3.col-grid .content-entry-wrap > .entry { width: 33%; }
 
 .col-3.col-tile .main-inner,
-.col-3.col-grid .main-inner{ padding-right: 60px; }
+.col-3.col-grid .main-inner { padding-right: 60px; }
 
 /* == Hard set 4 COLUMNS == */
 .col-4.col-tile .content-entry-wrap > .entry,
-.col-4.col-grid .content-entry-wrap > .entry{ width: 25%; }
+.col-4.col-grid .content-entry-wrap > .entry { width: 25%; }
 
 .col-4.col-tile .main-inner,
-.col-4.col-grid .main-inner{ padding-right: 60px; }
+.col-4.col-grid .main-inner { padding-right: 60px; }
 
 /*=== Archive Box Styling Part 2 - Tile and Grid ===*/
 
@@ -1873,7 +1873,13 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	border-radius: 10px;/* Grid view reduce padding for bigger image. */
 }
 .archive.taxonomy.col-grid .entry-inner { display: none; } /* Kills all text */
-.archive.taxonomy.col-grid .entry-media{ float: none; padding: 0; margin: 0;}
+.archive.taxonomy.col-grid .entry-media {
+	float: none; 
+	padding: 0; 
+	margin: 0;
+	width: 200px;
+	height: 200px;
+}
 /* .archive.taxonomy.col-grid .entry-media:after { /* Trick to clear float * /
 	content:".";display:block;height:0;clear:both;visibility:hidden;
 } */ 
@@ -1882,13 +1888,19 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy.col-tile .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
 }
-.archive.taxonomy.col-tile .entry-media { float: none; width: 100%; margin: 0; padding: 0; }
+.archive.taxonomy.col-tile .entry-media { 
+	float: none; 
+	width: 100%; 
+	margin: 0 0 5px 0; 
+	padding: 0; 
+}
 /* .archive.taxonomy.col-tile .entry-media:after { /* Trick to clear float * /
 	content:".";display:block;height:0;clear:both;visibility:hidden;
 } */
 .archive.taxonomy.col-tile .entry-header { 
 	clear: both; padding-left: 0; text-align: center;
 }
+.archive.taxonomy.col-tile .entry-header .entry-title{ font-size: 17px; }
 .archive.taxonomy.col-tile .entry-summary .entry-summary-short { display: block; }
 .archive.taxonomy.col-tile .entry-summary .entry-summary-long { display: none;}
 .archive.taxonomy.col-tile .entry-footer { display: none; }
