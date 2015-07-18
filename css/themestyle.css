@@ -1217,6 +1217,7 @@ hr {
 .menulink {
 	font-weight:bold;
 	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
 }
 .menulink a:link,
 .menulink a:visited,
@@ -1876,7 +1877,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy.col-grid .entry-media {
 	float: none; 
 	padding: 0; 
-	margin: 0;
+	margin: 0 auto; /* test */
 	width: 200px;
 	height: 200px;
 }
