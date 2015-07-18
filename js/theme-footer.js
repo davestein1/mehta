@@ -1,7 +1,6 @@
 jQuery( document ).ready( function($) {
 
 	console.log('hello from theme-footer.js');
-	/* alert('hello from theme-footer.js'); */
 
 
 	/* == Works Filter Name -- set text and class DS == */
