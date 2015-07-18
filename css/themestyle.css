@@ -1795,9 +1795,10 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 }
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
 	margin-left: 0;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
+	margin-bottom: 20px;
 	padding: 20px;
-	padding: 2rem;
+	/*padding: 2rem; */
 	/* border: 3px solid orange; */
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 	background: rgba(0,0,0,0.4);
