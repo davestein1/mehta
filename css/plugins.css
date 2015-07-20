@@ -2,11 +2,11 @@
 
 /* Contact Form 7 message style tweaks*/
 div.wpcf7 {
-	width: 100%_
-	border: 1px solid black;
+	width: 100%;
+	/* border: 1px solid black; */
 }
 	div.wpcf7 form.wpcf7-form {
-		border: 1px solid #999;
+		/* border: 1px solid #999; */
 		width: auto;
 		max-width: 400px;
 		margin: 0 auto; /* Center the entire form */ 
@@ -17,7 +17,7 @@ div.wpcf7 {
 		}
 
 .wpcf7-form-control-wrap {
-	max-width: 400px; /*  */
+	max-width: 97%; /* max field width */
 }
 .wpcf7-form-control {
 	
