@@ -13,9 +13,10 @@ div.wpcf7 {
 	}
 
 .wpcf7-form-control-wrap {
+	max-width: 95%; /*  */
 }
 .wpcf7-form-control {
-	/* max-width: 95%; /* Smallest mobile screen */
+	
 }
 .wpcf7 p {
 	margin-bottom: 1.5em;
