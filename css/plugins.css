@@ -4,7 +4,7 @@
 div.wpcf7 {
 	width: 100%;
 	border: 1px solid black;
-	margin: 0 auto; /* Center entire form */ 
+	margin: 0 auto; /* Center the entire form */ 
 }
 
 	div.wpcf7 form.wpcf7-form {
