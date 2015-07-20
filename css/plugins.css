@@ -1,14 +1,14 @@
 /* CSS for theme plugins */
 
 /* Contact Form 7 message style tweaks*/
-div.wpcf7 { 
-	border: 1px solid #999;
+div.wpcf7 { 	
 	margin: 0 auto; /* Center entire form */ 
 }
 
 div form.wpcf7-form {
 	width: 300px;
 	max-width: 500px;
+	border: 1px solid #999;
 }
 
 .wpcf7-form-control-wrap {
