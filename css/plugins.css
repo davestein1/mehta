@@ -11,6 +11,10 @@ div.wpcf7 {
 		max-width: 400px;
 		margin: 0 auto; /* Center the entire form */ 
 	}
+	
+		div.wpcf7 form.wpcf7-form input {
+			max-width: 395px; 
+		}
 
 .wpcf7-form-control-wrap {
 	max-width: 400px; /*  */
@@ -28,6 +32,7 @@ div.wpcf7 {
 	text-align: center;
 	width: 4.5em;
 	color: black;
+	border-radius: 12px;
 }
 
 div.wpcf7-response-output.wpcf7-validation-errors {
@@ -50,10 +55,7 @@ span.wpcf7-not-valid-tip {
 	border: 1px solid orange;
 }
 
-div.wpcf7 {
-	margin: 0;
-	padding: 0;
-}
+/* directly Copied from cf7 css */
 
 div.wpcf7-response-output {
 	margin: 2em 0.5em 1em;
