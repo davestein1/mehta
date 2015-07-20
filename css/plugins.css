@@ -7,13 +7,14 @@ div.wpcf7 {
 }
 
 div form.wpcf7-form {
+	width: 300px;
 	max-width: 500px;
 }
 
 .wpcf7-form-control-wrap {
 }
 .wpcf7-form-control {
-	max-width: 95%; /* Smallest mobile screen */
+	/* max-width: 95%; /* Smallest mobile screen */
 }
 .wpcf7 p {
 	margin-bottom: 1.5em;
