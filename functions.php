@@ -615,6 +615,7 @@ function custom_excerpt_length( $length ) {
 function jh_enqueue_scripts(){
 
 	if( true == true ){
+		wp_dequeue_script('contact-form-7-css');
 		/* wp_enqueue_script('theme'); */
 		//wp_enqueue_script( 'imagesloaded', get_stylesheet_directory_uri() . '/js/imagesloaded.min.js', array(), false, false );
 		wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.min.js', array(), false, false );
