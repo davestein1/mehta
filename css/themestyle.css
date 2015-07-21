@@ -135,7 +135,8 @@ table {
 	.table-no-border td {
 		border-style:none;
 		width: auto;
-		vertical-align: bottom; /* Fix for multiline situations */
+		/* vertical-align: bottom; /* Fix for multiline situations */
+		vertical-align: top; 
 	}
 
 	caption {}
@@ -1166,8 +1167,8 @@ hr {
 	width: 20%;
 	min-width: 125px;
 	max-width: 150px;
-	height: 30px;
-	line-height: 30px;
+	height: 35px; /* 30 */
+	line-height: 35px; /* 30 */
 	padding: 5px 0 5px 5px;
 	/* border: 1px solid fuchsia; */
 }
