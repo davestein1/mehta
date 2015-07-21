@@ -1168,7 +1168,7 @@ hr {
 	min-width: 125px;
 	max-width: 150px;
 	height: 30.4px; /* 30 */
-	line-height: 30.4px; /* 30 */
+	/* line-height: 30.4px;  30 */
 	padding: 5px 0 5px 5px;
 	/* border: 1px solid fuchsia; */
 }
@@ -1187,7 +1187,7 @@ hr {
 
 .search-form input[type="search"] {
 	width: 100%;
-	padding: 0; /* 1.5% 0 */
+	padding: 3px 0 0 0; /* 1.5% 0 */
 	margin: 5px 0 0 0;
 	height: 20px;
 	color: #999;
