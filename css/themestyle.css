@@ -1169,7 +1169,7 @@ hr {
 	max-width: 150px;
 	height: 30.4px; /* 30 */
 	/* line-height: 30.4px;  30 */
-	padding: 5px 0 5px 5px;
+	padding: 0 0 0 5px;
 	/* border: 1px solid fuchsia; */
 }
 	.searchwrap .search-form {
