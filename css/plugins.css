@@ -2,7 +2,8 @@
 
 /* Contact Form 7 message style tweaks*/
 div.wpcf7 {
-	width: 100%;
+	width: 100%; 
+	
 	/* border: 1px solid black; */
 }
 	div.wpcf7 form.wpcf7-form {
