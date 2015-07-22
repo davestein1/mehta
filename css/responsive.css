@@ -246,11 +246,6 @@
 		clear:both;
 		margin:0;
 	}
-	
-		#sidebar-primary section {
-			width: 50%;
-			margin: 0 auto;
-		}
 		
 
 	/* Secondary Sidebar
@@ -263,11 +258,6 @@
 		clear:both;
 		margin:0;
 	}
-	
-		#sidebar-secondary section {
-			width: auto;
-			margin: 0 auto;
-		}
 
 	/* Subsidiary Sidebar
 	*******************************************/
