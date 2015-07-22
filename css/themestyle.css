@@ -986,6 +986,7 @@ hr {
 
 	#sidebar-primary section {
 		float: none;
+		clear: both;
 		max-width: 90%;
 		border: 1px solid #999;
 		margin: 0 auto;
