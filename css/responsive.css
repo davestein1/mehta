@@ -4,7 +4,8 @@
  */
 
 /* for tablet */
-@media screen and (min-width: 481px) and (max-width: 760px) {
+/* @media screen and (min-width: 481px) and (max-width: 760px) { */
+@media screen and (min-width: 511px) and (max-width: 760px) {
 
 	/* content
 	*******************************************/
@@ -118,7 +119,8 @@
 } */
 
 /* for mobile */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) { */
+@media screen and (max-width: 510px) {
 	
 	/* Site Top and Header
 	*******************************************/
