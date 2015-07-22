@@ -985,7 +985,8 @@ hr {
 }
 
 	#sidebar-primary section {
-		width: auto;
+		width: 50%;
+		border: 1px solid #999;
 		margin: 0 auto;
 	}
 	
