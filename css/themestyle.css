@@ -22,6 +22,7 @@
 html {
 	color: #FAEBD7;
 	background: #36648B;
+	font-size: 62.5%; /* Allows rem = 0.1 * px as default. eg, 1.4rem =14px */
 }
 
 /* === Body === */
@@ -73,10 +74,13 @@ h1, h2, h3 {
 }
 
 /* Find the right home for size settings. */
-h1 { font-size: 25px; }
+/* h1 { font-size: 25px; }
 h2 { font-size: 1.7em; }
-h3 { font-size: 20px; }
+h3 { font-size: 20px; } */
 
+h1 { font-size: 2.5rem; } /* use rem with html font-size. Initially 62.5% -> 1rem=10px */
+h2 { font-size: 1.7rem; }
+h3 { font-size: 2.0rem; }
 
 /* === Blockquotes, quotes, and cites === */
 
@@ -986,7 +990,6 @@ hr {
 
 	#sidebar-primary section {
 		float: none;
-		clear: both;
 		max-width: 90%;
 		border: 1px solid #999;
 		margin: 0 auto;
