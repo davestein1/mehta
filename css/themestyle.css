@@ -330,11 +330,25 @@ img.size-full {}
 
 /* === Captions === */
 
-.wp-caption {}
+.wp-caption {
+	background-color: #36648B;
+	border: none;
+	margin-top: 1.0em;
+	margin-bottom: 0;
+}
 
-	.wp-caption img {}
+	.wp-caption img {
+		max-width: 100%;
+	}
 
-	.wp-caption-text {}
+	.wp-caption p,
+	.wp-caption-text {
+		margin: 0 5px;
+		padding: 2px;
+		font: normal normal normal 12px/12px Arial,Verdana,sans-serif;
+		color: #FAEBD7; 
+		text-align: center;
+	}
 
 		.wp-caption-text a {}
 		.wp-caption-text a:hover {}
@@ -349,27 +363,18 @@ img.size-full {}
 
 			.gallery .gallery-icon img {}
 
-		.gallery .gallery-caption {}
-		
-/* Gallery/Caption Tweaks */ 
-.gallery .gallery-row { margin-bottom: 1em; }
-.gallery_hide { display: none; }
+	/* Gallery/Caption Tweaks */ 
+	.gallery .gallery-row { margin-bottom: 1em; }
+	
+	.gallery .gallery-caption {
+		margin: 0 5px;
+		padding: 2px;
+		font: normal normal normal 12px/12px Arial,Verdana,sans-serif;
+		color: #FAEBD7; 
+		text-align: center;
+	}
 
-.wp-caption {
-	background-color: #36648B;
-	border: none;
-	margin-top: 1.0em;
-	margin-bottom: 0;
-}
-.wp-caption p,
-.wp-caption-text,
-.gallery-caption {
-	margin: 0 5px;
-	padding: 2px;
-	font: normal normal normal 12px/12px Arial,Verdana,sans-serif;
-	color: #FAEBD7; 
-	text-align: center;
-}
+.gallery_hide { display: none; }
 
 
 /* === Avatars === */
