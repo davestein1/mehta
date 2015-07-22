@@ -532,26 +532,6 @@ img.size-full {}
 				border-bottom: 0;
 			} */
 
-		#sidebar-primary {
-			padding: 50px 5px 25px 5px;
-		}
-		
-			#sidebar-primary section {
-				width: auto;
-				margin: 0 auto;
-			}
-
-		#sidebar-secondary {
-			padding: 0 5px 25px 5px;
-		}
-		
-			#sidebar-primary section {
-				width: auto;
-				margin: 0 auto;
-			}
-
-		#sidebar-subsidiary {}
-
 		/* Subsidiary and Footer Menu - simple | text | menu. */
 		#menu-subsidiary div.wrap {text-align: center;}
 		#menu-subsidiary ul {margin:0;list-style:none;}
@@ -1000,16 +980,32 @@ hr {
 
 /* ====== Specific ====== */
 
-#sidebar-primary {}
+#sidebar-primary {
+	padding: 50px 5px 25px 5px;
+}
 
+	#sidebar-primary section {
+		width: auto;
+		margin: 0 auto;
+	}
+	
 	/* Massage Collaborators sidebar*/
 	#sidebar-primary div.textwidget .collaborator_dropdowns select {
 		width: 90%;
 	}
 
-#sidebar-secondary {}
+#sidebar-secondary {
+	padding: 0 5px 25px 5px;
+}
+
+	#sidebar-primary section {
+		width: auto;
+		margin: 0 auto;
+	}
 
 #sidebar-subsidiary {}
+
+
 
 #sidebar-header {}
 
