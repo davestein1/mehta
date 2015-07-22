@@ -503,10 +503,12 @@ body#tinymce .gallery{
 		.gallery .gallery-item .gallery-caption {
 			font-size: 13px;
 			display: block;
-			position: absolute;
-			bottom: 0;
+			/* position: absolute;
+			bottom: 0; 
 			height: 3em;
-			line-height: 2em;
+			line-height: 2em; */
+			height: 5em;
+			line-height: 1em;
 			width: 100%;
 			padding: 0.5em;
 			margin: 0;
