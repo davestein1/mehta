@@ -535,11 +535,21 @@ img.size-full {}
 		#sidebar-primary {
 			padding: 50px 5px 25px 5px;
 		}
+		
+			#sidebar-primary section {
+				width: auto;
+				margin: 0 auto;
+			}
 
 		#sidebar-secondary {
 			padding: 0 5px 25px 5px;
 		}
 		
+			#sidebar-primary section {
+				width: auto;
+				margin: 0 auto;
+			}
+
 		#sidebar-subsidiary {}
 
 		/* Subsidiary and Footer Menu - simple | text | menu. */
