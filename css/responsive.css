@@ -23,13 +23,6 @@
 	.layout-default #sidebar-primary,
 	.layout-2c-l #sidebar-primary,
 	.layout-2c-r #sidebar-primary{
-		width:48.75%;
-		float:left;
-		clear:left;
-		margin:0;
-	}
-	/* width to 100% if sideabr primary is not active */
-	.sidebar-secondary-inactive #sidebar-primary{
 		width:100%;
 		float:none;
 		clear:both;
@@ -41,13 +34,6 @@
 	.layout-default #sidebar-secondary,
 	.layout-2c-l #sidebar-secondary,
 	.layout-2c-r #sidebar-secondary{
-		width:48.75%;
-		float:right;
-		clear:right;
-		margin:0;
-	}
-	/* width to 100% if sidebar secondary is not active */
-	.sidebar-primary-inactive #sidebar-secondary{
 		width:100%;
 		float:none;
 		clear:both;
@@ -124,6 +110,12 @@
 	
 	/* Site Top and Header
 	*******************************************/
+	
+	/* Site name and description */
+	#branding	{ float: right; }
+	
+	#site-description { margin-bottom: 5px };
+	
 	.searchwrap {
 		clear: both;
 		float: none;
@@ -131,8 +123,7 @@
 		margin: 0 auto;
 	}
 	
-	/* Site name and description */
-	#branding	{ float: right; }
+		.searchwrap input[type="search"] { padding: 0; }
 	
 	/* Contact Banner -- Goose text */
 	.singular-page-12 .header-image-text  {
