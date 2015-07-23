@@ -236,15 +236,12 @@
 	/* Content
 	*******************************************/
 
-	/* Reset home page stuff */	
-	.home.layout-2c-l #content,
-	.home.layout-default #content,
-	.home.layout-2c-l #sidebar-primary, 
-	.home.layout-default #sidebar-primary {}
-	
 	.layout-default #content,
 	.layout-2c-l #content,
-	.layout-2c-r #content{
+	.layout-2c-r #content,
+	.home.layout-default #content,
+	.home.layout-2c-l #content,
+	.home.layout-2c-r #content{
 		width:100%;
 		margin:0;
 		margin-bottom:25px;
@@ -255,7 +252,10 @@
 	*******************************************/
 	.layout-default #sidebar-primary,
 	.layout-2c-l #sidebar-primary,
-	.layout-2c-r #sidebar-primary{
+	.layout-2c-r #sidebar-primary,
+	.home.layout-default #sidebar-primary,
+	.home.layout-2c-l #sidebar-primary,
+	.home.layout-2c-r #sidebar-primary{
 		width:100%;
 		float:none;
 		clear:both;
@@ -267,7 +267,10 @@
 	*******************************************/
 	.layout-default #sidebar-secondary,
 	.layout-2c-l #sidebar-secondary,
-	.layout-2c-r #sidebar-secondary{
+	.layout-2c-r #sidebar-secondary,
+	.home.layout-default #sidebar-secondary,
+	.home.layout-2c-l #sidebar-secondary,
+	.home.layout-2c-r #sidebar-secondary{
 		width:100%;
 		float:none;
 		clear:both;
