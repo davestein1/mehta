@@ -508,7 +508,7 @@ img.size-full {}
 		#main { /* filters go in here */
 			clear: both;
 			padding: 0;
-			/* border: 1px solid green; /
+			/* border: 1px solid green; */
 		}
 		/* trick to in-flow floated element */
 		/* #main:after { 
