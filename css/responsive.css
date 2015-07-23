@@ -80,8 +80,6 @@
 	#menu-primary div.wrap,
 	#menu-secondary div.wrap { display: inline !important; } 
 	
-	#menu-secondary div.wrap { margin-bottom: 5px; } 
-	
 	#menu-primary div.wrap ul li:nth-child(1) a,
 	#menu-secondary div.wrap ul li:nth-child(1) a { /* 1st on left needs none.  */
 		padding-left: 0;
@@ -215,6 +213,8 @@
 	
 	#menu-primary div.wrap,
 	#menu-secondary div.wrap { display: none; } /* jQuery toggles in theme-footer.js */ 
+	
+	#menu-secondary div.wrap { margin-bottom: 5px; } /* a little room when disolayed */
 	
 		#menu-secondary div.wrap ul li,
 		#menu-primary div.wrap ul li { 
