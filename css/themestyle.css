@@ -995,14 +995,14 @@ hr {
 
 	#sidebar-primary section {
 		float: none;
-		max-width: 90%;
-		border: 1px solid #999;
+		/* max-width: 90%; */
+		/* border: 1px solid #999; */
 		margin: 0 auto;
 	}
 	
 	/* Massage Collaborators sidebar*/
 	#sidebar-primary div.textwidget .collaborator_dropdowns select {
-		width: 85%;
+		width: 77%;
 		float: none;
 		margin: 0 auto;
 	}
