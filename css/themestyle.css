@@ -1002,7 +1002,8 @@ hr {
 		/* Widget nav items in sidebars */ 
 		#sidebar-primary .widget ul li a,
 		#sidebar-secindary .widget ul li a {
-			font-weight: 400;
+			font-weight: 600;
+			line-height: 165%;
 			text-shadow: 1px 1px 1px black;
 			border-bottom: 1px dotted #DFDFDF;
 		}
@@ -1010,9 +1011,9 @@ hr {
 	.widget-title {}
 	
 		/* Center all but Calendar sidebar titles. */
-		:not(.calendar) #sidebar-primary .widget-title { text-align: center;}
+		:not(.calendar-page) #sidebar-primary .widget-title { text-align: center;}
 		
-		.calendar #sidebar-primary .widget-title { text-align: left;}
+		.calendar-page #sidebar-primary .widget-title { text-align: left;}
 		
 		/* .home #sidebar-primary .widget-title,
 		.singular-page-1895 #sidebar-primary .widget-title { text-align: center;} */
