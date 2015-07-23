@@ -1191,7 +1191,7 @@ hr {
 	width: 20%;
 	min-width: 125px;
 	max-width: 150px;
-	height: 30.4px; /* 30 */
+	/* height: 30.4px;  30 */
 	/* line-height: 30.4px;  30 */
 	padding: 0 0 0 0px; /* 30 */
 	margin-left: 5px;
@@ -1214,7 +1214,7 @@ hr {
 	width: 100%;
 	padding: 3px 0 0 0; /* 1.5% 0 */
 	margin: 5px 0 0 0;
-	height: 20px;
+	/* height: 20px; */
 	color: #999;
 	font-size: 80%;
 	text-indent: 1em;
