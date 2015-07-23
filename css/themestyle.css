@@ -84,7 +84,7 @@ h2 { font-size: 1.7em; }
 h3 { font-size: 20px; } */
 
 h1 { font-size: 2.5rem; } /* use rem with html font-size. Initially 62.5% -> 1rem=10px */
-h2 { font-size: 1.7rem; }
+h2 { font-size: 2.3rem; }
 h3 { font-size: 2.0rem; }
 
 /* === Blockquotes, quotes, and cites === */
@@ -476,7 +476,7 @@ img.size-full {}
 		#menu-primary.menu { width: auto; float: right; }
 		#menu-primary ul { margin: 0; list-style:none; } /* margin: 5px; */
 		#menu-primary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
-		#menu-primary ul li a {padding:0 0 0 0.5em; border: none; font-size: 75%; font-style: italic; font-weight: normal; white-space: nowrap; }
+		#menu-primary ul li a {padding:0 0 0 0.5em; border: none; font-size: 80%; font-style: italic; font-weight: normal; white-space: nowrap; }
 		#menu-primary ul li a:hover,
 		#menu-primary li.current-menu-item a {color: #fff; text-decoration: none; }
 
@@ -498,7 +498,7 @@ img.size-full {}
 		#menu-secondary.menu { width: auto; float: right; }
 		#menu-secondary ul { margin: 0; list-style:none; } /* margin: 5px; */
 		#menu-secondary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
-		#menu-secondary ul li a { padding:0 0 0 0.6em; font-family: 'Merriweather', Georgia, serif;font-size: 80%; font-weight: bold; text-shadow: 1px 1px 1px #000; white-space: nowrap;}
+		#menu-secondary ul li a { padding:0 0 0 0.6em; font-family: 'Merriweather', Georgia, serif;font-size: 90%; font-weight: bold; text-shadow: 1px 1px 1px #000; white-space: nowrap;}
 		#menu-secondary ul li a:hover,
 		#menu-secondary li.current-menu-item a {color: white; text-decoration: none; }
 
