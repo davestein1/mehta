@@ -184,14 +184,14 @@ blockquote:after,blockquote:before,q:after,q:before {
 a {
 	cursor:pointer;
 }
-/* Preformatted, Code */
+/* Preformatted, Code   DS changed em to rem */
 pre {
 	word-wrap: normal;
 	overflow:auto;
 	font:1em Monaco,monospace,Courier,"Courier New";
-	padding: 1.5em;
-	line-height: 1.5em;
-	background-size: 3em 3em;
+	padding: 1.5rem;
+	line-height: 1.5rem;
+	background-size: 3rem 3rem;
 	background-image: linear-gradient(rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
 	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
 	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
@@ -203,7 +203,7 @@ code {
 }
 pre code {
 	font-size:1em;
-	line-height: 1.5em;
+	line-height: 1.5rem;
 	background: transparent;
 }
 /* Delete, Insert */
@@ -312,7 +312,7 @@ optgroup{
 table {
 	border-collapse:collapse;
 	border-spacing:0;
-	line-height: 1.8em;
+	line-height: 1.8rem; /* 1.8em */
 	width: 100%;
 	border-bottom: 1px solid #ccc;
 }
@@ -410,7 +410,7 @@ body {
 	font-family: 'Open Sans','Trebuchet MS', sans-serif;
 	font-size:17px;
 	font-size:1.7rem;
-	line-height:1.7em;
+	line-height:150%; /* 1.7em; */
 	color: #444;
 }
 	/* Editor Style */
@@ -508,7 +508,7 @@ body#tinymce .gallery{
 			height: 3em;
 			line-height: 2em; */
 			height: 5em;
-			line-height: 1em;
+			line-height: 110%; /* 1em; */
 			width: 100%;
 			padding: 0.5em;
 			margin: 0;
