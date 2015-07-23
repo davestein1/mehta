@@ -32,6 +32,7 @@ body {
 	font-family: 'Merriweather', Georgia, serif;
 	color: #FAEBD7;
 	background: #36648B;
+	letter-spacing: 0.25pt;
 	/* font-size:17px;
 	font-size:1.7rem;
 	line-height:150%; /* set in reset.css and should cascade to a, p text. */
@@ -627,6 +628,7 @@ img.size-full {}
  * --------------------------------------------------------------------------- */
 #site-top { /* DS Entire top of site */
 	position: relative;
+	line-height: 23px; /* We use pixels here only */
 	padding: 5px 10px 0 5px;
 	/* border: 1px solid yellow; */
 	border-bottom: 4px solid #E5AF69; /* orange stripe for design */
