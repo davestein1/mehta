@@ -417,6 +417,10 @@ function add_body_class( $body_classes ) {
 		//Set a default view for the recordings archive. 
 		$body_classes[] = 'col-tile'; // Set view
 	}
+	if ( is_page('calendar') || (  is_page() && strpos( get_permalink(), 'calendar-archive') !== FALSE ) ) {
+		//Set a common class present when calendar pages present. 
+		$body_classes[] = 'calendar-page'; // Set view
+	}
 	
 	return $body_classes;
 }
