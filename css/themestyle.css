@@ -440,13 +440,14 @@ img.size-full {}
 	.home.layout-2c-l #content,
 	.home.layout-default #content {
 		float: left;
-		width: 77%;
+		width: 75%;
 	}
 	.home.layout-2c-l #sidebar-primary, 
 	.home.layout-default #sidebar-primary {
 		float: right;
-		width: 20.5%;
+		width: 24.5%;
 		min-width: 150px;
+		padding: 30px 0 5px 5px;
 	}
 
 
