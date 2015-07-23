@@ -241,6 +241,11 @@ form {}
 			background: rgba(0,0,0,0.4); 
 		}
 		
+		select option:checked {
+			color: red;
+			background: rgba(0,0,0,0.4); 
+		}
+		
 		body.iOS select { color: black; } /* Safari dropdowns very limited. */
 
 		select optgroup {}
