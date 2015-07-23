@@ -508,7 +508,7 @@ img.size-full {}
 		#main { /* filters go in here */
 			clear: both;
 			padding: 0;
-			border: 1px solid green;
+			/* border: 1px solid green; /
 		}
 		/* trick to in-flow floated element */
 		/* #main:after { 
@@ -522,7 +522,7 @@ img.size-full {}
 		#content { /* main body content goes in here. Not sidebars.  */
 			clear: both;
 			padding: 0 5px;
-			border: 1px solid black;
+			/* border: 1px solid black; */
 		}
 
 		/* trick to in-flow floated element */
@@ -1806,8 +1806,8 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	content: "."; 
 	display: block; 
 	clear: both; /*right; */
-	/* height: 0; 
-	visibility: hidden; TEST */
+	height: 0; 
+	visibility: hidden;
 }
 
 /*=== Archive Box Styling Part 1 - List View (default) ===*/
@@ -1819,7 +1819,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 .archive.taxonomy .content-entry-wrap {
 	margin: 0 auto;
-	border: 1px solid orange;
+	/* border: 1px solid orange; */
 	width: 95%;
 }
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {

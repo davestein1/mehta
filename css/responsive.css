@@ -121,12 +121,12 @@
 	.searchwrap {
 		clear: both;
 		float: none;
-		width: 50%;
-		margin: 0 auto;
+		width: 40%;
+		margin: 10px auto;
 	}
 	
 		.searchwrap input[type="search"] {
-			padding: 0;
+			padding: 3px;
 		}
 	
 	/* Contact Banner -- Goose text */
