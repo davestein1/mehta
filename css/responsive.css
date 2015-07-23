@@ -77,8 +77,11 @@
 	#menu-secondary.menu  { float: left;}
 	
 	/* jQuery toggles t/f none in theme-footer.js */ 
-	#menu-primary div.wrap,
-	#menu-secondary div.wrap { display: inline !important; } 
+	#menu-primary div.wrap { display: inline !important; } 
+	#menu-secondary div.wrap { 
+		display: inline !important;
+		margin-bottom: 5px;
+	} 
 	
 	#menu-primary div.wrap ul li:nth-child(1) a,
 	#menu-secondary div.wrap ul li:nth-child(1) a { /* 1st on left needs none.  */
