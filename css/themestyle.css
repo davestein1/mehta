@@ -421,16 +421,6 @@ img.size-full {}
 	width: 57.5%;
 }
 
-	 /* trick to in-flow floated element */
-	 /* .layout-2c-l #content:after {
-		content: ".doneleft."; 
-		display: block; 
-		height: 10px; 
-		clear: both;
-		/ *visibility: hidden; * /
-	} */
-
-
 .layout-2c-l #sidebar-primary {
 	float: right; 
 	min-width: 290px;
@@ -445,6 +435,20 @@ img.size-full {}
 		clear: both; 
 		/ * visibility: hidden;  * /
 	} */ 
+
+	/* Tweak home page */
+	.home.layout-2c-l #content,
+	.home.layout-default #content {
+		float: left;
+		width: 77%;
+	}
+	.home.layout-2c-l #sidebar-primary, 
+	.home.layout-default #sidebar-primary {
+		float: right;
+		width: 20.5%;
+		min-width: 150px;
+	}
+
 
 .layout-2c-l #sidebar-secondary {
 	clear: right;
