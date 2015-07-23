@@ -22,7 +22,8 @@
 html {
 	color: #FAEBD7;
 	background: #36648B;
-	font-size: 62.5%; /* Allows rem = 0.1 * px as default. eg, 1.4rem =14px */
+	/* font-size: 62.5%; /* Set in reset.css 
+	Allows rem = 0.1 * px as default. eg, 1.4rem =14px  */
 }
 
 /* === Body === */
@@ -31,6 +32,9 @@ body {
 	font-family: 'Merriweather', Georgia, serif;
 	color: #FAEBD7;
 	background: #36648B;
+	/* font-size:17px;
+	font-size:1.7rem;
+	line-height:150%; /* set in reset.css and should cascade to a, p text. */
 }
 
 /* === Links === */
