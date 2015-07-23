@@ -137,6 +137,7 @@ strong strong {
 }
 cite,em {
 	font-style:italic;
+	text-shadow: 1px 1px 1px black;
 }
 cite cite,em em {
 	font-style:normal;
@@ -408,9 +409,9 @@ html {
 }
 body {
 	font-family: 'Open Sans','Trebuchet MS', sans-serif;
-	font-size:17px;
-	font-size:1.7rem;
-	line-height:150%; /* 1.7em; */
+	font-size:15px;
+	font-size:1.5rem;
+	line-height:130%; /* 1.7em; */
 	color: #444;
 }
 	/* Editor Style */
