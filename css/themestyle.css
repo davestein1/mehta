@@ -998,6 +998,14 @@ hr {
 		.widget ul li {
 			list-style: none;
 		}
+		
+		/* Widget nav items in sidebars */ 
+		#sidebar-primary .widget ul li a,
+		#sidebar-secindary .widget ul li a {
+			font-weight: 400;
+			text-shadow: 1px 1px 1px black;
+			border-bottom: 1px dotted #DFDFDF;
+		}
 
 	.widget-title {}
 	
