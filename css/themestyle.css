@@ -241,7 +241,7 @@ form {}
 			background: rgba(0,0,0,0.4); 
 		}
 		
-		select option:hover {
+		select option:selected {
 			color: red;
 			background: rgba(0,0,0,0.4); 
 		}
