@@ -23,7 +23,7 @@ jQuery( document ).ready( function($) {
 		replace Contact/Publishing with Contact.  */
 	var windowsize = $(window).width(); 
 	if (windowsize < 700) {
-		$("#menu-secondary #menu-item-26").text('Contact');
+		$("#menu-secondary #menu-item-26 a").text('Contact');
 	}
 
 });
