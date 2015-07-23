@@ -28,6 +28,7 @@
 		clear:both;
 		margin:0;
 	}
+		#sidebar-primary section { max-width: 310px; }
 
 	/* sidebar secondary
 	*******************************************/
@@ -39,6 +40,7 @@
 		clear:both;
 		margin:0;
 	}
+		#sidebar-secondary section { max-width: 310px; }
 
 	/* sidebar subsidiary
 	*******************************************/
