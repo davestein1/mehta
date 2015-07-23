@@ -1007,6 +1007,8 @@ hr {
 		margin: 0 auto;
 	}
 
+	#sidebar-primary section .textwidget  { text-align: center; }
+	
 #sidebar-secondary {
 	padding: 0 5px 25px 5px;
 }

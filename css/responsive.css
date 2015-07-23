@@ -116,7 +116,7 @@
 	/* Site name and description */
 	#branding	{ float: right; }
 	
-	#site-description { margin-bottom: 5px };
+	#site-description { margin-bottom: 5px; }
 	
 	.searchwrap {
 		clear: both;
@@ -125,7 +125,9 @@
 		margin: 0 auto;
 	}
 	
-		.searchwrap input[type="search"] { padding: 0; }
+		.searchwrap input[type="search"] {
+			padding: 0;
+		}
 	
 	/* Contact Banner -- Goose text */
 	.singular-page-12 .header-image-text  {
