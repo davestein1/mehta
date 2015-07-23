@@ -237,11 +237,9 @@ form {}
 	}
 	
 		select option {
+			color: orange;
 			background: rgba(0,0,0,0.4); 
 		}
-		
-		select a:hover,
-		select a:active { background: blue };
 		
 		body.iOS select { color: black; } /* Safari dropdowns very limited. */
 
