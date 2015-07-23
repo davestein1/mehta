@@ -18,5 +18,12 @@ jQuery( document ).ready( function($) {
 		  theme-footer.js uses imagesLoaded to wait. */
 		masonry_container.css({ opacity: 0 });
 	}
+	
+	/* Help the menu fit on one line on smaller screens. 
+		replace Contact/Publishing with Contact.  */
+	var windowsize = $(window).width(); 
+	if (windowsize < 700) {
+		$("#menu-secondary #menu-item-26").text('Contact');
+	}
 
 });
