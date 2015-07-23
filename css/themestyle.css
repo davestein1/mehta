@@ -999,10 +999,15 @@ hr {
 			list-style: none;
 		}
 
-		.widget-title {}
+	.widget-title {}
+	
+		/* Center all but Calendar sidebar titles. */
+		:not(.calendar) #sidebar-primary .widget-title { text-align: center;}
 		
-			.home #sidebar-primary .widget-title,
-			.singular-page-1895 #sidebar-primary .widget-title { text-align: center;}
+		.calendar #sidebar-primary .widget-title { text-align: left;}
+		
+		/* .home #sidebar-primary .widget-title,
+		.singular-page-1895 #sidebar-primary .widget-title { text-align: center;} */
 
 /* ====== Specific ====== */
 
