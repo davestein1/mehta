@@ -1000,6 +1000,9 @@ hr {
 		}
 
 		.widget-title {}
+		
+			.home #sidebar-primary .widget-title,
+			.singular-page-1895 #sidebar-primary .widget-title { text-align: center;}
 
 /* ====== Specific ====== */
 
