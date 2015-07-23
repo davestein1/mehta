@@ -410,6 +410,7 @@ img.size-full {}
 	width: 100%;
 }
 .layout-2c-l #content {
+	margin-top: 25px;
 	float: left;
 	width: 57.5%;
 }
