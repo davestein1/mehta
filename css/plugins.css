@@ -256,13 +256,19 @@ td.gigpress-date {
 	text-shadow: 1px 1px 1px #000;
 }
 
-.gigpress-info .description :not(.gigpress-title-item) {
+.gigpress-info .description .gigpress-info-item {
+	font-size: 95%;
+	background: gray;
+}
+
+.gigpress-info .description .gigpress-info-item {
 	font-size: 95%;
 	background: gray;
 }
 
 .gigpress-ds-more-info {
 	font-style: italic;
+	font-size: 85%;
 }
 .gigpress-ds-venue {
 }
