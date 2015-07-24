@@ -126,7 +126,7 @@ div.wpcf7 .placeheld {
 	color: #888;
 }
 
-/* ===Gigpress used for calendar events=== */
+/* === GIGPRESSs used for calendar events=== */
 
 /* Stock items from original css. */
 /* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
@@ -257,6 +257,7 @@ td.gigpress-date {
 }
 .gigpress-ds-description {
 	font-size: 95%;
+	margin-bottom: 0.5em;
 }
 .gigpress-ds-more-info {
 	font-style: italic;
