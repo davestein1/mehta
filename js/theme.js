@@ -19,7 +19,7 @@ jQuery( document ).ready( function($) {
 	
 	/* Help the menu fit on one line on screens narrower than 615 pixels. 
 		replace Contact/Publishing with Contact.  */
-	var windowsize = window.width(); 
+	var windowsize = $(window).width(); 
 	var test = $(window).width();
 	alert(windowsize + ' ' + test);
 	if (windowsize < 615) {
