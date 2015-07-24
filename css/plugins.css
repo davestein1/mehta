@@ -126,7 +126,7 @@ div.wpcf7 .placeheld {
 	color: #888;
 }
 
-/* === GIGPRESSs used for calendar events=== */
+/* === GIGPRESS used for calendar events=== */
 
 /* Stock items from original css. */
 /* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
@@ -224,10 +224,10 @@ a.gigpress-ical, a.gigpress-ical:hover {
 
 /* Now we make gigpress changes. */
 
+/* Set left row of table */
 td.gigpress-date {
-	/* width: 19%; */
-	min-width: 120px;
-	min-width: 12rem; /* 7.5em */
+	min-width: 150px;
+	min-width: 15rem; /* was 12rem was 7.5em */
 	word-break: keep-all;
 	word-wrap: normal;
 }
@@ -244,7 +244,7 @@ td.gigpress-date {
 }
 .gigpress-ds-description {
 	font-size: 95%;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.75em;
 }
 .gigpress-ds-more-info {
 	font-style: italic;
