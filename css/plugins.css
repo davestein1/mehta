@@ -224,7 +224,7 @@ a.gigpress-ical, a.gigpress-ical:hover {
 
 /* Now we make gigpress changes. */
 
-/* Start with table fixes */
+/* Start with table fixes 
 .gigpress-info,
 .gigpress-info .description,
 .gigpress-title-item,
@@ -233,12 +233,33 @@ a.gigpress-ical, a.gigpress-ical:hover {
 .gigpress-sidebar-title,
 .gigpress-sidebar-date {
 	color: #FAEBD7;
+} */
+
+td.gigpress-date {
+	/* width: 19%; */
+	min-width: 120px;
+	min-width: 12rem; /* 7.5em */
+	word-break: keep-all;
+	word-wrap: normal;
 }
+.gigpress-calendar-links-inner {
+	/* background-color: #36648B; */
+	border: 3px solid #CCC;
+	line-height: 20px;
+	line-height: 2rem;
+} /* NEW!!! Style add-to-calendar pop-up */
+/* Outer box .gigpress-calendar-links has arrow */
+
 .gigpress-title-item,
 .gigpress-sidebar-title {
 	font-size: 100%;
 	text-shadow: 1px 1px 1px #000;
 }
+
+.gigpress-info .description :not(.gigpress-title-item) {
+	font-size: 95%;
+}
+
 .gigpress-ds-more-info {
 	font-style: italic;
 }
@@ -253,19 +274,6 @@ a.gigpress-ical, a.gigpress-ical:hover {
 .gigpress-ds-event-end {
 	clear: both;
 }
-td.gigpress-date {
-	/* width: 19%; */
-	min-width: 120px;
-	min-width: 7.5em;
-	word-break: keep-all;
-	word-wrap: normal;
-}
-.gigpress-calendar-links-inner {
-	background-color: #36648B; 
-	border: 3px solid #CCC;
-	line-height: 20px;
-} /* NEW!!! Style add-to-calendar pop-up */
-/* Outer box .gigpress-calendar-links has arrow */
 
 #sidebar-primary .widget_gigpress h3.widget-title { margin-bottom: 5px; }
 
