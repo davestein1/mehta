@@ -258,6 +258,7 @@ td.gigpress-date {
 
 .gigpress-info .description :not(.gigpress-title-item) {
 	font-size: 95%;
+	background: gray;
 }
 
 .gigpress-ds-more-info {
