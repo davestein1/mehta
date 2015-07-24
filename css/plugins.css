@@ -256,12 +256,7 @@ td.gigpress-date {
 	text-shadow: 1px 1px 1px #000;
 }
 
-.gigpress-info .description .gigpress-info-item {
-	font-size: 95%;
-	background: gray;
-}
-
-.gigpress-info .description .gigpress-info-item {
+.gigpress-info .description .gigpress-info-item .gigpress-ds-description {
 	font-size: 95%;
 	background: gray;
 }
