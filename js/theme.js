@@ -1,6 +1,4 @@
 jQuery( document ).ready( function($) {
-
-	console.log('hello from theme.js');
 	
 	$("body").addClass( "js-active" );
 	
@@ -25,5 +23,6 @@ jQuery( document ).ready( function($) {
 	if (windowsize < 615) {
 		$("#menu-secondary #menu-item-26").find("a").text('Contact');
 	}
-
+	
+	console.log('hello from theme.js. Screen width is ' + windowsize + 'px.');
 });

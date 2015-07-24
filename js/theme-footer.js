@@ -1,8 +1,5 @@
 jQuery( document ).ready( function($) {
 
-	console.log('hello from theme-footer.js');
-
-
 	/* == Works Filter Name -- set text and class DS == */
 	if($( ".works-filter" ).is( ":visible" )) {
 		$(".works-filter-toggle").text("Close Filter");
@@ -106,8 +103,8 @@ jQuery( document ).ready( function($) {
 		return false;
 	});
 	
-	/* Responsive menus have toggles.
-		HERE WE TRY TOGGLNG BOTH PRIMARY AND SECONDARY MENUS */
+	/* Responsive menus have toggles. We have combines them. 
+		HERE WE TOGGLE BOTH PRIMARY AND SECONDARY MENUS */
 	$( '.menu-toggle button' ).click(
 		function() {
 			//$( this ).parents( '.menu' ).children( '.wrap' ).fadeToggle();
@@ -123,6 +120,8 @@ jQuery( document ).ready( function($) {
 		//alert("hello from the fully loaded page and theme-footer.js"); 
 		$('img.header-image').addClass( "colorup" );
 	});
+	
+	console.log('hello from theme-footer.js');
 
 });
 
