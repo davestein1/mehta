@@ -255,17 +255,16 @@ td.gigpress-date {
 	font-size: 100%;
 	text-shadow: 1px 1px 1px #000;
 }
-
-.gigpress-info .description .gigpress-info-item .gigpress-ds-description {
+.gigpress-ds-description {
 	font-size: 95%;
 	background: gray;
 }
-
 .gigpress-ds-more-info {
 	font-style: italic;
 	font-size: 85%;
 }
 .gigpress-ds-venue {
+	font-size: 85%;
 }
 .gigpress-ds-event-type {
 	float: right;
@@ -277,6 +276,7 @@ td.gigpress-date {
 	clear: both;
 }
 
+/* Widget Gigpress */
 #sidebar-primary .widget_gigpress h3.widget-title { margin-bottom: 5px; }
 
 #sidebar-primary .widget ul.gigpress-listing { 
