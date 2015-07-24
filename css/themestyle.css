@@ -1309,7 +1309,7 @@ hr {
 
 
 /* If javascript active, start with grayscale header. */
-.js-active img.header-image:not(.colorup) {
+.js-active img.header-image {
     -webkit-filter: grayscale(100%); 
     -moz-filter: grayscale(100%); 
     -ms-filter: grayscale(100%);
