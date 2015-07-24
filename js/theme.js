@@ -19,8 +19,9 @@ jQuery( document ).ready( function($) {
 	
 	/* Help the menu fit on one line on screens narrower than 615 pixels. 
 		replace Contact/Publishing with Contact.  */
-	var windowsize = $(window).width(); 
-	alert(windowsize);
+	var windowsize = window.width(); 
+	var test = $(window).width();
+	alert(windowsize + ' ' + test);
 	if (windowsize < 615) {
 		$("#menu-secondary #menu-item-26").find("a").text('Contact');
 	}
