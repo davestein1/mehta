@@ -1331,7 +1331,7 @@ hr {
 	 -o-animation-fill-mode: both;
 		animation-fill-mode: both;
 
-/* 	animation: colorit 2s linear 0s infinite alternate; /
+/* 	animation: colorit 2s linear 0s infinite alternate; */
 }
 
 @keyframes colorit {
