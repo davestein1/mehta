@@ -224,17 +224,17 @@ a.gigpress-ical, a.gigpress-ical:hover {
 
 /* Now we make gigpress changes. */
 
-/* TEST Force table to not be like tables anymore */
+/* TEST Force table to not be like tables anymore. might be useful for small screens. 
 table.gigpress-table, 
 .gigpress-table tbody, 
 .gigpress-table th, 
 .gigpress-table td, 
 .gigpress-table tr { 
 	display: block; 
-}
+} */
 
 /* Set left row of table */
-td.Xgigpress-date {
+td.gigpress-date {
 	width: 10em;
 	/*min-width: 150px;
 	min-width: 15rem; /* was 12rem was 7.5em */
