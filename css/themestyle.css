@@ -1309,7 +1309,7 @@ hr {
 
 
 /* If javascript active, start with grayscale header. */
-.js-active img.header-image {
+.js-active img.header-image:not(.colorup) {
     -webkit-filter: grayscale(100%); 
     -moz-filter: grayscale(100%); 
     -ms-filter: grayscale(100%);
@@ -1320,11 +1320,11 @@ hr {
 /* V2 Let JS In theme-footer add class coloruo to colorize the header. */
 .js-active img.header-image.colorup {
 	-webkit-animation: colorit 2s; /* Safari, Chrome and Opera > 12.1 */
-/*	-moz-animation: colorit 2s; /* Firefox < 16 */
-/*	-ms-animation: colorit 2s; /* Internet Explorer */
-/*	 -o-animation: colorit 2s; /* Opera < 12.1 */
-/*	    animation: colorit 2s;
-	*/
+	-moz-animation: colorit 2s; /* Firefox < 16 */
+	-ms-animation: colorit 2s; /* Internet Explorer */
+	 -o-animation: colorit 2s; /* Opera < 12.1 */
+	    animation: colorit 2s;
+
 	-webkit-animation-fill-mode: both;
 	-moz-animation-fill-mode: both;
 	-ms-animation-fill-mode: both;
