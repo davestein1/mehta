@@ -71,7 +71,7 @@
 	}
 	
 	#menu-primary.menu,
-	#menu-secondary.menu  { float: left;}
+	#menu-secondary.menu  { clear: left; float: left;}
 	
 	/* jQuery toggles t/f none in theme-footer.js */ 
 	#menu-primary div.wrap,
@@ -94,7 +94,7 @@
 	} 
 	
 	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
-		/*clear: right; */
+		/*clear: right; * /
 		content:".\a";
 		display: block;
 		clear: right; /* wrong? * /
