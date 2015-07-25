@@ -1226,7 +1226,7 @@ hr {
 	/* height: 30.4px;  30 */
 	/* line-height: 30.4px;  30 */
 	padding: 0 0 0 0px; /* 30 */
-	margin-left: 5px;
+	margin: -5px 0 0 5px;
 	/* border: 1px solid fuchsia; */
 }
 	.searchwrap .search-form {
