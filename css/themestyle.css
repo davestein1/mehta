@@ -495,6 +495,7 @@ img.size-full {}
 			#site-top #menu-primary {
 				/* border: 1px solid red; */
 				width: auto;
+				margin-top: 5px;
 			}
 			#site-top #menu-primary:after { /* trick to in-flow floated element */
 				content: "."; 
