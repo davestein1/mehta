@@ -21,8 +21,9 @@ jQuery( document ).ready( function($) {
 		replace Contact/Publishing with Contact.  */
 	var windowsize = window.innerWidth; 
 	/* alert(windowsize); */
-	if ( windowsize < 570 ) {
-		$("#menu-secondary #menu-item-26").find("a").text('Contact');
+	if ( windowsize < 761 ) {
+		//$("#menu-secondary #menu-item-26").find("a").text('Contact');
+		$("#menu-item-26 > a").text('Contact');
 	}
 	
 	console.log('hello from theme.js. Screen width is ' + windowsize + 'px.');
