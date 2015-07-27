@@ -117,15 +117,21 @@
 
 } */
 
-/* for mobile */
+/*=== For mobile Screens ===*/
 /* @media screen and (max-width: 480px) { */
 @media screen and (max-width: 510px) {
 	
 	/* Site Top and Header
 	*******************************************/
 	
-	/* Site name and description */
-	#branding	{ float: right; }
+	/* Site name and description. Squeze out some pixels. */
+	#branding {
+		float: right;
+		margin-right: 0;
+	}
+	 
+	#site-title,
+	#site-description { margin-right: 0; }
 	
 	#site-description { margin-bottom: 5px; }
 	
