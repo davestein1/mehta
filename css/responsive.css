@@ -123,6 +123,7 @@
 	
 	/* Site Top and Header
 	*******************************************/
+	#site-top { margin-right: 0; }
 	
 	/* Site name and description. Squeze out some pixels. */
 	#branding,
@@ -131,8 +132,8 @@
 		margin-right: 0;
 	}
 	 
-	#site-title,
-	#site-description { margin-right: 0; }
+	/* #site-title,
+	#site-description { margin-right: 0; } */
 	
 	#site-description { margin-bottom: 5px; }
 	
