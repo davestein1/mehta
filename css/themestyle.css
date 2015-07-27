@@ -241,7 +241,8 @@ form {}
 			background: rgba(0,0,0,0.4); 
 		}
 		
-		select option:selected {
+		select option:selected,
+		select option li:hover {
 			color: red;
 			background: rgba(0,0,0,0.4); 
 		}
@@ -1461,12 +1462,14 @@ img.header-image-orig:hover {
 /* Style Menus and items inside the Works Filter drop down.(below)  
 -----------------------------------------------------------------
 */
-/* Pulldown/Dropdown menus. */
-/* .ds_dropdown {
-	font-size: 0.80em;
-	background: rgba(0,0,0,0.4); 
-	color: #FAEBD7;
-} */
+/* Pulldown/Dropdown menus. TEST */
+.ds_dropdown {
+	text-align: center;
+}
+.ds_dropdown li:hover {
+	background: black; 
+	color: white;
+}
 
 	/* iOS Safari webkit menulist greatly limits what we can customize. */
 	/* body.iOS .ds_dropdown { color: black; } */
