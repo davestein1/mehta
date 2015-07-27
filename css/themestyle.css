@@ -496,7 +496,7 @@ img.size-full {}
 			#site-top #menu-primary {
 				/* border: 1px solid red; */
 				width: auto;
-				margin-top: 5px;
+				/* margin-top: 5px; */
 			}
 			#site-top #menu-primary:after { /* trick to in-flow floated element */
 				content: "."; 
@@ -1227,7 +1227,7 @@ hr {
 	/* height: 30.4px;  30 */
 	/* line-height: 30.4px;  30 */
 	padding: 0 0 0 0px; /* 30 */
-	margin: -5px 0 0 5px;
+	margin: -5px 0 10px 5px;
 	/* border: 1px solid fuchsia; */
 }
 	.searchwrap .search-form {
