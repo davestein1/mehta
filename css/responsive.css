@@ -125,7 +125,8 @@
 	*******************************************/
 	
 	/* Site name and description. Squeze out some pixels. */
-	#branding {
+	#branding,
+	.sidebar-header-inactive #branding {
 		float: right;
 		margin-right: 0;
 	}
