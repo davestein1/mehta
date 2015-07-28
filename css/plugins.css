@@ -9,9 +9,10 @@ div.wpcf7 {
 	div.wpcf7 form.wpcf7-form {
 		/* border: 1px solid #999; */
 		width: auto;
-		max-width: 400px;
+		max-width: 600px;
 		/* margin: 0 auto; /* Center the entire form */
 		margin: 5px;
+		padding: 0 20px;
 	}
 	
 		div.wpcf7 form.wpcf7-form input {
