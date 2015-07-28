@@ -1490,6 +1490,10 @@ img.header-image-orig:hover {
 	text-align: center;
 }
 
+	.singular-page-12 .search_baloon {
+		margin: 0;
+	)
+
 /* Recordings Filter Menu - simple | text | menu. */
 .menu-recordings-list-filter-container {text-align: center;}
 .menu-recordings-list-filter-container ul {margin:0;list-style:none;}
