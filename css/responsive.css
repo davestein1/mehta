@@ -344,10 +344,10 @@
 	/* Misc. adjustments*/
 	
 	/* Center contact print photos */ 
-	.print_photos figure .wp-caption {
+	.print_photos figure.wp-caption {
 		float: none !important;
 		display: block;
-		text-align: center;
+		margin: 0 auto;
 	}
 }
 
