@@ -340,6 +340,14 @@
 		padding:0;
 		margin:0 0 25px 0;
 	}
+	
+	/* Misc. adjustments*/
+	
+	/* Center contact print photos */ 
+	.print_photos figure .wp-caption {
+		display: block;
+		text-align: center;
+	}
 }
 
 

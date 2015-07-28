@@ -1431,6 +1431,10 @@ img.header-image-orig:hover {
 	border-bottom: none;
 }
 
+.print_photos {
+	display: inline;
+}
+
 .gallery_hide { display: none; }
 
 /* composition archive has genre buttons */
