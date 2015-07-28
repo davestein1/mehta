@@ -1470,11 +1470,13 @@ img.header-image-orig:hover {
 /* Pulldown/Dropdown menus. TEST */
 .ds_dropdown {
 	text-align: center;
+	background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
 }
-.ds_dropdown li:hover {
+
+/*.ds_dropdown li:hover {
 	background: black; 
 	color: white;
-}
+} */
 
 	/* iOS Safari webkit menulist greatly limits what we can customize. */
 	/* body.iOS .ds_dropdown { color: black; } */
