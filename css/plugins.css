@@ -201,6 +201,7 @@ div.gigpress-calendar-links {
 }
 
 div.gigpress-calendar-links span {
+	background-color: blue;
 	display: block;
 }
 
