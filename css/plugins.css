@@ -12,7 +12,7 @@ div.wpcf7 {
 		max-width: 600px;
 		/* margin: 0 auto; /* Center the entire form */
 		margin: 5px;
-		padding: 0 20px;
+		padding: 0 20px 0 5px;
 	}
 	
 		div.wpcf7 form.wpcf7-form input {
@@ -24,7 +24,7 @@ div.wpcf7 {
 }
 
 .wpcf7-form-control-wrap .wpcf7-quiz {
-	max-width: 10em; /* max "music" field width */
+	max-width: 12em; /* max "music" field width */
 }
 
 .wpcf7-form-control {
