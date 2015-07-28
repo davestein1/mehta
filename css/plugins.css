@@ -22,6 +22,11 @@ div.wpcf7 {
 .wpcf7-form-control-wrap .wpcf7-text {
 	max-width: 25em; /* max text field width */
 }
+
+.wpcf7-form-control-wrap .wpcf7-quiz {
+	max-width: 10em; /* max "music" field width */
+}
+
 .wpcf7-form-control {
 	
 }
