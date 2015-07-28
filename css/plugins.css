@@ -16,12 +16,11 @@ div.wpcf7 {
 	}
 	
 		div.wpcf7 form.wpcf7-form input {
-			/* max-width: 395px; */
 			color: black;
 		}
 
-.wpcf7-form-control-wrap {
-	max-width: 97%; /* max field width */
+.wpcf7-form-control-wrap .wpcf7-text {
+	max-width: 25em; /* max text field width */
 }
 .wpcf7-form-control {
 	
