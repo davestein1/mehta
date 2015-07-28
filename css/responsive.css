@@ -123,13 +123,18 @@
 	
 	/* Site Top and Header
 	*******************************************/
-	#site-top { padding-right: 0; }
+	#site-top { 
+		padding-right: 0;
+		border: 1px solid #999;
+		padding-left: 25px;
+	}
 	
 	/* Site name and description. Squeze out some pixels. */
 	#branding,
 	.sidebar-header-inactive #branding {
-		float: right;
-		/* margin-right: 0; */
+		/*float: right; */
+		float: none;
+		margin: 0 auto;
 	}
 	 
 	/* #site-title,
