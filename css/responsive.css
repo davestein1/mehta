@@ -125,9 +125,9 @@
 	*******************************************/
 	#site-top { 
 		padding-right: 0;
-		border: 1px solid #999;
-		padding-left: 25px;
 	}
+	
+	#header { padding-left: 62px; } /* make room for menu button */
 	
 	/* Site name and description. Squeze out some pixels. */
 	#branding,
