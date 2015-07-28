@@ -165,7 +165,7 @@ a.gigpress-links-toggle {
 	text-indent: -9999px;
 	width: 11px;
 	height: 11px;
-	background: transparent url(../../plugins/gigpress/images/calendar-toggle.png) no-repeat left top;
+	background: transparent url(/content-wp/plugins/gigpress/images/calendar-toggle.png) no-repeat left top;
 	cursor: pointer;
 }
 
@@ -188,7 +188,7 @@ div.gigpress-calendar-links {
 	top: -1.2em;
 	width: 15em;
 	padding-left: 7px;
-	background: transparent url(../../plugins/gigpress/images/calendar-links-bg.png) no-repeat left center;
+	background: transparent url(/content-wp/plugins/gigpress/images/calendar-links-bg.png) no-repeat left center;
 }
 
 .gigpress-calendar-links-inner {
@@ -218,11 +218,11 @@ p.gigpress-subscribe a {
 }
 
 a.gigpress-rss, a.gigpress-rss:hover {
-	background: transparent url(../../plugins/gigpress/images/feed-icon-12x12.png) no-repeat left center;	
+	background: transparent url(/content-wp/plugins/gigpress/images/feed-icon-12x12.png) no-repeat left center;	
 }
 
 a.gigpress-ical, a.gigpress-ical:hover {
-	background: transparent url(../../plugins/gigpress/images/icalendar-icon.gif) no-repeat left center;	
+	background: transparent url(/content-wp/plugins/gigpress/images/icalendar-icon.gif) no-repeat left center;	
 }
 
 /* This is just to include data for hcalendar support, but hide it from view */
