@@ -1872,7 +1872,11 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	background: rgba(0,0,0,0.4);
 }
 
-.archive.taxonomy .entry-media { float: right; padding: 0 0 5px 15px; }
+.archive.taxonomy .entry-media { 
+	float: right; 
+	padding: 0 0 5px 15px;
+	width: 200px; /* List view and? */
+}
 /* .archive.taxonomy .theme-thumbnail { float: left;  } */
 .archive.taxonomy .entry-header { float: none; padding-left: 0; text-align: left; }
 .archive.taxonomy .entry-summary .entry-summary-short { display: none; }
