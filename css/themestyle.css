@@ -1033,6 +1033,12 @@ hr {
 		margin: 0 auto;
 	}
 	
+	/* Massage Home Sidebar */
+	#sidebar-primary section {
+		float: none;
+		margin: 0 auto;
+	}
+	
 	/* Massage Collaborators sidebar*/
 	#sidebar-primary div.textwidget .collaborator_dropdowns select {
 		width: 77%;
