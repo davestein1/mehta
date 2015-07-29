@@ -1894,8 +1894,8 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	padding: 5px;
 	border: 2px double #ccc; 
 	border-radius: 10px;/* Grid view reduce padding for bigger image. */
-	width: 205px;
-	height: 205px;
+	width: 215px;
+	height: 215px;
 }
 .archive.taxonomy.col-grid .entry-inner { display: none; } /* Kills all text */
 
@@ -1903,6 +1903,8 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	float: none; 
 	padding: 0; 
 	margin: auto; /* test */
+	max-width: 200px;
+	max-height: 200px;
 	/* width: 100%; */
 }
 /* .archive.taxonomy.col-grid .entry-media:after { /* Trick to clear float * /
