@@ -228,22 +228,28 @@ form {}
 	textarea {}
 
 	select {
-		font-size: 0.80em;
-		background: rgba(0,0,0,0.4); 
 		color: #FAEBD7;
+		background: rgba(0,0,0,0.4); 
+		font-size: 0.80em;
+		word-break: here;
 		text-align: center;
 		padding: 3px 3px 6px 3px;
 		width: auto;
+		/* test */
+		white-space: nowrap;
+		overflow: hidden; 
+		text-overflow: ellipsis;
+		/* background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%; */
 	}
 	
 		select option {
-			color: orange;
+			color: #FAEBD7;
 			background: rgba(0,0,0,0.4); 
 		}
 		
 		select option:selected,
 		select option li:hover {
-			color: red;
+			color: #FAEBD7;
 			background: rgba(0,0,0,0.4); 
 		}
 		
@@ -1420,12 +1426,12 @@ hr {
 -----------------------------------------------------------------
 */
 /* Pulldown/Dropdown menus. TEST */
-.ds_dropdown {
+/* .ds_dropdown {
 	text-align: center;
 	background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
 }
 
-/*.ds_dropdown li:hover {
+.ds_dropdown li:hover {
 	background: black; 
 	color: white;
 } */
