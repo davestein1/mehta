@@ -1941,14 +1941,15 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 /* ---------------------------------------------------------------------- */
 
 /* Search results styling */
-.search article.hentry {
-	border: none;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-	background: rgba(0,0,0,0.4);
-	padding: 20px;
-	padding: 2rem;
+.search article {
+	margin-left: 0;
+	/* margin-bottom: 2rem; */
 	margin-bottom: 20px;
-	margin-bottom: 2rem;
+	padding: 20px;
+	/*padding: 2rem; */
+	/* border: 3px solid orange; */
+	box-shadow: 4px 6px 8px rgba(255, 255, 255, 0.5);
+	background: rgba(0,0,0,0.4);
 }
 /* results indented -- pp's easier to read. */
 .search .entry-wrap .entry-summary,
