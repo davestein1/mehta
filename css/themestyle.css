@@ -536,7 +536,7 @@ img.size-full {}
 		
 		#content { /* main body content goes in here. Not sidebars.  */
 			clear: both;
-			padding: 0 5px;
+			padding: 0 15px;
 			/* border: 1px solid black; */
 		}
 
@@ -1902,7 +1902,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy.col-grid .entry-media {
 	float: none; 
 	padding: 0; 
-	margin: auto; /* test */
+	margin: 0; /* test */
 	max-width: 200px;
 	max-height: 200px;
 	/* width: 100%; */
