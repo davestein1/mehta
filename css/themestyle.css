@@ -1292,50 +1292,8 @@ hr {
 	color: white;
 }
 
-/*
-	Theme Name: stargazer-child
-	Theme URI: http://themehybrid.com/themes/alice
-	Description: A very neat child theme for <a href="http://themehybrid.com/themes/stargazer">Stargazer WordPress Theme</a> (The most advanced theme ever crafted). The child Theme gives your site a whole different look. It also inherits all the awesome feature from its parent theme. Check out the <a href="http://bit.ly/alice-demo">live demo site here</a>. You may find all documentations about the parent theme at <a href="http://www.themehybrid.com/">ThemeHybrid</a> and about the child theme at <a href="http://www.blogsynthesis.com/themes/alice/">BlogSynthesis</a>.
-	Tags:			one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, gray, black, white
-	Author:			Anand Kumar
-	Author URI:		http://www.blogsynthesis.com/
-	Version:		1.0.1
-	Text Domain:	alice
-	Template:		stargazer
-	License:		GNU General Public License v2.0 or later
-	License URI: 	http://www.opensource.org/licenses/gpl-license.php
-*/
 
-
-/* Change Defaults  */
-
-
-
-/* If javascript active, start with grayscale header. */
-.XXXXXjs-active img.header-image {
-    -webkit-filter: grayscale(100%); 
-    -moz-filter: grayscale(100%); 
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%); 
-}
-
-/* V2 Let JS In theme-footer add class coloruo to colorize the header. */
-.js-active img.header-image.colorup {
-	-webkit-animation: colorit 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: colorit 2s; /* Firefox < 16 */
-	-ms-animation: colorit 2s; /* Internet Explorer */
-	 -o-animation: colorit 2s; /* Opera < 12.1 */
-	    animation: colorit 2s;
-
-	-webkit-animation-fill-mode: both;
-	-moz-animation-fill-mode: both;
-	-ms-animation-fill-mode: both;
-	 -o-animation-fill-mode: both;
-		animation-fill-mode: both;
-
-/* 	animation: colorit 2s linear 0s infinite alternate; */
-}
+/* Header Animation */
 
 @keyframes colorit {
     from { filter: grayscale(1); }
@@ -1365,43 +1323,32 @@ hr {
     from { grayscale: 1; }
     to   { grayscale: 0; }
 }
-/*
-img.header-image-orig {
-	-webkit-transition: all 0.7s ease-in-out;
-	-moz-transition: all 0.7s ease-in-out;
-	-ms-transition: all 0.7s ease-in-out;
-	-o-transition: all 0.7s ease-in-out;
-	transition: all 0.7s ease-in-out; 
-	
-    filter: gray; /* For IE 6 - 9 * /
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android * /
 
-    -webkit-filter: grayscale(0%); 
-    -moz-filter: grayscale(0%); 
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: grayscale(0%); 
-
+/* If javascript active, start with grayscale header. */
+.XXXXjs-active img.header-image {
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%); 
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); 
 }
 
-img.header-image-orig:hover {
-	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-	-webkit-filter: grayscale(0%);
-    filter: grayscale(0); 
-}
-*/
+/* V2 Let JS In theme-footer add class coloruo to colorize the header. */
+.js-active img.header-image.colorup {
+	-webkit-animation: colorit 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: colorit 2s; /* Firefox < 16 */
+	-ms-animation: colorit 2s; /* Internet Explorer */
+	 -o-animation: colorit 2s; /* Opera < 12.1 */
+	    animation: colorit 2s;
 
-/* DS Tweaks Stargazer CSS */
-	
-/* Emulate what JT Stargazer does. 
-.wp-caption { position: relative; }
-.wp-caption .wp-caption-text {
-	position:   absolute;
-	bottom:     1.5rem;
-	padding:    0.75rem;
-	font-size:  0.9375rem;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	 -o-animation-fill-mode: both;
+		animation-fill-mode: both;
 }
-*/
+
+/* DS Tweaks JT TH  CSS */
 
 /* DS Jake site customizing.  */
 
