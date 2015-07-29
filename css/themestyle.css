@@ -1293,7 +1293,8 @@ hr {
 }
 
 
-/* Header Animation */
+/* Header Animation keyframes. Must come before its use. 
+	Adapted from JT's Stargazer */
 
 @keyframes colorit {
     from { filter: grayscale(1); }
@@ -1325,7 +1326,7 @@ hr {
 }
 
 /* If javascript active, start with grayscale header. */
-.XXXXjs-active img.header-image {
+.js-active img.header-image {
     -webkit-filter: grayscale(100%); 
     -moz-filter: grayscale(100%); 
     -ms-filter: grayscale(100%);
@@ -1333,7 +1334,7 @@ hr {
     filter: grayscale(100%); 
 }
 
-/* V2 Let JS In theme-footer add class coloruo to colorize the header. */
+/* Let JS In theme-footer add class colorup to colorize the header. */
 .js-active img.header-image.colorup {
 	-webkit-animation: colorit 2s; /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: colorit 2s; /* Firefox < 16 */
@@ -1348,13 +1349,11 @@ hr {
 		animation-fill-mode: both;
 }
 
-/* DS Tweaks JT TH  CSS */
-
 /* DS Jake site customizing.  */
 
 .home .entry-title { display: none; }
 
-/* Automatically inserted text/graohics after singular content.  */
+/* Automatically inserted text/graphics after singular content.  */
 /* wrapper */
 .autoinsert {
 	padding: 1em 0 0 0;
@@ -1899,11 +1898,12 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	height: 205px;
 }
 .archive.taxonomy.col-grid .entry-inner { display: none; } /* Kills all text */
+
 .archive.taxonomy.col-grid .entry-media {
 	float: none; 
 	padding: 0; 
-	margin: 0 auto; /* test */
-	width: 100%;
+	margin: auto; /* test */
+	/* width: 100%; */
 }
 /* .archive.taxonomy.col-grid .entry-media:after { /* Trick to clear float * /
 	content:".";display:block;height:0;clear:both;visibility:hidden;
