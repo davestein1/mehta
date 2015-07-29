@@ -1940,6 +1940,22 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .archive.taxonomy.col-tile .entry-meta { display: none; }
 /* ---------------------------------------------------------------------- */
 
+/* Search results styling */
+.search article.hentry {
+	border: none;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	background: rgba(0,0,0,0.4);
+	padding: 20px;
+	padding: 2rem;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+}
+/* results indented -- pp's easier to read. */
+.search .entry-wrap .entry-summary,
+.search .entry-wrap .entry-meta {
+	margin-left: 12px;
+}
+
 /**
  * Lightbox and Magnific Popup 
 Magnific Popup lightbox runs magnific-custom.js and sets body class mfp-active. 
