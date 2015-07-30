@@ -242,17 +242,18 @@ form {}
 		/* background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%; */
 	}
 	
-		select option {
+		select option,
+		select option input {
 			color: #FAEBD7;
 			background: rgba(0,0,0,0.4); 
 		}
 		
-		select option:selected,
+		/*select option:selected,
 		select option li:hover,
 		select:hover {
-			color: #FAEBD7;
+			color: black;
 			background: rgba(0,0,0,0.4); 
-		}
+		} */
 		
 		body.iOS select { color: black; } /* Safari dropdowns very limited. */
 
