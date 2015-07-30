@@ -455,7 +455,7 @@ img.size-full {}
 		float: right;
 		width: 24.5%;
 		min-width: 150px;
-		padding: 30px 0 5px 5px;
+		padding: 30px 5px 5px 5px;
 	}
 
 
@@ -1041,9 +1041,8 @@ hr {
 	}
 	
 	/* Massage Home Sidebar */
-	#sidebar-primary section {
-		float: none;
-		margin: 0 auto;
+	.home #sidebar-primary section ul {
+		margin-left: 1em;
 	}
 	
 	/* Massage Collaborators sidebar*/
