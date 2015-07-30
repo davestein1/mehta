@@ -1044,7 +1044,11 @@ hr {
 	.home #sidebar-primary section ul {
 		margin-left: 1em;
 	}
-	
+
+	.home #sidebar-primary section {
+		padding-right: 5px;
+	}
+
 	/* Massage Collaborators sidebar*/
 	#sidebar-primary div.textwidget .collaborator_dropdowns select {
 		width: 77%;
