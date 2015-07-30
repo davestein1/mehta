@@ -147,6 +147,11 @@ table {
 		/* vertical-align: bottom; /* Fix for multiline situations */
 		vertical-align: top; 
 	}
+	
+		/* Table on Contact Page */
+		.singular-page-12 .table-no-border td {
+			min-width: 18rem ;
+		}
 
 	caption {}
 
