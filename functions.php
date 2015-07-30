@@ -791,7 +791,7 @@ function add_other_to_entry_content($content) {
 	ob_end_clean();
 	if ($output) $content .= $output;
 	
-	return $content . '[add_other]';
+	return $content; /* . '[add_other]'; Debug */
 }
 
 function display_other_images() {

@@ -820,7 +820,7 @@ hr {
 				.singular-page-1895 #main header .entry-title { 
 					display: none; }
 
-		.entry-byline {}
+		.entry-byline { display: none; } /* Not using now */
 
 			.entry-byline a {}
 			.entry-byline a:hover {}
