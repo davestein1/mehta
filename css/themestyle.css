@@ -809,6 +809,13 @@ hr {
 	/* === Post Header === */
 
 	.entry-header {}
+	
+		/* Pad the top of these CPT pages only */
+		.singular-the-works .entry-header,
+		.singular-the-recordings .entry-header { 
+			margin-top: 10px;
+			margin-top: 1rem;
+		}
 
 		.entry-title {}
 
