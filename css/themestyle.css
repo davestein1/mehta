@@ -229,7 +229,7 @@ form {}
 
 	select {
 		color: #FAEBD7;
-		background: rgba(0,0,0,0.4); 
+		background: rgba(0,0,0,0.4) !important;
 		font-size: 0.80em;
 		word-break: here;
 		text-align: center;
@@ -242,8 +242,7 @@ form {}
 		/* background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%; */
 	}
 	
-		select option,
-		select input {
+		select option {
 			color: #FAEBD7;
 			background: rgba(0,0,0,0.4); 
 		}
