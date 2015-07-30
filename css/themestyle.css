@@ -248,7 +248,8 @@ form {}
 		}
 		
 		select option:selected,
-		select option li:hover {
+		select option li:hover,
+		select:hover {
 			color: #FAEBD7;
 			background: rgba(0,0,0,0.4); 
 		}
