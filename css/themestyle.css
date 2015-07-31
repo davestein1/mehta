@@ -843,7 +843,7 @@ hr {
 		background: transparent; /* #f9f9f9; */
 		border: 1px solid #ddd;
 	}
-
+	
 	.entry-summary {}
 
 	/* === Post Footer === */
@@ -1380,6 +1380,14 @@ hr {
 /* DS Jake site customizing.  */
 
 .home .entry-title { display: none; }
+
+.entry-content .headline { float: right; }
+
+	.entry-content .headline p { 
+		line-height: 150%;
+		margin-bottom: 11px;
+		margin-bottom: 0.5em;
+	}
 
 /* Automatically inserted text/graphics after singular content.  */
 /* wrapper */
