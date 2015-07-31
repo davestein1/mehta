@@ -1381,13 +1381,26 @@ hr {
 
 .home .entry-title { display: none; }
 
-.entry-content .headline { float: right; }
+/* Headline above featured works */
+.entry-content .headline { 
+	float: right;
+	max-width: 400px;
+}
 
 	.entry-content .headline p { 
 		line-height: 150%;
 		margin-bottom: 11px;
 		margin-bottom: 0.5em;
 	}
+	
+	/* trick to add floated element to flow */
+	.entry-content .headline:after {
+			content: "."; 
+			display: block; 
+			height: 0px; 
+			clear: both;
+			visibility: hidden;
+		}
 
 /* Automatically inserted text/graphics after singular content.  */
 /* wrapper */
