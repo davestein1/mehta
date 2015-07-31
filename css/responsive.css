@@ -248,12 +248,20 @@
 		}
 		
 	
-	/* Toggles 
+	/* Toggles and Masonry Tweaks
 	*******************************************/
-	/* On phone size dont display list toggle on work, recordings */
+	/* On phone size dont display list toggle on work, recordings
 	body.archive.col-masonry-active.taxonomy-category-recordings .works-list-toggle,
 	body.archive.col-masonry-active.taxonomy-category-works .works-list-toggle {
 		display: none;
+	} */
+	
+	/* List view is Tiny. Dont float the image. Center it. */
+	.archive.taxonomy .entry-media { 
+		float: none; 
+		width: 100%; 
+		margin: 0 0 5px 0; 
+		padding: 0; 
 	}
 	
 	/* Content
