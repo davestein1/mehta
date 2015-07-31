@@ -248,6 +248,14 @@
 		}
 		
 	
+	/* Toggles 
+	*******************************************/
+	/* On phone size dont display list toggle on work, recordings */
+	body.archive.col-masonry-active.taxonomy-category-recordings .works-list-toggle,
+	body.archive.col-masonry-active.taxonomy-category-works .works-list-toggle {
+		display: none;
+	}
+	
 	/* Content
 	*******************************************/
 

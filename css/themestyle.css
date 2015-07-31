@@ -946,7 +946,7 @@ hr {
 
 	.loop-title {}
 
-	.loop-description {}
+	.loop-description { display: none;} /* Not currently used */
 
 /* ====== PAGINATION ====== */
 
@@ -1677,7 +1677,7 @@ body.archive.col-masinry-active.taxonomy-post_tag .works-filter-toggle
 .works-list-toggle { display: none; }
 
 /* The mobile version of the toggles hide the link text and increases the icon size */
-@media (max-width: 480px) {
+@media (max-width: 510px) {
 
 	/* Thank you W3C for span support inside anchors. */
 	a.works-grid-toggle span,
@@ -1891,14 +1891,14 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	If col-auto and col-2,3,4 unset then width remains 100% */
 
 /* == Auto set no. of Columns == Responsive */
-@media (max-width: 480px) {
+@media (max-width: 510px) {
 	.col-auto.col-tile .content-entry-wrap > .entry,
 	.col-auto.col-grid .content-entry-wrap > .entry {
 		width: 90%;
 		padding: 3%;
 	}
 }
-@media (min-width: 481px) and (max-width: 860px) {
+@media (min-width: 511px) and (max-width: 860px) {
 	.col-auto.col-tile .content-entry-wrap > .entry,
 	.col-auto.col-grid .content-entry-wrap > .entry{
 		width: 47%;
