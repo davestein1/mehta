@@ -73,6 +73,10 @@ jQuery( document ).ready( function($) {
 		$( "body" ).removeClass("col-grid col-tile");
 		$( "body" ).addClass("col-list");
 		var masonry_container = $('.col-masonry-active .content-entry-wrap');
+		/* work around list view bug with double call */
+		setTimeout(function() {
+			masonry_container.masonry();
+		}, 1000);
 		masonry_container.masonry();
 	});
 
