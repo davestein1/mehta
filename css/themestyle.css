@@ -1676,9 +1676,9 @@ body.archive.col-masinry-active.taxonomy-post_tag .works-filter-toggle
 .works-tile-toggle,
 .works-list-toggle { display: none; }
 
-.works-grid-toggle a,
-.works-tile-toggle a,
-.works-list-toggle a { color: #EECBAD; }
+.works-grid-toggle,
+.works-tile-toggle,
+.works-list-toggle { color: #EECBAD; }
 
 /* The mobile version of the toggles hide the link text and increases the icon size */
 @media (max-width: 510px) {
