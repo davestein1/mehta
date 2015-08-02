@@ -981,7 +981,7 @@ hr {
 	.loop-pagination .page-numbers {
 		display: inline-block;
 		padding: 8px 11px;
-		margin: 0 20px 0 0;
+		margin: 0 20px 10px 0;
 		font: normal normal bold 13px/13px Arial, Verdana, sans-serif;
 	}
 	
@@ -1623,13 +1623,13 @@ body.archive.col-masinry-active.taxonomy-post_tag .works-filter-toggle
 	/* background: #E5AF69;
 	background: #222; */
 	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
-	color: #fff;
+	color: #EECBAD;
 	margin-right: 15%;
 }
 .works-filter-toggle:hover,
 .works-filter-toggle:focus{
 	border: none;
-	color: #faebd7;
+	color: white;
 	background: #222;
 }
 .works-filter-toggle:after{
@@ -1675,6 +1675,10 @@ body.archive.col-masinry-active.taxonomy-post_tag .works-filter-toggle
 .works-grid-toggle,
 .works-tile-toggle,
 .works-list-toggle { display: none; }
+
+.works-grid-toggle a,
+.works-tile-toggle a,
+.works-list-toggle a { color: #EECBAD; }
 
 /* The mobile version of the toggles hide the link text and increases the icon size */
 @media (max-width: 510px) {

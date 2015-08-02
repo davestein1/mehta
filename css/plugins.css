@@ -15,7 +15,8 @@ div.wpcf7 {
 		padding: 0 20px 0 5px;
 	}
 	
-		div.wpcf7 form.wpcf7-form input {
+		div.wpcf7 form.wpcf7-form input,
+		div.wpcf7 form.wpcf7-form textarea {
 			color: black;
 		}
 
