@@ -1823,7 +1823,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 	.archive.taxonomy .entry-media a { border-bottom: none; } /* no dotted thumbnails */
 
-	.archive.taxonomy .entry-media img {
+	.archive.taxonomy .entry-media img:not(.icon-thumbnail) {
 		padding: 2px;
 		background: transparent; /* #f9f9f9; */
 		border: 1px solid #DFDFDF;
