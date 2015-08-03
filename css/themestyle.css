@@ -838,10 +838,11 @@ hr {
 
 	.entry-content {}
 	
-	.entry-content img {
+	.entry-content img,
+	.search img {
 		padding: 2px;
 		background: transparent; /* #f9f9f9; */
-		border: 1px solid #ddd;
+		border: 1px solid #DFDFDF;
 	}
 	
 	.entry-summary {}
@@ -1820,7 +1821,13 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	text-align: center;
 }
 
-.archive.taxonomy .entry-media a { border-bottom: none; } /* no dotted thumbnails */
+	.archive.taxonomy .entry-media a { border-bottom: none; } /* no dotted thumbnails */
+
+	.archive.taxonomy .entry-media img {
+		padding: 2px;
+		background: transparent; /* #f9f9f9; */
+		border: 1px solid #DFDFDF;
+	}
 
 .archive.taxonomy .entry-wrap .entry-title{
 	/* font-size: 17px; */

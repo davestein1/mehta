@@ -1,5 +1,5 @@
 <article <?php hybrid_attr( 'post' ); ?>>
-<!-- hello from comtent.php -->
+<!-- hello from content.php -->
 	<?php if ( is_singular( get_post_type() ) ) : // If viewing a single post. ?>
 
 		<header class="entry-header">
