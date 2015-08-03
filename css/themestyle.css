@@ -1353,8 +1353,8 @@ hr {
     to   { grayscale: 0; }
 }
 
-/* If javascript active, start with grayscale header. */
-.js-active img.header-image {
+/* If javascript active, theme.js will add class grayit to start with grayscale header. */
+.js-active img.header-image.grayit {
     -webkit-filter: grayscale(100%); 
     -moz-filter: grayscale(100%); 
     -ms-filter: grayscale(100%);
@@ -1362,8 +1362,8 @@ hr {
     filter: grayscale(100%); 
 }
 
-/* Let JS In theme-footer add class colorup to colorize the header. */
-.js-active img.header-image.colorup {
+/* Let JS In theme-footer remove class grayit to colorize the header. */
+.js-active img.header-image:not(.grayit) {
 	-webkit-animation: colorit 2s; /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: colorit 2s; /* Firefox < 16 */
 	-ms-animation: colorit 2s; /* Internet Explorer */

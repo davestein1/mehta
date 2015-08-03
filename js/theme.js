@@ -2,6 +2,8 @@ jQuery( document ).ready( function($) {
 	
 	$("body").addClass( "js-active" );
 	
+	$('img.header-image').addClass( "grayit" ); /* gray header. Removed by theme~footer.js */
+	
 	/* === GRID and TILE View Masonry ===
 		Just turn it off until footer js turns it on. */
 	if ( $("body").hasClass( "col-masonry" ) ) {

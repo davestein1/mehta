@@ -122,7 +122,7 @@ jQuery( document ).ready( function($) {
 	/* Banner loads as grayscale. Color as signal we have fully loaded. */
 	$( window ).load( function() {
 		//alert("hello from the fully loaded page and theme-footer.js"); 
-		$('img.header-image').addClass( "colorup" );
+		$('img.header-image').removeClass( "grayit" );
 	});
 	
 	console.log('hello from theme-footer.js');
