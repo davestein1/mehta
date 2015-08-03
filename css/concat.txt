@@ -644,8 +644,6 @@ hr,h1,h2,h3,h4,h5,h6,figure,p,ul,ol,dl,address,pre,object,fieldset,table,table c
 	background: #fff;
 }
 
-
-
 /**
  * Theme Name:  Mehta
  * Theme URI:   http://steinbay.com/themes/mehta 
@@ -1491,7 +1489,7 @@ hr {
 		background: transparent; /* #f9f9f9; */
 		border: 1px solid #ddd;
 	}
-
+	
 	.entry-summary {}
 
 	/* === Post Footer === */
@@ -1594,7 +1592,7 @@ hr {
 
 	.loop-title {}
 
-	.loop-description {}
+	.loop-description { display: none;} /* Not currently used */
 
 /* ====== PAGINATION ====== */
 
@@ -1629,7 +1627,7 @@ hr {
 	.loop-pagination .page-numbers {
 		display: inline-block;
 		padding: 8px 11px;
-		margin: 0 20px 0 0;
+		margin: 0 20px 10px 0;
 		font: normal normal bold 13px/13px Arial, Verdana, sans-serif;
 	}
 	
@@ -2001,8 +1999,8 @@ hr {
     to   { grayscale: 0; }
 }
 
-/* If javascript active, start with grayscale header. */
-.js-active img.header-image {
+/* If javascript active, theme.js will add class grayit to start with grayscale header. */
+.js-active img.header-image.grayit {
     -webkit-filter: grayscale(100%); 
     -moz-filter: grayscale(100%); 
     -ms-filter: grayscale(100%);
@@ -2010,13 +2008,13 @@ hr {
     filter: grayscale(100%); 
 }
 
-/* Let JS In theme-footer add class colorup to colorize the header. */
-.js-active img.header-image.colorup {
-	-webkit-animation: colorit 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: colorit 2s; /* Firefox < 16 */
-	-ms-animation: colorit 2s; /* Internet Explorer */
-	 -o-animation: colorit 2s; /* Opera < 12.1 */
-	    animation: colorit 2s;
+/* Let JS In theme-footer remove class grayit to colorize the header. */
+.js-active img.header-image:not(.grayit) {
+	-webkit-animation: colorit 4s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: colorit 4s; /* Firefox < 16 */
+	-ms-animation: colorit 4s; /* Internet Explorer */
+	 -o-animation: colorit 4s; /* Opera < 12.1 */
+	    animation: colorit 4s;
 
 	-webkit-animation-fill-mode: both;
 	-moz-animation-fill-mode: both;
@@ -2028,6 +2026,29 @@ hr {
 /* DS Jake site customizing.  */
 
 .home .entry-title { display: none; }
+
+/* Headline above featured works */
+.entry-content .headline { 
+	float: right;
+	max-width: 400px;
+}
+
+	.entry-content .headline p { 
+		line-height: 150%;
+		text-align: right;
+		font-size: 85%;
+		margin-bottom: 11px;
+		margin-bottom: 0.5em;
+	}
+	
+	/* trick to add floated element to flow */
+	.entry-content .headline:after {
+			content: "."; 
+			display: block; 
+			height: 0px; 
+			clear: both;
+			visibility: hidden;
+		}
 
 /* Automatically inserted text/graphics after singular content.  */
 /* wrapper */
@@ -2248,13 +2269,13 @@ body.archive.col-masinry-active.taxonomy-post_tag .works-filter-toggle
 	/* background: #E5AF69;
 	background: #222; */
 	background: rgba(0,0,0,0.4); /* DS TEST was #222; */
-	color: #fff;
+	color: #EECBAD;
 	margin-right: 15%;
 }
 .works-filter-toggle:hover,
 .works-filter-toggle:focus{
 	border: none;
-	color: #faebd7;
+	color: white;
 	background: #222;
 }
 .works-filter-toggle:after{
@@ -2301,8 +2322,12 @@ body.archive.col-masinry-active.taxonomy-post_tag .works-filter-toggle
 .works-tile-toggle,
 .works-list-toggle { display: none; }
 
+.works-grid-toggle,
+.works-tile-toggle,
+.works-list-toggle { color: #EECBAD; }
+
 /* The mobile version of the toggles hide the link text and increases the icon size */
-@media (max-width: 480px) {
+@media (max-width: 510px) {
 
 	/* Thank you W3C for span support inside anchors. */
 	a.works-grid-toggle span,
@@ -2516,14 +2541,14 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	If col-auto and col-2,3,4 unset then width remains 100% */
 
 /* == Auto set no. of Columns == Responsive */
-@media (max-width: 480px) {
+@media (max-width: 510px) {
 	.col-auto.col-tile .content-entry-wrap > .entry,
 	.col-auto.col-grid .content-entry-wrap > .entry {
 		width: 90%;
 		padding: 3%;
 	}
 }
-@media (min-width: 481px) and (max-width: 860px) {
+@media (min-width: 511px) and (max-width: 860px) {
 	.col-auto.col-tile .content-entry-wrap > .entry,
 	.col-auto.col-grid .content-entry-wrap > .entry{
 		width: 47%;
@@ -2685,369 +2710,6 @@ in our custom popuos we create a new div classed mfp-dscaption inside mfp-title.
 
 /* END of themestyle.css */
 
-
-/**
- * Media Queries overwrite for style.css CSS
- * Mehta Theme
- */
-
-/* for tablet */
-/* @media screen and (min-width: 481px) and (max-width: 760px) { */
-@media screen and (min-width: 511px) and (max-width: 760px) {
-
-	/* content
-	*******************************************/
-	.layout-default #content,
-	.layout-2c-l #content,
-	.layout-2c-r #content,
-	.home.layout-default #content,
-	.home.layout-2c-l #content,
-	.home.layout-2c-r #content{
-		width:100%;
-		margin:0;
-		margin-bottom:25px;
-		clear:both;
-	}
-
-	/* sidebar primary
-	*******************************************/
-	.layout-default #sidebar-primary,
-	.layout-2c-l #sidebar-primary,
-	.layout-2c-r #sidebar-primary,
-	.home.layout-default #sidebar-primary,
-	.home.layout-2c-l #sidebar-primary,
-	.home.layout-2c-r #sidebar-primary	{
-		width:100%;
-		float:none;
-		clear:both;
-		margin:0;
-	}
-		#sidebar-primary section { max-width: 310px; }
-
-	/* sidebar secondary
-	*******************************************/
-	.layout-default #sidebar-secondary,
-	.layout-2c-l #sidebar-secondary,
-	.layout-2c-r #sidebar-secondary
-	.home.layout-default #sidebar-secondary,
-	.home.layout-2c-l #sidebar-secondary,
-	.home.layout-2c-r #sidebar-secondary{
-		width:100%;
-		float:none;
-		clear:both;
-		margin:0;
-	}
-		#sidebar-secondary section { max-width: 310px; }
-
-	/* sidebar subsidiary
-	*******************************************/
-	#sidebar-subsidiary .widget{
-		width:47.5%;
-	}
-	#sidebar-subsidiary div.widget:nth-child(odd) {
-		clear:left;
-	}
-	#sidebar-subsidiary div.widget:nth-child(even) {
-		clear:right;
-	}
-	
-	/* Menu adjustments as screen shrinks and top rows shift. */
-	
-	#menu-primary,
-	#menu-secondary { 
-		width: 100%; 
-	}
-	
-	#menu-primary.menu,
-	#menu-secondary.menu  { clear: left; float: left;}
-	
-	/* jQuery toggles t/f none in theme-footer.js */ 
-	#menu-primary div.wrap,
-	#menu-secondary div.wrap { display: inline !important; } 
-	
-	#menu-primary div.wrap ul li:nth-child(1) a,
-	#menu-secondary div.wrap ul li:nth-child(1) a { /* 1st on left needs none.  */
-		padding-left: 0;
-	}
-	
-	/*#menu-secondary div.wrap ul li:last-child a {
-		width: 5px;
-		overflow: hidden;
-		color: transparent;
-	}
-	
-	#menu-secondary div.wrap ul li:last-child a:after {
-		content: 'Contact';
-		font-size: 80%;
-	} 
-	
-	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
-		/*clear: right; * /
-		content:".\a";
-		display: block;
-		clear: right; /* wrong? * /
-	} */
-	
-	/* .searchwrap .search-form { margin-top: -5px }; */
-	
-}
-
-/* for another tablet 
-@media screen and (max-width: 600px) {
-
-	#branding{
-		width:100%;
-	}
-	#sidebar-header{
-		width:100%;
-		height:auto;
-	}
-
-} */
-
-/*=== For mobile Screens ===*/
-/* @media screen and (max-width: 480px) { */
-@media screen and (max-width: 510px) {
-	
-	/* Site Top and Header
-	*******************************************/
-	#site-top { 
-		padding-right: 0;
-	}
-	
-	#header { padding-left: 62px; } /* make room for menu button */
-	
-	/* Site name and description. Squeze out some pixels. */
-	#branding,
-	.sidebar-header-inactive #branding {
-		/*float: right; */
-		float: none;
-		margin: 0 auto;
-	}
-	 
-	/* #site-title,
-	#site-description { margin-right: 0; } */
-	
-	#site-description { margin-bottom: 5px; }
-	
-	.searchwrap {
-		clear: both;
-		float: none;
-		width: 40%;
-		margin: 10px auto;
-	}
-	
-		.searchwrap input[type="search"] {
-			padding: 3px;
-		}
-	
-	/* Contact Banner -- Goose text */
-	.singular-page-12 .header-image-text  {
-		font-size: 2.2rem;
-		letter-spacing: 2.5pt;
-	}
-	
-	/* Recordings Banner -- Goose text */
-	.singular-the_recordings .header-image-text,
-	.taxonomy-category-recordings .header-image-text {
-		font-size: 2.2rem;
-		letter-spacing: 2.5pt;
-	}
-
-
-	/* Menus
-	*******************************************/
-	.menu-toggle { padding: 0; margin: 0; }
-	
-	#menu-primary, 
-	#menu-secondary {
-		width: 100%;
-	}
-	
-	#menu-primary.menu, 
-	#menu-secondary.menu {
-		width: 100%;
-		float: none;
-	}
-	
-	/* #menu-primary.menu,
-	#menu-primary .menu-toggle button { float: right; }
-	#menu-secondary.menu { float: left; }
-	*/
-	
-	#menu-primary .menu-toggle { display: none; }
-	
-	#menu-secondary .menu-toggle {
-		display: block;
-		position: fixed;
-		top: 5px;
-		left: 5px;
-	}
-	
-	
-	#menu-primary .menu-toggle button,
-	#menu-secondary .menu-toggle button {
-		background: rgba(0,0,0,0.35);
-		border: 1px solid #ddd;
-		width: 60px;
-		font-size: 90%;
-		font-variant: small-caps;
-		padding: 0.3rem;
-	}
-	
-	#menu-primary .menu-toggle button::before {
-		content:        '\f333';
-		display:        inline-block;
-		font-family:    'dashicons';
-		font-size:      28px;
-		vertical-align: middle;
-		padding-bottom: 5px;
-
-		-webkit-font-smoothing: antialiased;
-	}
-
-	#menu-secondary .menu-toggle button::before {
-		content:        '\f333';
-		display:        inline-block;
-		font-family:    'dashicons';
-		font-size:      40px;
-		vertical-align: middle;
-		padding-top: 3px;
-		padding-bottom: 1px;
-
-		-webkit-font-smoothing: antialiased;
-	}
-	
-	#menu-primary div.wrap,
-	#menu-secondary div.wrap { display: none; } /* jQuery toggles in theme-footer.js */ 
-	
-	#menu-secondary div.wrap { margin-bottom: 5px; } /* a little room when disolayed */
-	
-		#menu-secondary div.wrap ul li,
-		#menu-primary div.wrap ul li { 
-			display: block;
-			float: none;
-		}
-		
-		#menu-secondary div.wrap ul li a,
-		#menu-primary div.wrap ul li a { 
-			font-size: 22px;
-			font-variant: small-caps;
-		}
-		
-	
-	/* Content
-	*******************************************/
-
-	.layout-default #content,
-	.layout-2c-l #content,
-	.layout-2c-r #content,
-	.home.layout-default #content,
-	.home.layout-2c-l #content,
-	.home.layout-2c-r #content{
-		width:100%;
-		margin:0;
-		margin-bottom:25px;
-		clear:both;
-	}
-	
-	/* Primary Sidebar
-	*******************************************/
-	.layout-default #sidebar-primary,
-	.layout-2c-l #sidebar-primary,
-	.layout-2c-r #sidebar-primary,
-	.home.layout-default #sidebar-primary,
-	.home.layout-2c-l #sidebar-primary,
-	.home.layout-2c-r #sidebar-primary{
-		width:100%;
-		float:none;
-		clear:both;
-		margin:0;
-	}
-		
-
-	/* Secondary Sidebar
-	*******************************************/
-	.layout-default #sidebar-secondary,
-	.layout-2c-l #sidebar-secondary,
-	.layout-2c-r #sidebar-secondary,
-	.home.layout-default #sidebar-secondary,
-	.home.layout-2c-l #sidebar-secondary,
-	.home.layout-2c-r #sidebar-secondary{
-		width:100%;
-		float:none;
-		clear:both;
-		margin:0;
-	}
-
-	/* Subsidiary Sidebar
-	*******************************************/
-	#sidebar-subsidiary .widget{
-		width:100%;
-		clear:both;
-	}
-
-	
-	/* Footer
-	*******************************************/
-	#footer .copyright{
-		float:none;
-		display: block;
-		width:100%;
-		text-align: center;
-	}
-	#footer .credit{
-		float:none;
-		display: block;
-		width:100%;
-		text-align: center;
-	}
-	#footer .loginlink{
-		display: none;
-	}
-
-	/* Grid Column
-	*******************************************/
-	.grid-column-2{
-		width:100%;
-		padding:0;
-		margin:0 0 25px 0;
-	}
-	.grid-column-1-3{
-		width:100%;
-		padding:0;
-		margin:0 0 25px 0;
-	}
-	.grid-column-2-3{
-		width:100%;
-		padding:0;
-		margin:0 0 25px 0;
-	}
-	.grid-column-1-4{
-		width:100%;
-		padding:0;
-		margin:0 0 25px 0;
-	}
-	.grid-column-3-4{
-		width:100%;
-		padding:0;
-		margin:0 0 25px 0;
-	}
-	
-	/* Misc. adjustments*/
-	
-	/* Center contact print photos */ 
-	.print_photos figure.wp-caption {
-		float: none !important;
-		display: block;
-		margin: 0 auto;
-	}
-}
-
-
-
-
-
 /* CSS for theme plugins */
 
 /* Contact Form 7 message style tweaks*/
@@ -3065,7 +2727,8 @@ div.wpcf7 {
 		padding: 0 20px 0 5px;
 	}
 	
-		div.wpcf7 form.wpcf7-form input {
+		div.wpcf7 form.wpcf7-form input,
+		div.wpcf7 form.wpcf7-form textarea {
 			color: black;
 		}
 
@@ -3364,3 +3027,380 @@ abbr,
 	text-decoration: none;
 }
 /* End of Gigpress style */
+
+/**
+ * Media Queries overwrite for style.css CSS
+ * Mehta Theme
+ */
+
+/* for tablet */
+/* @media screen and (min-width: 481px) and (max-width: 760px) { */
+@media screen and (min-width: 511px) and (max-width: 760px) {
+
+	/* content
+	*******************************************/
+	.layout-default #content,
+	.layout-2c-l #content,
+	.layout-2c-r #content,
+	.home.layout-default #content,
+	.home.layout-2c-l #content,
+	.home.layout-2c-r #content{
+		width:100%;
+		margin:0;
+		margin-bottom:25px;
+		clear:both;
+	}
+
+	/* sidebar primary
+	*******************************************/
+	.layout-default #sidebar-primary,
+	.layout-2c-l #sidebar-primary,
+	.layout-2c-r #sidebar-primary,
+	.home.layout-default #sidebar-primary,
+	.home.layout-2c-l #sidebar-primary,
+	.home.layout-2c-r #sidebar-primary	{
+		width:100%;
+		float:none;
+		clear:both;
+		margin:0;
+	}
+		#sidebar-primary section { max-width: 310px; }
+
+	/* sidebar secondary
+	*******************************************/
+	.layout-default #sidebar-secondary,
+	.layout-2c-l #sidebar-secondary,
+	.layout-2c-r #sidebar-secondary
+	.home.layout-default #sidebar-secondary,
+	.home.layout-2c-l #sidebar-secondary,
+	.home.layout-2c-r #sidebar-secondary{
+		width:100%;
+		float:none;
+		clear:both;
+		margin:0;
+	}
+		#sidebar-secondary section { max-width: 310px; }
+
+	/* sidebar subsidiary
+	*******************************************/
+	#sidebar-subsidiary .widget{
+		width:47.5%;
+	}
+	#sidebar-subsidiary div.widget:nth-child(odd) {
+		clear:left;
+	}
+	#sidebar-subsidiary div.widget:nth-child(even) {
+		clear:right;
+	}
+	
+	/* Menu adjustments as screen shrinks and top rows shift. */
+	
+	#menu-primary,
+	#menu-secondary { 
+		width: 100%; 
+	}
+	
+	#menu-primary.menu,
+	#menu-secondary.menu  { clear: left; float: left;}
+	
+	/* jQuery toggles t/f none in theme-footer.js */ 
+	#menu-primary div.wrap,
+	#menu-secondary div.wrap { display: inline !important; } 
+	
+	#menu-primary div.wrap ul li:nth-child(1) a,
+	#menu-secondary div.wrap ul li:nth-child(1) a { /* 1st on left needs none.  */
+		padding-left: 0;
+	}
+	
+	/*#menu-secondary div.wrap ul li:last-child a {
+		width: 5px;
+		overflow: hidden;
+		color: transparent;
+	}
+	
+	#menu-secondary div.wrap ul li:last-child a:after {
+		content: 'Contact';
+		font-size: 80%;
+	} 
+	
+	#xxxxmenu-primary div.wrap ul li:nth-child(3n+3):after { /* newline every third */
+		/*clear: right; * /
+		content:".\a";
+		display: block;
+		clear: right; /* wrong? * /
+	} */
+	
+	/* .searchwrap .search-form { margin-top: -5px }; */
+	
+}
+
+/* for another tablet 
+@media screen and (max-width: 600px) {
+
+	#branding{
+		width:100%;
+	}
+	#sidebar-header{
+		width:100%;
+		height:auto;
+	}
+
+} */
+
+/*=== For mobile Screens ===*/
+/* @media screen and (max-width: 480px) { */
+@media screen and (max-width: 510px) {
+	
+	/* Site Top and Header
+	*******************************************/
+	#site-top { 
+		padding-right: 0;
+	}
+	
+	#header { padding-left: 62px; } /* make room for menu button */
+	
+	/* Site name and description. Squeze out some pixels. */
+	#branding,
+	.sidebar-header-inactive #branding {
+		/*float: right; */
+		float: none;
+		margin: 0 auto;
+	}
+	 
+	/* #site-title,
+	#site-description { margin-right: 0; } */
+	
+	#site-description { margin-bottom: 5px; }
+	
+	.searchwrap {
+		clear: both;
+		float: none;
+		width: 40%;
+		margin: 10px auto;
+	}
+	
+		.searchwrap input[type="search"] {
+			padding: 3px;
+		}
+	
+	/* Contact Banner -- Goose text */
+	.singular-page-12 .header-image-text  {
+		font-size: 2.2rem;
+		letter-spacing: 2.5pt;
+	}
+	
+	/* Recordings Banner -- Goose text */
+	.singular-the_recordings .header-image-text,
+	.taxonomy-category-recordings .header-image-text {
+		font-size: 2.2rem;
+		letter-spacing: 2.5pt;
+	}
+
+
+	/* Menus
+	*******************************************/
+	.menu-toggle { padding: 0; margin: 0; }
+	
+	#menu-primary, 
+	#menu-secondary {
+		width: 100%;
+	}
+	
+	#menu-primary.menu, 
+	#menu-secondary.menu {
+		width: 100%;
+		float: none;
+	}
+	
+	/* #menu-primary.menu,
+	#menu-primary .menu-toggle button { float: right; }
+	#menu-secondary.menu { float: left; }
+	*/
+	
+	#menu-primary .menu-toggle { display: none; }
+	
+	#menu-secondary .menu-toggle {
+		display: block;
+		position: fixed;
+		top: 5px;
+		left: 5px;
+	}
+	
+	
+	#menu-primary .menu-toggle button,
+	#menu-secondary .menu-toggle button {
+		background: rgba(0,0,0,0.35);
+		border: 1px solid #ddd;
+		width: 60px;
+		font-size: 90%;
+		font-variant: small-caps;
+		padding: 0.3rem;
+	}
+	
+	#menu-primary .menu-toggle button::before {
+		content:        '\f333';
+		display:        inline-block;
+		font-family:    'dashicons';
+		font-size:      28px;
+		vertical-align: middle;
+		padding-bottom: 5px;
+
+		-webkit-font-smoothing: antialiased;
+	}
+
+	#menu-secondary .menu-toggle button::before {
+		content:        '\f333';
+		display:        inline-block;
+		font-family:    'dashicons';
+		font-size:      40px;
+		vertical-align: middle;
+		padding-top: 3px;
+		padding-bottom: 1px;
+
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	#menu-primary div.wrap,
+	#menu-secondary div.wrap { display: none; } /* jQuery toggles in theme-footer.js */ 
+	
+	#menu-secondary div.wrap { margin-bottom: 5px; } /* a little room when disolayed */
+	
+		#menu-secondary div.wrap ul li,
+		#menu-primary div.wrap ul li { 
+			display: block;
+			float: none;
+		}
+		
+		#menu-secondary div.wrap ul li a,
+		#menu-primary div.wrap ul li a { 
+			font-size: 22px;
+			font-variant: small-caps;
+		}
+		
+	
+	/* Toggles and Masonry Tweaks
+	*******************************************/
+	/* On phone size dont display list toggle on work, recordings
+	body.archive.col-masonry-active.taxonomy-category-recordings .works-list-toggle,
+	body.archive.col-masonry-active.taxonomy-category-works .works-list-toggle {
+		display: none;
+	} */
+	
+	/* List view is Tiny. Dont float the image. Center it. */
+	.archive.taxonomy .entry-media { 
+		float: none; 
+		width: 100%; 
+		margin: 0 0 5px 0; 
+		padding: 0; 
+	}
+	
+	/* Content
+	*******************************************/
+
+	.layout-default #content,
+	.layout-2c-l #content,
+	.layout-2c-r #content,
+	.home.layout-default #content,
+	.home.layout-2c-l #content,
+	.home.layout-2c-r #content{
+		width:100%;
+		margin:0;
+		margin-bottom:25px;
+		clear:both;
+	}
+	
+	/* Primary Sidebar
+	*******************************************/
+	.layout-default #sidebar-primary,
+	.layout-2c-l #sidebar-primary,
+	.layout-2c-r #sidebar-primary,
+	.home.layout-default #sidebar-primary,
+	.home.layout-2c-l #sidebar-primary,
+	.home.layout-2c-r #sidebar-primary{
+		width:100%;
+		float:none;
+		clear:both;
+		margin:0;
+	}
+		
+
+	/* Secondary Sidebar
+	*******************************************/
+	.layout-default #sidebar-secondary,
+	.layout-2c-l #sidebar-secondary,
+	.layout-2c-r #sidebar-secondary,
+	.home.layout-default #sidebar-secondary,
+	.home.layout-2c-l #sidebar-secondary,
+	.home.layout-2c-r #sidebar-secondary{
+		width:100%;
+		float:none;
+		clear:both;
+		margin:0;
+	}
+
+	/* Subsidiary Sidebar
+	*******************************************/
+	#sidebar-subsidiary .widget{
+		width:100%;
+		clear:both;
+	}
+
+	
+	/* Footer
+	*******************************************/
+	#footer .copyright{
+		float:none;
+		display: block;
+		width:100%;
+		text-align: center;
+	}
+	#footer .credit{
+		float:none;
+		display: block;
+		width:100%;
+		text-align: center;
+	}
+	#footer .loginlink{
+		display: none;
+	}
+
+	/* Grid Column
+	*******************************************/
+	.grid-column-2{
+		width:100%;
+		padding:0;
+		margin:0 0 25px 0;
+	}
+	.grid-column-1-3{
+		width:100%;
+		padding:0;
+		margin:0 0 25px 0;
+	}
+	.grid-column-2-3{
+		width:100%;
+		padding:0;
+		margin:0 0 25px 0;
+	}
+	.grid-column-1-4{
+		width:100%;
+		padding:0;
+		margin:0 0 25px 0;
+	}
+	.grid-column-3-4{
+		width:100%;
+		padding:0;
+		margin:0 0 25px 0;
+	}
+	
+	/* Misc. adjustments*/
+	
+	/* Center contact print photos */ 
+	.print_photos figure.wp-caption {
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+

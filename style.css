@@ -2,23 +2,23 @@
  * Theme Name:  Mehta
  * Theme URI:   http://steinbay.com/themes/mehta 
  * Description: A fork of/from Theme Hybrid’s Hybrid-Base
- * Version:     1.0.1
- * Author:      Justin Tadlock, modified by David Stein
+ * Version:     0.6.0
+ * Author:      Base by Justin Tadlock, modified by David Stein
  * Author URI:  http://justintadlock.com
  * Tags:        one-column, two-columns, custom-background, custom-header, custom-menu, featured-images, left-sidebar, post-formats, responsive-layout, right-sidebar, rtl-language-support, threaded-comments, translation-ready
  * Text Domain: hybrid-base
  * License:     GNU General Public License v2.0 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
-/* 
-To create style.min.css from this we use:
-http://csscompressor.com
-http://dev4.edakavin.com/content-wp/themes/mehta/style.css
-Options: Highest compression, optimize common shorthands only, accepted all options.
-
-To compress JS
-http://javascript-compressor.com
-Options: Don't cascade
+/* Compression Info
+	To create style.min.css from this we use:
+	http://csscompressor.com
+	http://jakeheggie.com/content-wp/themes/mehta/style.css
+	Options: Highest compression, add timestamp, accepted all options.
+	
+	To compress JS
+	http://javascript-compressor.com
+	Options: Don't cascade
 */
 
 /**
@@ -36,15 +36,15 @@ Options: Don't cascade
 /* --------------------------------------------------------------------------- */
 
 /**
- * Responsive Overwrites
- */
-	@import url( "css/responsive.css" );
-/* --------------------------------------------------------------------------- */
-
-/**
  * Plugin CSS
  */
 	@import url( "css/plugins.css" ); 
 /* ---------------------------------------------------------------------- */
+
+/**
+ * Responsive Overwrites
+ */
+	@import url( "css/responsive.css" );
+/* --------------------------------------------------------------------------- */
 
 /* End of style.css */
