@@ -845,20 +845,6 @@ hr {
 		border: 1px solid #DFDFDF;
 	}
 	
-		.search a img.thumbnail { float: right; } /* Throw thumbnails to the right */
-		
-			.search a img.thumbnail::after { 
-				/* trick to in-flow floated element */
-				content: "."; 
-				display: block; 
-				height: 0; 
-				clear: right; 
-				visibility: hidden;
-			}
-			
-		.search span.imginsert a img { float: none; } /* Bill Holub banner */
-		
-	
 	.entry-summary {}
 
 	/* === Post Footer === */
@@ -2012,6 +1998,8 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /* Search results styling */
 .search article {
+	clear: both;
+	float: left;
 	margin-left: 0;
 	/* margin-bottom: 2rem; */
 	margin-bottom: 20px;
@@ -2026,6 +2014,20 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .search .entry-wrap .entry-meta {
 	margin-left: 12px;
 }
+
+.search a img.thumbnail { float: right; } /* Throw thumbnails to the right */
+		
+	.search a img.thumbnail::after { 
+		/* trick to in-flow floated element */
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: right; 
+		visibility: hidden;
+	}
+
+	.search span.imginsert a img { float: left; } /* Bill Holub banner stays left*/
+		
 
 /**
  * Lightbox and Magnific Popup 
