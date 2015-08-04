@@ -1278,14 +1278,14 @@ img.size-full {}
 			.taxonomy-post_tag .header-image-text  {
 				left: 2%;
 				top: 65%;
-				letter-spacing: 3pt;
+				letter-spacing: 2.5pt;
 			}
 			
 			/* Contact Banner -- Goose text */
 			.singular-page-12 .header-image-text  {
 				left: 1%;
 				top: 55%;
-				letter-spacing: 3pt;
+				letter-spacing: 2.5pt;
 			}
 			
 			/* Recordings Banner -- Goose text */
@@ -1484,10 +1484,11 @@ hr {
 
 	.entry-content {}
 	
-	.entry-content img {
+	.entry-content img,
+	.search img.thumbnail {
 		padding: 2px;
 		background: transparent; /* #f9f9f9; */
-		border: 1px solid #ddd;
+		border: 1px solid #DFDFDF;
 	}
 	
 	.entry-summary {}
@@ -2466,7 +2467,13 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	text-align: center;
 }
 
-.archive.taxonomy .entry-media a { border-bottom: none; } /* no dotted thumbnails */
+	.archive.taxonomy .entry-media a { border-bottom: none; } /* no dotted thumbnails */
+
+	.archive.taxonomy .entry-media img:not(.icon-thumbnail) {
+		padding: 2px;
+		background: transparent; /* #f9f9f9; */
+		border: 1px solid #DFDFDF;
+	}
 
 .archive.taxonomy .entry-wrap .entry-title{
 	/* font-size: 17px; */
@@ -2509,6 +2516,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	width: 95%;
 }
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
+	float: left;
 	margin-left: 0;
 	/* margin-bottom: 2rem; */
 	margin-bottom: 20px;
@@ -2524,10 +2532,10 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	padding: 0 0 5px 15px;
 	width: 200px; /* List and grid view */
 }
-/* does this work? */
-	.archive.taxonomy .entry-media:after { /* Trick to clear float */
-	content:".";display:block;height:0;clear:both;visibility:hidden;
-} 
+	/* does this work? */
+	.archive.taxonomy .entry-media::after { /* Trick to clear float */
+		content:".";display:block;height:0;clear:both;visibility:hidden;
+	} 
 
 /* .archive.taxonomy .theme-thumbnail { float: left;  } */
 .archive.taxonomy .entry-header { float: none; padding-left: 0; text-align: left; }
@@ -2637,6 +2645,8 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 
 /* Search results styling */
 .search article {
+	clear: both;
+	float: left;
 	margin-left: 0;
 	/* margin-bottom: 2rem; */
 	margin-bottom: 20px;
@@ -2651,6 +2661,23 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 .search .entry-wrap .entry-meta {
 	margin-left: 12px;
 }
+
+.search a img.thumbnail { float: right; } /* Throw thumbnails to the right */
+		
+	.search a img.thumbnail::after { 
+		/* trick to in-flow floated element */
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: right; 
+		visibility: hidden;
+	}
+
+	.search span.imginsert a img { 
+		float: left;
+		margin-right: 25px; 
+	} /* Bill Holub banner stays left*/
+		
 
 /**
  * Lightbox and Magnific Popup 
@@ -3400,7 +3427,12 @@ abbr,
 		display: block;
 		margin: 0 auto;
 	}
+	
+	/* Search Results */
+	.search a img.thumbnail { float: none;}
+	.search span.imginsert a img { margin-bottom: 25px; }
 }
+
 
 
 
