@@ -370,6 +370,10 @@
 		display: block;
 		margin: 0 auto;
 	}
+	
+	/* Search Results */
+	.search a img.thumbnail { float: none;}
+	.search span.imginsert a img { margin-bottom: 25px; }
 }
 
 
