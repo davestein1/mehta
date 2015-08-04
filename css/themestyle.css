@@ -632,14 +632,14 @@ img.size-full {}
 			.taxonomy-post_tag .header-image-text  {
 				left: 2%;
 				top: 65%;
-				letter-spacing: 3pt;
+				letter-spacing: 2.5pt;
 			}
 			
 			/* Contact Banner -- Goose text */
 			.singular-page-12 .header-image-text  {
 				left: 1%;
 				top: 55%;
-				letter-spacing: 3pt;
+				letter-spacing: 2.5pt;
 			}
 			
 			/* Recordings Banner -- Goose text */
@@ -1870,6 +1870,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	width: 95%;
 }
 .archive.taxonomy .content-entry-wrap > .entry .entry-wrap {
+	float: left;
 	margin-left: 0;
 	/* margin-bottom: 2rem; */
 	margin-bottom: 20px;
