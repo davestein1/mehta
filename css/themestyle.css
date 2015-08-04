@@ -845,6 +845,10 @@ hr {
 		border: 1px solid #DFDFDF;
 	}
 	
+		.search :not(.autoinsertimage) img { float: right; }
+		.search :not(.autoinsertimage) img:after { clear: right; }
+		
+	
 	.entry-summary {}
 
 	/* === Post Footer === */
