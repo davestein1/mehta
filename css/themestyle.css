@@ -847,7 +847,7 @@ hr {
 	
 		.search a img { float: right; } /* Throw thumbnails to the right */
 		
-			.search a img:after { 
+			.search a img::after { 
 				/* trick to in-flow floated element */
 				content: "."; 
 				display: block; 
@@ -1899,10 +1899,10 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	padding: 0 0 5px 15px;
 	width: 200px; /* List and grid view */
 }
-/* does this work? */
-	.archive.taxonomy .entry-media:after { /* Trick to clear float */
-	content:".";display:block;height:0;clear:both;visibility:hidden;
-} 
+	/* does this work? */
+	.archive.taxonomy .entry-media::after { /* Trick to clear float */
+		content:".";display:block;height:0;clear:both;visibility:hidden;
+	} 
 
 /* .archive.taxonomy .theme-thumbnail { float: left;  } */
 .archive.taxonomy .entry-header { float: none; padding-left: 0; text-align: left; }
