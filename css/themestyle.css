@@ -845,8 +845,17 @@ hr {
 		border: 1px solid #DFDFDF;
 	}
 	
-		.search :not(.autoinsertimage) img { float: right; }
-		.search :not(.autoinsertimage) img:after { clear: right; }
+		.search a img { float: right; } /* Throw thumbnails to the right */
+			.search a img:after { 
+				/* trick to in-flow floated element */
+				content: "."; 
+				display: block; 
+				height: 0; 
+				clear: right; 
+				visibility: hidden;	
+			}
+			
+		.search span.imginsert a img { float: none; } /* Bill Holub banner */
 		
 	
 	.entry-summary {}
