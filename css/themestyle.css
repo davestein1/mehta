@@ -846,13 +846,14 @@ hr {
 	}
 	
 		.search a img { float: right; } /* Throw thumbnails to the right */
+		
 			.search a img:after { 
 				/* trick to in-flow floated element */
 				content: "."; 
 				display: block; 
 				height: 0; 
 				clear: right; 
-				visibility: hidden;	
+				visibility: hidden;
 			}
 			
 		.search span.imginsert a img { float: none; } /* Bill Holub banner */
