@@ -2026,7 +2026,10 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 		visibility: hidden;
 	}
 
-	.search span.imginsert a img { float: left; } /* Bill Holub banner stays left*/
+	.search span.imginsert a img { 
+		float: left;
+		margin-right: 25px; 
+	} /* Bill Holub banner stays left*/
 		
 
 /**
