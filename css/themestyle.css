@@ -839,15 +839,15 @@ hr {
 	.entry-content {}
 	
 	.entry-content img,
-	.search img {
+	.search img.thumbnail {
 		padding: 2px;
 		background: transparent; /* #f9f9f9; */
 		border: 1px solid #DFDFDF;
 	}
 	
-		.search a img { float: right; } /* Throw thumbnails to the right */
+		.search a img.thumbnail { float: right; } /* Throw thumbnails to the right */
 		
-			.search a img::after { 
+			.search a img.thumbnail::after { 
 				/* trick to in-flow floated element */
 				content: "."; 
 				display: block; 
