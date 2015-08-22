@@ -99,15 +99,76 @@ jQuery( document ).ready( function($) {
 		masonry_container.masonry();
 	});
 
-	/* Upcoming snowfall page. */
+	/* Deprecated. Works.
 	$('a[rel="smoothscroll"]').click(function(){
 		$('#scrollwindow').animate({ 
 			scrollTop:  $( $.attr(this, 'href') ).offset().top - $('#one').offset().top
 		}, 2000); 
 		return false;
+	}); */
+	
+	/* For snowfall page scrolling. */
+	$('a[rel="smoothscroll_down"]').click(function(){
+		
+		$( "body" ).addClass("smoothscroll_used");
+		
+		var offset_top = $('#scrollwindow').offset().top + 20;
+		var scrolled_from_top = $('#scrollwindow').scrollTop();
+		
+		 /* $( $('.smoothscroll_stop').get().reverse() )
+		 	.each(function( index, scroll_stop ) { */
+		 $('.smoothscroll_stop').each(function( index, scroll_stop ) { 
+		
+			var stop_offset = $(scroll_stop).offset().top - offset_top + scrolled_from_top;
+			
+			/*alert(index + " scrolled:" + scrolled_from_top + " stop_offset:" + stop_offset + " offset:" + offset_top + " " ); */
+			
+			if ( stop_offset - scrolled_from_top > 9 ) {
+				
+				$('#scrollwindow').animate({ 
+					scrollTop:  stop_offset 
+				}, 2000);
+				
+				return false; 
+				
+			}
+		
+		});
+		
+		return false;
 	});
 	
-	/* Responsive menus have toggles. We have combines them. 
+	/* For snowfall page scrolling. */	
+	$('a[rel="smoothscroll_up"]').click(function(){
+		
+		$( "body" ).addClass("smoothscroll_used");
+		
+		var offset_top = $('#scrollwindow').offset().top + 20;
+		var scrolled_from_top = $('#scrollwindow').scrollTop();
+		
+		 $( $('.smoothscroll_stop').get().reverse() ).each(function( index, scroll_stop ) { 
+		 /* $('.smoothscroll_stop').each(function( index, scroll_stop ) { */
+		
+			var stop_offset = $(scroll_stop).offset().top - offset_top + scrolled_from_top;
+			
+			/* alert(index + " scrolled:" + scrolled_from_top + " stop_offset:" + stop_offset + " offset:" + offset_top + " " ); */
+			
+			if ( scrolled_from_top - stop_offset > 9 ) {
+				
+				$('#scrollwindow').animate({ 
+					scrollTop:  stop_offset 
+				}, 2000);
+				
+				return false; 
+				
+			}
+		
+		});
+		
+		return false;
+	});
+
+	/* Responsive menus have toggles. We have combined them. 
 		HERE WE TOGGLE BOTH PRIMARY AND SECONDARY MENUS */
 	$( '.menu-toggle button' ).click(
 		function() {
@@ -128,4 +189,3 @@ jQuery( document ).ready( function($) {
 	console.log('hello from theme-footer.js');
 
 });
-
