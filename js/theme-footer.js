@@ -134,11 +134,16 @@ jQuery( document ).ready( function($) {
 			}
 		
 		});
+
+		/* Nothing below? Scroll to top. */
+		$('#scrollwindow').animate({ 
+			scrollTop:  0
+			}, 2000);
 		
 		return false;
 	});
 	
-	/* For snowfall page scrolling. */	
+	/* For snowfall page scrolling. */
 	$('a[rel="smoothscroll_up"]').click(function(){
 		
 		$( "body" ).addClass("smoothscroll_used");
