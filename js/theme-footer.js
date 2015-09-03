@@ -114,33 +114,44 @@ jQuery( document ).ready( function($) {
 		
 		var offset_top = $('#scrollwindow').offset().top + 20;
 		var scrolled_from_top = $('#scrollwindow').scrollTop();
+		var scroll_time = 2000; /* Default scroll time 2 seconds */
 		
-		 index_max = $('.smoothscroll_stop').length;
+		var index_max = $('.smoothscroll_stop').length - 1
+		 
 		 /* $( $('.smoothscroll_stop').get().reverse() )
 		 	.each(function( index, scroll_stop ) { */
 		 $('.smoothscroll_stop').each(function( index, scroll_stop ) { 
 		
 			var stop_offset = $(scroll_stop).offset().top - offset_top + scrolled_from_top;
 			
-			alert(index + " scrolled:" + scrolled_from_top + " stop_offset:" + stop_offset + " offset:" + offset_top + " " + index_max); *
+			/*alert(index + " scrolled:" + scrolled_from_top + " stop_offset:" + stop_offset + " offset:" + offset_top + " " + index_max); */
 			
 			if ( stop_offset - scrolled_from_top > 9 ) {
 				
 				$('#scrollwindow').animate({ 
 					scrollTop:  stop_offset 
-				}, 2000);
+				}, scroll_time );
 				
 				return false; 
 				
 			}
-		
+
+			/* At the end? Scroll back to top */
+			if ( index == index_max ) { 
+				
+				stop_offset = 0; 
+				scroll_time = 4000;
+				
+				$('#scrollwindow').animate({ 
+					scrollTop:  stop_offset 
+				}, scroll_time );
+				
+				return false; 
+				
+			}
+			
 		});
 
-		/* Nothing below? Scroll to top. 
-		$('#scrollwindow').animate({ 
-			scrollTop:  0
-			}, 2000); */
-		
 		return false;
 	});
 	
@@ -149,6 +160,7 @@ jQuery( document ).ready( function($) {
 		
 		$( "body" ).addClass("smoothscroll_used");
 		
+		var scroll_time = 2000; /* Default scroll time 2 seconds */
 		var offset_top = $('#scrollwindow').offset().top + 20;
 		var scrolled_from_top = $('#scrollwindow').scrollTop();
 		
@@ -163,7 +175,7 @@ jQuery( document ).ready( function($) {
 				
 				$('#scrollwindow').animate({ 
 					scrollTop:  stop_offset 
-				}, 2000);
+				}, scroll_time );
 				
 				return false; 
 				
