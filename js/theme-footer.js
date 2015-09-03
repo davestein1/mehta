@@ -115,13 +115,14 @@ jQuery( document ).ready( function($) {
 		var offset_top = $('#scrollwindow').offset().top + 20;
 		var scrolled_from_top = $('#scrollwindow').scrollTop();
 		
+		 index_max = $('.smoothscroll_stop').length;
 		 /* $( $('.smoothscroll_stop').get().reverse() )
 		 	.each(function( index, scroll_stop ) { */
 		 $('.smoothscroll_stop').each(function( index, scroll_stop ) { 
 		
 			var stop_offset = $(scroll_stop).offset().top - offset_top + scrolled_from_top;
 			
-			/*alert(index + " scrolled:" + scrolled_from_top + " stop_offset:" + stop_offset + " offset:" + offset_top + " " ); */
+			alert(index + " scrolled:" + scrolled_from_top + " stop_offset:" + stop_offset + " offset:" + offset_top + " " + index_max); *
 			
 			if ( stop_offset - scrolled_from_top > 9 ) {
 				
@@ -135,10 +136,10 @@ jQuery( document ).ready( function($) {
 		
 		});
 
-		/* Nothing below? Scroll to top. */
+		/* Nothing below? Scroll to top. 
 		$('#scrollwindow').animate({ 
 			scrollTop:  0
-			}, 2000);
+			}, 2000); */
 		
 		return false;
 	});
