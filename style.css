@@ -28,12 +28,6 @@
 	@import url( "css/reset.css" );
 /* --------------------------------------------------------------------------- */
 
-/**
- * Main Theme Style
- *
- 	/* "theme-reset" */
-	@import url( "css/themestyle.css" ); 
-/* --------------------------------------------------------------------------- */
 
 /**
  * Plugin CSS
@@ -41,10 +35,33 @@
 	@import url( "css/plugins.css" ); 
 /* ---------------------------------------------------------------------- */
 
+
+/**
+ * Magnific Popup CSS Lightbox/Carousel
+ */
+	@import url( "css/magnific-popup.css" ); 
+/* ---------------------------------------------------------------------- */
+
+
+/**
+ * Main Theme Style
+ *
+ 	/* "theme-reset" */
+	@import url( "css/themestyle.css" ); 
+/* --------------------------------------------------------------------------- */
+
+
 /**
  * Responsive Overwrites
  */
 	@import url( "css/responsive.css" );
 /* --------------------------------------------------------------------------- */
+
+
+/**
+ * Parallax Home Page CSS
+ */
+	@import url( "css/parallax-home.css" ); 
+/* ---------------------------------------------------------------------- */
 
 /* End of style.css */
