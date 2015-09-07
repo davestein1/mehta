@@ -1,3 +1,13 @@
+/* STYLE.CSS and STYLE.MIN.CSS are created here. 
+Concatenate css files in this order:
+reset.css
+plugins.css
+magnific-popup.css
+themestyle.css
+responsive.css
+parallax-home.css
+*/
+
 /**
  * RESET CSS
 *****************************************
@@ -644,7 +654,835 @@ hr,h1,h2,h3,h4,h5,h6,figure,p,ul,ol,dl,address,pre,object,fieldset,table,table c
 	background: #fff;
 }
 
+
+
+/******
+* PLUGINS.CSS 
+* Style for theme plugins 
+*/
+
+/* Contact Form 7 message style tweaks*/
+div.wpcf7 {
+	width: 100%; 
+	
+	/* border: 1px solid black; */
+}
+	div.wpcf7 form.wpcf7-form {
+		/* border: 1px solid #999; */
+		width: auto;
+		max-width: 600px;
+		/* margin: 0 auto; /* Center the entire form */
+		margin: 5px;
+		padding: 0 20px 0 5px;
+	}
+	
+		div.wpcf7 form.wpcf7-form input,
+		div.wpcf7 form.wpcf7-form textarea {
+			color: black;
+		}
+
+.wpcf7-form-control-wrap .wpcf7-text {
+	max-width: 25em; /* max text field width */
+}
+
+.wpcf7-form-control-wrap .wpcf7-quiz {
+	max-width: 12em; /* max "music" field width */
+}
+
+.wpcf7-form-control {
+	
+}
+.wpcf7 p {
+	margin-bottom: 1.5em;
+}
+.wpcf7-submit {
+	font-size: 1.5em;
+	margin: 0;
+	text-indent: 0;
+	text-align: center;
+	width: 4.5em;
+	color: black;
+	border-radius: 12px;
+}
+
+div.wpcf7-response-output.wpcf7-validation-errors {
+	border: 1px solid orange !important;
+	text-indent: 0em;
+	color: orange;
+}
+div.wpcf7-response-output,
+div.wpcf7-mail-sent-ok,
+.wpcf7-response-output.wpcf7-mail-sent-ok
+{
+	text-indent: 0em;
+	color: #FAEBD7;
+	border: 1px solid #EECBAD !important;
+}
+span.wpcf7-not-valid-tip {
+	font-size: 90%;
+	text-indent: 1em;
+	color: orange !important;
+	border: 1px solid orange;
+}
+
+/* directly Copied from cf7 css */
+
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
+
+span.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip { 
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+
+div.wpcf7 .placeheld {
+	color: #888;
+}
+
+/* === GIGPRESS used for calendar events=== */
+
+/* Stock items from original css. */
+/* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
+/* Default wrapper for the year/month dropdown */
+.gigpress-menu-container {
+	padding: 5px 0;
+	text-align: right;
+	float: right;
+}
+/* Meet the table that displays our shows */
+.gigpress-table {
+/*	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	border-top: 1px solid #CCC;
+*/
+	margin: 0.5em 0 1em 0;
+}
+td.gigpress-links-cell {
+	vertical-align: top;
+}
+
+.gigpress-calendar-add {
+	position: relative;
+}
+
+a.gigpress-links-toggle {
+	display: block;
+	text-indent: -9999px;
+	width: 11px;
+	height: 11px;
+	background: transparent url(/content-wp/plugins/gigpress/images/calendar-toggle.png) no-repeat left top;
+	cursor: pointer;
+}
+
+a.gigpress-links-toggle:hover {
+	background-position: -11px 0px;
+}
+
+a.gigpress-link-active {
+	background-position: -33px;
+}
+
+a.gigpress-link-active:hover {
+	background-position: -22px;
+}
+
+div.gigpress-calendar-links {
+	display: none;
+	position: absolute;
+	left: 20px;
+	top: -1.2em;
+	width: 15em;
+	padding-left: 7px;
+	background: transparent url(/content-wp/plugins/gigpress/images/calendar-links-bg.png) no-repeat left center;
+}
+
+.gigpress-calendar-links-inner {
+	background-color: #F3F3F3;
+	padding: 6px 8px;
+	font-size: 11px;
+	line-height: 16px;
+	border: 1px solid #CCC;
+	border-width: 1px 1px 1px 0;
+}
+
+div.gigpress-calendar-links span {
+	background-color: blue;
+	display: block;
+}
+
+/* These are for the RSS/iCal subscribe links */
+p.gigpress-subscribe {
+	text-align: left;
+	color: #999;
+}
+
+p.gigpress-subscribe a {
+	display: inline-block;
+	text-indent: -9999px;
+	width: 12px;
+	margin: 0 3px;
+}
+
+a.gigpress-rss, a.gigpress-rss:hover {
+	background: transparent url(/content-wp/plugins/gigpress/images/feed-icon-12x12.png) no-repeat left center;	
+}
+
+a.gigpress-ical, a.gigpress-ical:hover {
+	background: transparent url(/content-wp/plugins/gigpress/images/icalendar-icon.gif) no-repeat left center;	
+}
+
+/* This is just to include data for hcalendar support, but hide it from view */
+.vevent .hide { display: none; }
+
+
+/* Now we make gigpress changes. */
+
+/* TEST Force table to not be like tables anymore. might be useful for small screens. 
+table.gigpress-table, 
+.gigpress-table tbody, 
+.gigpress-table th, 
+.gigpress-table td, 
+.gigpress-table tr { 
+	display: block; 
+} */
+
+/* Set left row of table */
+td.gigpress-date {
+	width: 10em;
+	/*min-width: 150px;
+	min-width: 15rem; /* was 12rem was 7.5em */
+	max-width: 33%;
+	word-break: keep-all;
+	word-wrap: normal;
+}
+.gigpress-calendar-links-inner {
+	border: 3px solid #CCC;
+	line-height: 20px;
+	line-height: 2rem;
+} /* Outer box has arrow */
+
+.gigpress-title-item,
+.gigpress-sidebar-title {
+	font-size: 100%;
+	text-shadow: 1px 1px 1px #000;
+}
+.gigpress-ds-description {
+	font-size: 95%;
+	margin-bottom: 0.75em;
+}
+.gigpress-ds-more-info {
+	font-style: italic;
+	font-size: 85%;
+}
+.gigpress-ds-venue {
+	font-size: 85%;
+}
+.gigpress-ds-event-type {
+	float: right;
+	text-align: right;
+	width: auto;
+	font-size: 85%;
+}
+.gigpress-ds-event-end {
+	clear: both;
+}
+
+/* Widget Gigpress */
+#sidebar-primary .widget_gigpress h3.widget-title { margin-bottom: 5px; }
+
+#sidebar-primary .widget ul.gigpress-listing { 
+	margin-bottom: 0.5em; 
+}
+
+#sidebar-primary .widget .gigpress-listing li {
+	list-style: square;
+	list-style-position: inside;
+}
+#sidebar-primary .widget span.gigpress-sidebar-date {
+	font-weight: bold;
+	display: block;
+	font-weight: normal;
+	margin-top: 5px;
+}
+#sidebar-primary .widget .gigpress-sidebar-more {
+	text-align: center;
+	font-style: italic;
+}
+#sidebar-primary .widget p.gigpress-sidebar-more {
+	margin-bottom: 1em;
+}
+
+abbr,
+.widget_gigpress abbr { 
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+}
+
+/* Gigpress in a Slider */
+#gigpress-slide table.gigpress-table,
+#gigpress-slide table.gigpress-table tbody,
+#gigpress-slide table.gigpress-table td { border: none; }
+
+div#gigpress-slide {
+  height:  595px; /* 100%; */
+  background: #36648B;  
+  border: 1px solid white;
+  padding: 4px;
+  margin-left: 15px;
+} 
+
+#gigpress-slide div.gigpress-shows {
+  max-height: 450px; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+/* Mobile home page Gigpress Tweaks */
+.mobilehome #gigpress-slide div.gigpress-shows {
+  height: auto;
+  max-height: 1000px; 
+}
+.mobilehome #gigpress-slide {
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#gigpress-slide .gigpress-table td { 
+display: block; 
+width: 100%;
+max-width: 100%; 
+border: none;
+}
+
+#gigpress-slide .gigpress-table td.description { 
+  margin-left: 20px; 
+  margin-right: 8px;
+  margin-top: -5px;
+  width: auto;
+}
+
+#gigpress-slide  .gigpress-table tr td.description .gigpress-info-item,
+#gigpress-slide .gigpress-links-cell,
+#gigpress-slide .gigpress-info-item.gigpress-year { display: none; }
+
+#gigpress-slide h2,
+#gigpress-slide h3,
+#gigpress-slide .gigpress-subscribe { text-align: center; }
+
+#gigpress-slide .widget_gigpress h3.widget-title { margin-bottom: 5px; }
+
+#gigpress-slide .widget ul.gigpress-listing { 
+	margin-bottom: 0.5em; 
+}
+
+#gigpress-slide .widget .gigpress-listing li {
+	list-style: square;
+	list-style-position: inside;
+}
+#gigpress-slide .widget span.gigpress-sidebar-date {
+	font-weight: bold;
+	display: block;
+	font-weight: normal;
+	margin-top: 5px;
+}
+#gigpress-slide .widget .gigpress-sidebar-more {
+	text-align: center;
+	font-style: italic;
+}
+#gigpress-slide .widget p.gigpress-sidebar-more {
+	margin-bottom: 1em;
+}
+
+/* End of Gigpress style */
+
+/*******
+* MAGNIFIC-POPUP.CSS 
+* original file unmodified. 
+* Overwrites made in themestyke.css
+*/
+
+.mfp-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1042;
+    overflow: hidden;
+    position: fixed;
+    background: #0b0b0b;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+.mfp-wrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1043;
+    position: fixed;
+    outline: none !important;
+    -webkit-backface-visibility: hidden
+}
+.mfp-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.mfp-container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+.mfp-align-top .mfp-container:before {
+    display: none
+}
+.mfp-content {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 1045
+}
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+    width: 100%;
+    cursor: auto
+}
+.mfp-ajax-cur {
+    cursor: progress
+}
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: -moz-zoom-out;
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out
+}
+.mfp-zoom {
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in
+}
+.mfp-auto-cursor .mfp-content {
+    cursor: auto
+}
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader,
+.mfp-counter {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+.mfp-loading.mfp-figure {
+    display: none
+}
+.mfp-hide {
+    display: none !important
+}
+.mfp-preloader {
+    color: #cccccc;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    text-align: center;
+    margin-top: -0.8em;
+    left: 8px;
+    right: 8px;
+    z-index: 1044
+}
+.mfp-preloader a {
+    color: #cccccc
+}
+.mfp-preloader a:hover {
+    color: white
+}
+.mfp-s-ready .mfp-preloader {
+    display: none
+}
+.mfp-s-error .mfp-content {
+    display: none
+}
+button.mfp-close,
+button.mfp-arrow {
+    overflow: visible;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    outline: none;
+    padding: 0;
+    z-index: 1046;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+.mfp-close {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    padding: 0 0 18px 10px;
+    color: white;
+    font-style: normal;
+    font-size: 28px;
+    font-family: Arial, Baskerville, monospace
+}
+.mfp-close:hover,
+.mfp-close:focus {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: transparent;
+}
+.mfp-close:active {
+    top: 1px
+}
+.mfp-close-btn-in .mfp-close {
+    color: #333333
+}
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+    color: white;
+    right: -6px;
+    text-align: right;
+    padding-right: 6px;
+    width: 100%
+}
+.mfp-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #cccccc;
+    font-size: 12px;
+    line-height: 18px
+}
+.mfp-arrow {
+    position: absolute;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    margin: 0;
+    top: 50%;
+    margin-top: -55px;
+    padding: 0;
+    width: 90px;
+    height: 110px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+.mfp-arrow:active {
+    margin-top: -54px
+}
+.mfp-arrow:hover,
+.mfp-arrow:focus {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: transparent;
+}
+.mfp-arrow:before,
+.mfp-arrow:after,
+.mfp-arrow .mfp-b,
+.mfp-arrow .mfp-a {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-left: 35px;
+    border: medium inset transparent
+}
+.mfp-arrow:after,
+.mfp-arrow .mfp-a {
+    border-top-width: 13px;
+    border-bottom-width: 13px;
+    top: 8px
+}
+.mfp-arrow:before,
+.mfp-arrow .mfp-b {
+    border-top-width: 21px;
+    border-bottom-width: 21px;
+    opacity: 0.7
+}
+.mfp-arrow-left {
+    left: 0
+}
+.mfp-arrow-left:after,
+.mfp-arrow-left .mfp-a {
+    border-right: 17px solid white;
+    margin-left: 31px
+}
+.mfp-arrow-left:before,
+.mfp-arrow-left .mfp-b {
+    margin-left: 25px;
+    border-right: 27px solid #3f3f3f
+}
+.mfp-arrow-right {
+    right: 0
+}
+.mfp-arrow-right:after,
+.mfp-arrow-right .mfp-a {
+    border-left: 17px solid white;
+    margin-left: 39px
+}
+.mfp-arrow-right:before,
+.mfp-arrow-right .mfp-b {
+    border-left: 27px solid #3f3f3f
+}
+.mfp-iframe-holder {
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+.mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 900px
+}
+.mfp-iframe-holder .mfp-close {
+    top: -40px
+}
+.mfp-iframe-scaler {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%
+}
+.mfp-iframe-scaler iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: black
+}
+img.mfp-img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    line-height: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 0 40px;
+    margin: 0 auto
+}
+.mfp-figure {
+    line-height: 0
+}
+.mfp-figure:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 40px;
+    bottom: 40px;
+    display: block;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #444444
+}
+.mfp-figure small {
+    color: #bdbdbd;
+    display: block;
+    font-size: 12px;
+    line-height: 14px
+}
+.mfp-figure figure {
+    margin: 0
+}
+.mfp-bottom-bar {
+    margin-top: -36px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    cursor: auto
+}
+.mfp-title {
+    text-align: left;
+    line-height: 18px;
+    color: #f3f3f3;
+    word-wrap: break-word;
+    padding-right: 36px
+}
+.mfp-image-holder .mfp-content {
+    max-width: 100%
+}
+.mfp-gallery .mfp-image-holder .mfp-figure {
+    cursor: pointer
+}
+@media screen and (max-width: 800px) and (orientation: landscape),
+screen and (max-height: 300px) {
+    .mfp-img-mobile .mfp-image-holder {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .mfp-img-mobile img.mfp-img {
+        padding: 0
+    }
+    .mfp-img-mobile .mfp-figure:after {
+        top: 0;
+        bottom: 0
+    }
+    .mfp-img-mobile .mfp-figure small {
+        display: inline;
+        margin-left: 5px
+    }
+    .mfp-img-mobile .mfp-bottom-bar {
+        background: rgba(0, 0, 0, 0.6);
+        bottom: 0;
+        margin: 0;
+        top: auto;
+        padding: 3px 5px;
+        position: fixed;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    .mfp-img-mobile .mfp-bottom-bar:empty {
+        padding: 0
+    }
+    .mfp-img-mobile .mfp-counter {
+        right: 5px;
+        top: 3px
+    }
+    .mfp-img-mobile .mfp-close {
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        text-align: center;
+        padding: 0
+    }
+}
+@media all and (max-width: 900px) {
+    .mfp-arrow {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75)
+    }
+    .mfp-arrow-left {
+        -webkit-transform-origin: 0;
+        transform-origin: 0
+    }
+    .mfp-arrow-right {
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%
+    }
+    .mfp-container {
+        padding-left: 6px;
+        padding-right: 6px
+    }
+}
+.mfp-ie7 .mfp-img {
+    padding: 0
+}
+.mfp-ie7 .mfp-bottom-bar {
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: 5px;
+    padding-bottom: 5px
+}
+.mfp-ie7 .mfp-container {
+    padding: 0
+}
+.mfp-ie7 .mfp-content {
+    padding-top: 44px
+}
+.mfp-ie7 .mfp-close {
+    top: 0;
+    right: 0;
+    padding-top: 0
+}
+
+
 /**
+ * THEMESTYLE.CSS
  * Theme Name:  Mehta
  * Theme URI:   http://steinbay.com/themes/mehta 
  * Description: A fork of/from Theme Hybrid’s Hybrid-Base
@@ -2737,326 +3575,10 @@ in our custom popuos we create a new div classed mfp-dscaption inside mfp-title.
 
 /* END of themestyle.css */
 
-/* CSS for theme plugins */
 
-/* Contact Form 7 message style tweaks*/
-div.wpcf7 {
-	width: 100%; 
-	
-	/* border: 1px solid black; */
-}
-	div.wpcf7 form.wpcf7-form {
-		/* border: 1px solid #999; */
-		width: auto;
-		max-width: 600px;
-		/* margin: 0 auto; /* Center the entire form */
-		margin: 5px;
-		padding: 0 20px 0 5px;
-	}
-	
-		div.wpcf7 form.wpcf7-form input,
-		div.wpcf7 form.wpcf7-form textarea {
-			color: black;
-		}
-
-.wpcf7-form-control-wrap .wpcf7-text {
-	max-width: 25em; /* max text field width */
-}
-
-.wpcf7-form-control-wrap .wpcf7-quiz {
-	max-width: 12em; /* max "music" field width */
-}
-
-.wpcf7-form-control {
-	
-}
-.wpcf7 p {
-	margin-bottom: 1.5em;
-}
-.wpcf7-submit {
-	font-size: 1.5em;
-	margin: 0;
-	text-indent: 0;
-	text-align: center;
-	width: 4.5em;
-	color: black;
-	border-radius: 12px;
-}
-
-div.wpcf7-response-output.wpcf7-validation-errors {
-	border: 1px solid orange !important;
-	text-indent: 0em;
-	color: orange;
-}
-div.wpcf7-response-output,
-div.wpcf7-mail-sent-ok,
-.wpcf7-response-output.wpcf7-mail-sent-ok
-{
-	text-indent: 0em;
-	color: #FAEBD7;
-	border: 1px solid #EECBAD !important;
-}
-span.wpcf7-not-valid-tip {
-	font-size: 90%;
-	text-indent: 1em;
-	color: orange !important;
-	border: 1px solid orange;
-}
-
-/* directly Copied from cf7 css */
-
-div.wpcf7-response-output {
-	margin: 2em 0.5em 1em;
-	padding: 0.2em 1em;
-}
-
-div.wpcf7 .screen-reader-response {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-	height: 1px;
-	width: 1px;
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-div.wpcf7-mail-sent-ok {
-	border: 2px solid #398f14;
-}
-
-div.wpcf7-mail-sent-ng {
-	border: 2px solid #ff0000;
-}
-
-div.wpcf7-spam-blocked {
-	border: 2px solid #ffa500;
-}
-
-div.wpcf7-validation-errors {
-	border: 2px solid #f7e700;
-}
-
-span.wpcf7-form-control-wrap {
-	position: relative;
-}
-
-.use-floating-validation-tip span.wpcf7-not-valid-tip { 
-	position: absolute;
-	top: 20%;
-	left: 20%;
-	z-index: 100;
-	border: 1px solid #ff0000;
-	background: #fff;
-	padding: .2em .8em;
-}
-
-span.wpcf7-list-item {
-	margin-left: 0.5em;
-}
-
-.wpcf7-display-none {
-	display: none;
-}
-
-div.wpcf7 img.ajax-loader {
-	border: none;
-	vertical-align: middle;
-	margin-left: 4px;
-}
-
-div.wpcf7 div.ajax-error {
-	display: none;
-}
-
-div.wpcf7 .placeheld {
-	color: #888;
-}
-
-/* === GIGPRESS used for calendar events=== */
-
-/* Stock items from original css. */
-/* These styles control the peek-a-boo "add" links to iCal and Google Calendar. Behaviour dictated by a separate jQuery script. */
-/* Default wrapper for the year/month dropdown */
-.gigpress-menu-container {
-	padding: 5px 0;
-	text-align: right;
-	float: right;
-}
-/* Meet the table that displays our shows */
-.gigpress-table {
-/*	width: 100%;
-	border: none;
-	border-collapse: collapse;
-	border-top: 1px solid #CCC;
-*/
-	margin: 0.5em 0 1em 0;
-}
-td.gigpress-links-cell {
-	vertical-align: top;
-}
-
-.gigpress-calendar-add {
-	position: relative;
-}
-
-a.gigpress-links-toggle {
-	display: block;
-	text-indent: -9999px;
-	width: 11px;
-	height: 11px;
-	background: transparent url(/content-wp/plugins/gigpress/images/calendar-toggle.png) no-repeat left top;
-	cursor: pointer;
-}
-
-a.gigpress-links-toggle:hover {
-	background-position: -11px 0px;
-}
-
-a.gigpress-link-active {
-	background-position: -33px;
-}
-
-a.gigpress-link-active:hover {
-	background-position: -22px;
-}
-
-div.gigpress-calendar-links {
-	display: none;
-	position: absolute;
-	left: 20px;
-	top: -1.2em;
-	width: 15em;
-	padding-left: 7px;
-	background: transparent url(/content-wp/plugins/gigpress/images/calendar-links-bg.png) no-repeat left center;
-}
-
-.gigpress-calendar-links-inner {
-	background-color: #F3F3F3;
-	padding: 6px 8px;
-	font-size: 11px;
-	line-height: 16px;
-	border: 1px solid #CCC;
-	border-width: 1px 1px 1px 0;
-}
-
-div.gigpress-calendar-links span {
-	background-color: blue;
-	display: block;
-}
-
-/* These are for the RSS/iCal subscribe links */
-p.gigpress-subscribe {
-	text-align: left;
-	color: #999;
-}
-
-p.gigpress-subscribe a {
-	display: inline-block;
-	text-indent: -9999px;
-	width: 12px;
-	margin: 0 3px;
-}
-
-a.gigpress-rss, a.gigpress-rss:hover {
-	background: transparent url(/content-wp/plugins/gigpress/images/feed-icon-12x12.png) no-repeat left center;	
-}
-
-a.gigpress-ical, a.gigpress-ical:hover {
-	background: transparent url(/content-wp/plugins/gigpress/images/icalendar-icon.gif) no-repeat left center;	
-}
-
-/* This is just to include data for hcalendar support, but hide it from view */
-.vevent .hide { display: none; }
-
-
-/* Now we make gigpress changes. */
-
-/* TEST Force table to not be like tables anymore. might be useful for small screens. 
-table.gigpress-table, 
-.gigpress-table tbody, 
-.gigpress-table th, 
-.gigpress-table td, 
-.gigpress-table tr { 
-	display: block; 
-} */
-
-/* Set left row of table */
-td.gigpress-date {
-	width: 10em;
-	/*min-width: 150px;
-	min-width: 15rem; /* was 12rem was 7.5em */
-	max-width: 33%;
-	word-break: keep-all;
-	word-wrap: normal;
-}
-.gigpress-calendar-links-inner {
-	border: 3px solid #CCC;
-	line-height: 20px;
-	line-height: 2rem;
-} /* Outer box has arrow */
-
-.gigpress-title-item,
-.gigpress-sidebar-title {
-	font-size: 100%;
-	text-shadow: 1px 1px 1px #000;
-}
-.gigpress-ds-description {
-	font-size: 95%;
-	margin-bottom: 0.75em;
-}
-.gigpress-ds-more-info {
-	font-style: italic;
-	font-size: 85%;
-}
-.gigpress-ds-venue {
-	font-size: 85%;
-}
-.gigpress-ds-event-type {
-	float: right;
-	text-align: right;
-	width: auto;
-	font-size: 85%;
-}
-.gigpress-ds-event-end {
-	clear: both;
-}
-
-/* Widget Gigpress */
-#sidebar-primary .widget_gigpress h3.widget-title { margin-bottom: 5px; }
-
-#sidebar-primary .widget ul.gigpress-listing { 
-	margin-bottom: 0.5em; 
-}
-
-#sidebar-primary .widget .gigpress-listing li {
-	list-style: square;
-	list-style-position: inside;
-}
-#sidebar-primary .widget span.gigpress-sidebar-date {
-	font-weight: bold;
-	display: block;
-	font-weight: normal;
-	margin-top: 5px;
-}
-#sidebar-primary .widget .gigpress-sidebar-more {
-	text-align: center;
-	font-style: italic;
-}
-#sidebar-primary .widget p.gigpress-sidebar-more {
-	margin-bottom: 1em;
-}
-
-abbr,
-.widget_gigpress abbr { 
-	cursor: pointer;
-	border: none;
-	text-decoration: none;
-}
-/* End of Gigpress style */
-
-/**
- * Media Queries overwrite for style.css CSS
+/******
+ * RESPONSIVE.CSS
+ * Media Queries overwrites
  * Mehta Theme
  */
 
@@ -3436,3 +3958,381 @@ abbr,
 
 
 
+/************
+PARALLAX-HOME.CSS
+Home Page has a slider and parallax pages.
+The mobile view is a static page set to display: none and 
+it is controlled by javascriptadding class smallscreen.  
+*/
+
+/* Handle turning on/off small screen thin display. 
+Uses body class smallscreen added by javascript above. */
+.mobilehome { display: none; }
+.smallscreen .mobilehome { display: block; }
+.smallscreen #scrollwindow { display: none; }
+.smallscreen .scrollarrows { display: none; }
+
+/* Temp Page Tweaks
+.header-image-wrap,
+.breadcrumb-trail,
+header.entry-header,
+.entry-content p:first-of-type,
+.post-edit-link {
+    display: none;
+} */
+
+/* Black Border Box for our Snowfall */
+div#scrollwindow {
+    position: relative;
+    height: 640px;
+    width: auto;
+    border: 20px solid black;
+    box-sizing: border-box;
+    background: black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+	#scrollwindow ul li {
+	    list-style-type: none;
+	}
+
+div.scrollarrows {
+	position: relative;
+    height: 20px; /* used above and below scroll window  */
+    width: 100%;
+}
+
+.fixeddiv { width: 100%; height: 600px; position: relative; }
+
+/* Arrows are a lot of work */
+.arrow {
+	z-index: 10;
+	position: absolute; 
+	width: 100%;
+	text-align: center;
+	/*opacity: 0.5;
+	transition: opacity 0.25s ease-in-out; */
+	/* border: 1px solid #999; */
+}
+.arrow a { 
+	border-bottom: none;
+}
+
+.uparrow { 
+display: none; /* see below */
+position: absolute;
+top: 20px; 
+left: 49%;
+background-image: url(/content-wp/themes/mehta/images/uparrow.png);
+width: 44px;
+height: 16px;
+background-size: contain;
+background-position: 0px 0px;
+background-repeat: no-repeat;
+overflow: hidden;
+line-height: 5em;
+}
+
+.smoothscroll_used .uparrow { display: inline-block; }
+
+.downarrow { 
+position: absolute;
+bottom: 20px;
+left: 49%;
+background-image: url(/content-wp/themes/mehta/images/downarrow.png);
+display: inline-block;
+width: 44px;
+height: 16px;
+background-size: contain;
+background-position: 0px 0px;
+background-repeat: no-repeat;
+/* overflow: hidden; REVEAL CLICK TO SCROLL, PLEASE */
+overflow: visible;
+line-height: 5em;
+}
+.arrow-link {
+/* TEST */
+    position: absolute;
+    left: -50px;
+    right: -50px;
+    top: -14px;
+    height: 40px;
+    text-align: center;
+    overflow: visible;
+    font-size: 80%;
+    font-variant: small-caps;
+    font-style: italic;
+    z-index: 10;
+	background-color: transparent;
+
+/* OLD position: absolute;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+min-height: 42px;
+text-align: center;
+overflow: hidden;
+z-index: 10; /* test */
+}
+
+.yoohoo {
+	-webkit-animation: pulse 0.75s ease-in-out infinite alternate;
+	animation: pulse 0.75s ease-in-out infinite alternate; 
+}
+/* Above not working yet */
+
+.spacer { width: 100%; height: 0px; }
+
+#slide-one { background-color: green; }
+#slide-two { background-color: red; }
+#slide-three { background-color: blue; }
+#slide-four { background-color: orange; }
+
+/* Parallax Layering */
+.parallax__group {
+	position: relative;
+	height: 600px; 
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 30px;
+	height:  540px; /*600 - 30 - 30 margin */
+	background: transparent;
+	/* height: 600px;
+	width: 100%; */
+}
+
+.parallax__layer--fore {
+	-webkit-transform: translateZ(90px) scale(.7);
+	transform: translateZ(90px) scale(.7);
+	z-index: 1;
+	/* border: 1px solid fuchsia; */
+}
+
+.parallax__layer--base {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	z-index: 4;
+}
+
+.parallax__layer--back {
+	-webkit-transform: translateZ(-300px) scale(2);
+	transform: translateZ(-300px) scale(2);
+	z-index:  3;
+}
+
+.parallax__layer--over {
+	-webkit-transform: translateZ(180px) scale(.42);
+	transform: translateZ(180px) scale(.42);
+	z-index:  5;
+	/* border: 1px solid orange; */
+}
+
+.parallax__layer--deep {
+	-webkit-transform: translateZ(-600px) scale(3);
+	transform: translateZ(-600px) scale(3);
+	z-index: 2;
+}
+
+.parallax__layer--centerslice {
+	margin: 30px 0;
+	margin-left: -12.5vw;
+	left: 50%;
+	right: auto;
+	width: 25vw;
+	/* border: 5px solid green; */
+
+	-webkit-transform: translateZ(180px) scale(.42);
+	transform: translateZ(180px) scale(.42);
+	z-index:  5;
+}
+
+#group1 {
+    z-index: 5; /* slide over group 2 */
+}
+
+#group1 .parallax__layer--base {
+    background: transparent;
+  }
+
+#group2 {
+    z-index: 3; /* slide under groups 1 and 3 */
+}
+.bkgblue {
+    background: url('/content-wp/themes/mehta/images//trees_superblur.jpg') no-repeat;   
+}
+
+#group3 {
+    z-index: 4; /* slide over group 2 and 4 */
+}
+
+.bkgwhiteboard {
+    background: url('/content-wp/themes/mehta/images/jake-whiteboard.jpg') no-repeat center; 
+}
+#group4 {
+    z-index: 5; /* slide over group 3 */
+    background: transparent;
+}
+
+/* Royal Slider caption */
+.royalSlider figcaption  {
+	background-color: #000;
+	width: 100%; 
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	top: auto;
+   /* width: 100%; */
+   text-align: center;
+   /* background: blue; */
+}
+.royalSlider figcaption  p { margin: 0px; }
+
+/* Royal Slider special title slides for operas */
+.dsrsTitleSlide {
+	padding: 0 10px 10px 10px;
+	width: auto;
+	bottom: 25px !important;
+	top: auto !important;
+	left: 25px !important;
+	right: auto !important; 
+	z-index: 20 !important;
+	/*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);*/
+	background: rgba(254,254,254,0.2);
+	border-radius: 10px; /*50%;*/
+}
+
+/* Royal Slider special text for Jake Heggie is the American composer of */
+.dsrsTextSlide {
+	color: FAEBD7;
+	width: 325px;
+	padding-bottom: 10px;
+	top: 20px !important;
+	right: 20px !important;
+	left: auto !important;
+	z-index: 20 !important;
+	/*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);*/
+	background: rgba(0,0,0,0.2);
+	border-radius: 10px; /*50%;*/
+}
+
+/* Royal Slider misc tweaks */
+.rsABImage, .rsImg { border: none !important; }
+
+/* Fonts for our special slides. Used in Royal Slider and Snowfall page. */
+.parallax-slide h1,
+.dsrsTextSlide h1,
+.dsrsTitleSlide h1 {
+	color: #FAEBD7;
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 44px;
+	font-weight: 300;
+	font-style: normal;
+	font-variant: small-caps;
+	margin: 0.5em 0 0.5em 0; /* margin: 0 0 10px 0; */
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.parallax-slide h2,
+.dsrsTextSlide h2,
+.dsrsTitleSlide h2 {
+	font-family: 'Merriweather', Georgia, serif; 
+	letter-spacing: 2pt; 
+	line-height: 100%;
+	vertical-align: -1; 
+	font-variant: small-caps;
+	margin: 0.5em 0 0 0; /* margin: 0 0 10px 0; */
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.parallax-slide .blackfont {
+    color: black;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+.parallax-slide h3,
+.dsrsTextSlide h3,
+.dsrsTitleSlide h3 {
+	color: #FAEBD7;
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 22px;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	margin: 0.5em 0 0 0; /* 0; */
+	text-align: center;
+}
+
+.parallax-slide h4,
+.dsrsTextSlide h4,
+.dsrsTitleSlide h4 {
+	color: #FAEBD7;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	font-style: italic;
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	margin: 0.5em 0 0 0; /* 0; */
+	text-align: center;
+}
+
+/* Scale Alan Trugman's genre images with screen size. */
+.parallax-genre-img {
+	height: 250px;
+	width: 250px;
+	max-height: 23vw;
+	max-width: 23vw;	
+}
+
+.parallax-genre-img.top {
+	position: absolute;
+	top: 0;
+}
+
+.parallax-genre-img.bottom { 
+	position: absolute;
+	bottom: 0;
+}
+
+.parallax-genre-img.left { 
+	position: absolute;
+	left: 0;
+}
+
+.parallax-genre-img.right { 
+	position: absolute;
+	right: 0;
+}
+
+.parallax-genre-img.operacenter { /* center within centerslice */
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 5vh;
+	max-height: 25vw;
+	max-width: 25vw;
+}
+
+/* Narrow screens dontnhave room for themtitle slide. */
+@media screen and (max-width: 824px) {
+     .dsrsTitleSlide { display: none !important; }
+}

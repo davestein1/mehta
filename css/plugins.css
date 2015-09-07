@@ -1,4 +1,7 @@
-/* CSS for theme plugins */
+/******
+* PLUGINS.CSS 
+* Style for theme plugins 
+*/
 
 /* Contact Form 7 message style tweaks*/
 div.wpcf7 {
@@ -314,4 +317,80 @@ abbr,
 	border: none;
 	text-decoration: none;
 }
+
+/* Gigpress in a Slider */
+#gigpress-slide table.gigpress-table,
+#gigpress-slide table.gigpress-table tbody,
+#gigpress-slide table.gigpress-table td { border: none; }
+
+div#gigpress-slide {
+  height:  595px; /* 100%; */
+  background: #36648B;  
+  border: 1px solid white;
+  padding: 4px;
+  margin-left: 15px;
+} 
+
+#gigpress-slide div.gigpress-shows {
+  max-height: 450px; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+/* Mobile home page Gigpress Tweaks */
+.mobilehome #gigpress-slide div.gigpress-shows {
+  height: auto;
+  max-height: 1000px; 
+}
+.mobilehome #gigpress-slide {
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#gigpress-slide .gigpress-table td { 
+display: block; 
+width: 100%;
+max-width: 100%; 
+border: none;
+}
+
+#gigpress-slide .gigpress-table td.description { 
+  margin-left: 20px; 
+  margin-right: 8px;
+  margin-top: -5px;
+  width: auto;
+}
+
+#gigpress-slide  .gigpress-table tr td.description .gigpress-info-item,
+#gigpress-slide .gigpress-links-cell,
+#gigpress-slide .gigpress-info-item.gigpress-year { display: none; }
+
+#gigpress-slide h2,
+#gigpress-slide h3,
+#gigpress-slide .gigpress-subscribe { text-align: center; }
+
+#gigpress-slide .widget_gigpress h3.widget-title { margin-bottom: 5px; }
+
+#gigpress-slide .widget ul.gigpress-listing { 
+	margin-bottom: 0.5em; 
+}
+
+#gigpress-slide .widget .gigpress-listing li {
+	list-style: square;
+	list-style-position: inside;
+}
+#gigpress-slide .widget span.gigpress-sidebar-date {
+	font-weight: bold;
+	display: block;
+	font-weight: normal;
+	margin-top: 5px;
+}
+#gigpress-slide .widget .gigpress-sidebar-more {
+	text-align: center;
+	font-style: italic;
+}
+#gigpress-slide .widget p.gigpress-sidebar-more {
+	margin-bottom: 1em;
+}
+
 /* End of Gigpress style */

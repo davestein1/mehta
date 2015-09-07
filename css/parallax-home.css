@@ -1,0 +1,378 @@
+/************
+PARALLAX-HOME.CSS
+Home Page has a slider and parallax pages.
+The mobile view is a static page set to display: none and 
+it is controlled by javascriptadding class smallscreen.  
+*/
+
+/* Handle turning on/off small screen thin display. 
+Uses body class smallscreen added by javascript above. */
+.mobilehome { display: none; }
+.smallscreen .mobilehome { display: block; }
+.smallscreen #scrollwindow { display: none; }
+.smallscreen .scrollarrows { display: none; }
+
+/* Temp Page Tweaks
+.header-image-wrap,
+.breadcrumb-trail,
+header.entry-header,
+.entry-content p:first-of-type,
+.post-edit-link {
+    display: none;
+} */
+
+/* Black Border Box for our Snowfall */
+div#scrollwindow {
+    position: relative;
+    height: 640px;
+    width: auto;
+    border: 20px solid black;
+    box-sizing: border-box;
+    background: black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+	#scrollwindow ul li {
+	    list-style-type: none;
+	}
+
+div.scrollarrows {
+	position: relative;
+    height: 20px; /* used above and below scroll window  */
+    width: 100%;
+}
+
+.fixeddiv { width: 100%; height: 600px; position: relative; }
+
+/* Arrows are a lot of work */
+.arrow {
+	z-index: 10;
+	position: absolute; 
+	width: 100%;
+	text-align: center;
+	/*opacity: 0.5;
+	transition: opacity 0.25s ease-in-out; */
+	/* border: 1px solid #999; */
+}
+.arrow a { 
+	border-bottom: none;
+}
+
+.uparrow { 
+display: none; /* see below */
+position: absolute;
+top: 20px; 
+left: 49%;
+background-image: url(/content-wp/themes/mehta/images/uparrow.png);
+width: 44px;
+height: 16px;
+background-size: contain;
+background-position: 0px 0px;
+background-repeat: no-repeat;
+overflow: hidden;
+line-height: 5em;
+}
+
+.smoothscroll_used .uparrow { display: inline-block; }
+
+.downarrow { 
+position: absolute;
+bottom: 20px;
+left: 49%;
+background-image: url(/content-wp/themes/mehta/images/downarrow.png);
+display: inline-block;
+width: 44px;
+height: 16px;
+background-size: contain;
+background-position: 0px 0px;
+background-repeat: no-repeat;
+/* overflow: hidden; REVEAL CLICK TO SCROLL, PLEASE */
+overflow: visible;
+line-height: 5em;
+}
+.arrow-link {
+/* TEST */
+    position: absolute;
+    left: -50px;
+    right: -50px;
+    top: -14px;
+    height: 40px;
+    text-align: center;
+    overflow: visible;
+    font-size: 80%;
+    font-variant: small-caps;
+    font-style: italic;
+    z-index: 10;
+	background-color: transparent;
+
+/* OLD position: absolute;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+min-height: 42px;
+text-align: center;
+overflow: hidden;
+z-index: 10; /* test */
+}
+
+.yoohoo {
+	-webkit-animation: pulse 0.75s ease-in-out infinite alternate;
+	animation: pulse 0.75s ease-in-out infinite alternate; 
+}
+/* Above not working yet */
+
+.spacer { width: 100%; height: 0px; }
+
+#slide-one { background-color: green; }
+#slide-two { background-color: red; }
+#slide-three { background-color: blue; }
+#slide-four { background-color: orange; }
+
+/* Parallax Layering */
+.parallax__group {
+	position: relative;
+	height: 600px; 
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 30px;
+	height:  540px; /*600 - 30 - 30 margin */
+	background: transparent;
+	/* height: 600px;
+	width: 100%; */
+}
+
+.parallax__layer--fore {
+	-webkit-transform: translateZ(90px) scale(.7);
+	transform: translateZ(90px) scale(.7);
+	z-index: 1;
+	/* border: 1px solid fuchsia; */
+}
+
+.parallax__layer--base {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	z-index: 4;
+}
+
+.parallax__layer--back {
+	-webkit-transform: translateZ(-300px) scale(2);
+	transform: translateZ(-300px) scale(2);
+	z-index:  3;
+}
+
+.parallax__layer--over {
+	-webkit-transform: translateZ(180px) scale(.42);
+	transform: translateZ(180px) scale(.42);
+	z-index:  5;
+	/* border: 1px solid orange; */
+}
+
+.parallax__layer--deep {
+	-webkit-transform: translateZ(-600px) scale(3);
+	transform: translateZ(-600px) scale(3);
+	z-index: 2;
+}
+
+.parallax__layer--centerslice {
+	margin: 30px 0;
+	margin-left: -12.5vw;
+	left: 50%;
+	right: auto;
+	width: 25vw;
+	/* border: 5px solid green; */
+
+	-webkit-transform: translateZ(180px) scale(.42);
+	transform: translateZ(180px) scale(.42);
+	z-index:  5;
+}
+
+#group1 {
+    z-index: 5; /* slide over group 2 */
+}
+
+#group1 .parallax__layer--base {
+    background: transparent;
+  }
+
+#group2 {
+    z-index: 3; /* slide under groups 1 and 3 */
+}
+.bkgblue {
+    background: url('/content-wp/themes/mehta/images//trees_superblur.jpg') no-repeat;   
+}
+
+#group3 {
+    z-index: 4; /* slide over group 2 and 4 */
+}
+
+.bkgwhiteboard {
+    background: url('/content-wp/themes/mehta/images/jake-whiteboard.jpg') no-repeat center; 
+}
+#group4 {
+    z-index: 5; /* slide over group 3 */
+    background: transparent;
+}
+
+/* Royal Slider caption */
+.royalSlider figcaption  {
+	background-color: #000;
+	width: 100%; 
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	top: auto;
+   /* width: 100%; */
+   text-align: center;
+   /* background: blue; */
+}
+.royalSlider figcaption  p { margin: 0px; }
+
+/* Royal Slider special title slides for operas */
+.dsrsTitleSlide {
+	padding: 0 10px 10px 10px;
+	width: auto;
+	bottom: 25px !important;
+	top: auto !important;
+	left: 25px !important;
+	right: auto !important; 
+	z-index: 20 !important;
+	/*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);*/
+	background: rgba(254,254,254,0.2);
+	border-radius: 10px; /*50%;*/
+}
+
+/* Royal Slider special text for Jake Heggie is the American composer of */
+.dsrsTextSlide {
+	color: FAEBD7;
+	width: 325px;
+	padding-bottom: 10px;
+	top: 20px !important;
+	right: 20px !important;
+	left: auto !important;
+	z-index: 20 !important;
+	/*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);*/
+	background: rgba(0,0,0,0.2);
+	border-radius: 10px; /*50%;*/
+}
+
+/* Royal Slider misc tweaks */
+.rsABImage, .rsImg { border: none !important; }
+
+/* Fonts for our special slides. Used in Royal Slider and Snowfall page. */
+.parallax-slide h1,
+.dsrsTextSlide h1,
+.dsrsTitleSlide h1 {
+	color: #FAEBD7;
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 44px;
+	font-weight: 300;
+	font-style: normal;
+	font-variant: small-caps;
+	margin: 0.5em 0 0.5em 0; /* margin: 0 0 10px 0; */
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.parallax-slide h2,
+.dsrsTextSlide h2,
+.dsrsTitleSlide h2 {
+	font-family: 'Merriweather', Georgia, serif; 
+	letter-spacing: 2pt; 
+	line-height: 100%;
+	vertical-align: -1; 
+	font-variant: small-caps;
+	margin: 0.5em 0 0 0; /* margin: 0 0 10px 0; */
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.parallax-slide .blackfont {
+    color: black;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+.parallax-slide h3,
+.dsrsTextSlide h3,
+.dsrsTitleSlide h3 {
+	color: #FAEBD7;
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 22px;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	margin: 0.5em 0 0 0; /* 0; */
+	text-align: center;
+}
+
+.parallax-slide h4,
+.dsrsTextSlide h4,
+.dsrsTitleSlide h4 {
+	color: #FAEBD7;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	font-style: italic;
+	text-shadow: 1px 1px 1px #000;
+	white-space: nowrap;
+	margin: 0.5em 0 0 0; /* 0; */
+	text-align: center;
+}
+
+/* Scale Alan Trugman's genre images with screen size. */
+.parallax-genre-img {
+	height: 250px;
+	width: 250px;
+	max-height: 23vw;
+	max-width: 23vw;	
+}
+
+.parallax-genre-img.top {
+	position: absolute;
+	top: 0;
+}
+
+.parallax-genre-img.bottom { 
+	position: absolute;
+	bottom: 0;
+}
+
+.parallax-genre-img.left { 
+	position: absolute;
+	left: 0;
+}
+
+.parallax-genre-img.right { 
+	position: absolute;
+	right: 0;
+}
+
+.parallax-genre-img.operacenter { /* center within centerslice */
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 5vh;
+	max-height: 25vw;
+	max-width: 25vw;
+}
+
+/* Narrow screens dontnhave room for themtitle slide. */
+@media screen and (max-width: 824px) {
+     .dsrsTitleSlide { display: none !important; }
+}
