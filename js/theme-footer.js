@@ -1,10 +1,4 @@
-jQuery( document ).ready( function($) {
-
-	/* Catch a small screen and add a body class */
-	if ( window.innerWidth < 600 ) {
-		/* alert("small screen!"); */
-		document.getElementsByTagName('body')[0].className+=' smallscreen'; 
-	} 
+jQuery( document ).ready( function($) { 
 
 	/* == Works Filter Name -- set text and class DS == */
 	if($( ".works-filter" ).is( ":visible" )) {
