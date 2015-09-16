@@ -7,18 +7,18 @@ it is controlled by javascript adding class smallscreen.
 
 /* Handle turning on/off small screen thin display. 
 Uses body class smallscreen added by theme.js javascript. */
-.js-active .mobilehome { display: none; }
+body.js-active .mobilehome { display: none; }
 
 /* Javascript theme.js sets body class js-active and then smallscreen if appropriate. 
 	we use that to decide whether the slider or minimal view will be used. */
-.js-active.smallscreen .mobilehome { display: block; }
+body.js-active.smallscreen .mobilehome { display: block; }
 
 /* Turn off the fancy home page if no javascript or if a smallscreen */
-.js-active.smallscreen #scrollwindow, 
+body.js-active.smallscreen #scrollwindow, 
 body:not(.js-active) #scrollwindow { 
 	display: none; 
 }
-.js-active.smallscreen .scrollarrows, 
+body.js-active.smallscreen .scrollarrows, 
 body:not(.js-active) .scrollarrows {
 	display: none; 
 }
