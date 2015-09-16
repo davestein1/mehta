@@ -15,11 +15,11 @@ Uses body class smallscreen added by theme.js javascript. */
 
 /* Turn off the fancy home page if no javascript or if a smallscreen */
 .js-active.smallscreen #scrollwindow, 
-:not(.js-active) #scrollwindow { 
+body:not(.js-active) #scrollwindow { 
 	display: none; 
 }
 .js-active.smallscreen .scrollarrows, 
-:not(.js-active) .scrollarrows {
+body:not(.js-active) .scrollarrows {
 	display: none; 
 }
 
