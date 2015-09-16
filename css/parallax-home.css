@@ -2,12 +2,12 @@
 PARALLAX-HOME.CSS
 Home Page has a slider and parallax pages.
 The mobile view is a static page set to display: none and 
-it is controlled by javascriptadding class smallscreen.  
+it is controlled by javascript adding class smallscreen.  
 */
 
 /* Handle turning on/off small screen thin display. 
-Uses body class smallscreen added by javascript above. */
-.mobilehome { display: none; }
+Uses body class smallscreen added by theme.js javascript. */
+.js-active .mobilehome { display: none; }
 .smallscreen .mobilehome { display: block; }
 .smallscreen #scrollwindow { display: none; }
 .smallscreen .scrollarrows { display: none; }
