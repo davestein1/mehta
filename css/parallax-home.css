@@ -33,6 +33,7 @@ div#scrollwindow {
     background: black;
     overflow-x: hidden;
     overflow-y: auto;
+    -ms-overflow-style: none;
     -webkit-perspective: 300px;
     perspective: 300px;
 }
