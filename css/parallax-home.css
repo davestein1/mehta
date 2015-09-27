@@ -37,8 +37,9 @@ div#scrollwindow {
     -webkit-perspective: 300px;
     perspective: 300px;
 }
-
-	div#scrollwindow::-webkit-scrollbar: width: 8px;
+	/* webkit browser Scrollbar customize. */
+	div#scrollwindow::-webkit-scrollbar: { width: 8px; height: 30px; }
+	
 	div#scrollwindow::-webkit-scrollbar-track {
 	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 	    -webkit-border-radius: 10px;
