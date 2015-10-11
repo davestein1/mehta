@@ -32,11 +32,14 @@ div#scrollwindow {
     box-sizing: border-box;
     background: black;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     -ms-overflow-style: none;
     -webkit-perspective: 300px;
     perspective: 300px;
 }
+	/* Scrollbar auto-hide */
+	div#scrollwindow:hover { overflow-y: auto; }
+	
 	/* webkit browser Scrollbar customize. */
 	div#scrollwindow::-webkit-scrollbar: { width: 8px; height: 30px; }
 	
