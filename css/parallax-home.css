@@ -41,21 +41,21 @@ div#scrollwindow {
 	div#scrollwindow:hover { overflow-y: auto; }
 	
 	/* webkit browser Scrollbar customize. */
-	div#scrollwindow::-webkit-scrollbar: { width: 8px; height: 30px; }
+	#scrollwindow::-webkit-scrollbar: { width: 8px; height: 30px; }
 	
-	div#scrollwindow::-webkit-scrollbar-track {
+	#scrollwindow::-webkit-scrollbar-track {
 	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 	    -webkit-border-radius: 10px;
 	    border-radius: 10px;
 	}
 	/* Handle */
-	div#scrollwindow::-webkit-scrollbar-thumb {
+	#scrollwindow::-webkit-scrollbar-thumb {
 	    -webkit-border-radius: 10px;
 	    border-radius: 10px;
 	    background: rgba(0,0,128,0.8); 
 	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 	}
-	div#scrollwindow::-webkit-scrollbar-thumb:window-inactive {
+	#scrollwindow::-webkit-scrollbar-thumb:window-inactive {
 		background: rgba(0,0,128,0.4); 
 	}
 
