@@ -1526,11 +1526,11 @@ body {
 
 a {
 	color: #FAEBD7;
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted #999;
 }
 a:hover {
 	color: #FFF;
-	border-bottom: 1px dotted #000;
+	border-bottom: 1px solid #FAEBD7;
 	text-decoration: none;
 }
 
@@ -2008,9 +2008,9 @@ img.size-full {}
 		#menu-secondary.menu { width: auto; float: right; }
 		#menu-secondary ul { margin: 0; list-style:none; } /* margin: 5px; */
 		#menu-secondary ul li { display:inline; /* padding: 7px 0px 7px 10px; */ float: left;}
-		#menu-secondary ul li a { padding:0 0 0 0.6em; font-family: 'Merriweather', Georgia, serif;font-size: 90%; font-weight: bold; text-shadow: 1px 1px 1px #000; white-space: nowrap;}
+		#menu-secondary ul li a { padding:0 0 0 0.6em; font-family: 'Merriweather', Georgia, serif;font-size: 90%; font-weight: bold; text-shadow: 1px 1px 1px #000; white-space: nowrap; border-bottom: none;}
 		#menu-secondary ul li a:hover,
-		#menu-secondary li.current-menu-item a {color: white; text-decoration: none; }
+		#menu-secondary li.current-menu-item a {color: white; text-decoration: none; border-bottom: none; }
 
 			#site-top #menu-secondary { /* Hug bottom of #site-top div. */ 
 				/* border: 1px solid #000; */
@@ -2708,8 +2708,13 @@ hr {
 		float: left;
 	}
 
-	#footer a {}
-	#footer a:hover {}
+	#footer a {
+		border-bottom: none;
+	}
+	
+	#footer a:hover {
+		border-bottom: none;
+	}
 
 /**
  * Media Queries
@@ -3992,10 +3997,33 @@ div#scrollwindow {
     box-sizing: border-box;
     background: black;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
     -webkit-perspective: 300px;
     perspective: 300px;
 }
+	/* Scrollbar auto-hide */
+	div#scrollwindow:hover { overflow-y: auto; }
+	
+	/* webkit browser Scrollbar customize. */
+	#scrollwindow::-webkit-scrollbar: { width: 8px; height: 30px; }
+	
+	#scrollwindow::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	}
+	/* Handle */
+	#scrollwindow::-webkit-scrollbar-thumb {
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	    background: rgba(0,0,128,0.8); 
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+	#scrollwindow::-webkit-scrollbar-thumb:window-inactive {
+		background: rgba(0,0,128,0.4); 
+	}
+
 
 	#scrollwindow ul li {
 	    list-style-type: none;
@@ -4338,3 +4366,6 @@ z-index: 10; /* test */
 @media screen and (max-width: 824px) {
      .dsrsTitleSlide { display: none !important; }
 }
+
+/************
+End of PARALLAX-HOME.CSS */
