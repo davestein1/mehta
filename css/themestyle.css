@@ -43,13 +43,27 @@ body {
 
 a {
 	color: #FAEBD7;
-	border-bottom: 1px dotted #999;
+	border-bottom: none;
 }
 a:hover {
 	color: #FFF;
-	border-bottom: 1px solid #FAEBD7;
+	border-bottom: none;
 	text-decoration: none;
 }
+
+
+	.entry-content a,
+	.entry-meta a {
+		color: #FAEBD7;
+		border-bottom: 1px dotted #999;
+	}
+	
+	.entry-content a:hover,
+	.entry-meta a:hover {
+		color: #FFF;
+		border-bottom: 1px solid #FAEBD7;
+		text-decoration: none;
+	}
 
 /* === Headers === */
 
@@ -839,6 +853,10 @@ hr {
 
 	.entry-content {}
 	
+		/*.entry-content a {}
+		.entry-content a:hover {} Up in Links*/
+
+
 	.entry-content img,
 	.search img.thumbnail {
 		padding: 2px;
@@ -854,8 +872,8 @@ hr {
 
 		.entry-meta { font-size: 80%; }
 
-			.entry-meta a {}
-			.entry-meta a:hover {}
+			/*.entry-meta a {}
+			.entry-meta a:hover {} Up in Links*/
 
 			.entry-meta .published {}
 
