@@ -43,11 +43,11 @@ body {
 
 a {
 	color: #FAEBD7;
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted #999;
 }
 a:hover {
 	color: #FFF;
-	border-bottom: 1px dotted #000;
+	border-bottom: 1px solid #FAEBD7;
 	text-decoration: none;
 }
 
