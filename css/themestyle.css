@@ -64,6 +64,11 @@ a:hover {
 		border-bottom: 1px solid #FAEBD7;
 		text-decoration: none;
 	}
+	
+	.entry-content .wp-caption a,
+	.entry-content .wp-caption a:hover { 
+		border-bottom: none;
+	}
 
 /* === Headers === */
 
