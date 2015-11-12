@@ -1547,6 +1547,11 @@ a:hover {
 		border-bottom: 1px solid #FAEBD7;
 		text-decoration: none;
 	}
+	
+	.entry-content .wp-caption a,
+	.entry-content .wp-caption a:hover { 
+		border-bottom: none;
+	}
 
 /* === Headers === */
 
@@ -3598,6 +3603,7 @@ in our custom popuos we create a new div classed mfp-dscaption inside mfp-title.
 
 /* END of themestyle.css */
 
+
 /******
  * RESPONSIVE.CSS
  * Media Queries overwrites
@@ -4064,7 +4070,9 @@ div.scrollarrows {
 	transition: opacity 0.25s ease-in-out; */
 	/* border: 1px solid #999; */
 }
-.arrow a { 
+.arrow a,
+.entry-content .arrow a,
+.entry-content .arrow a:hover { 
 	border-bottom: none;
 }
 
@@ -4386,3 +4394,4 @@ z-index: 10; /* test */
 
 /************
 End of PARALLAX-HOME.CSS */
+
