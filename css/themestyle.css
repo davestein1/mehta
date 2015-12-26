@@ -2069,25 +2069,35 @@ And the js traps then sets these classes active AT THE TOP OF THE LIGHTBOX DOM.
 1. gallery-popup. if active then it adds class gallery-popup-active. It makes a lightbox carousel of the gallery, whether visible or not. 
 2. gallery-popup-link. if active then it adds class gallery-popup-link-active. we use css to add a slide show graphic to the image programmatically. 
 3. lightbox-popup. if active then it adds class lightbox-popup-active. 
-in our custom popuos we create a new div classed mfp-dscaption inside mfp-title. this allows screen bottom alignment. 
+in our custom popups we create a new div classed mfp-dscaption inside mfp-title. this allows screen bottom alignment. 
 */
 .mfp-bg {
 	opacity: 0.90;
 	filter: alpha(opacity=90);
 }
 
-.mfp-active .gallery-popup-link { position: relative; }
-
-.mfp-active .gallery-popup-link:after {
-	position: absolute;  
-	/* bottom: 5%; left: 5%; top: 0; */ 
-	left: 5px;
+.mfp-active .gallery-popup-link:before {
+	position: relative;
+	left: 5px; 
 	content: "\f232";
 	font-family: "dashicons";
 	font-size: 30px;
 	color: white;
 	-webkit-font-smoothing: antialiased;
 }
+
+.mfp-active .gallery-popup-link {}
+
+.mfp-active .gallery-popup-link:after {}
+
+	/* trick to in-flow floated element 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: right; 
+	visibility: hidden; */
+
+
 .lightbox-popup-active .mfp-title,
 .gallery-popup-link-active .mfp-title {
 	position: fixed;
@@ -2119,3 +2129,4 @@ in our custom popuos we create a new div classed mfp-dscaption inside mfp-title.
 .gallery-popup-link-active .mfp-counter { display: none; }
 
 /* END of themestyle.css */
+/**************************************************/

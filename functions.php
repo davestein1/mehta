@@ -29,6 +29,10 @@
  * @link       http://themehybrid.com/themes/hybrid-base
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
+ 
+ /* Updated:
+ * 25-Dec-2015 added 2 Great Scott banners
+ */
 
 /* Get the template directory and make sure it has a trailing slash. */
 $hybrid_base_dir = trailingslashit( get_template_directory() );
@@ -233,9 +237,9 @@ function my_header_image( $url ) {
 		$url = get_stylesheet_directory_uri() . '/images/headers/banner-collaborators.jpg';
 
 	elseif ( is_search() )
-		$url = get_stylesheet_directory_uri() . '/images/headers/banner-recordings.jpg';
+		$url = get_stylesheet_directory_uri() . '/images/headers/banner-search.jpg';
 
-	elseif ( is_search() || is_category('recordings') || in_category('recordings') )
+	elseif ( is_category('recordings') || in_category('recordings') )
 		$url = get_stylesheet_directory_uri() . '/images/headers/banner-recordings.jpg';
 
 	elseif ( is_category('works') || in_category('works') ) 
@@ -248,7 +252,7 @@ function my_header_image( $url ) {
 		$url = get_stylesheet_directory_uri() . '/images/headers/banner-biography.jpg';
 
 	elseif ( is_page('contact') || ( is_singular() && is_attachment() ) ) 
-		$url = get_stylesheet_directory_uri() . '/images/headers/banner-contact.jpg';
+		$url = get_stylesheet_directory_uri() . '/images/headers/banner-contact2.jpg';
 		
 	else 
 		$url = get_stylesheet_directory_uri() . '/images/headers/banner-catchall.jpg';
