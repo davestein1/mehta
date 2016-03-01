@@ -1,4 +1,4 @@
-/**
+/******************************
  * THEMESTYLE.CSS
  * Theme Name:  Mehta
  * Theme URI:   http://steinbay.com/themes/mehta 
@@ -998,6 +998,7 @@ hr {
 /* === Archive-type pages === */
 
 .loop-pagination { 
+	clear: both;
 	width: 100%;
 	padding: 10px;
 	text-align: center;
@@ -2031,6 +2032,7 @@ body.archive.col-masonry-active.taxonomy-category-recordings .works-grid-toggle 
 	clear: both;
 	float: left;
 	margin-left: 0;
+	/* SHOULD THIS BE WIDTH: 100%; ? */
 	/* margin-bottom: 2rem; */
 	margin-bottom: 20px;
 	padding: 20px;
@@ -2076,27 +2078,39 @@ in our custom popups we create a new div classed mfp-dscaption inside mfp-title.
 	filter: alpha(opacity=90);
 }
 
-.mfp-active .gallery-popup-link:before {
+.mfp-active figure /* #attachment_2168 */ {
 	position: relative;
-	left: 5px; 
+}
+
+.mfp-active .gallery-popup-link:before {
+	z-index: 100;
+	position: absolute;
+	left: 14px; 
+	top: 5px; /* 19px;*/
 	content: "\f232";
 	font-family: "dashicons";
 	font-size: 30px;
 	color: white;
 	-webkit-font-smoothing: antialiased;
+} 
+
+.mfp-active .gallery-popup-link {
+	position: static;
+	z-index: 50;
+	left: 0px; 
+	top: 0px;
 }
 
-.mfp-active .gallery-popup-link {}
-
-.mfp-active .gallery-popup-link:after {}
-
-	/* trick to in-flow floated element 
+.mfp-active .gallery-popup-link:after {
+	/* trick to in-flow floated element */
+	position: absolute; 
+	z-index: 100;
+	bottom: 0;
 	content: "."; 
-	display: block; 
-	height: 0; 
-	clear: right; 
-	visibility: hidden; */
-
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
 
 .lightbox-popup-active .mfp-title,
 .gallery-popup-link-active .mfp-title {
